@@ -1,0 +1,23 @@
+{
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "dev": "deno run -A --env-file --unsafely-ignore-certificate-errors --watch ./src/main.ts",
+    "main": "deno run -A --env-file --unsafely-ignore-certificate-errors ./src/main.ts"
+  },
+  "imports": {
+    "@/": "./src/",
+    "@actions/core": "npm:@actions/core@^1.11.1",
+    "@commitlint/cli": "npm:@commitlint/cli@^19.6.1",
+    "@commitlint/config-conventional": "npm:@commitlint/config-conventional@^19.6.0",
+    "@googleapis/youtube": "npm:@googleapis/youtube@^20.0.0",
+    "@types/crypto-js": "npm:@types/crypto-js@^4.2.2",
+    "@types/fs-extra": "npm:@types/fs-extra@^11.0.4",
+    "@types/lodash-es": "npm:@types/lodash-es@^4.17.12",
+    "cheerio": "npm:cheerio@^1.0.0",
+    "crypto-js": "npm:crypto-js@^4.2.0",
+    "fs-extra": "npm:fs-extra@^11.2.0",
+    "lefthook": "npm:lefthook@^1.10.1",
+    "lodash-es": "npm:lodash-es@^4.17.21",
+    "p-limit": "npm:p-limit@^6.2.0"
+  }
+}

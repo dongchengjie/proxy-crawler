@@ -1,0 +1,19 @@
+assert_lefthook_installed: true
+
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: deno run -A npm:commitlint --edit
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: deno-lint
+      run: deno lint {staged_files} --compact --fix
+      glob: "*.{js,cjs,mjs,ts,cts,mts}"
+      stage_fixed: true
+
+    - name: deno-fmt
+      run: deno fmt {staged_files}
+      glob: "*.*"
+      stage_fixed: true

@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "request": "launch",
+      "name": "Debug",
+      "type": "node",
+      "runtimeExecutable": "deno",
+      "cwd": "${workspaceFolder}",
+      "program": "${workspaceFolder}/src/main.ts",
+      "runtimeArgs": [
+        "run",
+        "--unstable",
+        "--inspect-wait",
+        "--allow-all",
+        "--env-file",
+        "--unsafely-ignore-certificate-errors"
+      ],
+      "attachSimplePort": 9229
+    }
+  ]
+}
