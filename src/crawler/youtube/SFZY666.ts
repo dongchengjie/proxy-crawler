@@ -54,7 +54,7 @@ export class SFZY666 extends Crawler {
       .find((text) => text.includes("20.37版以后"));
     subscriptionUrl = subscriptionUrl?.match(/https?:\/\/\S+/)?.[0];
     if (!subscriptionUrl) return;
-    this.log(`订阅链接: ${blogUrl}`);
+    this.log(`订阅链接: ${subscriptionUrl}`);
 
     // 获取订阅内容
     const subscription = await getBody(subscriptionUrl);
