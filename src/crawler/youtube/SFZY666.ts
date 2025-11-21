@@ -31,7 +31,12 @@ export class SFZY666 extends Crawler {
 
     // 获取博客链接
     const lines = description.split("\n");
-    const line = lines.find((line) => line.includes("本期免费节点"));
+    const line = lines.find(
+      (line) =>
+        line.includes(".blogs") ||
+        line.includes("本期免费节点") ||
+        line.includes("最新免费节点")
+    );
     const blogUrl = line?.match(/https?:\/\/\S+/)?.[0];
     if (!blogUrl) return;
     this.log(`博客链接: ${blogUrl}`);
