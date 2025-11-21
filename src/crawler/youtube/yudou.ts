@@ -13,7 +13,7 @@ export class YuDou extends Crawler {
 
   public override async getFileContent(): Promise<string | undefined> {
     // 获取博客列表
-    const blogs = await getBody("https://www.yudou77.top/");
+    const blogs = await getBody("https://www.yudou6677.top/");
     if (!blogs) return;
 
     // 获取最新博客链接
