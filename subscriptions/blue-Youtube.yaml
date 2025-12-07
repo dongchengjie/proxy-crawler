@@ -5,30 +5,6 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vless","name":"俄罗斯_1","server":"62.60.148.21","port":443,"uuid":"39e5cc2f-1294-4a42-bb58-306a8be785e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"st.ozone.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"俄罗斯_2","server":"wolfy.ufavpn.ru","port":52900,"uuid":"97e7c83c-9346-49b4-85a5-1e3bbf7488b9","skip-cert-verify":true,"network":"tcp","servername":"ozon.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"俄罗斯_3","server":"wolfy.ufavpn.ru","port":42275,"uuid":"ded39de0-6d5e-426b-90e8-b7dfeced29b2","skip-cert-verify":true,"network":"tcp","servername":"eh.vk.com","tls":false,"udp":true}
-  - {"type":"vless","name":"保加利亚","server":"bg.fasssst.ru","port":443,"uuid":"c1853115-eb6b-4592-b01f-05037d33505d","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"bg.fasssst.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"俄罗斯_4","server":"plr.strelkavpn.ru","port":8443,"uuid":"0e0df131-29f5-4725-b9a3-7b1a6cac4c95","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"plr.strelkavpn.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"俄罗斯_5","server":"178.236.16.98","port":35728,"uuid":"a00d89f6-ab7e-4e30-a5e5-54c701d62c93","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"美国_1","server":"delilah.ns.cloudflare.com","port":443,"uuid":"5b687f17-0176-495e-84a1-0835f8feec91","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639002592262919469.sentra-amsir.info","ws-opts":{"path":"/egakxows","headers":{"host":"639002592262919469.sentra-amsir.info"}}}
-  - {"type":"vless","name":"美国_2","server":"plr.strelkavpn.ru","port":8443,"uuid":"0e0df131-29f5-4725-b9a3-7b1a6cac4c95","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"plr.strelkavpn.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"美国_3","server":"bg.fasssst.ru","port":443,"uuid":"c1853115-eb6b-4592-b01f-05037d33505d","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"bg.fasssst.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"荷兰_1","server":"89.23.113.137","port":49943,"uuid":"_911331","skip-cert-verify":true,"network":"tcp","servername":"ietf.org","tls":false,"udp":true}
-  - {"type":"vless","name":"荷兰_2","server":"s3.nobaddays.site","port":49943,"uuid":"_911331","skip-cert-verify":true,"network":"tcp","servername":"ietf.org","tls":false,"udp":true}
-  - {"type":"vless","name":"法国","server":"141.227.162.151","port":33919,"uuid":"9eee43b5-6b7d-494a-a5b3-fb45b7ee4976","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"},"servername":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"}
-  - {"type":"vless","name":"荷兰_3","server":"89.23.113.137","port":49943,"uuid":"_911331","skip-cert-verify":true,"network":"tcp","servername":"ietf.org","tls":false,"udp":true}
-  - {"type":"vless","name":"意大利","server":"141.227.140.217","port":23990,"uuid":"5afe0624-a873-4cb8-b4eb-cea6c41a9e52","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"},"servername":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"}
-  - {"type":"vless","name":"美国_4","server":"141.227.136.51","port":25687,"uuid":"a03e540d-7fa2-4187-b0d0-5202a22cf9a0","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"},"servername":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"}
-  - {"type":"vless","name":"🇧🇬BG_1|⬇️3.3MB/s","server":"bg.fasssst.ru","port":443,"uuid":"c1853115-eb6b-4592-b01f-05037d33505d","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"bg.fasssst.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷FR_1|⬇️3.6MB/s","server":"69.84.182.13","port":443,"uuid":"04f3ed37-bfd4-46d3-b4eb-e62d1f32b6f9","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"fr-1-fr-1.aiopen.sbs","ws-opts":{"path":"/kbjc/fr1","headers":{"host":"fr-1-fr-1.aiopen.sbs"}}}
-  - {"type":"vless","name":"🇮🇪IE_1|⬇️3.5MB/s","server":"141.227.162.151","port":33919,"uuid":"9eee43b5-6b7d-494a-a5b3-fb45b7ee4976","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"},"servername":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"}
-  - {"type":"vless","name":"🇮🇱IL_1|⬇️4.2MB/s","server":"ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz","port":443,"uuid":"0e8a6896-ad90-4a3b-89a3-77d64aa409e2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"i2pd.website","tls":false,"udp":true}
-  - {"type":"vless","name":"🇵🇱PL_1|⬇️1.9MB/s","server":"plr.strelkavpn.ru","port":8443,"uuid":"0e0df131-29f5-4725-b9a3-7b1a6cac4c95","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"plr.strelkavpn.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"🇷🇺RU_3|⬇️2.1MB/s","server":"yt.connect-iskra.ru","port":8443,"uuid":"fdc3a9ca-1b77-4b06-869c-43982db07c9f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"shiftline.xyz","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_10|⬇️5.3MB/s","server":"104.234.4.149","port":56282,"uuid":"aafc1774-1fe6-4f6e-807c-1bfde06bf5a2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"updates.cdn-apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US_4|⬇️4.9MB/s","server":"172.67.130.204","port":443,"uuid":"c226ac5d-65e9-4379-95c3-fb542bc242d8","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"HHhhhHhhhhH.777198.xYz","ws-opts":{"path":"/OjdW89Bpg4ykd4O","headers":{"host":"HHhhhHhhhhH.777198.xYz"}}}
-  - {"type":"vless","name":"🇺🇸US_9|⬇️2.0MB/s","server":"us01-vlr01-gmn03.vpnvezdehod.net","port":443,"uuid":"c52e7342-2c31-4f0b-83e9-007ad8d1691a","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"hls-svod.itunes.apple.com","tls":false,"udp":true}
   - {"type":"trojan","name":"香港_1","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
     [By EbraSha] Kon©️Central������️ping:229.77ms ","network":"tcp"}
   - {"type":"trojan","name":"香港_2","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
@@ -75,7 +51,6 @@ proxies:
   - {"type":"trojan","name":"香港_25","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������","network":"tcp"}
   - {"type":"trojan","name":"香港_26","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
   - {"type":"trojan","name":"香港_27","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
-  - {"type":"trojan","name":"印度尼西亚","server":"180.131.145.161","port":23274,"password":"FodSUXysuS","udp":true,"skip-cert-verify":true,"sni":"cloudflare.com","network":"grpc"}
   - {"type":"trojan","name":"香港_28","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
     [By EbraSha] b2n.ir/v2ray-configs | 749 ","network":"tcp"}
   - {"type":"trojan","name":"香港_29","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
@@ -100,70 +75,52 @@ proxies:
     [By EbraSha] ","network":"tcp"}
   - {"type":"trojan","name":"香港_39","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
     [By EbraSha] b2n.ir/v2ray-configs | 75 ","network":"tcp"}
-  - {"type":"trojan","name":"美国_5","server":"23.247.137.64","port":443,"password":"3c4e10af98c30972","udp":true,"skip-cert-verify":true,"sni":"n2.gladns.com","network":"grpc"}
   - {"type":"trojan","name":"香港_40","server":"58.152.30.120","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
-  - {"type":"trojan","name":"美国_6","server":"23.247.137.64","port":443,"password":"3c4e10af98c30972","udp":true,"skip-cert-verify":true,"sni":"n2.gladns.com","network":"grpc"}
-  - {"type":"trojan","name":"香港_41","server":"58.152.30.120","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
-  - {"type":"trojan","name":"美国_7","server":"23.247.137.64","port":443,"password":"3c4e10af98c30972","udp":true,"skip-cert-verify":true,"sni":"n2.gladns.com","network":"grpc"}
-  - {"type":"trojan","name":"香港_42","server":"58.152.30.120","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
-  - {"type":"trojan","name":"香港_43","server":"58.152.25.20","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
-  - {"type":"trojan","name":"美国_8","server":"23.247.137.64","port":443,"password":"3c4e10af98c30972","udp":true,"skip-cert-verify":true,"sni":"n2.gladns.com","network":"grpc"}
-  - {"type":"trojan","name":"香港_44","server":"58.152.30.120","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
-  - {"type":"trojan","name":"香港_45","server":"58.152.25.20","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
-  - {"type":"trojan","name":"香港_46","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
+  - {"type":"trojan","name":"香港_41","server":"58.152.25.20","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"t.me/ripaojiedian","network":"tcp"}
+  - {"type":"trojan","name":"香港_42","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
     [By EbraSha] b2n.ir/v2ray-configs | 393 ","network":"tcp"}
-  - {"type":"trojan","name":"香港_47","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
+  - {"type":"trojan","name":"香港_43","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
     [By EbraSha] b2n.ir/v2ray-configs | 749 ","network":"tcp"}
-  - {"type":"trojan","name":"香港_48","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
+  - {"type":"trojan","name":"香港_44","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
     [By EbraSha] b2n.ir/v2ray-configs | 438 ","network":"tcp"}
-  - {"type":"trojan","name":"香港_49","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
+  - {"type":"trojan","name":"香港_45","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
     ","network":"tcp"}
-  - {"type":"trojan","name":"香港_50","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
+  - {"type":"trojan","name":"香港_46","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
     [By EbraSha] b2n.ir/v2ray-configs | 188 ","network":"tcp"}
-  - {"type":"trojan","name":"香港_51","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"      
+  - {"type":"trojan","name":"香港_47","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"      
     [By EbraSha] b2n.ir/v2ray-configs | 393 ","network":"tcp"}
-  - {"type":"trojan","name":"香港_52","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
+  - {"type":"trojan","name":"香港_48","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
     [By EbraSha] b2n.ir/v2ray-configs | 956 ","network":"tcp"}
-  - {"type":"trojan","name":"香港_53","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"      
+  - {"type":"trojan","name":"香港_49","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"      
     [By EbraSha] b2n.ir/v2ray-configs | 75 ","network":"tcp"}
-  - {"type":"trojan","name":"香港_54","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
+  - {"type":"trojan","name":"香港_50","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
     [By EbraSha] b2n.ir/v2ray-configs | 964 ","network":"tcp"}
-  - {"type":"trojan","name":"香港_55","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"      
+  - {"type":"trojan","name":"香港_51","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"      
     [By EbraSha] b2n.ir/v2ray-configs | 964 ","network":"tcp"}
-  - {"type":"trojan","name":"香港_56","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
+  - {"type":"trojan","name":"香港_52","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"
     [By EbraSha] b2n.ir/v2ray-configs | 987 ","network":"tcp"}
-  - {"type":"trojan","name":"香港_57","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
+  - {"type":"trojan","name":"香港_53","server":"58.152.53.8","port":443,"password":"BxceQaOe","udp":true,"skip-cert-verify":true,"sni":"������
     [By EbraSha] ","network":"tcp"}
+  - {"type":"trojan","name":"英国","server":"cf.0sm.com","port":443,"password":"7418004a-0ecd-41c0-a062-42bf966d3fb2","udp":true,"skip-cert-verify":true,"sni":"vd.vmy2024.dpdns.org","network":"ws","ws-opts":{"path":"/","headers":{"host":"vd.vmy2024.dpdns.org"}}}
+  - {"type":"trojan","name":"德国","server":"cf.877774.xyz","port":443,"password":"7418004a-0ecd-41c0-a062-42bf966d3fb2","udp":true,"skip-cert-verify":true,"sni":"guang.bgm2024.dpdns.org","network":"ws","ws-opts":{"path":"/","headers":{"host":"guang.bgm2024.dpdns.org"}}}
+  - {"type":"vless","name":"俄罗斯_1","server":"62.60.148.21","port":443,"uuid":"39e5cc2f-1294-4a42-bb58-306a8be785e1","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"st.ozone.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"俄罗斯_2","server":"wolfy.ufavpn.ru","port":52900,"uuid":"97e7c83c-9346-49b4-85a5-1e3bbf7488b9","skip-cert-verify":true,"network":"tcp","servername":"ozon.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"俄罗斯_3","server":"wolfy.ufavpn.ru","port":42275,"uuid":"ded39de0-6d5e-426b-90e8-b7dfeced29b2","skip-cert-verify":true,"network":"tcp","servername":"eh.vk.com","tls":false,"udp":true}
+  - {"type":"vless","name":"美国_1","server":"delilah.ns.cloudflare.com","port":443,"uuid":"5b687f17-0176-495e-84a1-0835f8feec91","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"639002592262919469.sentra-amsir.info","ws-opts":{"path":"/egakxows","headers":{"host":"639002592262919469.sentra-amsir.info"}}}
+  - {"type":"vless","name":"荷兰_1","server":"89.23.113.137","port":49943,"uuid":"_911331","skip-cert-verify":true,"network":"tcp","servername":"ietf.org","tls":false,"udp":true}
+  - {"type":"vless","name":"荷兰_2","server":"s3.nobaddays.site","port":49943,"uuid":"_911331","skip-cert-verify":true,"network":"tcp","servername":"ietf.org","tls":false,"udp":true}
+  - {"type":"vless","name":"荷兰_3","server":"89.23.113.137","port":49943,"uuid":"_911331","skip-cert-verify":true,"network":"tcp","servername":"ietf.org","tls":false,"udp":true}
+  - {"type":"vless","name":"美国_2","server":"141.227.136.51","port":25687,"uuid":"a03e540d-7fa2-4187-b0d0-5202a22cf9a0","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"},"servername":"ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON"}
+  - {"type":"vless","name":"美国_3","server":"185.70.186.203","port":443,"uuid":"e74dc1a5-7d48-400b-93c6-efb860b706fa","skip-cert-verify":true}
+  - {"type":"vless","name":"美国_4","server":"213.165.63.234","port":62728,"uuid":"e03b538a-91c9-4d3c-a2cb-8a6b1d8df54f","skip-cert-verify":true,"network":"tcp","servername":"yandex.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"美国_5","server":"193.247.82.67","port":443,"uuid":"b278fc13-9be7-4e21-90cb-cb52ac0e2469","skip-cert-verify":true}
+  - {"type":"vless","name":"美国_6","server":"193.247.82.67","port":443,"uuid":"b278fc13-9be7-4e21-90cb-cb52ac0e2469","skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 俄罗斯_3
-      - 保加利亚
-      - 俄罗斯_4
-      - 俄罗斯_5
-      - 美国_1
-      - 美国_2
-      - 美国_3
-      - 荷兰_1
-      - 荷兰_2
-      - 法国
-      - 荷兰_3
-      - 意大利
-      - 美国_4
-      - 🇧🇬BG_1|⬇️3.3MB/s
-      - 🇫🇷FR_1|⬇️3.6MB/s
-      - 🇮🇪IE_1|⬇️3.5MB/s
-      - 🇮🇱IL_1|⬇️4.2MB/s
-      - 🇵🇱PL_1|⬇️1.9MB/s
-      - 🇷🇺RU_3|⬇️2.1MB/s
-      - 🇺🇸US_10|⬇️5.3MB/s
-      - 🇺🇸US_4|⬇️4.9MB/s
-      - 🇺🇸US_9|⬇️2.0MB/s
       - 香港_1
       - 香港_2
       - 香港_3
@@ -191,7 +148,6 @@ proxy-groups:
       - 香港_25
       - 香港_26
       - 香港_27
-      - 印度尼西亚
       - 香港_28
       - 香港_29
       - 香港_30
@@ -204,14 +160,10 @@ proxy-groups:
       - 香港_37
       - 香港_38
       - 香港_39
-      - 美国_5
       - 香港_40
-      - 美国_6
       - 香港_41
-      - 美国_7
       - 香港_42
       - 香港_43
-      - 美国_8
       - 香港_44
       - 香港_45
       - 香港_46
@@ -222,40 +174,26 @@ proxy-groups:
       - 香港_51
       - 香港_52
       - 香港_53
-      - 香港_54
-      - 香港_55
-      - 香港_56
-      - 香港_57
+      - 英国
+      - 德国
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 美国_1
+      - 荷兰_1
+      - 荷兰_2
+      - 荷兰_3
+      - 美国_2
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 美国_6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 俄罗斯_3
-      - 保加利亚
-      - 俄罗斯_4
-      - 俄罗斯_5
-      - 美国_1
-      - 美国_2
-      - 美国_3
-      - 荷兰_1
-      - 荷兰_2
-      - 法国
-      - 荷兰_3
-      - 意大利
-      - 美国_4
-      - 🇧🇬BG_1|⬇️3.3MB/s
-      - 🇫🇷FR_1|⬇️3.6MB/s
-      - 🇮🇪IE_1|⬇️3.5MB/s
-      - 🇮🇱IL_1|⬇️4.2MB/s
-      - 🇵🇱PL_1|⬇️1.9MB/s
-      - 🇷🇺RU_3|⬇️2.1MB/s
-      - 🇺🇸US_10|⬇️5.3MB/s
-      - 🇺🇸US_4|⬇️4.9MB/s
-      - 🇺🇸US_9|⬇️2.0MB/s
       - 香港_1
       - 香港_2
       - 香港_3
@@ -283,7 +221,6 @@ proxy-groups:
       - 香港_25
       - 香港_26
       - 香港_27
-      - 印度尼西亚
       - 香港_28
       - 香港_29
       - 香港_30
@@ -296,14 +233,10 @@ proxy-groups:
       - 香港_37
       - 香港_38
       - 香港_39
-      - 美国_5
       - 香港_40
-      - 美国_6
       - 香港_41
-      - 美国_7
       - 香港_42
       - 香港_43
-      - 美国_8
       - 香港_44
       - 香港_45
       - 香港_46
@@ -314,40 +247,26 @@ proxy-groups:
       - 香港_51
       - 香港_52
       - 香港_53
-      - 香港_54
-      - 香港_55
-      - 香港_56
-      - 香港_57
+      - 英国
+      - 德国
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 美国_1
+      - 荷兰_1
+      - 荷兰_2
+      - 荷兰_3
+      - 美国_2
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 美国_6
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 俄罗斯_3
-      - 保加利亚
-      - 俄罗斯_4
-      - 俄罗斯_5
-      - 美国_1
-      - 美国_2
-      - 美国_3
-      - 荷兰_1
-      - 荷兰_2
-      - 法国
-      - 荷兰_3
-      - 意大利
-      - 美国_4
-      - 🇧🇬BG_1|⬇️3.3MB/s
-      - 🇫🇷FR_1|⬇️3.6MB/s
-      - 🇮🇪IE_1|⬇️3.5MB/s
-      - 🇮🇱IL_1|⬇️4.2MB/s
-      - 🇵🇱PL_1|⬇️1.9MB/s
-      - 🇷🇺RU_3|⬇️2.1MB/s
-      - 🇺🇸US_10|⬇️5.3MB/s
-      - 🇺🇸US_4|⬇️4.9MB/s
-      - 🇺🇸US_9|⬇️2.0MB/s
       - 香港_1
       - 香港_2
       - 香港_3
@@ -375,7 +294,6 @@ proxy-groups:
       - 香港_25
       - 香港_26
       - 香港_27
-      - 印度尼西亚
       - 香港_28
       - 香港_29
       - 香港_30
@@ -388,14 +306,10 @@ proxy-groups:
       - 香港_37
       - 香港_38
       - 香港_39
-      - 美国_5
       - 香港_40
-      - 美国_6
       - 香港_41
-      - 美国_7
       - 香港_42
       - 香港_43
-      - 美国_8
       - 香港_44
       - 香港_45
       - 香港_46
@@ -406,39 +320,25 @@ proxy-groups:
       - 香港_51
       - 香港_52
       - 香港_53
-      - 香港_54
-      - 香港_55
-      - 香港_56
-      - 香港_57
+      - 英国
+      - 德国
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 美国_1
+      - 荷兰_1
+      - 荷兰_2
+      - 荷兰_3
+      - 美国_2
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 美国_6
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 俄罗斯_3
-      - 保加利亚
-      - 俄罗斯_4
-      - 俄罗斯_5
-      - 美国_1
-      - 美国_2
-      - 美国_3
-      - 荷兰_1
-      - 荷兰_2
-      - 法国
-      - 荷兰_3
-      - 意大利
-      - 美国_4
-      - 🇧🇬BG_1|⬇️3.3MB/s
-      - 🇫🇷FR_1|⬇️3.6MB/s
-      - 🇮🇪IE_1|⬇️3.5MB/s
-      - 🇮🇱IL_1|⬇️4.2MB/s
-      - 🇵🇱PL_1|⬇️1.9MB/s
-      - 🇷🇺RU_3|⬇️2.1MB/s
-      - 🇺🇸US_10|⬇️5.3MB/s
-      - 🇺🇸US_4|⬇️4.9MB/s
-      - 🇺🇸US_9|⬇️2.0MB/s
       - 香港_1
       - 香港_2
       - 香港_3
@@ -466,7 +366,6 @@ proxy-groups:
       - 香港_25
       - 香港_26
       - 香港_27
-      - 印度尼西亚
       - 香港_28
       - 香港_29
       - 香港_30
@@ -479,14 +378,10 @@ proxy-groups:
       - 香港_37
       - 香港_38
       - 香港_39
-      - 美国_5
       - 香港_40
-      - 美国_6
       - 香港_41
-      - 美国_7
       - 香港_42
       - 香港_43
-      - 美国_8
       - 香港_44
       - 香港_45
       - 香港_46
@@ -497,39 +392,25 @@ proxy-groups:
       - 香港_51
       - 香港_52
       - 香港_53
-      - 香港_54
-      - 香港_55
-      - 香港_56
-      - 香港_57
+      - 英国
+      - 德国
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 美国_1
+      - 荷兰_1
+      - 荷兰_2
+      - 荷兰_3
+      - 美国_2
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 美国_6
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 俄罗斯_3
-      - 保加利亚
-      - 俄罗斯_4
-      - 俄罗斯_5
-      - 美国_1
-      - 美国_2
-      - 美国_3
-      - 荷兰_1
-      - 荷兰_2
-      - 法国
-      - 荷兰_3
-      - 意大利
-      - 美国_4
-      - 🇧🇬BG_1|⬇️3.3MB/s
-      - 🇫🇷FR_1|⬇️3.6MB/s
-      - 🇮🇪IE_1|⬇️3.5MB/s
-      - 🇮🇱IL_1|⬇️4.2MB/s
-      - 🇵🇱PL_1|⬇️1.9MB/s
-      - 🇷🇺RU_3|⬇️2.1MB/s
-      - 🇺🇸US_10|⬇️5.3MB/s
-      - 🇺🇸US_4|⬇️4.9MB/s
-      - 🇺🇸US_9|⬇️2.0MB/s
       - 香港_1
       - 香港_2
       - 香港_3
@@ -557,7 +438,6 @@ proxy-groups:
       - 香港_25
       - 香港_26
       - 香港_27
-      - 印度尼西亚
       - 香港_28
       - 香港_29
       - 香港_30
@@ -570,14 +450,10 @@ proxy-groups:
       - 香港_37
       - 香港_38
       - 香港_39
-      - 美国_5
       - 香港_40
-      - 美国_6
       - 香港_41
-      - 美国_7
       - 香港_42
       - 香港_43
-      - 美国_8
       - 香港_44
       - 香港_45
       - 香港_46
@@ -588,39 +464,25 @@ proxy-groups:
       - 香港_51
       - 香港_52
       - 香港_53
-      - 香港_54
-      - 香港_55
-      - 香港_56
-      - 香港_57
+      - 英国
+      - 德国
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 美国_1
+      - 荷兰_1
+      - 荷兰_2
+      - 荷兰_3
+      - 美国_2
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 美国_6
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 俄罗斯_3
-      - 保加利亚
-      - 俄罗斯_4
-      - 俄罗斯_5
-      - 美国_1
-      - 美国_2
-      - 美国_3
-      - 荷兰_1
-      - 荷兰_2
-      - 法国
-      - 荷兰_3
-      - 意大利
-      - 美国_4
-      - 🇧🇬BG_1|⬇️3.3MB/s
-      - 🇫🇷FR_1|⬇️3.6MB/s
-      - 🇮🇪IE_1|⬇️3.5MB/s
-      - 🇮🇱IL_1|⬇️4.2MB/s
-      - 🇵🇱PL_1|⬇️1.9MB/s
-      - 🇷🇺RU_3|⬇️2.1MB/s
-      - 🇺🇸US_10|⬇️5.3MB/s
-      - 🇺🇸US_4|⬇️4.9MB/s
-      - 🇺🇸US_9|⬇️2.0MB/s
       - 香港_1
       - 香港_2
       - 香港_3
@@ -648,7 +510,6 @@ proxy-groups:
       - 香港_25
       - 香港_26
       - 香港_27
-      - 印度尼西亚
       - 香港_28
       - 香港_29
       - 香港_30
@@ -661,14 +522,10 @@ proxy-groups:
       - 香港_37
       - 香港_38
       - 香港_39
-      - 美国_5
       - 香港_40
-      - 美国_6
       - 香港_41
-      - 美国_7
       - 香港_42
       - 香港_43
-      - 美国_8
       - 香港_44
       - 香港_45
       - 香港_46
@@ -679,10 +536,20 @@ proxy-groups:
       - 香港_51
       - 香港_52
       - 香港_53
-      - 香港_54
-      - 香港_55
-      - 香港_56
-      - 香港_57
+      - 英国
+      - 德国
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 美国_1
+      - 荷兰_1
+      - 荷兰_2
+      - 荷兰_3
+      - 美国_2
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 美国_6
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -705,30 +572,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 俄罗斯_1
-      - 俄罗斯_2
-      - 俄罗斯_3
-      - 保加利亚
-      - 俄罗斯_4
-      - 俄罗斯_5
-      - 美国_1
-      - 美国_2
-      - 美国_3
-      - 荷兰_1
-      - 荷兰_2
-      - 法国
-      - 荷兰_3
-      - 意大利
-      - 美国_4
-      - 🇧🇬BG_1|⬇️3.3MB/s
-      - 🇫🇷FR_1|⬇️3.6MB/s
-      - 🇮🇪IE_1|⬇️3.5MB/s
-      - 🇮🇱IL_1|⬇️4.2MB/s
-      - 🇵🇱PL_1|⬇️1.9MB/s
-      - 🇷🇺RU_3|⬇️2.1MB/s
-      - 🇺🇸US_10|⬇️5.3MB/s
-      - 🇺🇸US_4|⬇️4.9MB/s
-      - 🇺🇸US_9|⬇️2.0MB/s
       - 香港_1
       - 香港_2
       - 香港_3
@@ -756,7 +599,6 @@ proxy-groups:
       - 香港_25
       - 香港_26
       - 香港_27
-      - 印度尼西亚
       - 香港_28
       - 香港_29
       - 香港_30
@@ -769,14 +611,10 @@ proxy-groups:
       - 香港_37
       - 香港_38
       - 香港_39
-      - 美国_5
       - 香港_40
-      - 美国_6
       - 香港_41
-      - 美国_7
       - 香港_42
       - 香港_43
-      - 美国_8
       - 香港_44
       - 香港_45
       - 香港_46
@@ -787,10 +625,20 @@ proxy-groups:
       - 香港_51
       - 香港_52
       - 香港_53
-      - 香港_54
-      - 香港_55
-      - 香港_56
-      - 香港_57
+      - 英国
+      - 德国
+      - 俄罗斯_1
+      - 俄罗斯_2
+      - 俄罗斯_3
+      - 美国_1
+      - 荷兰_1
+      - 荷兰_2
+      - 荷兰_3
+      - 美国_2
+      - 美国_3
+      - 美国_4
+      - 美国_5
+      - 美国_6
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
