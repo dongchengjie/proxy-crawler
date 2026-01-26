@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Crawl Jobs
         run: |
-          deno install --allow-scripts
+          deno install --allow-scripts --lock
           deno run main
 
       - name: Prepare files to be committed

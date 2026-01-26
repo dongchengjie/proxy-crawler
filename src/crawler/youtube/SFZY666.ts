@@ -35,7 +35,7 @@ export class SFZY666 extends Crawler {
       (line) =>
         line.includes(".blogs") ||
         line.includes("本期免费节点") ||
-        line.includes("最新免费节点")
+        line.includes("最新免费节点"),
     );
     const blogUrl = line?.match(/https?:\/\/\S+/)?.[0];
     if (!blogUrl) return;
@@ -51,7 +51,7 @@ export class SFZY666 extends Crawler {
       .map((_index, el) => $blog(el).text())
       .toArray()
       .filter(Boolean)
-      .find((text) => text.includes("20.37版以后"));
+      .find((text) => text.includes("20.37版"));
     subscriptionUrl = subscriptionUrl?.match(/https?:\/\/\S+/)?.[0];
     if (!subscriptionUrl) return;
     this.log(`订阅链接: ${subscriptionUrl}`);
