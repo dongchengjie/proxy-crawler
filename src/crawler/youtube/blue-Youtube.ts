@@ -52,7 +52,7 @@ export class BlueYoutube extends Crawler {
       try {
         const aes = CryptoJS.AES.decrypt(encryption, attempt);
         const decoded = (decryption = decodeURIComponent(
-          aes.toString(CryptoJS.enc.Utf8)
+          aes.toString(CryptoJS.enc.Utf8),
         ));
         if (decoded != null && decoded.length > 0) {
           decryption = decoded;
@@ -70,8 +70,8 @@ export class BlueYoutube extends Crawler {
     let subscriptionUrl = $decryption("p")
       .toArray()
       .map((el) => {
-        if ($decryption(el).text().toLowerCase().includes("clash")) {
-          return $decryption(el).next("p").text();
+        if ($decryption(el).text().toLowerCase().endsWith(".yaml")) {
+          return $decryption(el).text();
         }
       })
       .find(Boolean);
