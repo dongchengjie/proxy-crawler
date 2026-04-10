@@ -10,6 +10,10 @@ export class Youneedproxy extends Crawler {
     return "youneedproxy";
   }
 
+  public override getFilename(): string {
+    return `${this.name()}.txt`;
+  }
+
   public override async getFileContent(): Promise<string | undefined> {
     // 获取并记录 PHPSESSID
     const listUrl = "https://www.youneed.win/category/nodeshare";
