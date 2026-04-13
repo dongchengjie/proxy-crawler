@@ -35,7 +35,8 @@ export class SFZY666 extends Crawler {
       (line) =>
         line.includes(".blogs") ||
         line.includes("本期免费节点") ||
-        line.includes("最新免费节点"),
+        line.includes("最新免费节点") ||
+        line.includes("节点获取地址"),
     );
     const blogUrl = line?.match(/https?:\/\/\S+/)?.[0];
     if (!blogUrl) return;
@@ -47,11 +48,17 @@ export class SFZY666 extends Crawler {
 
     // 获取订阅链接
     const $blog = cheerio.load(blog);
-    let subscriptionUrl = $blog("li")
-      .map((_index, el) => $blog(el).text())
+    let subscriptionUrl = $blog(".copy-row")
+      .filter((_index, el) => {
+        return $blog(el).prev().text().toLowerCase().includes("clash");
+      })
+      .map((_index, el) => {
+        const href = $blog(el).find("a.download-btn").first().attr("href");
+        return href?.trim();
+      })
       .toArray()
       .filter(Boolean)
-      .find((text) => text.includes("20.37版"));
+      .find((text) => text.startsWith("http"));
     subscriptionUrl = subscriptionUrl?.match(/https?:\/\/\S+/)?.[0];
     if (!subscriptionUrl) return;
     this.log(`订阅链接: ${subscriptionUrl}`);
