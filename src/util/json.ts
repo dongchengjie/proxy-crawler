@@ -1,4 +1,3 @@
-// @ts-types="npm:@types/lodash-es"
 import { forEach, isObject } from "lodash-es";
 
 export const walk = (

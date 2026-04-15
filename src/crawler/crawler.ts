@@ -1,6 +1,5 @@
 import core from "@actions/core";
 import { env } from "@/util/env.ts";
-// @ts-types="npm:@types/fs-extra"
 import { outputFileSync } from "fs-extra";
 import { join, resolve } from "node:path";
 

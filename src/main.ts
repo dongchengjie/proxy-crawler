@@ -1,6 +1,5 @@
 import { getCrawlers } from "@/crawler/index.ts";
 import { env } from "@/util/env.ts";
-// @ts-types="npm:@types/fs-extra"
 import { outputFileSync } from "fs-extra";
 import { resolve } from "node:path";
 

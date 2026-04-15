@@ -3,6 +3,7 @@ import { getBody } from "@/util/http.ts";
 import { getVideoById, getVideosByChannelId } from "@/util/youtube.ts";
 import { charCombinations } from "../../util/password.ts";
 import { decryptPrivateBin } from "privatebin-decrypt";
+import clone from "clone";
 
 export class QFZYFX extends Crawler {
   public override name(): string {
@@ -31,10 +32,9 @@ export class QFZYFX extends Crawler {
     if (!description) return;
 
     // 获取paste.to链接
-    const lines = description.split("\n");
-    const line = lines.find(
-      (line) => line.includes("https://paste.to") || line.includes("订阅地址"),
-    );
+    const line = description
+      .split("\n")
+      .find((line) => line.includes("https://paste.to"));
     const shareUrl = line?.match(/https?:\/\/\S+/)?.[0];
     if (!shareUrl) return;
     this.log(`paste.to链接: ${shareUrl}`);
@@ -51,15 +51,16 @@ export class QFZYFX extends Crawler {
     const key = shareUrl.substring(shareUrl.lastIndexOf("#") + 1);
 
     // 暴力解密
-    const passwords = charCombinations("0123456789", 4, 6);
+    const passwords = charCombinations("0123456789", 4, 4);
     let paste: string | undefined;
     for (const attempt of passwords) {
       try {
+        const c_data = clone(data);
         const decrypted = await decryptPrivateBin({
           key,
+          data: c_data.adata,
+          cipherMessage: c_data.ct,
           password: attempt,
-          data: data.adata,
-          cipherMessage: data.ct,
         });
         if (decrypted) {
           paste = decrypted;

@@ -3,7 +3,6 @@ import { Crawler } from "@/crawler/crawler.ts";
 import { getBody } from "@/util/http.ts";
 // import { runScript } from "@/util/vm.ts";
 import * as cheerio from "cheerio";
-// @ts-types="npm:@types/crypto-js"
 // import CryptoJS from "crypto-js";
 
 export class BlueYoutube extends Crawler {
