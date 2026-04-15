@@ -1,0 +1,89 @@
+import { Crawler } from "@/crawler/crawler.ts";
+import { getBody } from "@/util/http.ts";
+import { getVideoById, getVideosByChannelId } from "@/util/youtube.ts";
+import { charCombinations } from "../../util/password.ts";
+import { decryptPrivateBin } from "privatebin-decrypt";
+
+export class QFZYFX extends Crawler {
+  public override name(): string {
+    return "QFZYFX";
+  }
+
+  public override async getFileContent(): Promise<string | undefined> {
+    // 获取视频列表
+    const vlr = await getVideosByChannelId("UC9QOmPLuO-C6IA8jc--IOpg");
+    if (vlr.status !== 200) return;
+
+    // 获取最新视频idz
+    const video = vlr.data.items?.find((item) => {
+      const clues = ["免费科学上网", "免费节点", "免费订阅"];
+      return clues.some((clue) => item?.snippet?.title?.includes(clue));
+    });
+    const videoId = video?.id?.videoId;
+    if (!videoId) return;
+    this.log(`最新视频id: ${videoId}`);
+
+    // 获取视频简介
+    const vr = await getVideoById(videoId);
+    if (vr.status !== 200) return;
+
+    const description = vr?.data?.items?.find(Boolean)?.snippet?.description;
+    if (!description) return;
+
+    // 获取paste.to链接
+    const lines = description.split("\n");
+    const line = lines.find(
+      (line) => line.includes("https://paste.to") || line.includes("订阅地址"),
+    );
+    const shareUrl = line?.match(/https?:\/\/\S+/)?.[0];
+    if (!shareUrl) return;
+    this.log(`paste.to链接: ${shareUrl}`);
+
+    // 获取加密内容
+    const data = (await (
+      await fetch(shareUrl, {
+        headers: { Accept: "application/json, text/javascript, */*; q=0.01" },
+      })
+    ).json()) as {
+      ct: string;
+      adata: (string | number | (string | number)[])[];
+    };
+    const key = shareUrl.substring(shareUrl.lastIndexOf("#") + 1);
+
+    // 暴力解密
+    const passwords = charCombinations("0123456789", 4, 6);
+    let paste: string | undefined;
+    for (const attempt of passwords) {
+      try {
+        const decrypted = await decryptPrivateBin({
+          key,
+          password: attempt,
+          data: data.adata,
+          cipherMessage: data.ct,
+        });
+        if (decrypted) {
+          paste = decrypted;
+          this.log(`访问密码: ${attempt}`);
+          break;
+        }
+      } catch {
+        // ignore
+      }
+    }
+    if (!paste) return;
+
+    // 获取订阅链接
+    let subscriptionUrl = paste
+      .split("\n")
+      .filter((line) => line.toLowerCase().includes("clash"))
+      .find((text) => text.startsWith("http"));
+    subscriptionUrl = subscriptionUrl?.match(/https?:\/\/\S+/)?.[0];
+    if (!subscriptionUrl) return;
+    this.log(`订阅链接: ${subscriptionUrl}`);
+
+    // 获取订阅内容
+    const subscription = await getBody(subscriptionUrl);
+
+    return subscription;
+  }
+}

@@ -3,9 +3,10 @@ import { BlueYoutube } from "@/crawler/youtube/blue-Youtube.ts";
 import { SFZY666 } from "@/crawler/youtube/SFZY666.ts";
 import { YuDou } from "@/crawler/youtube/yudou.ts";
 import { Youneedproxy } from "@/crawler/blog/youneedproxy.ts";
+import { QFZYFX } from "@/crawler/youtube/QFZYFX.ts";
 
 export const getCrawlers = (): Crawler[] => {
-  return [BlueYoutube, SFZY666, YuDou, Youneedproxy].map((Crawler) =>
+  return [BlueYoutube, SFZY666, YuDou, Youneedproxy, QFZYFX].map((Crawler) =>
     new Crawler()
   );
 };
