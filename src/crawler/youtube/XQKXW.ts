@@ -5,19 +5,19 @@ import { charCombinations } from "../../util/password.ts";
 import { decryptPrivateBin } from "privatebin-decrypt";
 import clone from "clone";
 
-export class QFZYFX extends Crawler {
+export class XQKXW extends Crawler {
   public override name(): string {
-    return "QFZYFX";
+    return "XQKXW";
   }
 
   public override async getFileContent(): Promise<string | undefined> {
     // 获取视频列表
-    const vlr = await getVideosByChannelId("UC9QOmPLuO-C6IA8jc--IOpg");
+    const vlr = await getVideosByChannelId("UCR3bE81YkAzTUOK2WEiaqZQ");
     if (vlr.status !== 200) return;
 
     // 获取最新视频id
     const video = vlr.data.items?.find((item) => {
-      const clues = ["免费科学上网", "免费节点", "免费订阅"];
+      const clues = ["免费节点", "免费订阅", "节点分享"];
       return clues.some((clue) => item?.snippet?.title?.includes(clue));
     });
     const videoId = video?.id?.videoId;
@@ -74,11 +74,8 @@ export class QFZYFX extends Crawler {
     if (!paste) return;
 
     // 获取订阅链接
-    let subscriptionUrl = paste
-      .split("\n")
-      .filter((line) => line.toLowerCase().includes("clash"))
-      .find((text) => text.startsWith("http"));
-    subscriptionUrl = subscriptionUrl?.match(/https?:\/\/\S+/)?.[0];
+    const detail = paste.substring(paste.indexOf("2、clash"));
+    const subscriptionUrl = detail?.match(/https?:\/\/\S+/)?.[0];
     if (!subscriptionUrl) return;
     this.log(`订阅链接: ${subscriptionUrl}`);
 
