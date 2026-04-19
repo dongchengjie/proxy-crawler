@@ -3,6 +3,7 @@ import { Crawler } from "@/crawler/crawler.ts";
 import { getBody } from "@/util/http.ts";
 // import { runScript } from "@/util/vm.ts";
 import * as cheerio from "cheerio";
+import { getVideoById, getVideosByChannelId } from "../../util/youtube.ts";
 // import CryptoJS from "crypto-js";
 
 export class BlueYoutube extends Crawler {
@@ -11,6 +12,38 @@ export class BlueYoutube extends Crawler {
   }
 
   public override async getFileContent(): Promise<string | undefined> {
+    // 获取视频列表
+    const vlr = await getVideosByChannelId("UCtzk4Wh7dwJLDKXbq4w4PRQ");
+    if (vlr.status !== 200) return;
+
+    // 获取最新视频id
+    const video = vlr.data.items?.find((item) => {
+      const clues = ["免费节点", "免费订阅", "节点分享"];
+      return clues.some((clue) => item?.snippet?.title?.includes(clue));
+    });
+    const videoId = video?.id?.videoId;
+    if (!videoId) return;
+    this.log(`最新视频id: ${videoId}`);
+
+    // 获取视频简介
+    const vr = await getVideoById(videoId);
+    if (vr.status !== 200) return;
+
+    const description = vr?.data?.items?.find(Boolean)?.snippet?.description;
+    if (!description) return;
+
+    // 获取博客链接
+    const lines = description.split("\n");
+    const line = lines.find(
+      (line) =>
+        line.includes("us1.zhuk.dpdns.org") ||
+        line.includes("节点下载：") ||
+        line.includes("节点获取地址"),
+    );
+    const blogUrl = line?.match(/https?:\/\/\S+/)?.[0];
+    if (!blogUrl) return;
+    this.log(`博客链接: ${blogUrl}`);
+
     // 获取网页内容
     const blog = await getBody("https://us1.zhuk.dpdns.org/13-Youtube.html");
     if (!blog) return;
