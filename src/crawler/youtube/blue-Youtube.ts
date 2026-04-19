@@ -45,7 +45,7 @@ export class BlueYoutube extends Crawler {
     this.log(`博客链接: ${blogUrl}`);
 
     // 获取网页内容
-    const blog = await getBody("https://us1.zhuk.dpdns.org/13-Youtube.html");
+    const blog = await getBody(blogUrl);
     if (!blog) return;
 
     // 获访问密码
