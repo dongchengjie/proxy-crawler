@@ -5,7 +5,6 @@ import { YuDou } from "@/crawler/youtube/yudou.ts";
 import { QFZYFX } from "@/crawler/youtube/QFZYFX.ts";
 import { XQKXW } from "@/crawler/youtube/XQKXW.ts";
 import { ZYFXS } from "@/crawler/youtube/ZYFXS.ts";
-import { V2RaySE } from "@/crawler/blog/v2rayse.ts";
 import { Youneedproxy } from "@/crawler/blog/youneedproxy.ts";
 
 export const getCrawlers = (): Crawler[] => {
@@ -16,7 +15,6 @@ export const getCrawlers = (): Crawler[] => {
     QFZYFX,
     XQKXW,
     ZYFXS,
-    V2RaySE,
     Youneedproxy,
   ].map((Crawler) => new Crawler());
 };
