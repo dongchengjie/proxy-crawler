@@ -5,179 +5,879 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
+  - {"type":"ss","name":"🇯🇵日本14_1","server":"cf.090227.xyz","port":443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇭🇰香港HK0050.5MB/s","server":"103.43.191.121","port":8443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇸🇬新加坡SG0061.8MB/s","server":"47.237.71.245","port":15430,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇰🇷韩国05_1","server":"211.48.77.114","port":12312,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇰🇷韩国02_1","server":"211.48.77.114","port":24095,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK092|⬇️1MB/s","server":"104.238.70.16","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵日本01","server":"202.84.53.85","port":14740,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇺🇸美国25","server":"50.62.195.16","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇲🇩MD181|⬇️1MB/s","server":"1.232.206.121","port":14399,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"HK","server":"47.242.145.136","port":8001,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK065|⬇️4MB/s","server":"139.162.141.75","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP152|⬇️1MB/s","server":"46.246.96.59","port":8443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK086|⬇️1MB/s","server":"50.62.90.16","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK081|⬇️1MB/s","server":"188.241.241.3","port":2053,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK054|⬇️2MB/s","server":"103.181.177.88","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇨🇳TW2","server":"125.227.233.197","port":2053,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP140|⬇️6MB/s","server":"195.135.254.173","port":8443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP130|⬇️4MB/s","server":"185.223.93.86","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP004|⬇️12MB/s","server":"104.17.19.67","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK132|⬇️1MB/s","server":"154.194.0.16","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK148|⬇️2MB/s","server":"45.40.147.16","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP131|⬇️2MB/s","server":"31.58.226.196","port":8443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK150|⬇️1MB/s","server":"153.121.45.101","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK133|⬇️1MB/s","server":"211.48.77.114","port":12312,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK117|⬇️6MB/s","server":"8.223.63.150","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK170|⬇️2MB/s","server":"140.238.51.35","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP162|⬇️2MB/s","server":"158.180.72.60","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP054|⬇️14MB/s","server":"104.17.153.182","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK207|⬇️1MB/s","server":"45.40.154.16","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP092|⬇️12MB/s","server":"104.17.53.235","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK256|⬇️2MB/s","server":"211.48.77.114","port":24095,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP197|⬇️1MB/s","server":"89.110.116.183","port":2053,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP228|⬇️3MB/s","server":"94.159.102.107","port":8443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP226|⬇️4MB/s","server":"91.223.169.88","port":8443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇭🇰HK184|⬇️11MB/s","server":"139.144.181.54","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇳🇱NL_12|31KB/s","server":"switcher-nick-croquet.freesocks.work","port":443,"cipher":"chacha20-ietf-poly1305","password":"RFK38Cg7APneSB5cWDcpbm"}
+  - {"type":"ss","name":"🇳🇱NL_11|19KB/s","server":"switcher-nick-croquet.freesocks.work","port":443,"cipher":"chacha20-ietf-poly1305","password":"wwzVn2ZnHfqYa6l8EWh3eY"}
+  - {"type":"ss","name":"🇳🇱NL_14|23KB/s","server":"switcher-nick-croquet.freesocks.work","port":443,"cipher":"chacha20-ietf-poly1305","password":"9tqhMdIrTkgQ46PvhyAtMH"}
+  - {"type":"ss","name":"🇳🇱NL_5|191KB/s","server":"46.30.46.217","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇺🇸US_31|58KB/s","server":"tinkered-pennies-puppies.freesocks.work","port":443,"cipher":"chacha20-ietf-poly1305","password":"hbGrpfvNrJsUmKmPbR3iY2"}
+  - {"type":"ss","name":"🇺🇸US_11|701KB/s","server":"108.162.198.215","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇺🇸US_4|560KB/s","server":"198.12.144.16","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇬🇧GB_2|1.2MB/s|260KB/s","server":"57.128.183.137","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇺🇸US_7|516KB/s","server":"162.159.39.207","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇩🇪DE_3|234KB/s","server":"136.244.80.24","port":8443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"SG-ss","server":"cf.090227.xyz","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"JP-ss","server":"saas.sin.fan","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"HK-ss","server":"cf.008500.xyz","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵日本10","server":"sub.danfeng.eu.org","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵日本12","server":"store.ubi.com","port":443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇯🇵日本14_2","server":"103.133.1.38","port":443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇯🇵日本11","server":"199.181.197.38","port":443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP002|⬇️5MB/s","server":"114.33.57.170","port":443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP045|⬇️2MB/s","server":"152.69.229.175","port":22558,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇰🇷韩国05_2","server":"116.93.199.28","port":22140,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP245|⬇️1MB/s","server":"89.150.35.155","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP244|⬇️13MB/s","server":"104.17.150.140","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP231|⬇️4MB/s","server":"104.17.150.209","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇺🇸美国16","server":"160.153.137.16","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP169|⬇️11MB/s","server":"144.168.56.119","port":40864,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP217|⬇️10MB/s","server":"104.17.147.127","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP205|⬇️1MB/s","server":"179.61.132.85","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP074|⬇️6MB/s","server":"74.48.179.37","port":58184,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇰🇷韩国02_2","server":"211.48.77.114","port":19655,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP186|⬇️1MB/s","server":"93.179.113.25","port":8443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇰🇷韩国04","server":"116.93.199.28","port":10296,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP057|⬇️9MB/s","server":"45.151.132.228","port":19034,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP058|⬇️1MB/s","server":"162.159.38.194","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP170|⬇️1MB/s","server":"89.110.127.51","port":8443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP175|⬇️5MB/s","server":"91.84.105.32","port":8443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP047|⬇️4MB/s","server":"89.110.87.31","port":2053,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP221|⬇️2MB/s","server":"89.169.8.223","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP257|⬇️2MB/s","server":"192.227.237.81","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP071|⬇️5MB/s","server":"212.34.128.155","port":2053,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP199|⬇️13MB/s","server":"172.64.155.39","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP101|⬇️1MB/s","server":"193.122.195.166","port":52557,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP246|⬇️11MB/s","server":"104.19.35.79","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP207|⬇️3MB/s","server":"5.35.46.168","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇬🇧英国02","server":"57.129.137.51","port":8443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP325|⬇️10MB/s","server":"cf.zhetengsha.eu.org","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP321|⬇️13MB/s","server":"104.19.41.26","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇩🇪德国03","server":"192.46.237.206","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP104|⬇️4MB/s","server":"195.123.210.147","port":443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP281|⬇️3MB/s","server":"cf.130519.xyz","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP282|⬇️2MB/s","server":"cdns.doon.eu.org","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP328|⬇️2MB/s","server":"199.119.137.41","port":2053,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇳🇱荷兰03","server":"5.253.189.215","port":443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP182|⬇️1MB/s","server":"43.245.227.108","port":2053,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇫🇷法国01","server":"135.125.191.9","port":8443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP173|⬇️1MB/s","server":"162.159.45.203","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP253|⬇️7MB/s","server":"104.17.208.158","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP262|⬇️2MB/s","server":"141.148.1.34","port":38589,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP284|⬇️6MB/s","server":"cf.zhetengsha.eu.org","port":443,"cipher":"none","password":"3e96ef7d-8637-42c2-ac73-75182196e755","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"mfvpn.fuchen.indevs.in","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP211|⬇️4MB/s","server":"57.128.183.107","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP278|⬇️3MB/s","server":"104.19.40.252","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP288|⬇️11MB/s","server":"104.19.41.107","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇩🇪德国09","server":"194.233.167.228","port":443,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇻🇳越南06","server":"103.15.90.134","port":49678,"cipher":"none","password":"14b02e2a-8930-4afb-8412-ea4a4954ca5b","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"ylnhh.us.ci","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP248|⬇️1MB/s","server":"104.18.4.95","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP172|⬇️10MB/s","server":"104.19.57.251","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP285|⬇️4MB/s","server":"104.19.53.254","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP264|⬇️1MB/s","server":"104.19.45.141","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP271|⬇️17MB/s","server":"104.18.46.154","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP206|⬇️1MB/s","server":"162.159.39.31","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
+  - {"type":"ss","name":"🇯🇵JP267|⬇️19MB/s","server":"104.16.244.238","port":443,"cipher":"none","password":"79960b0b-7d31-4263-8915-6511b0e137a8","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"woshinidie-et3.pages.dev","tls":true}}
   - {"type":"vless","name":"02-WS-saas.sin.fan","server":"saas.sin.fan","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.dynv6.net","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"vless","name":"00-WS-jp-AI","server":"jp.111000.cc.cd","port":443,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sni.111000.dynv6.net","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"vless","name":"🇰🇷KR266|⬇️9MB/s","server":"krp01.jumperservice.com","port":19001,"uuid":"6eeb820e-89ef-4b60-9060-ddcaea0580f0","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"addons.mozilla.org","tls":false,"udp":true}
-  - {"type":"vless","name":"🇰🇷KR265|⬇️1MB/s","server":"krp01.jumperservice.com","port":19001,"uuid":"455fc271-3ee2-493b-8c75-9324b4851e2f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"addons.mozilla.org","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US_1|219KB/s","server":"144.31.127.61","port":443,"uuid":"d5f95f47-9399-49c6-a76b-aa6b289609ba","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"gateway.icloud.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇭🇰HK_1|261KB/s","server":"216.57.105.74","port":443,"uuid":"73c0a723-c0ab-4ad8-8f25-799b9bd54e36","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇨🇿CZ_1|258KB/s","server":"86.54.82.239","port":443,"uuid":"43488128-319e-f480-64ea-0acdc712e2a8","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"store.steampowered.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇨🇭CH_1|212KB/s","server":"138.124.98.9","port":443,"uuid":"913c6074-a747-492b-a7e9-5abfcad6369d","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"nl.milas.click","tls":false,"udp":true}
+  - {"type":"vless","name":"🇷🇺RU068|⬇️2MB/s","server":"cluster-russia-1.firstvideocdn.ru","port":52006,"uuid":"75807638-6f19-07d0-ae08-38492ee85c88","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"cluster-russia-1.firstvideocdn.ru","tls":true,"udp":true}
+  - {"type":"vless","name":"🇩🇪DE164|⬇️1MB/s","server":"159.195.82.187","port":9443,"uuid":"4649d681-7f26-4959-a3f2-02eb8866230f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"yahoo.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇹🇼TW301|⬇️4MB/s","server":"125.227.219.98","port":6235,"uuid":"f6ddddaf-dfd6-4134-9dae-03b93b03d146","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"baidu.com","ws-opts":{"path":"/xxxxhttp","headers":{"host":"baidu.com"}}}
   - {"type":"trojan","name":"AT_1","server":"152.53.60.198","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
   - {"type":"trojan","name":"AT_2","server":"152.53.200.98","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"//","headers":{"host":"jflsjlaf.pages.dev"}}}
   - {"type":"trojan","name":"AT_3","server":"152.53.60.198","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
   - {"type":"trojan","name":"AT_4","server":"152.53.200.98","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
   - {"type":"trojan","name":"AT_5","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
-  - {"type":"trojan","name":"02-Trojan-saas.sin.fan","server":"saas.sin.fan","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"trojan","name":"00-Trojan-jp-AI","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
   - {"type":"trojan","name":"美国丨yoyapai.com|48KB/s","server":"152.53.60.198","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/"}}
   - {"type":"trojan","name":"🇳🇱NL_1|261KB/s","server":"152.53.200.167","port":8444,"password":"trojan","udp":true,"skip-cert-verify":true,"sni":"jflsjlaf.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"jflsjlaf.pages.dev"}}}
-  - {"type":"trojan","name":"🇺🇸US_17|521KB/s","server":"ct.090227.xyz","port":443,"password":"22367c45-f6c4-4ca8-8d52-d9787d7bbe91","udp":true,"skip-cert-verify":true,"sni":"cm22-bgphhh.pages.dev","network":"ws","ws-opts":{"path":"/dl/proxyip=45.196.239.151,167.253.153.161,45.196.239.238,45.196.238.248,45.196.238.145,223.165.4.57,85.237.207.19,167.253.153.80?ed=2560"}}
-  - {"type":"trojan","name":"🇺🇸US_19|517KB/s","server":"mfa.gov.ua","port":2096,"password":"22367c45-f6c4-4ca8-8d52-d9787d7bbe91","udp":true,"skip-cert-verify":true,"sni":"cm22-bgphhh.pages.dev","network":"ws","ws-opts":{"path":"/","headers":{"host":"cm22-bgphhh.pages.dev"}}}
-  - {"type":"trojan","name":"🇺🇸US_18|334KB/s","server":"104.16.148.10","port":443,"password":"22367c45-f6c4-4ca8-8d52-d9787d7bbe91","udp":true,"skip-cert-verify":true,"sni":"cm22-bgphhh.pages.dev","network":"ws","ws-opts":{"path":"/buy/proxyip=45.196.239.151,167.253.153.161,45.196.239.238,45.196.238.248,45.196.238.145,223.165.4.57,85.237.207.19,167.253.153.80","headers":{"host":"cm22-bgphhh.pages.dev"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 🇯🇵日本14_1
+      - 🇭🇰香港HK0050.5MB/s
+      - 🇸🇬新加坡SG0061.8MB/s
+      - 🇰🇷韩国05_1
+      - 🇰🇷韩国02_1
+      - 🇭🇰HK092|⬇️1MB/s
+      - 🇯🇵日本01
+      - 🇺🇸美国25
+      - 🇲🇩MD181|⬇️1MB/s
+      - HK
+      - 🇭🇰HK065|⬇️4MB/s
+      - 🇯🇵JP152|⬇️1MB/s
+      - 🇭🇰HK086|⬇️1MB/s
+      - 🇭🇰HK081|⬇️1MB/s
+      - 🇭🇰HK054|⬇️2MB/s
+      - 🇨🇳TW2
+      - 🇯🇵JP140|⬇️6MB/s
+      - 🇯🇵JP130|⬇️4MB/s
+      - 🇯🇵JP004|⬇️12MB/s
+      - 🇭🇰HK132|⬇️1MB/s
+      - 🇭🇰HK148|⬇️2MB/s
+      - 🇯🇵JP131|⬇️2MB/s
+      - 🇭🇰HK150|⬇️1MB/s
+      - 🇭🇰HK133|⬇️1MB/s
+      - 🇭🇰HK117|⬇️6MB/s
+      - 🇭🇰HK170|⬇️2MB/s
+      - 🇯🇵JP162|⬇️2MB/s
+      - 🇯🇵JP054|⬇️14MB/s
+      - 🇭🇰HK207|⬇️1MB/s
+      - 🇯🇵JP092|⬇️12MB/s
+      - 🇭🇰HK256|⬇️2MB/s
+      - 🇯🇵JP197|⬇️1MB/s
+      - 🇯🇵JP228|⬇️3MB/s
+      - 🇯🇵JP226|⬇️4MB/s
+      - 🇭🇰HK184|⬇️11MB/s
+      - 🇳🇱NL_12|31KB/s
+      - 🇳🇱NL_11|19KB/s
+      - 🇳🇱NL_14|23KB/s
+      - 🇳🇱NL_5|191KB/s
+      - 🇺🇸US_31|58KB/s
+      - 🇺🇸US_11|701KB/s
+      - 🇺🇸US_4|560KB/s
+      - 🇬🇧GB_2|1.2MB/s|260KB/s
+      - 🇺🇸US_7|516KB/s
+      - 🇩🇪DE_3|234KB/s
+      - SG-ss
+      - JP-ss
+      - HK-ss
+      - 🇯🇵日本10
+      - 🇯🇵日本12
+      - 🇯🇵日本14_2
+      - 🇯🇵日本11
+      - 🇯🇵JP002|⬇️5MB/s
+      - 🇯🇵JP045|⬇️2MB/s
+      - 🇰🇷韩国05_2
+      - 🇯🇵JP245|⬇️1MB/s
+      - 🇯🇵JP244|⬇️13MB/s
+      - 🇯🇵JP231|⬇️4MB/s
+      - 🇺🇸美国16
+      - 🇯🇵JP169|⬇️11MB/s
+      - 🇯🇵JP217|⬇️10MB/s
+      - 🇯🇵JP205|⬇️1MB/s
+      - 🇯🇵JP074|⬇️6MB/s
+      - 🇰🇷韩国02_2
+      - 🇯🇵JP186|⬇️1MB/s
+      - 🇰🇷韩国04
+      - 🇯🇵JP057|⬇️9MB/s
+      - 🇯🇵JP058|⬇️1MB/s
+      - 🇯🇵JP170|⬇️1MB/s
+      - 🇯🇵JP175|⬇️5MB/s
+      - 🇯🇵JP047|⬇️4MB/s
+      - 🇯🇵JP221|⬇️2MB/s
+      - 🇯🇵JP257|⬇️2MB/s
+      - 🇯🇵JP071|⬇️5MB/s
+      - 🇯🇵JP199|⬇️13MB/s
+      - 🇯🇵JP101|⬇️1MB/s
+      - 🇯🇵JP246|⬇️11MB/s
+      - 🇯🇵JP207|⬇️3MB/s
+      - 🇬🇧英国02
+      - 🇯🇵JP325|⬇️10MB/s
+      - 🇯🇵JP321|⬇️13MB/s
+      - 🇩🇪德国03
+      - 🇯🇵JP104|⬇️4MB/s
+      - 🇯🇵JP281|⬇️3MB/s
+      - 🇯🇵JP282|⬇️2MB/s
+      - 🇯🇵JP328|⬇️2MB/s
+      - 🇳🇱荷兰03
+      - 🇯🇵JP182|⬇️1MB/s
+      - 🇫🇷法国01
+      - 🇯🇵JP173|⬇️1MB/s
+      - 🇯🇵JP253|⬇️7MB/s
+      - 🇯🇵JP262|⬇️2MB/s
+      - 🇯🇵JP284|⬇️6MB/s
+      - 🇯🇵JP211|⬇️4MB/s
+      - 🇯🇵JP278|⬇️3MB/s
+      - 🇯🇵JP288|⬇️11MB/s
+      - 🇩🇪德国09
+      - 🇻🇳越南06
+      - 🇯🇵JP248|⬇️1MB/s
+      - 🇯🇵JP172|⬇️10MB/s
+      - 🇯🇵JP285|⬇️4MB/s
+      - 🇯🇵JP264|⬇️1MB/s
+      - 🇯🇵JP271|⬇️17MB/s
+      - 🇯🇵JP206|⬇️1MB/s
+      - 🇯🇵JP267|⬇️19MB/s
       - 02-WS-saas.sin.fan
-      - 00-WS-jp-AI
-      - 🇰🇷KR266|⬇️9MB/s
-      - 🇰🇷KR265|⬇️1MB/s
       - 🇺🇸US_1|219KB/s
       - 🇭🇰HK_1|261KB/s
-      - 🇨🇿CZ_1|258KB/s
       - 🇨🇭CH_1|212KB/s
+      - 🇷🇺RU068|⬇️2MB/s
+      - 🇩🇪DE164|⬇️1MB/s
+      - 🇹🇼TW301|⬇️4MB/s
       - AT_1
       - AT_2
       - AT_3
       - AT_4
       - AT_5
-      - 02-Trojan-saas.sin.fan
       - 00-Trojan-jp-AI
       - 美国丨yoyapai.com|48KB/s
       - 🇳🇱NL_1|261KB/s
-      - 🇺🇸US_17|521KB/s
-      - 🇺🇸US_19|517KB/s
-      - 🇺🇸US_18|334KB/s
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 🇯🇵日本14_1
+      - 🇭🇰香港HK0050.5MB/s
+      - 🇸🇬新加坡SG0061.8MB/s
+      - 🇰🇷韩国05_1
+      - 🇰🇷韩国02_1
+      - 🇭🇰HK092|⬇️1MB/s
+      - 🇯🇵日本01
+      - 🇺🇸美国25
+      - 🇲🇩MD181|⬇️1MB/s
+      - HK
+      - 🇭🇰HK065|⬇️4MB/s
+      - 🇯🇵JP152|⬇️1MB/s
+      - 🇭🇰HK086|⬇️1MB/s
+      - 🇭🇰HK081|⬇️1MB/s
+      - 🇭🇰HK054|⬇️2MB/s
+      - 🇨🇳TW2
+      - 🇯🇵JP140|⬇️6MB/s
+      - 🇯🇵JP130|⬇️4MB/s
+      - 🇯🇵JP004|⬇️12MB/s
+      - 🇭🇰HK132|⬇️1MB/s
+      - 🇭🇰HK148|⬇️2MB/s
+      - 🇯🇵JP131|⬇️2MB/s
+      - 🇭🇰HK150|⬇️1MB/s
+      - 🇭🇰HK133|⬇️1MB/s
+      - 🇭🇰HK117|⬇️6MB/s
+      - 🇭🇰HK170|⬇️2MB/s
+      - 🇯🇵JP162|⬇️2MB/s
+      - 🇯🇵JP054|⬇️14MB/s
+      - 🇭🇰HK207|⬇️1MB/s
+      - 🇯🇵JP092|⬇️12MB/s
+      - 🇭🇰HK256|⬇️2MB/s
+      - 🇯🇵JP197|⬇️1MB/s
+      - 🇯🇵JP228|⬇️3MB/s
+      - 🇯🇵JP226|⬇️4MB/s
+      - 🇭🇰HK184|⬇️11MB/s
+      - 🇳🇱NL_12|31KB/s
+      - 🇳🇱NL_11|19KB/s
+      - 🇳🇱NL_14|23KB/s
+      - 🇳🇱NL_5|191KB/s
+      - 🇺🇸US_31|58KB/s
+      - 🇺🇸US_11|701KB/s
+      - 🇺🇸US_4|560KB/s
+      - 🇬🇧GB_2|1.2MB/s|260KB/s
+      - 🇺🇸US_7|516KB/s
+      - 🇩🇪DE_3|234KB/s
+      - SG-ss
+      - JP-ss
+      - HK-ss
+      - 🇯🇵日本10
+      - 🇯🇵日本12
+      - 🇯🇵日本14_2
+      - 🇯🇵日本11
+      - 🇯🇵JP002|⬇️5MB/s
+      - 🇯🇵JP045|⬇️2MB/s
+      - 🇰🇷韩国05_2
+      - 🇯🇵JP245|⬇️1MB/s
+      - 🇯🇵JP244|⬇️13MB/s
+      - 🇯🇵JP231|⬇️4MB/s
+      - 🇺🇸美国16
+      - 🇯🇵JP169|⬇️11MB/s
+      - 🇯🇵JP217|⬇️10MB/s
+      - 🇯🇵JP205|⬇️1MB/s
+      - 🇯🇵JP074|⬇️6MB/s
+      - 🇰🇷韩国02_2
+      - 🇯🇵JP186|⬇️1MB/s
+      - 🇰🇷韩国04
+      - 🇯🇵JP057|⬇️9MB/s
+      - 🇯🇵JP058|⬇️1MB/s
+      - 🇯🇵JP170|⬇️1MB/s
+      - 🇯🇵JP175|⬇️5MB/s
+      - 🇯🇵JP047|⬇️4MB/s
+      - 🇯🇵JP221|⬇️2MB/s
+      - 🇯🇵JP257|⬇️2MB/s
+      - 🇯🇵JP071|⬇️5MB/s
+      - 🇯🇵JP199|⬇️13MB/s
+      - 🇯🇵JP101|⬇️1MB/s
+      - 🇯🇵JP246|⬇️11MB/s
+      - 🇯🇵JP207|⬇️3MB/s
+      - 🇬🇧英国02
+      - 🇯🇵JP325|⬇️10MB/s
+      - 🇯🇵JP321|⬇️13MB/s
+      - 🇩🇪德国03
+      - 🇯🇵JP104|⬇️4MB/s
+      - 🇯🇵JP281|⬇️3MB/s
+      - 🇯🇵JP282|⬇️2MB/s
+      - 🇯🇵JP328|⬇️2MB/s
+      - 🇳🇱荷兰03
+      - 🇯🇵JP182|⬇️1MB/s
+      - 🇫🇷法国01
+      - 🇯🇵JP173|⬇️1MB/s
+      - 🇯🇵JP253|⬇️7MB/s
+      - 🇯🇵JP262|⬇️2MB/s
+      - 🇯🇵JP284|⬇️6MB/s
+      - 🇯🇵JP211|⬇️4MB/s
+      - 🇯🇵JP278|⬇️3MB/s
+      - 🇯🇵JP288|⬇️11MB/s
+      - 🇩🇪德国09
+      - 🇻🇳越南06
+      - 🇯🇵JP248|⬇️1MB/s
+      - 🇯🇵JP172|⬇️10MB/s
+      - 🇯🇵JP285|⬇️4MB/s
+      - 🇯🇵JP264|⬇️1MB/s
+      - 🇯🇵JP271|⬇️17MB/s
+      - 🇯🇵JP206|⬇️1MB/s
+      - 🇯🇵JP267|⬇️19MB/s
       - 02-WS-saas.sin.fan
-      - 00-WS-jp-AI
-      - 🇰🇷KR266|⬇️9MB/s
-      - 🇰🇷KR265|⬇️1MB/s
       - 🇺🇸US_1|219KB/s
       - 🇭🇰HK_1|261KB/s
-      - 🇨🇿CZ_1|258KB/s
       - 🇨🇭CH_1|212KB/s
+      - 🇷🇺RU068|⬇️2MB/s
+      - 🇩🇪DE164|⬇️1MB/s
+      - 🇹🇼TW301|⬇️4MB/s
       - AT_1
       - AT_2
       - AT_3
       - AT_4
       - AT_5
-      - 02-Trojan-saas.sin.fan
       - 00-Trojan-jp-AI
       - 美国丨yoyapai.com|48KB/s
       - 🇳🇱NL_1|261KB/s
-      - 🇺🇸US_17|521KB/s
-      - 🇺🇸US_19|517KB/s
-      - 🇺🇸US_18|334KB/s
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 🇯🇵日本14_1
+      - 🇭🇰香港HK0050.5MB/s
+      - 🇸🇬新加坡SG0061.8MB/s
+      - 🇰🇷韩国05_1
+      - 🇰🇷韩国02_1
+      - 🇭🇰HK092|⬇️1MB/s
+      - 🇯🇵日本01
+      - 🇺🇸美国25
+      - 🇲🇩MD181|⬇️1MB/s
+      - HK
+      - 🇭🇰HK065|⬇️4MB/s
+      - 🇯🇵JP152|⬇️1MB/s
+      - 🇭🇰HK086|⬇️1MB/s
+      - 🇭🇰HK081|⬇️1MB/s
+      - 🇭🇰HK054|⬇️2MB/s
+      - 🇨🇳TW2
+      - 🇯🇵JP140|⬇️6MB/s
+      - 🇯🇵JP130|⬇️4MB/s
+      - 🇯🇵JP004|⬇️12MB/s
+      - 🇭🇰HK132|⬇️1MB/s
+      - 🇭🇰HK148|⬇️2MB/s
+      - 🇯🇵JP131|⬇️2MB/s
+      - 🇭🇰HK150|⬇️1MB/s
+      - 🇭🇰HK133|⬇️1MB/s
+      - 🇭🇰HK117|⬇️6MB/s
+      - 🇭🇰HK170|⬇️2MB/s
+      - 🇯🇵JP162|⬇️2MB/s
+      - 🇯🇵JP054|⬇️14MB/s
+      - 🇭🇰HK207|⬇️1MB/s
+      - 🇯🇵JP092|⬇️12MB/s
+      - 🇭🇰HK256|⬇️2MB/s
+      - 🇯🇵JP197|⬇️1MB/s
+      - 🇯🇵JP228|⬇️3MB/s
+      - 🇯🇵JP226|⬇️4MB/s
+      - 🇭🇰HK184|⬇️11MB/s
+      - 🇳🇱NL_12|31KB/s
+      - 🇳🇱NL_11|19KB/s
+      - 🇳🇱NL_14|23KB/s
+      - 🇳🇱NL_5|191KB/s
+      - 🇺🇸US_31|58KB/s
+      - 🇺🇸US_11|701KB/s
+      - 🇺🇸US_4|560KB/s
+      - 🇬🇧GB_2|1.2MB/s|260KB/s
+      - 🇺🇸US_7|516KB/s
+      - 🇩🇪DE_3|234KB/s
+      - SG-ss
+      - JP-ss
+      - HK-ss
+      - 🇯🇵日本10
+      - 🇯🇵日本12
+      - 🇯🇵日本14_2
+      - 🇯🇵日本11
+      - 🇯🇵JP002|⬇️5MB/s
+      - 🇯🇵JP045|⬇️2MB/s
+      - 🇰🇷韩国05_2
+      - 🇯🇵JP245|⬇️1MB/s
+      - 🇯🇵JP244|⬇️13MB/s
+      - 🇯🇵JP231|⬇️4MB/s
+      - 🇺🇸美国16
+      - 🇯🇵JP169|⬇️11MB/s
+      - 🇯🇵JP217|⬇️10MB/s
+      - 🇯🇵JP205|⬇️1MB/s
+      - 🇯🇵JP074|⬇️6MB/s
+      - 🇰🇷韩国02_2
+      - 🇯🇵JP186|⬇️1MB/s
+      - 🇰🇷韩国04
+      - 🇯🇵JP057|⬇️9MB/s
+      - 🇯🇵JP058|⬇️1MB/s
+      - 🇯🇵JP170|⬇️1MB/s
+      - 🇯🇵JP175|⬇️5MB/s
+      - 🇯🇵JP047|⬇️4MB/s
+      - 🇯🇵JP221|⬇️2MB/s
+      - 🇯🇵JP257|⬇️2MB/s
+      - 🇯🇵JP071|⬇️5MB/s
+      - 🇯🇵JP199|⬇️13MB/s
+      - 🇯🇵JP101|⬇️1MB/s
+      - 🇯🇵JP246|⬇️11MB/s
+      - 🇯🇵JP207|⬇️3MB/s
+      - 🇬🇧英国02
+      - 🇯🇵JP325|⬇️10MB/s
+      - 🇯🇵JP321|⬇️13MB/s
+      - 🇩🇪德国03
+      - 🇯🇵JP104|⬇️4MB/s
+      - 🇯🇵JP281|⬇️3MB/s
+      - 🇯🇵JP282|⬇️2MB/s
+      - 🇯🇵JP328|⬇️2MB/s
+      - 🇳🇱荷兰03
+      - 🇯🇵JP182|⬇️1MB/s
+      - 🇫🇷法国01
+      - 🇯🇵JP173|⬇️1MB/s
+      - 🇯🇵JP253|⬇️7MB/s
+      - 🇯🇵JP262|⬇️2MB/s
+      - 🇯🇵JP284|⬇️6MB/s
+      - 🇯🇵JP211|⬇️4MB/s
+      - 🇯🇵JP278|⬇️3MB/s
+      - 🇯🇵JP288|⬇️11MB/s
+      - 🇩🇪德国09
+      - 🇻🇳越南06
+      - 🇯🇵JP248|⬇️1MB/s
+      - 🇯🇵JP172|⬇️10MB/s
+      - 🇯🇵JP285|⬇️4MB/s
+      - 🇯🇵JP264|⬇️1MB/s
+      - 🇯🇵JP271|⬇️17MB/s
+      - 🇯🇵JP206|⬇️1MB/s
+      - 🇯🇵JP267|⬇️19MB/s
       - 02-WS-saas.sin.fan
-      - 00-WS-jp-AI
-      - 🇰🇷KR266|⬇️9MB/s
-      - 🇰🇷KR265|⬇️1MB/s
       - 🇺🇸US_1|219KB/s
       - 🇭🇰HK_1|261KB/s
-      - 🇨🇿CZ_1|258KB/s
       - 🇨🇭CH_1|212KB/s
+      - 🇷🇺RU068|⬇️2MB/s
+      - 🇩🇪DE164|⬇️1MB/s
+      - 🇹🇼TW301|⬇️4MB/s
       - AT_1
       - AT_2
       - AT_3
       - AT_4
       - AT_5
-      - 02-Trojan-saas.sin.fan
       - 00-Trojan-jp-AI
       - 美国丨yoyapai.com|48KB/s
       - 🇳🇱NL_1|261KB/s
-      - 🇺🇸US_17|521KB/s
-      - 🇺🇸US_19|517KB/s
-      - 🇺🇸US_18|334KB/s
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇯🇵日本14_1
+      - 🇭🇰香港HK0050.5MB/s
+      - 🇸🇬新加坡SG0061.8MB/s
+      - 🇰🇷韩国05_1
+      - 🇰🇷韩国02_1
+      - 🇭🇰HK092|⬇️1MB/s
+      - 🇯🇵日本01
+      - 🇺🇸美国25
+      - 🇲🇩MD181|⬇️1MB/s
+      - HK
+      - 🇭🇰HK065|⬇️4MB/s
+      - 🇯🇵JP152|⬇️1MB/s
+      - 🇭🇰HK086|⬇️1MB/s
+      - 🇭🇰HK081|⬇️1MB/s
+      - 🇭🇰HK054|⬇️2MB/s
+      - 🇨🇳TW2
+      - 🇯🇵JP140|⬇️6MB/s
+      - 🇯🇵JP130|⬇️4MB/s
+      - 🇯🇵JP004|⬇️12MB/s
+      - 🇭🇰HK132|⬇️1MB/s
+      - 🇭🇰HK148|⬇️2MB/s
+      - 🇯🇵JP131|⬇️2MB/s
+      - 🇭🇰HK150|⬇️1MB/s
+      - 🇭🇰HK133|⬇️1MB/s
+      - 🇭🇰HK117|⬇️6MB/s
+      - 🇭🇰HK170|⬇️2MB/s
+      - 🇯🇵JP162|⬇️2MB/s
+      - 🇯🇵JP054|⬇️14MB/s
+      - 🇭🇰HK207|⬇️1MB/s
+      - 🇯🇵JP092|⬇️12MB/s
+      - 🇭🇰HK256|⬇️2MB/s
+      - 🇯🇵JP197|⬇️1MB/s
+      - 🇯🇵JP228|⬇️3MB/s
+      - 🇯🇵JP226|⬇️4MB/s
+      - 🇭🇰HK184|⬇️11MB/s
+      - 🇳🇱NL_12|31KB/s
+      - 🇳🇱NL_11|19KB/s
+      - 🇳🇱NL_14|23KB/s
+      - 🇳🇱NL_5|191KB/s
+      - 🇺🇸US_31|58KB/s
+      - 🇺🇸US_11|701KB/s
+      - 🇺🇸US_4|560KB/s
+      - 🇬🇧GB_2|1.2MB/s|260KB/s
+      - 🇺🇸US_7|516KB/s
+      - 🇩🇪DE_3|234KB/s
+      - SG-ss
+      - JP-ss
+      - HK-ss
+      - 🇯🇵日本10
+      - 🇯🇵日本12
+      - 🇯🇵日本14_2
+      - 🇯🇵日本11
+      - 🇯🇵JP002|⬇️5MB/s
+      - 🇯🇵JP045|⬇️2MB/s
+      - 🇰🇷韩国05_2
+      - 🇯🇵JP245|⬇️1MB/s
+      - 🇯🇵JP244|⬇️13MB/s
+      - 🇯🇵JP231|⬇️4MB/s
+      - 🇺🇸美国16
+      - 🇯🇵JP169|⬇️11MB/s
+      - 🇯🇵JP217|⬇️10MB/s
+      - 🇯🇵JP205|⬇️1MB/s
+      - 🇯🇵JP074|⬇️6MB/s
+      - 🇰🇷韩国02_2
+      - 🇯🇵JP186|⬇️1MB/s
+      - 🇰🇷韩国04
+      - 🇯🇵JP057|⬇️9MB/s
+      - 🇯🇵JP058|⬇️1MB/s
+      - 🇯🇵JP170|⬇️1MB/s
+      - 🇯🇵JP175|⬇️5MB/s
+      - 🇯🇵JP047|⬇️4MB/s
+      - 🇯🇵JP221|⬇️2MB/s
+      - 🇯🇵JP257|⬇️2MB/s
+      - 🇯🇵JP071|⬇️5MB/s
+      - 🇯🇵JP199|⬇️13MB/s
+      - 🇯🇵JP101|⬇️1MB/s
+      - 🇯🇵JP246|⬇️11MB/s
+      - 🇯🇵JP207|⬇️3MB/s
+      - 🇬🇧英国02
+      - 🇯🇵JP325|⬇️10MB/s
+      - 🇯🇵JP321|⬇️13MB/s
+      - 🇩🇪德国03
+      - 🇯🇵JP104|⬇️4MB/s
+      - 🇯🇵JP281|⬇️3MB/s
+      - 🇯🇵JP282|⬇️2MB/s
+      - 🇯🇵JP328|⬇️2MB/s
+      - 🇳🇱荷兰03
+      - 🇯🇵JP182|⬇️1MB/s
+      - 🇫🇷法国01
+      - 🇯🇵JP173|⬇️1MB/s
+      - 🇯🇵JP253|⬇️7MB/s
+      - 🇯🇵JP262|⬇️2MB/s
+      - 🇯🇵JP284|⬇️6MB/s
+      - 🇯🇵JP211|⬇️4MB/s
+      - 🇯🇵JP278|⬇️3MB/s
+      - 🇯🇵JP288|⬇️11MB/s
+      - 🇩🇪德国09
+      - 🇻🇳越南06
+      - 🇯🇵JP248|⬇️1MB/s
+      - 🇯🇵JP172|⬇️10MB/s
+      - 🇯🇵JP285|⬇️4MB/s
+      - 🇯🇵JP264|⬇️1MB/s
+      - 🇯🇵JP271|⬇️17MB/s
+      - 🇯🇵JP206|⬇️1MB/s
+      - 🇯🇵JP267|⬇️19MB/s
       - 02-WS-saas.sin.fan
-      - 00-WS-jp-AI
-      - 🇰🇷KR266|⬇️9MB/s
-      - 🇰🇷KR265|⬇️1MB/s
       - 🇺🇸US_1|219KB/s
       - 🇭🇰HK_1|261KB/s
-      - 🇨🇿CZ_1|258KB/s
       - 🇨🇭CH_1|212KB/s
+      - 🇷🇺RU068|⬇️2MB/s
+      - 🇩🇪DE164|⬇️1MB/s
+      - 🇹🇼TW301|⬇️4MB/s
       - AT_1
       - AT_2
       - AT_3
       - AT_4
       - AT_5
-      - 02-Trojan-saas.sin.fan
       - 00-Trojan-jp-AI
       - 美国丨yoyapai.com|48KB/s
       - 🇳🇱NL_1|261KB/s
-      - 🇺🇸US_17|521KB/s
-      - 🇺🇸US_19|517KB/s
-      - 🇺🇸US_18|334KB/s
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 🇯🇵日本14_1
+      - 🇭🇰香港HK0050.5MB/s
+      - 🇸🇬新加坡SG0061.8MB/s
+      - 🇰🇷韩国05_1
+      - 🇰🇷韩国02_1
+      - 🇭🇰HK092|⬇️1MB/s
+      - 🇯🇵日本01
+      - 🇺🇸美国25
+      - 🇲🇩MD181|⬇️1MB/s
+      - HK
+      - 🇭🇰HK065|⬇️4MB/s
+      - 🇯🇵JP152|⬇️1MB/s
+      - 🇭🇰HK086|⬇️1MB/s
+      - 🇭🇰HK081|⬇️1MB/s
+      - 🇭🇰HK054|⬇️2MB/s
+      - 🇨🇳TW2
+      - 🇯🇵JP140|⬇️6MB/s
+      - 🇯🇵JP130|⬇️4MB/s
+      - 🇯🇵JP004|⬇️12MB/s
+      - 🇭🇰HK132|⬇️1MB/s
+      - 🇭🇰HK148|⬇️2MB/s
+      - 🇯🇵JP131|⬇️2MB/s
+      - 🇭🇰HK150|⬇️1MB/s
+      - 🇭🇰HK133|⬇️1MB/s
+      - 🇭🇰HK117|⬇️6MB/s
+      - 🇭🇰HK170|⬇️2MB/s
+      - 🇯🇵JP162|⬇️2MB/s
+      - 🇯🇵JP054|⬇️14MB/s
+      - 🇭🇰HK207|⬇️1MB/s
+      - 🇯🇵JP092|⬇️12MB/s
+      - 🇭🇰HK256|⬇️2MB/s
+      - 🇯🇵JP197|⬇️1MB/s
+      - 🇯🇵JP228|⬇️3MB/s
+      - 🇯🇵JP226|⬇️4MB/s
+      - 🇭🇰HK184|⬇️11MB/s
+      - 🇳🇱NL_12|31KB/s
+      - 🇳🇱NL_11|19KB/s
+      - 🇳🇱NL_14|23KB/s
+      - 🇳🇱NL_5|191KB/s
+      - 🇺🇸US_31|58KB/s
+      - 🇺🇸US_11|701KB/s
+      - 🇺🇸US_4|560KB/s
+      - 🇬🇧GB_2|1.2MB/s|260KB/s
+      - 🇺🇸US_7|516KB/s
+      - 🇩🇪DE_3|234KB/s
+      - SG-ss
+      - JP-ss
+      - HK-ss
+      - 🇯🇵日本10
+      - 🇯🇵日本12
+      - 🇯🇵日本14_2
+      - 🇯🇵日本11
+      - 🇯🇵JP002|⬇️5MB/s
+      - 🇯🇵JP045|⬇️2MB/s
+      - 🇰🇷韩国05_2
+      - 🇯🇵JP245|⬇️1MB/s
+      - 🇯🇵JP244|⬇️13MB/s
+      - 🇯🇵JP231|⬇️4MB/s
+      - 🇺🇸美国16
+      - 🇯🇵JP169|⬇️11MB/s
+      - 🇯🇵JP217|⬇️10MB/s
+      - 🇯🇵JP205|⬇️1MB/s
+      - 🇯🇵JP074|⬇️6MB/s
+      - 🇰🇷韩国02_2
+      - 🇯🇵JP186|⬇️1MB/s
+      - 🇰🇷韩国04
+      - 🇯🇵JP057|⬇️9MB/s
+      - 🇯🇵JP058|⬇️1MB/s
+      - 🇯🇵JP170|⬇️1MB/s
+      - 🇯🇵JP175|⬇️5MB/s
+      - 🇯🇵JP047|⬇️4MB/s
+      - 🇯🇵JP221|⬇️2MB/s
+      - 🇯🇵JP257|⬇️2MB/s
+      - 🇯🇵JP071|⬇️5MB/s
+      - 🇯🇵JP199|⬇️13MB/s
+      - 🇯🇵JP101|⬇️1MB/s
+      - 🇯🇵JP246|⬇️11MB/s
+      - 🇯🇵JP207|⬇️3MB/s
+      - 🇬🇧英国02
+      - 🇯🇵JP325|⬇️10MB/s
+      - 🇯🇵JP321|⬇️13MB/s
+      - 🇩🇪德国03
+      - 🇯🇵JP104|⬇️4MB/s
+      - 🇯🇵JP281|⬇️3MB/s
+      - 🇯🇵JP282|⬇️2MB/s
+      - 🇯🇵JP328|⬇️2MB/s
+      - 🇳🇱荷兰03
+      - 🇯🇵JP182|⬇️1MB/s
+      - 🇫🇷法国01
+      - 🇯🇵JP173|⬇️1MB/s
+      - 🇯🇵JP253|⬇️7MB/s
+      - 🇯🇵JP262|⬇️2MB/s
+      - 🇯🇵JP284|⬇️6MB/s
+      - 🇯🇵JP211|⬇️4MB/s
+      - 🇯🇵JP278|⬇️3MB/s
+      - 🇯🇵JP288|⬇️11MB/s
+      - 🇩🇪德国09
+      - 🇻🇳越南06
+      - 🇯🇵JP248|⬇️1MB/s
+      - 🇯🇵JP172|⬇️10MB/s
+      - 🇯🇵JP285|⬇️4MB/s
+      - 🇯🇵JP264|⬇️1MB/s
+      - 🇯🇵JP271|⬇️17MB/s
+      - 🇯🇵JP206|⬇️1MB/s
+      - 🇯🇵JP267|⬇️19MB/s
       - 02-WS-saas.sin.fan
-      - 00-WS-jp-AI
-      - 🇰🇷KR266|⬇️9MB/s
-      - 🇰🇷KR265|⬇️1MB/s
       - 🇺🇸US_1|219KB/s
       - 🇭🇰HK_1|261KB/s
-      - 🇨🇿CZ_1|258KB/s
       - 🇨🇭CH_1|212KB/s
+      - 🇷🇺RU068|⬇️2MB/s
+      - 🇩🇪DE164|⬇️1MB/s
+      - 🇹🇼TW301|⬇️4MB/s
       - AT_1
       - AT_2
       - AT_3
       - AT_4
       - AT_5
-      - 02-Trojan-saas.sin.fan
       - 00-Trojan-jp-AI
       - 美国丨yoyapai.com|48KB/s
       - 🇳🇱NL_1|261KB/s
-      - 🇺🇸US_17|521KB/s
-      - 🇺🇸US_19|517KB/s
-      - 🇺🇸US_18|334KB/s
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 🇯🇵日本14_1
+      - 🇭🇰香港HK0050.5MB/s
+      - 🇸🇬新加坡SG0061.8MB/s
+      - 🇰🇷韩国05_1
+      - 🇰🇷韩国02_1
+      - 🇭🇰HK092|⬇️1MB/s
+      - 🇯🇵日本01
+      - 🇺🇸美国25
+      - 🇲🇩MD181|⬇️1MB/s
+      - HK
+      - 🇭🇰HK065|⬇️4MB/s
+      - 🇯🇵JP152|⬇️1MB/s
+      - 🇭🇰HK086|⬇️1MB/s
+      - 🇭🇰HK081|⬇️1MB/s
+      - 🇭🇰HK054|⬇️2MB/s
+      - 🇨🇳TW2
+      - 🇯🇵JP140|⬇️6MB/s
+      - 🇯🇵JP130|⬇️4MB/s
+      - 🇯🇵JP004|⬇️12MB/s
+      - 🇭🇰HK132|⬇️1MB/s
+      - 🇭🇰HK148|⬇️2MB/s
+      - 🇯🇵JP131|⬇️2MB/s
+      - 🇭🇰HK150|⬇️1MB/s
+      - 🇭🇰HK133|⬇️1MB/s
+      - 🇭🇰HK117|⬇️6MB/s
+      - 🇭🇰HK170|⬇️2MB/s
+      - 🇯🇵JP162|⬇️2MB/s
+      - 🇯🇵JP054|⬇️14MB/s
+      - 🇭🇰HK207|⬇️1MB/s
+      - 🇯🇵JP092|⬇️12MB/s
+      - 🇭🇰HK256|⬇️2MB/s
+      - 🇯🇵JP197|⬇️1MB/s
+      - 🇯🇵JP228|⬇️3MB/s
+      - 🇯🇵JP226|⬇️4MB/s
+      - 🇭🇰HK184|⬇️11MB/s
+      - 🇳🇱NL_12|31KB/s
+      - 🇳🇱NL_11|19KB/s
+      - 🇳🇱NL_14|23KB/s
+      - 🇳🇱NL_5|191KB/s
+      - 🇺🇸US_31|58KB/s
+      - 🇺🇸US_11|701KB/s
+      - 🇺🇸US_4|560KB/s
+      - 🇬🇧GB_2|1.2MB/s|260KB/s
+      - 🇺🇸US_7|516KB/s
+      - 🇩🇪DE_3|234KB/s
+      - SG-ss
+      - JP-ss
+      - HK-ss
+      - 🇯🇵日本10
+      - 🇯🇵日本12
+      - 🇯🇵日本14_2
+      - 🇯🇵日本11
+      - 🇯🇵JP002|⬇️5MB/s
+      - 🇯🇵JP045|⬇️2MB/s
+      - 🇰🇷韩国05_2
+      - 🇯🇵JP245|⬇️1MB/s
+      - 🇯🇵JP244|⬇️13MB/s
+      - 🇯🇵JP231|⬇️4MB/s
+      - 🇺🇸美国16
+      - 🇯🇵JP169|⬇️11MB/s
+      - 🇯🇵JP217|⬇️10MB/s
+      - 🇯🇵JP205|⬇️1MB/s
+      - 🇯🇵JP074|⬇️6MB/s
+      - 🇰🇷韩国02_2
+      - 🇯🇵JP186|⬇️1MB/s
+      - 🇰🇷韩国04
+      - 🇯🇵JP057|⬇️9MB/s
+      - 🇯🇵JP058|⬇️1MB/s
+      - 🇯🇵JP170|⬇️1MB/s
+      - 🇯🇵JP175|⬇️5MB/s
+      - 🇯🇵JP047|⬇️4MB/s
+      - 🇯🇵JP221|⬇️2MB/s
+      - 🇯🇵JP257|⬇️2MB/s
+      - 🇯🇵JP071|⬇️5MB/s
+      - 🇯🇵JP199|⬇️13MB/s
+      - 🇯🇵JP101|⬇️1MB/s
+      - 🇯🇵JP246|⬇️11MB/s
+      - 🇯🇵JP207|⬇️3MB/s
+      - 🇬🇧英国02
+      - 🇯🇵JP325|⬇️10MB/s
+      - 🇯🇵JP321|⬇️13MB/s
+      - 🇩🇪德国03
+      - 🇯🇵JP104|⬇️4MB/s
+      - 🇯🇵JP281|⬇️3MB/s
+      - 🇯🇵JP282|⬇️2MB/s
+      - 🇯🇵JP328|⬇️2MB/s
+      - 🇳🇱荷兰03
+      - 🇯🇵JP182|⬇️1MB/s
+      - 🇫🇷法国01
+      - 🇯🇵JP173|⬇️1MB/s
+      - 🇯🇵JP253|⬇️7MB/s
+      - 🇯🇵JP262|⬇️2MB/s
+      - 🇯🇵JP284|⬇️6MB/s
+      - 🇯🇵JP211|⬇️4MB/s
+      - 🇯🇵JP278|⬇️3MB/s
+      - 🇯🇵JP288|⬇️11MB/s
+      - 🇩🇪德国09
+      - 🇻🇳越南06
+      - 🇯🇵JP248|⬇️1MB/s
+      - 🇯🇵JP172|⬇️10MB/s
+      - 🇯🇵JP285|⬇️4MB/s
+      - 🇯🇵JP264|⬇️1MB/s
+      - 🇯🇵JP271|⬇️17MB/s
+      - 🇯🇵JP206|⬇️1MB/s
+      - 🇯🇵JP267|⬇️19MB/s
       - 02-WS-saas.sin.fan
-      - 00-WS-jp-AI
-      - 🇰🇷KR266|⬇️9MB/s
-      - 🇰🇷KR265|⬇️1MB/s
       - 🇺🇸US_1|219KB/s
       - 🇭🇰HK_1|261KB/s
-      - 🇨🇿CZ_1|258KB/s
       - 🇨🇭CH_1|212KB/s
+      - 🇷🇺RU068|⬇️2MB/s
+      - 🇩🇪DE164|⬇️1MB/s
+      - 🇹🇼TW301|⬇️4MB/s
       - AT_1
       - AT_2
       - AT_3
       - AT_4
       - AT_5
-      - 02-Trojan-saas.sin.fan
       - 00-Trojan-jp-AI
       - 美国丨yoyapai.com|48KB/s
       - 🇳🇱NL_1|261KB/s
-      - 🇺🇸US_17|521KB/s
-      - 🇺🇸US_19|517KB/s
-      - 🇺🇸US_18|334KB/s
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -200,26 +900,126 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 🇯🇵日本14_1
+      - 🇭🇰香港HK0050.5MB/s
+      - 🇸🇬新加坡SG0061.8MB/s
+      - 🇰🇷韩国05_1
+      - 🇰🇷韩国02_1
+      - 🇭🇰HK092|⬇️1MB/s
+      - 🇯🇵日本01
+      - 🇺🇸美国25
+      - 🇲🇩MD181|⬇️1MB/s
+      - HK
+      - 🇭🇰HK065|⬇️4MB/s
+      - 🇯🇵JP152|⬇️1MB/s
+      - 🇭🇰HK086|⬇️1MB/s
+      - 🇭🇰HK081|⬇️1MB/s
+      - 🇭🇰HK054|⬇️2MB/s
+      - 🇨🇳TW2
+      - 🇯🇵JP140|⬇️6MB/s
+      - 🇯🇵JP130|⬇️4MB/s
+      - 🇯🇵JP004|⬇️12MB/s
+      - 🇭🇰HK132|⬇️1MB/s
+      - 🇭🇰HK148|⬇️2MB/s
+      - 🇯🇵JP131|⬇️2MB/s
+      - 🇭🇰HK150|⬇️1MB/s
+      - 🇭🇰HK133|⬇️1MB/s
+      - 🇭🇰HK117|⬇️6MB/s
+      - 🇭🇰HK170|⬇️2MB/s
+      - 🇯🇵JP162|⬇️2MB/s
+      - 🇯🇵JP054|⬇️14MB/s
+      - 🇭🇰HK207|⬇️1MB/s
+      - 🇯🇵JP092|⬇️12MB/s
+      - 🇭🇰HK256|⬇️2MB/s
+      - 🇯🇵JP197|⬇️1MB/s
+      - 🇯🇵JP228|⬇️3MB/s
+      - 🇯🇵JP226|⬇️4MB/s
+      - 🇭🇰HK184|⬇️11MB/s
+      - 🇳🇱NL_12|31KB/s
+      - 🇳🇱NL_11|19KB/s
+      - 🇳🇱NL_14|23KB/s
+      - 🇳🇱NL_5|191KB/s
+      - 🇺🇸US_31|58KB/s
+      - 🇺🇸US_11|701KB/s
+      - 🇺🇸US_4|560KB/s
+      - 🇬🇧GB_2|1.2MB/s|260KB/s
+      - 🇺🇸US_7|516KB/s
+      - 🇩🇪DE_3|234KB/s
+      - SG-ss
+      - JP-ss
+      - HK-ss
+      - 🇯🇵日本10
+      - 🇯🇵日本12
+      - 🇯🇵日本14_2
+      - 🇯🇵日本11
+      - 🇯🇵JP002|⬇️5MB/s
+      - 🇯🇵JP045|⬇️2MB/s
+      - 🇰🇷韩国05_2
+      - 🇯🇵JP245|⬇️1MB/s
+      - 🇯🇵JP244|⬇️13MB/s
+      - 🇯🇵JP231|⬇️4MB/s
+      - 🇺🇸美国16
+      - 🇯🇵JP169|⬇️11MB/s
+      - 🇯🇵JP217|⬇️10MB/s
+      - 🇯🇵JP205|⬇️1MB/s
+      - 🇯🇵JP074|⬇️6MB/s
+      - 🇰🇷韩国02_2
+      - 🇯🇵JP186|⬇️1MB/s
+      - 🇰🇷韩国04
+      - 🇯🇵JP057|⬇️9MB/s
+      - 🇯🇵JP058|⬇️1MB/s
+      - 🇯🇵JP170|⬇️1MB/s
+      - 🇯🇵JP175|⬇️5MB/s
+      - 🇯🇵JP047|⬇️4MB/s
+      - 🇯🇵JP221|⬇️2MB/s
+      - 🇯🇵JP257|⬇️2MB/s
+      - 🇯🇵JP071|⬇️5MB/s
+      - 🇯🇵JP199|⬇️13MB/s
+      - 🇯🇵JP101|⬇️1MB/s
+      - 🇯🇵JP246|⬇️11MB/s
+      - 🇯🇵JP207|⬇️3MB/s
+      - 🇬🇧英国02
+      - 🇯🇵JP325|⬇️10MB/s
+      - 🇯🇵JP321|⬇️13MB/s
+      - 🇩🇪德国03
+      - 🇯🇵JP104|⬇️4MB/s
+      - 🇯🇵JP281|⬇️3MB/s
+      - 🇯🇵JP282|⬇️2MB/s
+      - 🇯🇵JP328|⬇️2MB/s
+      - 🇳🇱荷兰03
+      - 🇯🇵JP182|⬇️1MB/s
+      - 🇫🇷法国01
+      - 🇯🇵JP173|⬇️1MB/s
+      - 🇯🇵JP253|⬇️7MB/s
+      - 🇯🇵JP262|⬇️2MB/s
+      - 🇯🇵JP284|⬇️6MB/s
+      - 🇯🇵JP211|⬇️4MB/s
+      - 🇯🇵JP278|⬇️3MB/s
+      - 🇯🇵JP288|⬇️11MB/s
+      - 🇩🇪德国09
+      - 🇻🇳越南06
+      - 🇯🇵JP248|⬇️1MB/s
+      - 🇯🇵JP172|⬇️10MB/s
+      - 🇯🇵JP285|⬇️4MB/s
+      - 🇯🇵JP264|⬇️1MB/s
+      - 🇯🇵JP271|⬇️17MB/s
+      - 🇯🇵JP206|⬇️1MB/s
+      - 🇯🇵JP267|⬇️19MB/s
       - 02-WS-saas.sin.fan
-      - 00-WS-jp-AI
-      - 🇰🇷KR266|⬇️9MB/s
-      - 🇰🇷KR265|⬇️1MB/s
       - 🇺🇸US_1|219KB/s
       - 🇭🇰HK_1|261KB/s
-      - 🇨🇿CZ_1|258KB/s
       - 🇨🇭CH_1|212KB/s
+      - 🇷🇺RU068|⬇️2MB/s
+      - 🇩🇪DE164|⬇️1MB/s
+      - 🇹🇼TW301|⬇️4MB/s
       - AT_1
       - AT_2
       - AT_3
       - AT_4
       - AT_5
-      - 02-Trojan-saas.sin.fan
       - 00-Trojan-jp-AI
       - 美国丨yoyapai.com|48KB/s
       - 🇳🇱NL_1|261KB/s
-      - 🇺🇸US_17|521KB/s
-      - 🇺🇸US_19|517KB/s
-      - 🇺🇸US_18|334KB/s
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
