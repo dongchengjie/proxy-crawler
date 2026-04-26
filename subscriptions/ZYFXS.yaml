@@ -5,199 +5,283 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: youtube@资源分享师 137, server: 104.24.169.183, port: 8080, type: vmess, uuid: nasnet, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: "/NASNET/cdn#/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560", ws-headers: {Host: nasnet-571299667.rahavard365.co}, udp: true}
-  - {name: 中国 🇨🇳 youtube@资源分享师 CN 141, server: 76c3.earthdraft.onezz.top, port: 20010, type: vmess, uuid: 7d81d7ed-03f4-331a-ab0d-e9a7425f05e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: ithome.com}, udp: true}
-  - {name: 印度 🇮🇳 youtube@资源分享师 IN 142, server: 65.0.104.223, port: 80, type: ss, cipher: aes-256-gcm, password: dada1203, udp: true}
-  - {name: 香港 🇭🇰 youtube@资源分享师 HK 133, server: 103.181.164.145, port: 51556, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 香港 🇭🇰 youtube@资源分享师 HK 126, server: 38.22.93.20, port: 55165, type: vmess, uuid: 8108a7dc-6162-4366-d492-23dcd3553e38, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 土耳其 🇹🇷 youtube@资源分享师 TR 147, server: 185.39.204.196, port: 7918, type: ss, cipher: aes-256-gcm, password: HGlzsKUqaTiC0PSLHn6jT83OZvGiLnpI, udp: true}
-  - {name: 瑞典 🇸🇪 youtube@资源分享师 SE 111, server: 92.246.137.150, port: 443, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 日本 🇯🇵 youtube@资源分享师 JP 139, server: 103.127.243.66, port: 54291, type: vmess, uuid: c5856e0b-5ca6-49bf-8525-d02af9c37cf5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: h2, h2-opts: {path: /, host: [103.127.243.66]}, udp: true}
-  - {name: 日本 🇯🇵 youtube@资源分享师 JP 136, server: 103.127.243.59, port: 56738, type: vmess, uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: h2, h2-opts: {path: /, host: [103.127.243.59]}, udp: true}
-  - {name: 日本 🇯🇵 youtube@资源分享师 JP 135, server: 103.127.243.60, port: 55386, type: vmess, uuid: 22d4ef9c-b269-4f82-9f59-6c2c0d8ce16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 🇯🇵 youtube@资源分享师 JP 134, server: 103.127.243.49, port: 53224, type: vmess, uuid: 4f47e6cc-659d-4588-8155-21d2782f1b91, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 美国 🇺🇸 youtube@资源分享师 US 108, server: 2.27.35.199, port: 8443, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 捷克 🇨🇿 youtube@资源分享师 CZ 112, server: 95.85.233.44, port: 443, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 99, server: 220.127.68.28, port: 50001, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 98, server: 220.95.25.188, port: 10250, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 97, server: 220.79.9.247, port: 33338, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 96, server: 220.125.240.77, port: 23424, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 95, server: 220.84.186.84, port: 10000, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 94, server: 220.122.42.198, port: 18781, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 93, server: 220.93.106.4, port: 12345, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 113, server: 220.85.252.224, port: 19150, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 110, server: 220.118.97.223, port: 18080, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 109, server: 220.125.240.77, port: 23424, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 104, server: 220.125.207.242, port: 25565, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 103, server: 220.78.7.17, port: 18001, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 102, server: 220.122.42.198, port: 10995, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 101, server: 220.122.102.26, port: 30017, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 100, server: 220.72.32.44, port: 18080, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 法国 🇫🇷 youtube@资源分享师 FR 138, server: m.cnmjin.net, port: 16616, type: vmess, uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com}, udp: true}
-  - {name: 法国 🇫🇷 youtube@资源分享师 FR 131, server: m.cnmjin.net, port: 16622, type: vmess, uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com}, udp: true}
-  - {name: 法国 🇫🇷 youtube@资源分享师 FR 125, server: t.cnmjcn.cyou, port: 16622, type: vmess, uuid: 705f9dfc-07a7-44b8-bd43-15d32abfa61d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 943b57a4316253b5c6ef402731b11d57.mobgslb.tbcache.com}, udp: true}
-  - {name: 法国 🇫🇷 youtube@资源分享师 FR 124, server: m.cnmjin.net, port: 16622, type: vmess, uuid: 1c9bfd97-6e19-4942-a225-5f1b6f143370, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 997a4439f9df5fc29fda3811532f740b.mobgslb.tbcache.com}, udp: true}
-  - {name: 俄罗斯 🇷🇺 youtube@资源分享师 RU 149, server: 185.22.155.49, port: 40129, type: ss, cipher: aes-256-gcm, password: 7ae4e68cf77f6089, udp: true}
-  - {name: 俄罗斯 🇷🇺 youtube@资源分享师 RU 146, server: 195.58.49.26, port: 40210, type: ss, cipher: aes-256-gcm, password: 3150466568eda87b, udp: true}
-  - {name: 德国 🇩🇪 youtube@资源分享师 DE 140, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 🇩🇪 youtube@资源分享师 DE 132, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 🇩🇪 youtube@资源分享师 DE 130, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 🇩🇪 youtube@资源分享师 DE 129, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 🇩🇪 youtube@资源分享师 DE 128, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 🇩🇪 youtube@资源分享师 DE 127, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 🇩🇪 youtube@资源分享师 DE 123, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 🇩🇪 youtube@资源分享师 DE 107, server: 193.23.199.106, port: 443, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 德国 🇩🇪 youtube@资源分享师 DE 106, server: 193.23.218.192, port: 443, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
-  - {name: 德国 🇩🇪 youtube@资源分享师 DE 105, server: 193.23.218.192, port: 443, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 日本 🇯🇵 youtube@资源分享师 JP 133, server: hkp1.network-cdn-gw-yd.net, port: 49901, type: ss, cipher: chacha20-ietf-poly1305, password: a71a7679-7718-4655-b487-7a07bad7a70c, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 90, server: m.cnmjin.net, port: 16618, type: vmess, uuid: 302457f5-6848-4e2b-be16-193131ab6374, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 80, server: t.cnmjcn.cyou, port: 16618, type: vmess, uuid: 302457f5-6848-4e2b-be16-193131ab6374, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com}, udp: true}
+  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 200, server: 220.78.7.17, port: 18001, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 157, server: 220.118.233.240, port: 23791, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 64, server: t.cnmjcn.cyou, port: 16622, type: vmess, uuid: 881da2de-238e-425e-a7e7-389f4842e545, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com}, udp: true}
+  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 185, server: 220.122.42.198, port: 10995, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 88, server: m.cnmjin.net, port: 16622, type: vmess, uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com}, udp: true}
+  - {name: 中国 🇨🇳 youtube@资源分享师 CN 211, server: 76c3.earthdraft.onezz.top, port: 20010, type: vmess, uuid: 7d81d7ed-03f4-331a-ab0d-e9a7425f05e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: ithome.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 54, server: t.cnmjcn.cyou, port: 16622, type: vmess, uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 61, server: t.cnmjcn.cyou, port: 16622, type: vmess, uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 111, server: t.cnmjcn.cyou, port: 16632, type: vmess, uuid: 7927975e-9616-412b-b508-983ab960377d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 136, server: m.cnmjin.net, port: 16622, type: vmess, uuid: 302457f5-6848-4e2b-be16-193131ab6374, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 69, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 881da2de-238e-425e-a7e7-389f4842e545, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 129, server: m.cnmjin.net, port: 16622, type: vmess, uuid: 881da2de-238e-425e-a7e7-389f4842e545, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com}, udp: true}
+  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 191, server: 220.127.68.28, port: 50001, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 244, server: 220.95.25.188, port: 10250, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 108, server: t.cnmjcn.cyou, port: 16632, type: vmess, uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 114, server: m.cnmjin.net, port: 16616, type: vmess, uuid: 302457f5-6848-4e2b-be16-193131ab6374, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 122, server: t.cnmjcn.cyou, port: 16616, type: vmess, uuid: 302457f5-6848-4e2b-be16-193131ab6374, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 156, server: m.cnmjin.net, port: 16616, type: vmess, uuid: 881da2de-238e-425e-a7e7-389f4842e545, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 121, server: m.cnmjin.net, port: 16616, type: vmess, uuid: 881da2de-238e-425e-a7e7-389f4842e545, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 83, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 7927975e-9616-412b-b508-983ab960377d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 94, server: t.cnmjcn.cyou, port: 16616, type: vmess, uuid: 881da2de-238e-425e-a7e7-389f4842e545, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com}, udp: true}
+  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 221, server: 220.122.42.198, port: 18781, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 52, server: t.cnmjcn.cyou, port: 16616, type: vmess, uuid: 7927975e-9616-412b-b508-983ab960377d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 100, server: m.cnmjin.net, port: 16616, type: vmess, uuid: 7927975e-9616-412b-b508-983ab960377d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 161, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 302457f5-6848-4e2b-be16-193131ab6374, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba411337c4d2d5541e2607d665631571.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 117, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 134, server: m.cnmjin.net, port: 16616, type: vmess, uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 74, server: m.cnmjin.net, port: 16617, type: vmess, uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com}, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 93, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 🇯🇵 youtube@资源分享师 JP 230, server: hkp8.network-cdn-gw-yd.net, port: 48818, type: ss, cipher: chacha20-ietf-poly1305, password: a71a7679-7718-4655-b487-7a07bad7a70c, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 113, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 119, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 155, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 11, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 15, server: m.cnmjin.net, port: 16617, type: vmess, uuid: 881da2de-238e-425e-a7e7-389f4842e545, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 59, server: t.cnmjcn.cyou, port: 16617, type: vmess, uuid: 7927975e-9616-412b-b508-983ab960377d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 130, server: t.cnmjcn.cyou, port: 16616, type: vmess, uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 41, server: t.cnmjcn.cyou, port: 16617, type: vmess, uuid: 881da2de-238e-425e-a7e7-389f4842e545, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com}, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 243, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国 🇬🇧 youtube@资源分享师 GB 34, server: 82.38.31.99, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 32, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 72, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 56, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 4, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 51, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 97, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 9, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 21, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 新加坡 🇸🇬 youtube@资源分享师 SG 137, server: 165.22.111.31, port: 8388, type: ss, cipher: aes-256-gcm, password: 7GaQIM4q84sLnhqQJ8mLqb0KbdDmBWxKPaXa59tFXtg, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 190, server: m.cnmjin.net, port: 16648, type: vmess, uuid: 91f3e053-2caf-4d7d-a2ea-55fec9a19441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 11a79962aeff6caf4f270aa607818974.mobgslb.tbcache.com}, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 252, server: 193.23.218.192, port: 443, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 262, server: 193.23.218.192, port: 443, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 126, server: m.cnmjin.net, port: 16648, type: vmess, uuid: 7927975e-9616-412b-b508-983ab960377d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com}, udp: true}
+  - {name: 法国 🇫🇷 youtube@资源分享师 FR 144, server: t.cnmjcn.cyou, port: 16648, type: vmess, uuid: 7927975e-9616-412b-b508-983ab960377d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 8597cd680dc75db1c8ac6d9942dcf0e6.mobgslb.tbcache.com}, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 256, server: 193.23.199.106, port: 443, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 🇷🇺 youtube@资源分享师 RU 148, server: 195.58.49.26, port: 40210, type: ss, cipher: aes-256-gcm, password: 3150466568eda87b, udp: true}
+  - {name: 韩国 🇰🇷 youtube@资源分享师 KR 269, server: 220.122.102.26, port: 30017, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 278, server: 93.123.84.194, port: 443, type: trojan, password: !<str> 1234567890, skip-cert-verify: true, udp: true}
+  - {name: 中国 🇨🇳 youtube@资源分享师 CN 209, server: 76c3.earthdraft.onezz.top, port: 20010, type: vmess, uuid: 7d81d7ed-03f4-331a-ab0d-e9a7425f05e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /chat, ws-headers: {Host: ithome.com}, udp: true}
+  - {name: 德国 🇩🇪 youtube@资源分享师 DE 205, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 🇭🇰 youtube@资源分享师 HK 273, server: 45e755.shlswe.xyz, port: 28108, type: ss, cipher: aes-128-gcm, password: f97cf7d99d, udp: true}
+  - {name: 香港 🇭🇰 youtube@资源分享师 HK 285, server: 45e755.shlswe.xyz, port: 28118, type: ss, cipher: aes-128-gcm, password: f97cf7d99d, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - youtube@资源分享师 137
-      - 中国 🇨🇳 youtube@资源分享师 CN 141
-      - 印度 🇮🇳 youtube@资源分享师 IN 142
-      - 香港 🇭🇰 youtube@资源分享师 HK 133
-      - 香港 🇭🇰 youtube@资源分享师 HK 126
-      - 土耳其 🇹🇷 youtube@资源分享师 TR 147
-      - 瑞典 🇸🇪 youtube@资源分享师 SE 111
-      - 日本 🇯🇵 youtube@资源分享师 JP 139
-      - 日本 🇯🇵 youtube@资源分享师 JP 136
-      - 日本 🇯🇵 youtube@资源分享师 JP 135
-      - 日本 🇯🇵 youtube@资源分享师 JP 134
-      - 美国 🇺🇸 youtube@资源分享师 US 108
-      - 捷克 🇨🇿 youtube@资源分享师 CZ 112
-      - 韩国 🇰🇷 youtube@资源分享师 KR 99
-      - 韩国 🇰🇷 youtube@资源分享师 KR 98
-      - 韩国 🇰🇷 youtube@资源分享师 KR 97
-      - 韩国 🇰🇷 youtube@资源分享师 KR 96
-      - 韩国 🇰🇷 youtube@资源分享师 KR 95
-      - 韩国 🇰🇷 youtube@资源分享师 KR 94
-      - 韩国 🇰🇷 youtube@资源分享师 KR 93
-      - 韩国 🇰🇷 youtube@资源分享师 KR 113
-      - 韩国 🇰🇷 youtube@资源分享师 KR 110
-      - 韩国 🇰🇷 youtube@资源分享师 KR 109
-      - 韩国 🇰🇷 youtube@资源分享师 KR 104
-      - 韩国 🇰🇷 youtube@资源分享师 KR 103
-      - 韩国 🇰🇷 youtube@资源分享师 KR 102
-      - 韩国 🇰🇷 youtube@资源分享师 KR 101
-      - 韩国 🇰🇷 youtube@资源分享师 KR 100
-      - 法国 🇫🇷 youtube@资源分享师 FR 138
-      - 法国 🇫🇷 youtube@资源分享师 FR 131
-      - 法国 🇫🇷 youtube@资源分享师 FR 125
-      - 法国 🇫🇷 youtube@资源分享师 FR 124
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 149
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 146
-      - 德国 🇩🇪 youtube@资源分享师 DE 140
-      - 德国 🇩🇪 youtube@资源分享师 DE 132
-      - 德国 🇩🇪 youtube@资源分享师 DE 130
-      - 德国 🇩🇪 youtube@资源分享师 DE 129
-      - 德国 🇩🇪 youtube@资源分享师 DE 128
-      - 德国 🇩🇪 youtube@资源分享师 DE 127
-      - 德国 🇩🇪 youtube@资源分享师 DE 123
-      - 德国 🇩🇪 youtube@资源分享师 DE 107
-      - 德国 🇩🇪 youtube@资源分享师 DE 106
-      - 德国 🇩🇪 youtube@资源分享师 DE 105
+      - 日本 🇯🇵 youtube@资源分享师 JP 133
+      - 法国 🇫🇷 youtube@资源分享师 FR 90
+      - 法国 🇫🇷 youtube@资源分享师 FR 80
+      - 韩国 🇰🇷 youtube@资源分享师 KR 200
+      - 韩国 🇰🇷 youtube@资源分享师 KR 157
+      - 法国 🇫🇷 youtube@资源分享师 FR 64
+      - 韩国 🇰🇷 youtube@资源分享师 KR 185
+      - 法国 🇫🇷 youtube@资源分享师 FR 88
+      - 中国 🇨🇳 youtube@资源分享师 CN 211
+      - 法国 🇫🇷 youtube@资源分享师 FR 54
+      - 法国 🇫🇷 youtube@资源分享师 FR 61
+      - 法国 🇫🇷 youtube@资源分享师 FR 111
+      - 法国 🇫🇷 youtube@资源分享师 FR 136
+      - 法国 🇫🇷 youtube@资源分享师 FR 69
+      - 法国 🇫🇷 youtube@资源分享师 FR 129
+      - 韩国 🇰🇷 youtube@资源分享师 KR 191
+      - 韩国 🇰🇷 youtube@资源分享师 KR 244
+      - 法国 🇫🇷 youtube@资源分享师 FR 108
+      - 法国 🇫🇷 youtube@资源分享师 FR 114
+      - 法国 🇫🇷 youtube@资源分享师 FR 122
+      - 法国 🇫🇷 youtube@资源分享师 FR 156
+      - 法国 🇫🇷 youtube@资源分享师 FR 121
+      - 法国 🇫🇷 youtube@资源分享师 FR 83
+      - 法国 🇫🇷 youtube@资源分享师 FR 94
+      - 韩国 🇰🇷 youtube@资源分享师 KR 221
+      - 法国 🇫🇷 youtube@资源分享师 FR 52
+      - 法国 🇫🇷 youtube@资源分享师 FR 100
+      - 法国 🇫🇷 youtube@资源分享师 FR 161
+      - 法国 🇫🇷 youtube@资源分享师 FR 117
+      - 法国 🇫🇷 youtube@资源分享师 FR 134
+      - 法国 🇫🇷 youtube@资源分享师 FR 74
+      - 德国 🇩🇪 youtube@资源分享师 DE 93
+      - 日本 🇯🇵 youtube@资源分享师 JP 230
+      - 德国 🇩🇪 youtube@资源分享师 DE 113
+      - 德国 🇩🇪 youtube@资源分享师 DE 119
+      - 德国 🇩🇪 youtube@资源分享师 DE 155
+      - 德国 🇩🇪 youtube@资源分享师 DE 11
+      - 法国 🇫🇷 youtube@资源分享师 FR 15
+      - 法国 🇫🇷 youtube@资源分享师 FR 59
+      - 法国 🇫🇷 youtube@资源分享师 FR 130
+      - 法国 🇫🇷 youtube@资源分享师 FR 41
+      - 德国 🇩🇪 youtube@资源分享师 DE 243
+      - 英国 🇬🇧 youtube@资源分享师 GB 34
+      - 德国 🇩🇪 youtube@资源分享师 DE 32
+      - 德国 🇩🇪 youtube@资源分享师 DE 72
+      - 德国 🇩🇪 youtube@资源分享师 DE 56
+      - 德国 🇩🇪 youtube@资源分享师 DE 4
+      - 德国 🇩🇪 youtube@资源分享师 DE 51
+      - 德国 🇩🇪 youtube@资源分享师 DE 97
+      - 德国 🇩🇪 youtube@资源分享师 DE 9
+      - 德国 🇩🇪 youtube@资源分享师 DE 21
+      - 新加坡 🇸🇬 youtube@资源分享师 SG 137
+      - 法国 🇫🇷 youtube@资源分享师 FR 190
+      - 德国 🇩🇪 youtube@资源分享师 DE 252
+      - 德国 🇩🇪 youtube@资源分享师 DE 262
+      - 法国 🇫🇷 youtube@资源分享师 FR 126
+      - 法国 🇫🇷 youtube@资源分享师 FR 144
+      - 德国 🇩🇪 youtube@资源分享师 DE 256
+      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 148
+      - 韩国 🇰🇷 youtube@资源分享师 KR 269
+      - 德国 🇩🇪 youtube@资源分享师 DE 278
+      - 中国 🇨🇳 youtube@资源分享师 CN 209
+      - 德国 🇩🇪 youtube@资源分享师 DE 205
+      - 香港 🇭🇰 youtube@资源分享师 HK 273
+      - 香港 🇭🇰 youtube@资源分享师 HK 285
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - youtube@资源分享师 137
-      - 中国 🇨🇳 youtube@资源分享师 CN 141
-      - 印度 🇮🇳 youtube@资源分享师 IN 142
-      - 香港 🇭🇰 youtube@资源分享师 HK 133
-      - 香港 🇭🇰 youtube@资源分享师 HK 126
-      - 土耳其 🇹🇷 youtube@资源分享师 TR 147
-      - 瑞典 🇸🇪 youtube@资源分享师 SE 111
-      - 日本 🇯🇵 youtube@资源分享师 JP 139
-      - 日本 🇯🇵 youtube@资源分享师 JP 136
-      - 日本 🇯🇵 youtube@资源分享师 JP 135
-      - 日本 🇯🇵 youtube@资源分享师 JP 134
-      - 美国 🇺🇸 youtube@资源分享师 US 108
-      - 捷克 🇨🇿 youtube@资源分享师 CZ 112
-      - 韩国 🇰🇷 youtube@资源分享师 KR 99
-      - 韩国 🇰🇷 youtube@资源分享师 KR 98
-      - 韩国 🇰🇷 youtube@资源分享师 KR 97
-      - 韩国 🇰🇷 youtube@资源分享师 KR 96
-      - 韩国 🇰🇷 youtube@资源分享师 KR 95
-      - 韩国 🇰🇷 youtube@资源分享师 KR 94
-      - 韩国 🇰🇷 youtube@资源分享师 KR 93
-      - 韩国 🇰🇷 youtube@资源分享师 KR 113
-      - 韩国 🇰🇷 youtube@资源分享师 KR 110
-      - 韩国 🇰🇷 youtube@资源分享师 KR 109
-      - 韩国 🇰🇷 youtube@资源分享师 KR 104
-      - 韩国 🇰🇷 youtube@资源分享师 KR 103
-      - 韩国 🇰🇷 youtube@资源分享师 KR 102
-      - 韩国 🇰🇷 youtube@资源分享师 KR 101
-      - 韩国 🇰🇷 youtube@资源分享师 KR 100
-      - 法国 🇫🇷 youtube@资源分享师 FR 138
-      - 法国 🇫🇷 youtube@资源分享师 FR 131
-      - 法国 🇫🇷 youtube@资源分享师 FR 125
-      - 法国 🇫🇷 youtube@资源分享师 FR 124
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 149
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 146
-      - 德国 🇩🇪 youtube@资源分享师 DE 140
-      - 德国 🇩🇪 youtube@资源分享师 DE 132
-      - 德国 🇩🇪 youtube@资源分享师 DE 130
-      - 德国 🇩🇪 youtube@资源分享师 DE 129
-      - 德国 🇩🇪 youtube@资源分享师 DE 128
-      - 德国 🇩🇪 youtube@资源分享师 DE 127
-      - 德国 🇩🇪 youtube@资源分享师 DE 123
-      - 德国 🇩🇪 youtube@资源分享师 DE 107
-      - 德国 🇩🇪 youtube@资源分享师 DE 106
-      - 德国 🇩🇪 youtube@资源分享师 DE 105
+      - 日本 🇯🇵 youtube@资源分享师 JP 133
+      - 法国 🇫🇷 youtube@资源分享师 FR 90
+      - 法国 🇫🇷 youtube@资源分享师 FR 80
+      - 韩国 🇰🇷 youtube@资源分享师 KR 200
+      - 韩国 🇰🇷 youtube@资源分享师 KR 157
+      - 法国 🇫🇷 youtube@资源分享师 FR 64
+      - 韩国 🇰🇷 youtube@资源分享师 KR 185
+      - 法国 🇫🇷 youtube@资源分享师 FR 88
+      - 中国 🇨🇳 youtube@资源分享师 CN 211
+      - 法国 🇫🇷 youtube@资源分享师 FR 54
+      - 法国 🇫🇷 youtube@资源分享师 FR 61
+      - 法国 🇫🇷 youtube@资源分享师 FR 111
+      - 法国 🇫🇷 youtube@资源分享师 FR 136
+      - 法国 🇫🇷 youtube@资源分享师 FR 69
+      - 法国 🇫🇷 youtube@资源分享师 FR 129
+      - 韩国 🇰🇷 youtube@资源分享师 KR 191
+      - 韩国 🇰🇷 youtube@资源分享师 KR 244
+      - 法国 🇫🇷 youtube@资源分享师 FR 108
+      - 法国 🇫🇷 youtube@资源分享师 FR 114
+      - 法国 🇫🇷 youtube@资源分享师 FR 122
+      - 法国 🇫🇷 youtube@资源分享师 FR 156
+      - 法国 🇫🇷 youtube@资源分享师 FR 121
+      - 法国 🇫🇷 youtube@资源分享师 FR 83
+      - 法国 🇫🇷 youtube@资源分享师 FR 94
+      - 韩国 🇰🇷 youtube@资源分享师 KR 221
+      - 法国 🇫🇷 youtube@资源分享师 FR 52
+      - 法国 🇫🇷 youtube@资源分享师 FR 100
+      - 法国 🇫🇷 youtube@资源分享师 FR 161
+      - 法国 🇫🇷 youtube@资源分享师 FR 117
+      - 法国 🇫🇷 youtube@资源分享师 FR 134
+      - 法国 🇫🇷 youtube@资源分享师 FR 74
+      - 德国 🇩🇪 youtube@资源分享师 DE 93
+      - 日本 🇯🇵 youtube@资源分享师 JP 230
+      - 德国 🇩🇪 youtube@资源分享师 DE 113
+      - 德国 🇩🇪 youtube@资源分享师 DE 119
+      - 德国 🇩🇪 youtube@资源分享师 DE 155
+      - 德国 🇩🇪 youtube@资源分享师 DE 11
+      - 法国 🇫🇷 youtube@资源分享师 FR 15
+      - 法国 🇫🇷 youtube@资源分享师 FR 59
+      - 法国 🇫🇷 youtube@资源分享师 FR 130
+      - 法国 🇫🇷 youtube@资源分享师 FR 41
+      - 德国 🇩🇪 youtube@资源分享师 DE 243
+      - 英国 🇬🇧 youtube@资源分享师 GB 34
+      - 德国 🇩🇪 youtube@资源分享师 DE 32
+      - 德国 🇩🇪 youtube@资源分享师 DE 72
+      - 德国 🇩🇪 youtube@资源分享师 DE 56
+      - 德国 🇩🇪 youtube@资源分享师 DE 4
+      - 德国 🇩🇪 youtube@资源分享师 DE 51
+      - 德国 🇩🇪 youtube@资源分享师 DE 97
+      - 德国 🇩🇪 youtube@资源分享师 DE 9
+      - 德国 🇩🇪 youtube@资源分享师 DE 21
+      - 新加坡 🇸🇬 youtube@资源分享师 SG 137
+      - 法国 🇫🇷 youtube@资源分享师 FR 190
+      - 德国 🇩🇪 youtube@资源分享师 DE 252
+      - 德国 🇩🇪 youtube@资源分享师 DE 262
+      - 法国 🇫🇷 youtube@资源分享师 FR 126
+      - 法国 🇫🇷 youtube@资源分享师 FR 144
+      - 德国 🇩🇪 youtube@资源分享师 DE 256
+      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 148
+      - 韩国 🇰🇷 youtube@资源分享师 KR 269
+      - 德国 🇩🇪 youtube@资源分享师 DE 278
+      - 中国 🇨🇳 youtube@资源分享师 CN 209
+      - 德国 🇩🇪 youtube@资源分享师 DE 205
+      - 香港 🇭🇰 youtube@资源分享师 HK 273
+      - 香港 🇭🇰 youtube@资源分享师 HK 285
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - youtube@资源分享师 137
-      - 中国 🇨🇳 youtube@资源分享师 CN 141
-      - 印度 🇮🇳 youtube@资源分享师 IN 142
-      - 香港 🇭🇰 youtube@资源分享师 HK 133
-      - 香港 🇭🇰 youtube@资源分享师 HK 126
-      - 土耳其 🇹🇷 youtube@资源分享师 TR 147
-      - 瑞典 🇸🇪 youtube@资源分享师 SE 111
-      - 日本 🇯🇵 youtube@资源分享师 JP 139
-      - 日本 🇯🇵 youtube@资源分享师 JP 136
-      - 日本 🇯🇵 youtube@资源分享师 JP 135
-      - 日本 🇯🇵 youtube@资源分享师 JP 134
-      - 美国 🇺🇸 youtube@资源分享师 US 108
-      - 捷克 🇨🇿 youtube@资源分享师 CZ 112
-      - 韩国 🇰🇷 youtube@资源分享师 KR 99
-      - 韩国 🇰🇷 youtube@资源分享师 KR 98
-      - 韩国 🇰🇷 youtube@资源分享师 KR 97
-      - 韩国 🇰🇷 youtube@资源分享师 KR 96
-      - 韩国 🇰🇷 youtube@资源分享师 KR 95
-      - 韩国 🇰🇷 youtube@资源分享师 KR 94
-      - 韩国 🇰🇷 youtube@资源分享师 KR 93
-      - 韩国 🇰🇷 youtube@资源分享师 KR 113
-      - 韩国 🇰🇷 youtube@资源分享师 KR 110
-      - 韩国 🇰🇷 youtube@资源分享师 KR 109
-      - 韩国 🇰🇷 youtube@资源分享师 KR 104
-      - 韩国 🇰🇷 youtube@资源分享师 KR 103
-      - 韩国 🇰🇷 youtube@资源分享师 KR 102
-      - 韩国 🇰🇷 youtube@资源分享师 KR 101
-      - 韩国 🇰🇷 youtube@资源分享师 KR 100
-      - 法国 🇫🇷 youtube@资源分享师 FR 138
-      - 法国 🇫🇷 youtube@资源分享师 FR 131
-      - 法国 🇫🇷 youtube@资源分享师 FR 125
-      - 法国 🇫🇷 youtube@资源分享师 FR 124
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 149
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 146
-      - 德国 🇩🇪 youtube@资源分享师 DE 140
-      - 德国 🇩🇪 youtube@资源分享师 DE 132
-      - 德国 🇩🇪 youtube@资源分享师 DE 130
-      - 德国 🇩🇪 youtube@资源分享师 DE 129
-      - 德国 🇩🇪 youtube@资源分享师 DE 128
-      - 德国 🇩🇪 youtube@资源分享师 DE 127
-      - 德国 🇩🇪 youtube@资源分享师 DE 123
-      - 德国 🇩🇪 youtube@资源分享师 DE 107
-      - 德国 🇩🇪 youtube@资源分享师 DE 106
-      - 德国 🇩🇪 youtube@资源分享师 DE 105
+      - 日本 🇯🇵 youtube@资源分享师 JP 133
+      - 法国 🇫🇷 youtube@资源分享师 FR 90
+      - 法国 🇫🇷 youtube@资源分享师 FR 80
+      - 韩国 🇰🇷 youtube@资源分享师 KR 200
+      - 韩国 🇰🇷 youtube@资源分享师 KR 157
+      - 法国 🇫🇷 youtube@资源分享师 FR 64
+      - 韩国 🇰🇷 youtube@资源分享师 KR 185
+      - 法国 🇫🇷 youtube@资源分享师 FR 88
+      - 中国 🇨🇳 youtube@资源分享师 CN 211
+      - 法国 🇫🇷 youtube@资源分享师 FR 54
+      - 法国 🇫🇷 youtube@资源分享师 FR 61
+      - 法国 🇫🇷 youtube@资源分享师 FR 111
+      - 法国 🇫🇷 youtube@资源分享师 FR 136
+      - 法国 🇫🇷 youtube@资源分享师 FR 69
+      - 法国 🇫🇷 youtube@资源分享师 FR 129
+      - 韩国 🇰🇷 youtube@资源分享师 KR 191
+      - 韩国 🇰🇷 youtube@资源分享师 KR 244
+      - 法国 🇫🇷 youtube@资源分享师 FR 108
+      - 法国 🇫🇷 youtube@资源分享师 FR 114
+      - 法国 🇫🇷 youtube@资源分享师 FR 122
+      - 法国 🇫🇷 youtube@资源分享师 FR 156
+      - 法国 🇫🇷 youtube@资源分享师 FR 121
+      - 法国 🇫🇷 youtube@资源分享师 FR 83
+      - 法国 🇫🇷 youtube@资源分享师 FR 94
+      - 韩国 🇰🇷 youtube@资源分享师 KR 221
+      - 法国 🇫🇷 youtube@资源分享师 FR 52
+      - 法国 🇫🇷 youtube@资源分享师 FR 100
+      - 法国 🇫🇷 youtube@资源分享师 FR 161
+      - 法国 🇫🇷 youtube@资源分享师 FR 117
+      - 法国 🇫🇷 youtube@资源分享师 FR 134
+      - 法国 🇫🇷 youtube@资源分享师 FR 74
+      - 德国 🇩🇪 youtube@资源分享师 DE 93
+      - 日本 🇯🇵 youtube@资源分享师 JP 230
+      - 德国 🇩🇪 youtube@资源分享师 DE 113
+      - 德国 🇩🇪 youtube@资源分享师 DE 119
+      - 德国 🇩🇪 youtube@资源分享师 DE 155
+      - 德国 🇩🇪 youtube@资源分享师 DE 11
+      - 法国 🇫🇷 youtube@资源分享师 FR 15
+      - 法国 🇫🇷 youtube@资源分享师 FR 59
+      - 法国 🇫🇷 youtube@资源分享师 FR 130
+      - 法国 🇫🇷 youtube@资源分享师 FR 41
+      - 德国 🇩🇪 youtube@资源分享师 DE 243
+      - 英国 🇬🇧 youtube@资源分享师 GB 34
+      - 德国 🇩🇪 youtube@资源分享师 DE 32
+      - 德国 🇩🇪 youtube@资源分享师 DE 72
+      - 德国 🇩🇪 youtube@资源分享师 DE 56
+      - 德国 🇩🇪 youtube@资源分享师 DE 4
+      - 德国 🇩🇪 youtube@资源分享师 DE 51
+      - 德国 🇩🇪 youtube@资源分享师 DE 97
+      - 德国 🇩🇪 youtube@资源分享师 DE 9
+      - 德国 🇩🇪 youtube@资源分享师 DE 21
+      - 新加坡 🇸🇬 youtube@资源分享师 SG 137
+      - 法国 🇫🇷 youtube@资源分享师 FR 190
+      - 德国 🇩🇪 youtube@资源分享师 DE 252
+      - 德国 🇩🇪 youtube@资源分享师 DE 262
+      - 法国 🇫🇷 youtube@资源分享师 FR 126
+      - 法国 🇫🇷 youtube@资源分享师 FR 144
+      - 德国 🇩🇪 youtube@资源分享师 DE 256
+      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 148
+      - 韩国 🇰🇷 youtube@资源分享师 KR 269
+      - 德国 🇩🇪 youtube@资源分享师 DE 278
+      - 中国 🇨🇳 youtube@资源分享师 CN 209
+      - 德国 🇩🇪 youtube@资源分享师 DE 205
+      - 香港 🇭🇰 youtube@资源分享师 HK 273
+      - 香港 🇭🇰 youtube@资源分享师 HK 285
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -216,205 +300,289 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - youtube@资源分享师 137
-      - 中国 🇨🇳 youtube@资源分享师 CN 141
-      - 印度 🇮🇳 youtube@资源分享师 IN 142
-      - 香港 🇭🇰 youtube@资源分享师 HK 133
-      - 香港 🇭🇰 youtube@资源分享师 HK 126
-      - 土耳其 🇹🇷 youtube@资源分享师 TR 147
-      - 瑞典 🇸🇪 youtube@资源分享师 SE 111
-      - 日本 🇯🇵 youtube@资源分享师 JP 139
-      - 日本 🇯🇵 youtube@资源分享师 JP 136
-      - 日本 🇯🇵 youtube@资源分享师 JP 135
-      - 日本 🇯🇵 youtube@资源分享师 JP 134
-      - 美国 🇺🇸 youtube@资源分享师 US 108
-      - 捷克 🇨🇿 youtube@资源分享师 CZ 112
-      - 韩国 🇰🇷 youtube@资源分享师 KR 99
-      - 韩国 🇰🇷 youtube@资源分享师 KR 98
-      - 韩国 🇰🇷 youtube@资源分享师 KR 97
-      - 韩国 🇰🇷 youtube@资源分享师 KR 96
-      - 韩国 🇰🇷 youtube@资源分享师 KR 95
-      - 韩国 🇰🇷 youtube@资源分享师 KR 94
-      - 韩国 🇰🇷 youtube@资源分享师 KR 93
-      - 韩国 🇰🇷 youtube@资源分享师 KR 113
-      - 韩国 🇰🇷 youtube@资源分享师 KR 110
-      - 韩国 🇰🇷 youtube@资源分享师 KR 109
-      - 韩国 🇰🇷 youtube@资源分享师 KR 104
-      - 韩国 🇰🇷 youtube@资源分享师 KR 103
-      - 韩国 🇰🇷 youtube@资源分享师 KR 102
-      - 韩国 🇰🇷 youtube@资源分享师 KR 101
-      - 韩国 🇰🇷 youtube@资源分享师 KR 100
-      - 法国 🇫🇷 youtube@资源分享师 FR 138
-      - 法国 🇫🇷 youtube@资源分享师 FR 131
-      - 法国 🇫🇷 youtube@资源分享师 FR 125
-      - 法国 🇫🇷 youtube@资源分享师 FR 124
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 149
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 146
-      - 德国 🇩🇪 youtube@资源分享师 DE 140
-      - 德国 🇩🇪 youtube@资源分享师 DE 132
-      - 德国 🇩🇪 youtube@资源分享师 DE 130
-      - 德国 🇩🇪 youtube@资源分享师 DE 129
-      - 德国 🇩🇪 youtube@资源分享师 DE 128
-      - 德国 🇩🇪 youtube@资源分享师 DE 127
-      - 德国 🇩🇪 youtube@资源分享师 DE 123
-      - 德国 🇩🇪 youtube@资源分享师 DE 107
-      - 德国 🇩🇪 youtube@资源分享师 DE 106
-      - 德国 🇩🇪 youtube@资源分享师 DE 105
+      - 日本 🇯🇵 youtube@资源分享师 JP 133
+      - 法国 🇫🇷 youtube@资源分享师 FR 90
+      - 法国 🇫🇷 youtube@资源分享师 FR 80
+      - 韩国 🇰🇷 youtube@资源分享师 KR 200
+      - 韩国 🇰🇷 youtube@资源分享师 KR 157
+      - 法国 🇫🇷 youtube@资源分享师 FR 64
+      - 韩国 🇰🇷 youtube@资源分享师 KR 185
+      - 法国 🇫🇷 youtube@资源分享师 FR 88
+      - 中国 🇨🇳 youtube@资源分享师 CN 211
+      - 法国 🇫🇷 youtube@资源分享师 FR 54
+      - 法国 🇫🇷 youtube@资源分享师 FR 61
+      - 法国 🇫🇷 youtube@资源分享师 FR 111
+      - 法国 🇫🇷 youtube@资源分享师 FR 136
+      - 法国 🇫🇷 youtube@资源分享师 FR 69
+      - 法国 🇫🇷 youtube@资源分享师 FR 129
+      - 韩国 🇰🇷 youtube@资源分享师 KR 191
+      - 韩国 🇰🇷 youtube@资源分享师 KR 244
+      - 法国 🇫🇷 youtube@资源分享师 FR 108
+      - 法国 🇫🇷 youtube@资源分享师 FR 114
+      - 法国 🇫🇷 youtube@资源分享师 FR 122
+      - 法国 🇫🇷 youtube@资源分享师 FR 156
+      - 法国 🇫🇷 youtube@资源分享师 FR 121
+      - 法国 🇫🇷 youtube@资源分享师 FR 83
+      - 法国 🇫🇷 youtube@资源分享师 FR 94
+      - 韩国 🇰🇷 youtube@资源分享师 KR 221
+      - 法国 🇫🇷 youtube@资源分享师 FR 52
+      - 法国 🇫🇷 youtube@资源分享师 FR 100
+      - 法国 🇫🇷 youtube@资源分享师 FR 161
+      - 法国 🇫🇷 youtube@资源分享师 FR 117
+      - 法国 🇫🇷 youtube@资源分享师 FR 134
+      - 法国 🇫🇷 youtube@资源分享师 FR 74
+      - 德国 🇩🇪 youtube@资源分享师 DE 93
+      - 日本 🇯🇵 youtube@资源分享师 JP 230
+      - 德国 🇩🇪 youtube@资源分享师 DE 113
+      - 德国 🇩🇪 youtube@资源分享师 DE 119
+      - 德国 🇩🇪 youtube@资源分享师 DE 155
+      - 德国 🇩🇪 youtube@资源分享师 DE 11
+      - 法国 🇫🇷 youtube@资源分享师 FR 15
+      - 法国 🇫🇷 youtube@资源分享师 FR 59
+      - 法国 🇫🇷 youtube@资源分享师 FR 130
+      - 法国 🇫🇷 youtube@资源分享师 FR 41
+      - 德国 🇩🇪 youtube@资源分享师 DE 243
+      - 英国 🇬🇧 youtube@资源分享师 GB 34
+      - 德国 🇩🇪 youtube@资源分享师 DE 32
+      - 德国 🇩🇪 youtube@资源分享师 DE 72
+      - 德国 🇩🇪 youtube@资源分享师 DE 56
+      - 德国 🇩🇪 youtube@资源分享师 DE 4
+      - 德国 🇩🇪 youtube@资源分享师 DE 51
+      - 德国 🇩🇪 youtube@资源分享师 DE 97
+      - 德国 🇩🇪 youtube@资源分享师 DE 9
+      - 德国 🇩🇪 youtube@资源分享师 DE 21
+      - 新加坡 🇸🇬 youtube@资源分享师 SG 137
+      - 法国 🇫🇷 youtube@资源分享师 FR 190
+      - 德国 🇩🇪 youtube@资源分享师 DE 252
+      - 德国 🇩🇪 youtube@资源分享师 DE 262
+      - 法国 🇫🇷 youtube@资源分享师 FR 126
+      - 法国 🇫🇷 youtube@资源分享师 FR 144
+      - 德国 🇩🇪 youtube@资源分享师 DE 256
+      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 148
+      - 韩国 🇰🇷 youtube@资源分享师 KR 269
+      - 德国 🇩🇪 youtube@资源分享师 DE 278
+      - 中国 🇨🇳 youtube@资源分享师 CN 209
+      - 德国 🇩🇪 youtube@资源分享师 DE 205
+      - 香港 🇭🇰 youtube@资源分享师 HK 273
+      - 香港 🇭🇰 youtube@资源分享师 HK 285
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 香港 🇭🇰 youtube@资源分享师 HK 133
-      - 香港 🇭🇰 youtube@资源分享师 HK 126
+      - 香港 🇭🇰 youtube@资源分享师 HK 273
+      - 香港 🇭🇰 youtube@资源分享师 HK 285
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - youtube@资源分享师 137
-      - 中国 🇨🇳 youtube@资源分享师 CN 141
-      - 印度 🇮🇳 youtube@资源分享师 IN 142
-      - 香港 🇭🇰 youtube@资源分享师 HK 133
-      - 香港 🇭🇰 youtube@资源分享师 HK 126
-      - 土耳其 🇹🇷 youtube@资源分享师 TR 147
-      - 瑞典 🇸🇪 youtube@资源分享师 SE 111
-      - 日本 🇯🇵 youtube@资源分享师 JP 139
-      - 日本 🇯🇵 youtube@资源分享师 JP 136
-      - 日本 🇯🇵 youtube@资源分享师 JP 135
-      - 日本 🇯🇵 youtube@资源分享师 JP 134
-      - 美国 🇺🇸 youtube@资源分享师 US 108
-      - 捷克 🇨🇿 youtube@资源分享师 CZ 112
-      - 韩国 🇰🇷 youtube@资源分享师 KR 99
-      - 韩国 🇰🇷 youtube@资源分享师 KR 98
-      - 韩国 🇰🇷 youtube@资源分享师 KR 97
-      - 韩国 🇰🇷 youtube@资源分享师 KR 96
-      - 韩国 🇰🇷 youtube@资源分享师 KR 95
-      - 韩国 🇰🇷 youtube@资源分享师 KR 94
-      - 韩国 🇰🇷 youtube@资源分享师 KR 93
-      - 韩国 🇰🇷 youtube@资源分享师 KR 113
-      - 韩国 🇰🇷 youtube@资源分享师 KR 110
-      - 韩国 🇰🇷 youtube@资源分享师 KR 109
-      - 韩国 🇰🇷 youtube@资源分享师 KR 104
-      - 韩国 🇰🇷 youtube@资源分享师 KR 103
-      - 韩国 🇰🇷 youtube@资源分享师 KR 102
-      - 韩国 🇰🇷 youtube@资源分享师 KR 101
-      - 韩国 🇰🇷 youtube@资源分享师 KR 100
-      - 法国 🇫🇷 youtube@资源分享师 FR 138
-      - 法国 🇫🇷 youtube@资源分享师 FR 131
-      - 法国 🇫🇷 youtube@资源分享师 FR 125
-      - 法国 🇫🇷 youtube@资源分享师 FR 124
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 149
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 146
-      - 德国 🇩🇪 youtube@资源分享师 DE 140
-      - 德国 🇩🇪 youtube@资源分享师 DE 132
-      - 德国 🇩🇪 youtube@资源分享师 DE 130
-      - 德国 🇩🇪 youtube@资源分享师 DE 129
-      - 德国 🇩🇪 youtube@资源分享师 DE 128
-      - 德国 🇩🇪 youtube@资源分享师 DE 127
-      - 德国 🇩🇪 youtube@资源分享师 DE 123
-      - 德国 🇩🇪 youtube@资源分享师 DE 107
-      - 德国 🇩🇪 youtube@资源分享师 DE 106
-      - 德国 🇩🇪 youtube@资源分享师 DE 105
+      - 日本 🇯🇵 youtube@资源分享师 JP 133
+      - 法国 🇫🇷 youtube@资源分享师 FR 90
+      - 法国 🇫🇷 youtube@资源分享师 FR 80
+      - 韩国 🇰🇷 youtube@资源分享师 KR 200
+      - 韩国 🇰🇷 youtube@资源分享师 KR 157
+      - 法国 🇫🇷 youtube@资源分享师 FR 64
+      - 韩国 🇰🇷 youtube@资源分享师 KR 185
+      - 法国 🇫🇷 youtube@资源分享师 FR 88
+      - 中国 🇨🇳 youtube@资源分享师 CN 211
+      - 法国 🇫🇷 youtube@资源分享师 FR 54
+      - 法国 🇫🇷 youtube@资源分享师 FR 61
+      - 法国 🇫🇷 youtube@资源分享师 FR 111
+      - 法国 🇫🇷 youtube@资源分享师 FR 136
+      - 法国 🇫🇷 youtube@资源分享师 FR 69
+      - 法国 🇫🇷 youtube@资源分享师 FR 129
+      - 韩国 🇰🇷 youtube@资源分享师 KR 191
+      - 韩国 🇰🇷 youtube@资源分享师 KR 244
+      - 法国 🇫🇷 youtube@资源分享师 FR 108
+      - 法国 🇫🇷 youtube@资源分享师 FR 114
+      - 法国 🇫🇷 youtube@资源分享师 FR 122
+      - 法国 🇫🇷 youtube@资源分享师 FR 156
+      - 法国 🇫🇷 youtube@资源分享师 FR 121
+      - 法国 🇫🇷 youtube@资源分享师 FR 83
+      - 法国 🇫🇷 youtube@资源分享师 FR 94
+      - 韩国 🇰🇷 youtube@资源分享师 KR 221
+      - 法国 🇫🇷 youtube@资源分享师 FR 52
+      - 法国 🇫🇷 youtube@资源分享师 FR 100
+      - 法国 🇫🇷 youtube@资源分享师 FR 161
+      - 法国 🇫🇷 youtube@资源分享师 FR 117
+      - 法国 🇫🇷 youtube@资源分享师 FR 134
+      - 法国 🇫🇷 youtube@资源分享师 FR 74
+      - 德国 🇩🇪 youtube@资源分享师 DE 93
+      - 日本 🇯🇵 youtube@资源分享师 JP 230
+      - 德国 🇩🇪 youtube@资源分享师 DE 113
+      - 德国 🇩🇪 youtube@资源分享师 DE 119
+      - 德国 🇩🇪 youtube@资源分享师 DE 155
+      - 德国 🇩🇪 youtube@资源分享师 DE 11
+      - 法国 🇫🇷 youtube@资源分享师 FR 15
+      - 法国 🇫🇷 youtube@资源分享师 FR 59
+      - 法国 🇫🇷 youtube@资源分享师 FR 130
+      - 法国 🇫🇷 youtube@资源分享师 FR 41
+      - 德国 🇩🇪 youtube@资源分享师 DE 243
+      - 英国 🇬🇧 youtube@资源分享师 GB 34
+      - 德国 🇩🇪 youtube@资源分享师 DE 32
+      - 德国 🇩🇪 youtube@资源分享师 DE 72
+      - 德国 🇩🇪 youtube@资源分享师 DE 56
+      - 德国 🇩🇪 youtube@资源分享师 DE 4
+      - 德国 🇩🇪 youtube@资源分享师 DE 51
+      - 德国 🇩🇪 youtube@资源分享师 DE 97
+      - 德国 🇩🇪 youtube@资源分享师 DE 9
+      - 德国 🇩🇪 youtube@资源分享师 DE 21
+      - 新加坡 🇸🇬 youtube@资源分享师 SG 137
+      - 法国 🇫🇷 youtube@资源分享师 FR 190
+      - 德国 🇩🇪 youtube@资源分享师 DE 252
+      - 德国 🇩🇪 youtube@资源分享师 DE 262
+      - 法国 🇫🇷 youtube@资源分享师 FR 126
+      - 法国 🇫🇷 youtube@资源分享师 FR 144
+      - 德国 🇩🇪 youtube@资源分享师 DE 256
+      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 148
+      - 韩国 🇰🇷 youtube@资源分享师 KR 269
+      - 德国 🇩🇪 youtube@资源分享师 DE 278
+      - 中国 🇨🇳 youtube@资源分享师 CN 209
+      - 德国 🇩🇪 youtube@资源分享师 DE 205
+      - 香港 🇭🇰 youtube@资源分享师 HK 273
+      - 香港 🇭🇰 youtube@资源分享师 HK 285
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - youtube@资源分享师 137
-      - 中国 🇨🇳 youtube@资源分享师 CN 141
-      - 印度 🇮🇳 youtube@资源分享师 IN 142
-      - 香港 🇭🇰 youtube@资源分享师 HK 133
-      - 香港 🇭🇰 youtube@资源分享师 HK 126
-      - 土耳其 🇹🇷 youtube@资源分享师 TR 147
-      - 瑞典 🇸🇪 youtube@资源分享师 SE 111
-      - 日本 🇯🇵 youtube@资源分享师 JP 139
-      - 日本 🇯🇵 youtube@资源分享师 JP 136
-      - 日本 🇯🇵 youtube@资源分享师 JP 135
-      - 日本 🇯🇵 youtube@资源分享师 JP 134
-      - 美国 🇺🇸 youtube@资源分享师 US 108
-      - 捷克 🇨🇿 youtube@资源分享师 CZ 112
-      - 韩国 🇰🇷 youtube@资源分享师 KR 99
-      - 韩国 🇰🇷 youtube@资源分享师 KR 98
-      - 韩国 🇰🇷 youtube@资源分享师 KR 97
-      - 韩国 🇰🇷 youtube@资源分享师 KR 96
-      - 韩国 🇰🇷 youtube@资源分享师 KR 95
-      - 韩国 🇰🇷 youtube@资源分享师 KR 94
-      - 韩国 🇰🇷 youtube@资源分享师 KR 93
-      - 韩国 🇰🇷 youtube@资源分享师 KR 113
-      - 韩国 🇰🇷 youtube@资源分享师 KR 110
-      - 韩国 🇰🇷 youtube@资源分享师 KR 109
-      - 韩国 🇰🇷 youtube@资源分享师 KR 104
-      - 韩国 🇰🇷 youtube@资源分享师 KR 103
-      - 韩国 🇰🇷 youtube@资源分享师 KR 102
-      - 韩国 🇰🇷 youtube@资源分享师 KR 101
-      - 韩国 🇰🇷 youtube@资源分享师 KR 100
-      - 法国 🇫🇷 youtube@资源分享师 FR 138
-      - 法国 🇫🇷 youtube@资源分享师 FR 131
-      - 法国 🇫🇷 youtube@资源分享师 FR 125
-      - 法国 🇫🇷 youtube@资源分享师 FR 124
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 149
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 146
-      - 德国 🇩🇪 youtube@资源分享师 DE 140
-      - 德国 🇩🇪 youtube@资源分享师 DE 132
-      - 德国 🇩🇪 youtube@资源分享师 DE 130
-      - 德国 🇩🇪 youtube@资源分享师 DE 129
-      - 德国 🇩🇪 youtube@资源分享师 DE 128
-      - 德国 🇩🇪 youtube@资源分享师 DE 127
-      - 德国 🇩🇪 youtube@资源分享师 DE 123
-      - 德国 🇩🇪 youtube@资源分享师 DE 107
-      - 德国 🇩🇪 youtube@资源分享师 DE 106
-      - 德国 🇩🇪 youtube@资源分享师 DE 105
+      - 日本 🇯🇵 youtube@资源分享师 JP 133
+      - 法国 🇫🇷 youtube@资源分享师 FR 90
+      - 法国 🇫🇷 youtube@资源分享师 FR 80
+      - 韩国 🇰🇷 youtube@资源分享师 KR 200
+      - 韩国 🇰🇷 youtube@资源分享师 KR 157
+      - 法国 🇫🇷 youtube@资源分享师 FR 64
+      - 韩国 🇰🇷 youtube@资源分享师 KR 185
+      - 法国 🇫🇷 youtube@资源分享师 FR 88
+      - 中国 🇨🇳 youtube@资源分享师 CN 211
+      - 法国 🇫🇷 youtube@资源分享师 FR 54
+      - 法国 🇫🇷 youtube@资源分享师 FR 61
+      - 法国 🇫🇷 youtube@资源分享师 FR 111
+      - 法国 🇫🇷 youtube@资源分享师 FR 136
+      - 法国 🇫🇷 youtube@资源分享师 FR 69
+      - 法国 🇫🇷 youtube@资源分享师 FR 129
+      - 韩国 🇰🇷 youtube@资源分享师 KR 191
+      - 韩国 🇰🇷 youtube@资源分享师 KR 244
+      - 法国 🇫🇷 youtube@资源分享师 FR 108
+      - 法国 🇫🇷 youtube@资源分享师 FR 114
+      - 法国 🇫🇷 youtube@资源分享师 FR 122
+      - 法国 🇫🇷 youtube@资源分享师 FR 156
+      - 法国 🇫🇷 youtube@资源分享师 FR 121
+      - 法国 🇫🇷 youtube@资源分享师 FR 83
+      - 法国 🇫🇷 youtube@资源分享师 FR 94
+      - 韩国 🇰🇷 youtube@资源分享师 KR 221
+      - 法国 🇫🇷 youtube@资源分享师 FR 52
+      - 法国 🇫🇷 youtube@资源分享师 FR 100
+      - 法国 🇫🇷 youtube@资源分享师 FR 161
+      - 法国 🇫🇷 youtube@资源分享师 FR 117
+      - 法国 🇫🇷 youtube@资源分享师 FR 134
+      - 法国 🇫🇷 youtube@资源分享师 FR 74
+      - 德国 🇩🇪 youtube@资源分享师 DE 93
+      - 日本 🇯🇵 youtube@资源分享师 JP 230
+      - 德国 🇩🇪 youtube@资源分享师 DE 113
+      - 德国 🇩🇪 youtube@资源分享师 DE 119
+      - 德国 🇩🇪 youtube@资源分享师 DE 155
+      - 德国 🇩🇪 youtube@资源分享师 DE 11
+      - 法国 🇫🇷 youtube@资源分享师 FR 15
+      - 法国 🇫🇷 youtube@资源分享师 FR 59
+      - 法国 🇫🇷 youtube@资源分享师 FR 130
+      - 法国 🇫🇷 youtube@资源分享师 FR 41
+      - 德国 🇩🇪 youtube@资源分享师 DE 243
+      - 英国 🇬🇧 youtube@资源分享师 GB 34
+      - 德国 🇩🇪 youtube@资源分享师 DE 32
+      - 德国 🇩🇪 youtube@资源分享师 DE 72
+      - 德国 🇩🇪 youtube@资源分享师 DE 56
+      - 德国 🇩🇪 youtube@资源分享师 DE 4
+      - 德国 🇩🇪 youtube@资源分享师 DE 51
+      - 德国 🇩🇪 youtube@资源分享师 DE 97
+      - 德国 🇩🇪 youtube@资源分享师 DE 9
+      - 德国 🇩🇪 youtube@资源分享师 DE 21
+      - 新加坡 🇸🇬 youtube@资源分享师 SG 137
+      - 法国 🇫🇷 youtube@资源分享师 FR 190
+      - 德国 🇩🇪 youtube@资源分享师 DE 252
+      - 德国 🇩🇪 youtube@资源分享师 DE 262
+      - 法国 🇫🇷 youtube@资源分享师 FR 126
+      - 法国 🇫🇷 youtube@资源分享师 FR 144
+      - 德国 🇩🇪 youtube@资源分享师 DE 256
+      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 148
+      - 韩国 🇰🇷 youtube@资源分享师 KR 269
+      - 德国 🇩🇪 youtube@资源分享师 DE 278
+      - 中国 🇨🇳 youtube@资源分享师 CN 209
+      - 德国 🇩🇪 youtube@资源分享师 DE 205
+      - 香港 🇭🇰 youtube@资源分享师 HK 273
+      - 香港 🇭🇰 youtube@资源分享师 HK 285
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - youtube@资源分享师 137
-      - 中国 🇨🇳 youtube@资源分享师 CN 141
-      - 印度 🇮🇳 youtube@资源分享师 IN 142
-      - 香港 🇭🇰 youtube@资源分享师 HK 133
-      - 香港 🇭🇰 youtube@资源分享师 HK 126
-      - 土耳其 🇹🇷 youtube@资源分享师 TR 147
-      - 瑞典 🇸🇪 youtube@资源分享师 SE 111
-      - 日本 🇯🇵 youtube@资源分享师 JP 139
-      - 日本 🇯🇵 youtube@资源分享师 JP 136
-      - 日本 🇯🇵 youtube@资源分享师 JP 135
-      - 日本 🇯🇵 youtube@资源分享师 JP 134
-      - 美国 🇺🇸 youtube@资源分享师 US 108
-      - 捷克 🇨🇿 youtube@资源分享师 CZ 112
-      - 韩国 🇰🇷 youtube@资源分享师 KR 99
-      - 韩国 🇰🇷 youtube@资源分享师 KR 98
-      - 韩国 🇰🇷 youtube@资源分享师 KR 97
-      - 韩国 🇰🇷 youtube@资源分享师 KR 96
-      - 韩国 🇰🇷 youtube@资源分享师 KR 95
-      - 韩国 🇰🇷 youtube@资源分享师 KR 94
-      - 韩国 🇰🇷 youtube@资源分享师 KR 93
-      - 韩国 🇰🇷 youtube@资源分享师 KR 113
-      - 韩国 🇰🇷 youtube@资源分享师 KR 110
-      - 韩国 🇰🇷 youtube@资源分享师 KR 109
-      - 韩国 🇰🇷 youtube@资源分享师 KR 104
-      - 韩国 🇰🇷 youtube@资源分享师 KR 103
-      - 韩国 🇰🇷 youtube@资源分享师 KR 102
-      - 韩国 🇰🇷 youtube@资源分享师 KR 101
-      - 韩国 🇰🇷 youtube@资源分享师 KR 100
-      - 法国 🇫🇷 youtube@资源分享师 FR 138
-      - 法国 🇫🇷 youtube@资源分享师 FR 131
-      - 法国 🇫🇷 youtube@资源分享师 FR 125
-      - 法国 🇫🇷 youtube@资源分享师 FR 124
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 149
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 146
-      - 德国 🇩🇪 youtube@资源分享师 DE 140
-      - 德国 🇩🇪 youtube@资源分享师 DE 132
-      - 德国 🇩🇪 youtube@资源分享师 DE 130
-      - 德国 🇩🇪 youtube@资源分享师 DE 129
-      - 德国 🇩🇪 youtube@资源分享师 DE 128
-      - 德国 🇩🇪 youtube@资源分享师 DE 127
-      - 德国 🇩🇪 youtube@资源分享师 DE 123
-      - 德国 🇩🇪 youtube@资源分享师 DE 107
-      - 德国 🇩🇪 youtube@资源分享师 DE 106
-      - 德国 🇩🇪 youtube@资源分享师 DE 105
+      - 日本 🇯🇵 youtube@资源分享师 JP 133
+      - 法国 🇫🇷 youtube@资源分享师 FR 90
+      - 法国 🇫🇷 youtube@资源分享师 FR 80
+      - 韩国 🇰🇷 youtube@资源分享师 KR 200
+      - 韩国 🇰🇷 youtube@资源分享师 KR 157
+      - 法国 🇫🇷 youtube@资源分享师 FR 64
+      - 韩国 🇰🇷 youtube@资源分享师 KR 185
+      - 法国 🇫🇷 youtube@资源分享师 FR 88
+      - 中国 🇨🇳 youtube@资源分享师 CN 211
+      - 法国 🇫🇷 youtube@资源分享师 FR 54
+      - 法国 🇫🇷 youtube@资源分享师 FR 61
+      - 法国 🇫🇷 youtube@资源分享师 FR 111
+      - 法国 🇫🇷 youtube@资源分享师 FR 136
+      - 法国 🇫🇷 youtube@资源分享师 FR 69
+      - 法国 🇫🇷 youtube@资源分享师 FR 129
+      - 韩国 🇰🇷 youtube@资源分享师 KR 191
+      - 韩国 🇰🇷 youtube@资源分享师 KR 244
+      - 法国 🇫🇷 youtube@资源分享师 FR 108
+      - 法国 🇫🇷 youtube@资源分享师 FR 114
+      - 法国 🇫🇷 youtube@资源分享师 FR 122
+      - 法国 🇫🇷 youtube@资源分享师 FR 156
+      - 法国 🇫🇷 youtube@资源分享师 FR 121
+      - 法国 🇫🇷 youtube@资源分享师 FR 83
+      - 法国 🇫🇷 youtube@资源分享师 FR 94
+      - 韩国 🇰🇷 youtube@资源分享师 KR 221
+      - 法国 🇫🇷 youtube@资源分享师 FR 52
+      - 法国 🇫🇷 youtube@资源分享师 FR 100
+      - 法国 🇫🇷 youtube@资源分享师 FR 161
+      - 法国 🇫🇷 youtube@资源分享师 FR 117
+      - 法国 🇫🇷 youtube@资源分享师 FR 134
+      - 法国 🇫🇷 youtube@资源分享师 FR 74
+      - 德国 🇩🇪 youtube@资源分享师 DE 93
+      - 日本 🇯🇵 youtube@资源分享师 JP 230
+      - 德国 🇩🇪 youtube@资源分享师 DE 113
+      - 德国 🇩🇪 youtube@资源分享师 DE 119
+      - 德国 🇩🇪 youtube@资源分享师 DE 155
+      - 德国 🇩🇪 youtube@资源分享师 DE 11
+      - 法国 🇫🇷 youtube@资源分享师 FR 15
+      - 法国 🇫🇷 youtube@资源分享师 FR 59
+      - 法国 🇫🇷 youtube@资源分享师 FR 130
+      - 法国 🇫🇷 youtube@资源分享师 FR 41
+      - 德国 🇩🇪 youtube@资源分享师 DE 243
+      - 英国 🇬🇧 youtube@资源分享师 GB 34
+      - 德国 🇩🇪 youtube@资源分享师 DE 32
+      - 德国 🇩🇪 youtube@资源分享师 DE 72
+      - 德国 🇩🇪 youtube@资源分享师 DE 56
+      - 德国 🇩🇪 youtube@资源分享师 DE 4
+      - 德国 🇩🇪 youtube@资源分享师 DE 51
+      - 德国 🇩🇪 youtube@资源分享师 DE 97
+      - 德国 🇩🇪 youtube@资源分享师 DE 9
+      - 德国 🇩🇪 youtube@资源分享师 DE 21
+      - 新加坡 🇸🇬 youtube@资源分享师 SG 137
+      - 法国 🇫🇷 youtube@资源分享师 FR 190
+      - 德国 🇩🇪 youtube@资源分享师 DE 252
+      - 德国 🇩🇪 youtube@资源分享师 DE 262
+      - 法国 🇫🇷 youtube@资源分享师 FR 126
+      - 法国 🇫🇷 youtube@资源分享师 FR 144
+      - 德国 🇩🇪 youtube@资源分享师 DE 256
+      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 148
+      - 韩国 🇰🇷 youtube@资源分享师 KR 269
+      - 德国 🇩🇪 youtube@资源分享师 DE 278
+      - 中国 🇨🇳 youtube@资源分享师 CN 209
+      - 德国 🇩🇪 youtube@资源分享师 DE 205
+      - 香港 🇭🇰 youtube@资源分享师 HK 273
+      - 香港 🇭🇰 youtube@资源分享师 HK 285
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -430,50 +598,71 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - youtube@资源分享师 137
-      - 中国 🇨🇳 youtube@资源分享师 CN 141
-      - 印度 🇮🇳 youtube@资源分享师 IN 142
-      - 香港 🇭🇰 youtube@资源分享师 HK 133
-      - 香港 🇭🇰 youtube@资源分享师 HK 126
-      - 土耳其 🇹🇷 youtube@资源分享师 TR 147
-      - 瑞典 🇸🇪 youtube@资源分享师 SE 111
-      - 日本 🇯🇵 youtube@资源分享师 JP 139
-      - 日本 🇯🇵 youtube@资源分享师 JP 136
-      - 日本 🇯🇵 youtube@资源分享师 JP 135
-      - 日本 🇯🇵 youtube@资源分享师 JP 134
-      - 美国 🇺🇸 youtube@资源分享师 US 108
-      - 捷克 🇨🇿 youtube@资源分享师 CZ 112
-      - 韩国 🇰🇷 youtube@资源分享师 KR 99
-      - 韩国 🇰🇷 youtube@资源分享师 KR 98
-      - 韩国 🇰🇷 youtube@资源分享师 KR 97
-      - 韩国 🇰🇷 youtube@资源分享师 KR 96
-      - 韩国 🇰🇷 youtube@资源分享师 KR 95
-      - 韩国 🇰🇷 youtube@资源分享师 KR 94
-      - 韩国 🇰🇷 youtube@资源分享师 KR 93
-      - 韩国 🇰🇷 youtube@资源分享师 KR 113
-      - 韩国 🇰🇷 youtube@资源分享师 KR 110
-      - 韩国 🇰🇷 youtube@资源分享师 KR 109
-      - 韩国 🇰🇷 youtube@资源分享师 KR 104
-      - 韩国 🇰🇷 youtube@资源分享师 KR 103
-      - 韩国 🇰🇷 youtube@资源分享师 KR 102
-      - 韩国 🇰🇷 youtube@资源分享师 KR 101
-      - 韩国 🇰🇷 youtube@资源分享师 KR 100
-      - 法国 🇫🇷 youtube@资源分享师 FR 138
-      - 法国 🇫🇷 youtube@资源分享师 FR 131
-      - 法国 🇫🇷 youtube@资源分享师 FR 125
-      - 法国 🇫🇷 youtube@资源分享师 FR 124
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 149
-      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 146
-      - 德国 🇩🇪 youtube@资源分享师 DE 140
-      - 德国 🇩🇪 youtube@资源分享师 DE 132
-      - 德国 🇩🇪 youtube@资源分享师 DE 130
-      - 德国 🇩🇪 youtube@资源分享师 DE 129
-      - 德国 🇩🇪 youtube@资源分享师 DE 128
-      - 德国 🇩🇪 youtube@资源分享师 DE 127
-      - 德国 🇩🇪 youtube@资源分享师 DE 123
-      - 德国 🇩🇪 youtube@资源分享师 DE 107
-      - 德国 🇩🇪 youtube@资源分享师 DE 106
-      - 德国 🇩🇪 youtube@资源分享师 DE 105
+      - 日本 🇯🇵 youtube@资源分享师 JP 133
+      - 法国 🇫🇷 youtube@资源分享师 FR 90
+      - 法国 🇫🇷 youtube@资源分享师 FR 80
+      - 韩国 🇰🇷 youtube@资源分享师 KR 200
+      - 韩国 🇰🇷 youtube@资源分享师 KR 157
+      - 法国 🇫🇷 youtube@资源分享师 FR 64
+      - 韩国 🇰🇷 youtube@资源分享师 KR 185
+      - 法国 🇫🇷 youtube@资源分享师 FR 88
+      - 中国 🇨🇳 youtube@资源分享师 CN 211
+      - 法国 🇫🇷 youtube@资源分享师 FR 54
+      - 法国 🇫🇷 youtube@资源分享师 FR 61
+      - 法国 🇫🇷 youtube@资源分享师 FR 111
+      - 法国 🇫🇷 youtube@资源分享师 FR 136
+      - 法国 🇫🇷 youtube@资源分享师 FR 69
+      - 法国 🇫🇷 youtube@资源分享师 FR 129
+      - 韩国 🇰🇷 youtube@资源分享师 KR 191
+      - 韩国 🇰🇷 youtube@资源分享师 KR 244
+      - 法国 🇫🇷 youtube@资源分享师 FR 108
+      - 法国 🇫🇷 youtube@资源分享师 FR 114
+      - 法国 🇫🇷 youtube@资源分享师 FR 122
+      - 法国 🇫🇷 youtube@资源分享师 FR 156
+      - 法国 🇫🇷 youtube@资源分享师 FR 121
+      - 法国 🇫🇷 youtube@资源分享师 FR 83
+      - 法国 🇫🇷 youtube@资源分享师 FR 94
+      - 韩国 🇰🇷 youtube@资源分享师 KR 221
+      - 法国 🇫🇷 youtube@资源分享师 FR 52
+      - 法国 🇫🇷 youtube@资源分享师 FR 100
+      - 法国 🇫🇷 youtube@资源分享师 FR 161
+      - 法国 🇫🇷 youtube@资源分享师 FR 117
+      - 法国 🇫🇷 youtube@资源分享师 FR 134
+      - 法国 🇫🇷 youtube@资源分享师 FR 74
+      - 德国 🇩🇪 youtube@资源分享师 DE 93
+      - 日本 🇯🇵 youtube@资源分享师 JP 230
+      - 德国 🇩🇪 youtube@资源分享师 DE 113
+      - 德国 🇩🇪 youtube@资源分享师 DE 119
+      - 德国 🇩🇪 youtube@资源分享师 DE 155
+      - 德国 🇩🇪 youtube@资源分享师 DE 11
+      - 法国 🇫🇷 youtube@资源分享师 FR 15
+      - 法国 🇫🇷 youtube@资源分享师 FR 59
+      - 法国 🇫🇷 youtube@资源分享师 FR 130
+      - 法国 🇫🇷 youtube@资源分享师 FR 41
+      - 德国 🇩🇪 youtube@资源分享师 DE 243
+      - 英国 🇬🇧 youtube@资源分享师 GB 34
+      - 德国 🇩🇪 youtube@资源分享师 DE 32
+      - 德国 🇩🇪 youtube@资源分享师 DE 72
+      - 德国 🇩🇪 youtube@资源分享师 DE 56
+      - 德国 🇩🇪 youtube@资源分享师 DE 4
+      - 德国 🇩🇪 youtube@资源分享师 DE 51
+      - 德国 🇩🇪 youtube@资源分享师 DE 97
+      - 德国 🇩🇪 youtube@资源分享师 DE 9
+      - 德国 🇩🇪 youtube@资源分享师 DE 21
+      - 新加坡 🇸🇬 youtube@资源分享师 SG 137
+      - 法国 🇫🇷 youtube@资源分享师 FR 190
+      - 德国 🇩🇪 youtube@资源分享师 DE 252
+      - 德国 🇩🇪 youtube@资源分享师 DE 262
+      - 法国 🇫🇷 youtube@资源分享师 FR 126
+      - 法国 🇫🇷 youtube@资源分享师 FR 144
+      - 德国 🇩🇪 youtube@资源分享师 DE 256
+      - 俄罗斯 🇷🇺 youtube@资源分享师 RU 148
+      - 韩国 🇰🇷 youtube@资源分享师 KR 269
+      - 德国 🇩🇪 youtube@资源分享师 DE 278
+      - 中国 🇨🇳 youtube@资源分享师 CN 209
+      - 德国 🇩🇪 youtube@资源分享师 DE 205
+      - 香港 🇭🇰 youtube@资源分享师 HK 273
+      - 香港 🇭🇰 youtube@资源分享师 HK 285
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
