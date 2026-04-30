@@ -5,13 +5,8 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"ss","name":"🇳🇱NL_11|19KB/s","server":"switcher-nick-croquet.freesocks.work","port":443,"cipher":"chacha20-ietf-poly1305","password":"wwzVn2ZnHfqYa6l8EWh3eY"}
-  - {"type":"ss","name":"🇺🇸US_31|58KB/s","server":"tinkered-pennies-puppies.freesocks.work","port":443,"cipher":"chacha20-ietf-poly1305","password":"hbGrpfvNrJsUmKmPbR3iY2"}
-  - {"type":"ss","name":"USSS-29|free-nodes","server":"tinkered-pennies-puppies.freesocks.work","port":443,"cipher":"chacha20-ietf-poly1305","password":"hbGrpfvNrJsUmKmPbR3iY2"}
-  - {"type":"ss","name":"GBSS-30|free-nodes","server":"chengbai02.ascwt179.com","port":13223,"cipher":"aes-128-gcm","password":"JVrsLLN1tkN8oXZO"}
-  - {"type":"ss","name":"香港+电讯盈科有限公司","server":"chengbai02.ascwt179.com","port":13223,"cipher":"aes-128-gcm","password":"JVrsLLN1tkN8oXZO"}
-  - {"type":"ss","name":"未知SS-25|free-nodes","server":"20.87.107.99","port":443,"cipher":"chacha20-ietf-poly1305","password":"akMKO9KXowxFcx5A"}
-  - {"type":"ss","name":"TWSS-07|free-nodes","server":"r3mrcg007147vhp.cybervena.com","port":50099,"cipher":"chacha20-ietf-poly1305","password":"7e731ec3-f8e1-43f6-92cf-3978d14705c4"}
+  - {"type":"trojan","name":"00-Trojan-jp-AI","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
+  - {"type":"trojan","name":"JPTROJAN-45|free-nodes","server":"jp2-8sb.6121999.dpdns.org","port":24534,"password":"e136d465-0558-43b9-b50c-b1f45d4cb2c2","udp":true,"skip-cert-verify":true,"sni":"jp2-8sb.6121999.dpdns.org","network":"tcp"}
   - {"type":"vless","name":"🇭🇰HK_1|261KB/s","server":"216.57.105.74","port":443,"uuid":"73c0a723-c0ab-4ad8-8f25-799b9bd54e36","skip-cert-verify":true,"network":"tcp","servername":"yahoo.com","tls":false,"udp":true}
   - {"type":"vless","name":"🇹🇼TW020|⬇️12MB/s","server":"125.227.219.98","port":6235,"uuid":"f6ddddaf-dfd6-4134-9dae-03b93b03d146","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"baidu.com","ws-opts":{"path":"/xxxxhttp","headers":{"host":"baidu.com"}}}
   - {"type":"vless","name":"DEVLESS-103|free-nodes","server":"finl9.keepsecured.net","port":443,"uuid":"b6ce8a51-19b9-4979-91ba-b4298c26d5fc","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision-udp443","servername":"finl9.keepsecured.net","tls":true,"udp":true}
@@ -31,21 +26,76 @@ proxies:
   - {"type":"vless","name":"未知VLESS-151|free-nodes","server":"ipv6s372.ccgfw.top","port":443,"uuid":"8f8ccdc5-fe99-38d7-a8a6-422f8c88ef0a","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"u712031u58f7ipv6s372.ccgfw.top","tls":true,"udp":true}
   - {"type":"vless","name":"未知VLESS-138|free-nodes","server":"s473.ccgfw.top","port":443,"uuid":"8f8ccdc5-fe99-38d7-a8a6-422f8c88ef0a","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"u712031uefc5s473.ccgfw.top","tls":true,"udp":true}
   - {"type":"vless","name":"未知VLESS-157|free-nodes","server":"s501.ccgfw.top","port":443,"uuid":"8f8ccdc5-fe99-38d7-a8a6-422f8c88ef0a","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"u712031u2c89s501.ccgfw.top","tls":true,"udp":true}
-  - {"type":"trojan","name":"00-Trojan-jp-AI","server":"jp.111000.cc.cd","port":443,"password":"6202b230-417c-4d8e-b624-0f71afa9c75d","udp":true,"skip-cert-verify":true,"sni":"sni.111000.dynv6.net","network":"ws","ws-opts":{"path":"/?ed=2560&proxyip=ip.111000.de5.net:443","headers":{"host":"sni.111000.dynv6.net"}}}
-  - {"type":"trojan","name":"JPTROJAN-45|free-nodes","server":"jp2-8sb.6121999.dpdns.org","port":24534,"password":"e136d465-0558-43b9-b50c-b1f45d4cb2c2","udp":true,"skip-cert-verify":true,"sni":"jp2-8sb.6121999.dpdns.org","network":"tcp"}
+  - {"type":"ss","name":"🇳🇱NL_11|19KB/s","server":"switcher-nick-croquet.freesocks.work","port":443,"cipher":"chacha20-ietf-poly1305","password":"wwzVn2ZnHfqYa6l8EWh3eY"}
+  - {"type":"ss","name":"🇺🇸US_31|58KB/s","server":"tinkered-pennies-puppies.freesocks.work","port":443,"cipher":"chacha20-ietf-poly1305","password":"hbGrpfvNrJsUmKmPbR3iY2"}
+  - {"type":"ss","name":"USSS-29|free-nodes","server":"tinkered-pennies-puppies.freesocks.work","port":443,"cipher":"chacha20-ietf-poly1305","password":"hbGrpfvNrJsUmKmPbR3iY2"}
+  - {"type":"ss","name":"GBSS-30|free-nodes","server":"chengbai02.ascwt179.com","port":13223,"cipher":"aes-128-gcm","password":"JVrsLLN1tkN8oXZO"}
+  - {"type":"ss","name":"香港+电讯盈科有限公司","server":"chengbai02.ascwt179.com","port":13223,"cipher":"aes-128-gcm","password":"JVrsLLN1tkN8oXZO"}
+  - {"type":"ss","name":"未知SS-25|free-nodes","server":"20.87.107.99","port":443,"cipher":"chacha20-ietf-poly1305","password":"akMKO9KXowxFcx5A"}
+  - {"type":"ss","name":"TWSS-07|free-nodes","server":"r3mrcg007147vhp.cybervena.com","port":50099,"cipher":"chacha20-ietf-poly1305","password":"7e731ec3-f8e1-43f6-92cf-3978d14705c4"}
+  - {"type":"ss","name":"🇸🇬⚡️️NZ新西兰","server":"za.peaceandlove2017.com","port":56732,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇳🇬⚡️️NG尼日利亚","server":"za.peaceandlove2017.com","port":17609,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇰🇷⚡️KR韩国","server":"za.peaceandlove2017.com","port":35230,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇱🇻⚡️️LV拉脱维亚|Disney","server":"za.peaceandlove2017.com","port":58179,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇰🇿⚡️️KZ哈萨克斯坦","server":"za.peaceandlove2017.com","port":22165,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇦🇿⚡️️AZ阿塞拜疆","server":"za.peaceandlove2017.com","port":19037,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇦🇱⚡️️AL阿尔巴尼亚|Disney","server":"za.peaceandlove2017.com","port":37268,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇵🇹⚡️️PT葡萄牙|Disney","server":"za.peaceandlove2017.com","port":40873,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇮🇪⚡️️IE爱尔兰|Disney","server":"za.peaceandlove2017.com","port":12227,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇫🇮️⚡️FI芬兰","server":"za.peaceandlove2017.com","port":14383,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇸🇰⚡️️SK斯洛伐克|Disney","server":"za.peaceandlove2017.com","port":24313,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇮🇸⚡️️IS冰岛","server":"za.peaceandlove2017.com","port":45556,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇺🇸⚡️️AM亚美尼亚|Disney","server":"za.peaceandlove2017.com","port":14497,"cipher":"2022-blake3-aes-128-gcm:ZTA0YmEwNjZhYzVkMmI0Yg==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇨🇭⚡️️CH瑞士|Disney","server":"za.peaceandlove2017.com","port":20261,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇳🇴⚡️️NO挪威","server":"za.peaceandlove2017.com","port":10054,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇺🇦⚡️️UA乌克兰","server":"za.peaceandlove2017.com","port":40862,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇧🇬⚡️️BG保加利亚","server":"za.peaceandlove2017.com","port":19253,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇸🇮⚡️SI斯洛文尼亚","server":"za.peaceandlove2017.com","port":20234,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇵🇱⚡️️PL波兰|Disney","server":"za.peaceandlove2017.com","port":46473,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇨🇿⚡️️CZ捷克","server":"za.peaceandlove2017.com","port":45128,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇬🇷⚡️️GR希腊","server":"za.peaceandlove2017.com","port":18236,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇪🇸⚡️️ES西班牙","server":"za.peaceandlove2017.com","port":27409,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇬🇧⚡️UK英国","server":"za.peaceandlove2017.com","port":49657,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇦🇹⚡️️AT奥地利|Disney","server":"za.peaceandlove2017.com","port":34333,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇺🇸⚡️US美国-01","server":"za.peaceandlove2017.com","port":16171,"cipher":"2022-blake3-aes-128-gcm:ZTA0YmEwNjZhYzVkMmI0Yg==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇺🇸⚡️US美国-02","server":"za.peaceandlove2017.com","port":23266,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇺🇸⚡️US美国-05","server":"za.peaceandlove2017.com","port":35515,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇧🇪⚡️️BE比利时|Disney","server":"za.peaceandlove2017.com","port":38240,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇺🇸️⚡️US美国-03","server":"za.peaceandlove2017.com","port":28107,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇩🇪⚡️️DE德国|Disney","server":"za.peaceandlove2017.com","port":45314,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇮🇹⚡️️IT意大利","server":"za.peaceandlove2017.com","port":22899,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇺🇸⚡️US美国-04","server":"za.peaceandlove2017.com","port":22440,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇮🇳⚡️IN印度","server":"za.peaceandlove2017.com","port":36571,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇻🇳⚡️VN越南","server":"za.peaceandlove2017.com","port":24909,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇲🇾⚡️️MY马来西亚","server":"za.peaceandlove2017.com","port":41431,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇯🇵⚡️️JP日本-04","server":"za.peaceandlove2017.com","port":13675,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇯🇵⚡️JP日本-02","server":"za.peaceandlove2017.com","port":45983,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇹🇼⚡️TW台湾-03","server":"za.peaceandlove2017.com","port":24521,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇯🇵⚡️JP日本-01","server":"za.peaceandlove2017.com","port":34075,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇯🇵⚡️JP日本-03","server":"za.peaceandlove2017.com","port":48082,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇸🇬⚡️SG新加坡-02|Disney","server":"za.peaceandlove2017.com","port":22875,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇸🇬⚡️SG新加坡-03","server":"za.peaceandlove2017.com","port":28269,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇹🇼️⚡️TW台湾-02","server":"za.peaceandlove2017.com","port":25417,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️️HK香港-03|Disney","server":"za.peaceandlove2017.com","port":42054,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️HK香港-11","server":"za.peaceandlove2017.com","port":23834,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️HK香港-07","server":"za.peaceandlove2017.com","port":39648,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️️HK香港-05|Disney","server":"za.peaceandlove2017.com","port":42056,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️HK香港-10","server":"za.peaceandlove2017.com","port":22191,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️HK香港-12","server":"za.peaceandlove2017.com","port":10518,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️️HK香港-01|Disney","server":"za.peaceandlove2017.com","port":42052,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️️HK香港-06|Disney","server":"za.peaceandlove2017.com","port":23479,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️HK香港-08","server":"za.peaceandlove2017.com","port":14987,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️️HK香港-04|Disney","server":"za.peaceandlove2017.com","port":42055,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️️HK香港-02|Disney","server":"za.peaceandlove2017.com","port":42053,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
+  - {"type":"ss","name":"🇭🇰⚡️HK香港-09","server":"za.peaceandlove2017.com","port":10228,"cipher":"2022-blake3-aes-128-gcm:YTQ3YmEwMTQ5NDUxYzAzOA==","password":"ZDZjYmNjNDUtOGRhZS00MQ=="}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇳🇱NL_11|19KB/s
-      - 🇺🇸US_31|58KB/s
-      - USSS-29|free-nodes
-      - GBSS-30|free-nodes
-      - 香港+电讯盈科有限公司
-      - 未知SS-25|free-nodes
-      - TWSS-07|free-nodes
+      - 00-Trojan-jp-AI
+      - JPTROJAN-45|free-nodes
       - 🇭🇰HK_1|261KB/s
       - 🇹🇼TW020|⬇️12MB/s
       - DEVLESS-103|free-nodes
@@ -65,21 +115,76 @@ proxy-groups:
       - 未知VLESS-151|free-nodes
       - 未知VLESS-138|free-nodes
       - 未知VLESS-157|free-nodes
-      - 00-Trojan-jp-AI
-      - JPTROJAN-45|free-nodes
+      - 🇳🇱NL_11|19KB/s
+      - 🇺🇸US_31|58KB/s
+      - USSS-29|free-nodes
+      - GBSS-30|free-nodes
+      - 香港+电讯盈科有限公司
+      - 未知SS-25|free-nodes
+      - TWSS-07|free-nodes
+      - 🇸🇬⚡️️NZ新西兰
+      - 🇳🇬⚡️️NG尼日利亚
+      - 🇰🇷⚡️KR韩国
+      - 🇱🇻⚡️️LV拉脱维亚|Disney
+      - 🇰🇿⚡️️KZ哈萨克斯坦
+      - 🇦🇿⚡️️AZ阿塞拜疆
+      - 🇦🇱⚡️️AL阿尔巴尼亚|Disney
+      - 🇵🇹⚡️️PT葡萄牙|Disney
+      - 🇮🇪⚡️️IE爱尔兰|Disney
+      - 🇫🇮️⚡️FI芬兰
+      - 🇸🇰⚡️️SK斯洛伐克|Disney
+      - 🇮🇸⚡️️IS冰岛
+      - 🇺🇸⚡️️AM亚美尼亚|Disney
+      - 🇨🇭⚡️️CH瑞士|Disney
+      - 🇳🇴⚡️️NO挪威
+      - 🇺🇦⚡️️UA乌克兰
+      - 🇧🇬⚡️️BG保加利亚
+      - 🇸🇮⚡️SI斯洛文尼亚
+      - 🇵🇱⚡️️PL波兰|Disney
+      - 🇨🇿⚡️️CZ捷克
+      - 🇬🇷⚡️️GR希腊
+      - 🇪🇸⚡️️ES西班牙
+      - 🇬🇧⚡️UK英国
+      - 🇦🇹⚡️️AT奥地利|Disney
+      - 🇺🇸⚡️US美国-01
+      - 🇺🇸⚡️US美国-02
+      - 🇺🇸⚡️US美国-05
+      - 🇧🇪⚡️️BE比利时|Disney
+      - 🇺🇸️⚡️US美国-03
+      - 🇩🇪⚡️️DE德国|Disney
+      - 🇮🇹⚡️️IT意大利
+      - 🇺🇸⚡️US美国-04
+      - 🇮🇳⚡️IN印度
+      - 🇻🇳⚡️VN越南
+      - 🇲🇾⚡️️MY马来西亚
+      - 🇯🇵⚡️️JP日本-04
+      - 🇯🇵⚡️JP日本-02
+      - 🇹🇼⚡️TW台湾-03
+      - 🇯🇵⚡️JP日本-01
+      - 🇯🇵⚡️JP日本-03
+      - 🇸🇬⚡️SG新加坡-02|Disney
+      - 🇸🇬⚡️SG新加坡-03
+      - 🇹🇼️⚡️TW台湾-02
+      - 🇭🇰⚡️️HK香港-03|Disney
+      - 🇭🇰⚡️HK香港-11
+      - 🇭🇰⚡️HK香港-07
+      - 🇭🇰⚡️️HK香港-05|Disney
+      - 🇭🇰⚡️HK香港-10
+      - 🇭🇰⚡️HK香港-12
+      - 🇭🇰⚡️️HK香港-01|Disney
+      - 🇭🇰⚡️️HK香港-06|Disney
+      - 🇭🇰⚡️HK香港-08
+      - 🇭🇰⚡️️HK香港-04|Disney
+      - 🇭🇰⚡️️HK香港-02|Disney
+      - 🇭🇰⚡️HK香港-09
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇳🇱NL_11|19KB/s
-      - 🇺🇸US_31|58KB/s
-      - USSS-29|free-nodes
-      - GBSS-30|free-nodes
-      - 香港+电讯盈科有限公司
-      - 未知SS-25|free-nodes
-      - TWSS-07|free-nodes
+      - 00-Trojan-jp-AI
+      - JPTROJAN-45|free-nodes
       - 🇭🇰HK_1|261KB/s
       - 🇹🇼TW020|⬇️12MB/s
       - DEVLESS-103|free-nodes
@@ -99,21 +204,76 @@ proxy-groups:
       - 未知VLESS-151|free-nodes
       - 未知VLESS-138|free-nodes
       - 未知VLESS-157|free-nodes
-      - 00-Trojan-jp-AI
-      - JPTROJAN-45|free-nodes
+      - 🇳🇱NL_11|19KB/s
+      - 🇺🇸US_31|58KB/s
+      - USSS-29|free-nodes
+      - GBSS-30|free-nodes
+      - 香港+电讯盈科有限公司
+      - 未知SS-25|free-nodes
+      - TWSS-07|free-nodes
+      - 🇸🇬⚡️️NZ新西兰
+      - 🇳🇬⚡️️NG尼日利亚
+      - 🇰🇷⚡️KR韩国
+      - 🇱🇻⚡️️LV拉脱维亚|Disney
+      - 🇰🇿⚡️️KZ哈萨克斯坦
+      - 🇦🇿⚡️️AZ阿塞拜疆
+      - 🇦🇱⚡️️AL阿尔巴尼亚|Disney
+      - 🇵🇹⚡️️PT葡萄牙|Disney
+      - 🇮🇪⚡️️IE爱尔兰|Disney
+      - 🇫🇮️⚡️FI芬兰
+      - 🇸🇰⚡️️SK斯洛伐克|Disney
+      - 🇮🇸⚡️️IS冰岛
+      - 🇺🇸⚡️️AM亚美尼亚|Disney
+      - 🇨🇭⚡️️CH瑞士|Disney
+      - 🇳🇴⚡️️NO挪威
+      - 🇺🇦⚡️️UA乌克兰
+      - 🇧🇬⚡️️BG保加利亚
+      - 🇸🇮⚡️SI斯洛文尼亚
+      - 🇵🇱⚡️️PL波兰|Disney
+      - 🇨🇿⚡️️CZ捷克
+      - 🇬🇷⚡️️GR希腊
+      - 🇪🇸⚡️️ES西班牙
+      - 🇬🇧⚡️UK英国
+      - 🇦🇹⚡️️AT奥地利|Disney
+      - 🇺🇸⚡️US美国-01
+      - 🇺🇸⚡️US美国-02
+      - 🇺🇸⚡️US美国-05
+      - 🇧🇪⚡️️BE比利时|Disney
+      - 🇺🇸️⚡️US美国-03
+      - 🇩🇪⚡️️DE德国|Disney
+      - 🇮🇹⚡️️IT意大利
+      - 🇺🇸⚡️US美国-04
+      - 🇮🇳⚡️IN印度
+      - 🇻🇳⚡️VN越南
+      - 🇲🇾⚡️️MY马来西亚
+      - 🇯🇵⚡️️JP日本-04
+      - 🇯🇵⚡️JP日本-02
+      - 🇹🇼⚡️TW台湾-03
+      - 🇯🇵⚡️JP日本-01
+      - 🇯🇵⚡️JP日本-03
+      - 🇸🇬⚡️SG新加坡-02|Disney
+      - 🇸🇬⚡️SG新加坡-03
+      - 🇹🇼️⚡️TW台湾-02
+      - 🇭🇰⚡️️HK香港-03|Disney
+      - 🇭🇰⚡️HK香港-11
+      - 🇭🇰⚡️HK香港-07
+      - 🇭🇰⚡️️HK香港-05|Disney
+      - 🇭🇰⚡️HK香港-10
+      - 🇭🇰⚡️HK香港-12
+      - 🇭🇰⚡️️HK香港-01|Disney
+      - 🇭🇰⚡️️HK香港-06|Disney
+      - 🇭🇰⚡️HK香港-08
+      - 🇭🇰⚡️️HK香港-04|Disney
+      - 🇭🇰⚡️️HK香港-02|Disney
+      - 🇭🇰⚡️HK香港-09
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇳🇱NL_11|19KB/s
-      - 🇺🇸US_31|58KB/s
-      - USSS-29|free-nodes
-      - GBSS-30|free-nodes
-      - 香港+电讯盈科有限公司
-      - 未知SS-25|free-nodes
-      - TWSS-07|free-nodes
+      - 00-Trojan-jp-AI
+      - JPTROJAN-45|free-nodes
       - 🇭🇰HK_1|261KB/s
       - 🇹🇼TW020|⬇️12MB/s
       - DEVLESS-103|free-nodes
@@ -133,20 +293,75 @@ proxy-groups:
       - 未知VLESS-151|free-nodes
       - 未知VLESS-138|free-nodes
       - 未知VLESS-157|free-nodes
-      - 00-Trojan-jp-AI
-      - JPTROJAN-45|free-nodes
+      - 🇳🇱NL_11|19KB/s
+      - 🇺🇸US_31|58KB/s
+      - USSS-29|free-nodes
+      - GBSS-30|free-nodes
+      - 香港+电讯盈科有限公司
+      - 未知SS-25|free-nodes
+      - TWSS-07|free-nodes
+      - 🇸🇬⚡️️NZ新西兰
+      - 🇳🇬⚡️️NG尼日利亚
+      - 🇰🇷⚡️KR韩国
+      - 🇱🇻⚡️️LV拉脱维亚|Disney
+      - 🇰🇿⚡️️KZ哈萨克斯坦
+      - 🇦🇿⚡️️AZ阿塞拜疆
+      - 🇦🇱⚡️️AL阿尔巴尼亚|Disney
+      - 🇵🇹⚡️️PT葡萄牙|Disney
+      - 🇮🇪⚡️️IE爱尔兰|Disney
+      - 🇫🇮️⚡️FI芬兰
+      - 🇸🇰⚡️️SK斯洛伐克|Disney
+      - 🇮🇸⚡️️IS冰岛
+      - 🇺🇸⚡️️AM亚美尼亚|Disney
+      - 🇨🇭⚡️️CH瑞士|Disney
+      - 🇳🇴⚡️️NO挪威
+      - 🇺🇦⚡️️UA乌克兰
+      - 🇧🇬⚡️️BG保加利亚
+      - 🇸🇮⚡️SI斯洛文尼亚
+      - 🇵🇱⚡️️PL波兰|Disney
+      - 🇨🇿⚡️️CZ捷克
+      - 🇬🇷⚡️️GR希腊
+      - 🇪🇸⚡️️ES西班牙
+      - 🇬🇧⚡️UK英国
+      - 🇦🇹⚡️️AT奥地利|Disney
+      - 🇺🇸⚡️US美国-01
+      - 🇺🇸⚡️US美国-02
+      - 🇺🇸⚡️US美国-05
+      - 🇧🇪⚡️️BE比利时|Disney
+      - 🇺🇸️⚡️US美国-03
+      - 🇩🇪⚡️️DE德国|Disney
+      - 🇮🇹⚡️️IT意大利
+      - 🇺🇸⚡️US美国-04
+      - 🇮🇳⚡️IN印度
+      - 🇻🇳⚡️VN越南
+      - 🇲🇾⚡️️MY马来西亚
+      - 🇯🇵⚡️️JP日本-04
+      - 🇯🇵⚡️JP日本-02
+      - 🇹🇼⚡️TW台湾-03
+      - 🇯🇵⚡️JP日本-01
+      - 🇯🇵⚡️JP日本-03
+      - 🇸🇬⚡️SG新加坡-02|Disney
+      - 🇸🇬⚡️SG新加坡-03
+      - 🇹🇼️⚡️TW台湾-02
+      - 🇭🇰⚡️️HK香港-03|Disney
+      - 🇭🇰⚡️HK香港-11
+      - 🇭🇰⚡️HK香港-07
+      - 🇭🇰⚡️️HK香港-05|Disney
+      - 🇭🇰⚡️HK香港-10
+      - 🇭🇰⚡️HK香港-12
+      - 🇭🇰⚡️️HK香港-01|Disney
+      - 🇭🇰⚡️️HK香港-06|Disney
+      - 🇭🇰⚡️HK香港-08
+      - 🇭🇰⚡️️HK香港-04|Disney
+      - 🇭🇰⚡️️HK香港-02|Disney
+      - 🇭🇰⚡️HK香港-09
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇳🇱NL_11|19KB/s
-      - 🇺🇸US_31|58KB/s
-      - USSS-29|free-nodes
-      - GBSS-30|free-nodes
-      - 香港+电讯盈科有限公司
-      - 未知SS-25|free-nodes
-      - TWSS-07|free-nodes
+      - 00-Trojan-jp-AI
+      - JPTROJAN-45|free-nodes
       - 🇭🇰HK_1|261KB/s
       - 🇹🇼TW020|⬇️12MB/s
       - DEVLESS-103|free-nodes
@@ -166,20 +381,75 @@ proxy-groups:
       - 未知VLESS-151|free-nodes
       - 未知VLESS-138|free-nodes
       - 未知VLESS-157|free-nodes
-      - 00-Trojan-jp-AI
-      - JPTROJAN-45|free-nodes
+      - 🇳🇱NL_11|19KB/s
+      - 🇺🇸US_31|58KB/s
+      - USSS-29|free-nodes
+      - GBSS-30|free-nodes
+      - 香港+电讯盈科有限公司
+      - 未知SS-25|free-nodes
+      - TWSS-07|free-nodes
+      - 🇸🇬⚡️️NZ新西兰
+      - 🇳🇬⚡️️NG尼日利亚
+      - 🇰🇷⚡️KR韩国
+      - 🇱🇻⚡️️LV拉脱维亚|Disney
+      - 🇰🇿⚡️️KZ哈萨克斯坦
+      - 🇦🇿⚡️️AZ阿塞拜疆
+      - 🇦🇱⚡️️AL阿尔巴尼亚|Disney
+      - 🇵🇹⚡️️PT葡萄牙|Disney
+      - 🇮🇪⚡️️IE爱尔兰|Disney
+      - 🇫🇮️⚡️FI芬兰
+      - 🇸🇰⚡️️SK斯洛伐克|Disney
+      - 🇮🇸⚡️️IS冰岛
+      - 🇺🇸⚡️️AM亚美尼亚|Disney
+      - 🇨🇭⚡️️CH瑞士|Disney
+      - 🇳🇴⚡️️NO挪威
+      - 🇺🇦⚡️️UA乌克兰
+      - 🇧🇬⚡️️BG保加利亚
+      - 🇸🇮⚡️SI斯洛文尼亚
+      - 🇵🇱⚡️️PL波兰|Disney
+      - 🇨🇿⚡️️CZ捷克
+      - 🇬🇷⚡️️GR希腊
+      - 🇪🇸⚡️️ES西班牙
+      - 🇬🇧⚡️UK英国
+      - 🇦🇹⚡️️AT奥地利|Disney
+      - 🇺🇸⚡️US美国-01
+      - 🇺🇸⚡️US美国-02
+      - 🇺🇸⚡️US美国-05
+      - 🇧🇪⚡️️BE比利时|Disney
+      - 🇺🇸️⚡️US美国-03
+      - 🇩🇪⚡️️DE德国|Disney
+      - 🇮🇹⚡️️IT意大利
+      - 🇺🇸⚡️US美国-04
+      - 🇮🇳⚡️IN印度
+      - 🇻🇳⚡️VN越南
+      - 🇲🇾⚡️️MY马来西亚
+      - 🇯🇵⚡️️JP日本-04
+      - 🇯🇵⚡️JP日本-02
+      - 🇹🇼⚡️TW台湾-03
+      - 🇯🇵⚡️JP日本-01
+      - 🇯🇵⚡️JP日本-03
+      - 🇸🇬⚡️SG新加坡-02|Disney
+      - 🇸🇬⚡️SG新加坡-03
+      - 🇹🇼️⚡️TW台湾-02
+      - 🇭🇰⚡️️HK香港-03|Disney
+      - 🇭🇰⚡️HK香港-11
+      - 🇭🇰⚡️HK香港-07
+      - 🇭🇰⚡️️HK香港-05|Disney
+      - 🇭🇰⚡️HK香港-10
+      - 🇭🇰⚡️HK香港-12
+      - 🇭🇰⚡️️HK香港-01|Disney
+      - 🇭🇰⚡️️HK香港-06|Disney
+      - 🇭🇰⚡️HK香港-08
+      - 🇭🇰⚡️️HK香港-04|Disney
+      - 🇭🇰⚡️️HK香港-02|Disney
+      - 🇭🇰⚡️HK香港-09
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇳🇱NL_11|19KB/s
-      - 🇺🇸US_31|58KB/s
-      - USSS-29|free-nodes
-      - GBSS-30|free-nodes
-      - 香港+电讯盈科有限公司
-      - 未知SS-25|free-nodes
-      - TWSS-07|free-nodes
+      - 00-Trojan-jp-AI
+      - JPTROJAN-45|free-nodes
       - 🇭🇰HK_1|261KB/s
       - 🇹🇼TW020|⬇️12MB/s
       - DEVLESS-103|free-nodes
@@ -199,20 +469,75 @@ proxy-groups:
       - 未知VLESS-151|free-nodes
       - 未知VLESS-138|free-nodes
       - 未知VLESS-157|free-nodes
-      - 00-Trojan-jp-AI
-      - JPTROJAN-45|free-nodes
+      - 🇳🇱NL_11|19KB/s
+      - 🇺🇸US_31|58KB/s
+      - USSS-29|free-nodes
+      - GBSS-30|free-nodes
+      - 香港+电讯盈科有限公司
+      - 未知SS-25|free-nodes
+      - TWSS-07|free-nodes
+      - 🇸🇬⚡️️NZ新西兰
+      - 🇳🇬⚡️️NG尼日利亚
+      - 🇰🇷⚡️KR韩国
+      - 🇱🇻⚡️️LV拉脱维亚|Disney
+      - 🇰🇿⚡️️KZ哈萨克斯坦
+      - 🇦🇿⚡️️AZ阿塞拜疆
+      - 🇦🇱⚡️️AL阿尔巴尼亚|Disney
+      - 🇵🇹⚡️️PT葡萄牙|Disney
+      - 🇮🇪⚡️️IE爱尔兰|Disney
+      - 🇫🇮️⚡️FI芬兰
+      - 🇸🇰⚡️️SK斯洛伐克|Disney
+      - 🇮🇸⚡️️IS冰岛
+      - 🇺🇸⚡️️AM亚美尼亚|Disney
+      - 🇨🇭⚡️️CH瑞士|Disney
+      - 🇳🇴⚡️️NO挪威
+      - 🇺🇦⚡️️UA乌克兰
+      - 🇧🇬⚡️️BG保加利亚
+      - 🇸🇮⚡️SI斯洛文尼亚
+      - 🇵🇱⚡️️PL波兰|Disney
+      - 🇨🇿⚡️️CZ捷克
+      - 🇬🇷⚡️️GR希腊
+      - 🇪🇸⚡️️ES西班牙
+      - 🇬🇧⚡️UK英国
+      - 🇦🇹⚡️️AT奥地利|Disney
+      - 🇺🇸⚡️US美国-01
+      - 🇺🇸⚡️US美国-02
+      - 🇺🇸⚡️US美国-05
+      - 🇧🇪⚡️️BE比利时|Disney
+      - 🇺🇸️⚡️US美国-03
+      - 🇩🇪⚡️️DE德国|Disney
+      - 🇮🇹⚡️️IT意大利
+      - 🇺🇸⚡️US美国-04
+      - 🇮🇳⚡️IN印度
+      - 🇻🇳⚡️VN越南
+      - 🇲🇾⚡️️MY马来西亚
+      - 🇯🇵⚡️️JP日本-04
+      - 🇯🇵⚡️JP日本-02
+      - 🇹🇼⚡️TW台湾-03
+      - 🇯🇵⚡️JP日本-01
+      - 🇯🇵⚡️JP日本-03
+      - 🇸🇬⚡️SG新加坡-02|Disney
+      - 🇸🇬⚡️SG新加坡-03
+      - 🇹🇼️⚡️TW台湾-02
+      - 🇭🇰⚡️️HK香港-03|Disney
+      - 🇭🇰⚡️HK香港-11
+      - 🇭🇰⚡️HK香港-07
+      - 🇭🇰⚡️️HK香港-05|Disney
+      - 🇭🇰⚡️HK香港-10
+      - 🇭🇰⚡️HK香港-12
+      - 🇭🇰⚡️️HK香港-01|Disney
+      - 🇭🇰⚡️️HK香港-06|Disney
+      - 🇭🇰⚡️HK香港-08
+      - 🇭🇰⚡️️HK香港-04|Disney
+      - 🇭🇰⚡️️HK香港-02|Disney
+      - 🇭🇰⚡️HK香港-09
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇳🇱NL_11|19KB/s
-      - 🇺🇸US_31|58KB/s
-      - USSS-29|free-nodes
-      - GBSS-30|free-nodes
-      - 香港+电讯盈科有限公司
-      - 未知SS-25|free-nodes
-      - TWSS-07|free-nodes
+      - 00-Trojan-jp-AI
+      - JPTROJAN-45|free-nodes
       - 🇭🇰HK_1|261KB/s
       - 🇹🇼TW020|⬇️12MB/s
       - DEVLESS-103|free-nodes
@@ -232,8 +557,68 @@ proxy-groups:
       - 未知VLESS-151|free-nodes
       - 未知VLESS-138|free-nodes
       - 未知VLESS-157|free-nodes
-      - 00-Trojan-jp-AI
-      - JPTROJAN-45|free-nodes
+      - 🇳🇱NL_11|19KB/s
+      - 🇺🇸US_31|58KB/s
+      - USSS-29|free-nodes
+      - GBSS-30|free-nodes
+      - 香港+电讯盈科有限公司
+      - 未知SS-25|free-nodes
+      - TWSS-07|free-nodes
+      - 🇸🇬⚡️️NZ新西兰
+      - 🇳🇬⚡️️NG尼日利亚
+      - 🇰🇷⚡️KR韩国
+      - 🇱🇻⚡️️LV拉脱维亚|Disney
+      - 🇰🇿⚡️️KZ哈萨克斯坦
+      - 🇦🇿⚡️️AZ阿塞拜疆
+      - 🇦🇱⚡️️AL阿尔巴尼亚|Disney
+      - 🇵🇹⚡️️PT葡萄牙|Disney
+      - 🇮🇪⚡️️IE爱尔兰|Disney
+      - 🇫🇮️⚡️FI芬兰
+      - 🇸🇰⚡️️SK斯洛伐克|Disney
+      - 🇮🇸⚡️️IS冰岛
+      - 🇺🇸⚡️️AM亚美尼亚|Disney
+      - 🇨🇭⚡️️CH瑞士|Disney
+      - 🇳🇴⚡️️NO挪威
+      - 🇺🇦⚡️️UA乌克兰
+      - 🇧🇬⚡️️BG保加利亚
+      - 🇸🇮⚡️SI斯洛文尼亚
+      - 🇵🇱⚡️️PL波兰|Disney
+      - 🇨🇿⚡️️CZ捷克
+      - 🇬🇷⚡️️GR希腊
+      - 🇪🇸⚡️️ES西班牙
+      - 🇬🇧⚡️UK英国
+      - 🇦🇹⚡️️AT奥地利|Disney
+      - 🇺🇸⚡️US美国-01
+      - 🇺🇸⚡️US美国-02
+      - 🇺🇸⚡️US美国-05
+      - 🇧🇪⚡️️BE比利时|Disney
+      - 🇺🇸️⚡️US美国-03
+      - 🇩🇪⚡️️DE德国|Disney
+      - 🇮🇹⚡️️IT意大利
+      - 🇺🇸⚡️US美国-04
+      - 🇮🇳⚡️IN印度
+      - 🇻🇳⚡️VN越南
+      - 🇲🇾⚡️️MY马来西亚
+      - 🇯🇵⚡️️JP日本-04
+      - 🇯🇵⚡️JP日本-02
+      - 🇹🇼⚡️TW台湾-03
+      - 🇯🇵⚡️JP日本-01
+      - 🇯🇵⚡️JP日本-03
+      - 🇸🇬⚡️SG新加坡-02|Disney
+      - 🇸🇬⚡️SG新加坡-03
+      - 🇹🇼️⚡️TW台湾-02
+      - 🇭🇰⚡️️HK香港-03|Disney
+      - 🇭🇰⚡️HK香港-11
+      - 🇭🇰⚡️HK香港-07
+      - 🇭🇰⚡️️HK香港-05|Disney
+      - 🇭🇰⚡️HK香港-10
+      - 🇭🇰⚡️HK香港-12
+      - 🇭🇰⚡️️HK香港-01|Disney
+      - 🇭🇰⚡️️HK香港-06|Disney
+      - 🇭🇰⚡️HK香港-08
+      - 🇭🇰⚡️️HK香港-04|Disney
+      - 🇭🇰⚡️️HK香港-02|Disney
+      - 🇭🇰⚡️HK香港-09
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -256,13 +641,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇳🇱NL_11|19KB/s
-      - 🇺🇸US_31|58KB/s
-      - USSS-29|free-nodes
-      - GBSS-30|free-nodes
-      - 香港+电讯盈科有限公司
-      - 未知SS-25|free-nodes
-      - TWSS-07|free-nodes
+      - 00-Trojan-jp-AI
+      - JPTROJAN-45|free-nodes
       - 🇭🇰HK_1|261KB/s
       - 🇹🇼TW020|⬇️12MB/s
       - DEVLESS-103|free-nodes
@@ -282,8 +662,68 @@ proxy-groups:
       - 未知VLESS-151|free-nodes
       - 未知VLESS-138|free-nodes
       - 未知VLESS-157|free-nodes
-      - 00-Trojan-jp-AI
-      - JPTROJAN-45|free-nodes
+      - 🇳🇱NL_11|19KB/s
+      - 🇺🇸US_31|58KB/s
+      - USSS-29|free-nodes
+      - GBSS-30|free-nodes
+      - 香港+电讯盈科有限公司
+      - 未知SS-25|free-nodes
+      - TWSS-07|free-nodes
+      - 🇸🇬⚡️️NZ新西兰
+      - 🇳🇬⚡️️NG尼日利亚
+      - 🇰🇷⚡️KR韩国
+      - 🇱🇻⚡️️LV拉脱维亚|Disney
+      - 🇰🇿⚡️️KZ哈萨克斯坦
+      - 🇦🇿⚡️️AZ阿塞拜疆
+      - 🇦🇱⚡️️AL阿尔巴尼亚|Disney
+      - 🇵🇹⚡️️PT葡萄牙|Disney
+      - 🇮🇪⚡️️IE爱尔兰|Disney
+      - 🇫🇮️⚡️FI芬兰
+      - 🇸🇰⚡️️SK斯洛伐克|Disney
+      - 🇮🇸⚡️️IS冰岛
+      - 🇺🇸⚡️️AM亚美尼亚|Disney
+      - 🇨🇭⚡️️CH瑞士|Disney
+      - 🇳🇴⚡️️NO挪威
+      - 🇺🇦⚡️️UA乌克兰
+      - 🇧🇬⚡️️BG保加利亚
+      - 🇸🇮⚡️SI斯洛文尼亚
+      - 🇵🇱⚡️️PL波兰|Disney
+      - 🇨🇿⚡️️CZ捷克
+      - 🇬🇷⚡️️GR希腊
+      - 🇪🇸⚡️️ES西班牙
+      - 🇬🇧⚡️UK英国
+      - 🇦🇹⚡️️AT奥地利|Disney
+      - 🇺🇸⚡️US美国-01
+      - 🇺🇸⚡️US美国-02
+      - 🇺🇸⚡️US美国-05
+      - 🇧🇪⚡️️BE比利时|Disney
+      - 🇺🇸️⚡️US美国-03
+      - 🇩🇪⚡️️DE德国|Disney
+      - 🇮🇹⚡️️IT意大利
+      - 🇺🇸⚡️US美国-04
+      - 🇮🇳⚡️IN印度
+      - 🇻🇳⚡️VN越南
+      - 🇲🇾⚡️️MY马来西亚
+      - 🇯🇵⚡️️JP日本-04
+      - 🇯🇵⚡️JP日本-02
+      - 🇹🇼⚡️TW台湾-03
+      - 🇯🇵⚡️JP日本-01
+      - 🇯🇵⚡️JP日本-03
+      - 🇸🇬⚡️SG新加坡-02|Disney
+      - 🇸🇬⚡️SG新加坡-03
+      - 🇹🇼️⚡️TW台湾-02
+      - 🇭🇰⚡️️HK香港-03|Disney
+      - 🇭🇰⚡️HK香港-11
+      - 🇭🇰⚡️HK香港-07
+      - 🇭🇰⚡️️HK香港-05|Disney
+      - 🇭🇰⚡️HK香港-10
+      - 🇭🇰⚡️HK香港-12
+      - 🇭🇰⚡️️HK香港-01|Disney
+      - 🇭🇰⚡️️HK香港-06|Disney
+      - 🇭🇰⚡️HK香港-08
+      - 🇭🇰⚡️️HK香港-04|Disney
+      - 🇭🇰⚡️️HK香港-02|Disney
+      - 🇭🇰⚡️HK香港-09
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
