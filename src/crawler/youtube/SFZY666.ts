@@ -15,8 +15,8 @@ export class SFZY666 extends Crawler {
 
     // 获取最新视频id
     const video = vlr.data.items?.find((item) => {
-      const clues = ["免费科学上网", "免费节点", "免费订阅"];
-      return clues.some((clue) => item?.snippet?.title?.includes(clue));
+      const title = item?.snippet?.title;
+      return title && title.length > 0;
     });
     const videoId = video?.id?.videoId;
     if (!videoId) return;
