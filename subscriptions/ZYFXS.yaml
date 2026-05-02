@@ -5,115 +5,167 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 新加坡 youtube@资源分享师 SG 6, server: svip-sg.xiaobaivpn.icu, port: 28814, type: trojan, password: 34cfd01e-2dee-401e-ba27-713e313554cd, sni: svip-sg.xiaobaivpn.icu, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 14, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 16, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 17, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 23, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国 youtube@资源分享师 GB 24, server: 82.38.31.217, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 25, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 27, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国 youtube@资源分享师 GB 29, server: 82.38.31.61, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
-  - {name: 英国 youtube@资源分享师 GB 33, server: 82.38.31.146, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
-  - {name: 英国 youtube@资源分享师 GB 38, server: 82.38.31.214, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
-  - {name: 英国 youtube@资源分享师 GB 51, server: 82.38.31.210, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
-  - {name: 马来西亚 youtube@资源分享师 MY 55, server: v30.hdacd.com, port: 30830, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯 youtube@资源分享师 RU 56, server: 176.32.39.99, port: 40120, type: ss, cipher: aes-256-gcm, password: 1a87017d0bf57f34, udp: true}
-  - {name: 俄罗斯 youtube@资源分享师 RU 66, server: 195.58.49.26, port: 50123, type: ss, cipher: aes-256-gcm, password: 3150466568eda87b, udp: true}
-  - {name: 塞舌尔 youtube@资源分享师 SC 72, server: 154.205.153.107, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
-  - {name: 韩国 youtube@资源分享师 KR 83, server: 203.32.26.24, port: 40120, type: ss, cipher: aes-256-gcm, password: 63d7c17506d1f48b, udp: true}
-  - {name: 日本 youtube@资源分享师 JP 86, server: 103.127.243.60, port: 55386, type: vmess, uuid: 22d4ef9c-b269-4f82-9f59-6c2c0d8ce16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 87, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 英国 youtube@资源分享师 GB 89, server: 82.38.31.148, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
-  - {name: 英国 youtube@资源分享师 GB 92, server: 82.38.31.89, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
-  - {name: 日本 youtube@资源分享师 JP 100, server: 103.127.243.59, port: 56738, type: vmess, uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 日本 youtube@资源分享师 JP 101, server: 185.141.219.204, port: 8388, type: ss, cipher: aes-256-gcm, password: OPfrjA9xz5nw, udp: true}
+  - {name: 英国 youtube@资源分享师 GB 11, server: 82.38.31.89, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 35, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 57, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国 youtube@资源分享师 GB 76, server: 82.38.31.208, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
+  - {name: 英国 youtube@资源分享师 GB 94, server: 82.38.31.199, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 99, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 101, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 108, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国 youtube@资源分享师 GB 109, server: 82.38.31.214, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 111, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 114, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国 youtube@资源分享师 GB 124, server: 82.38.31.217, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 145, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 152, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 157, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 160, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 169, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 英国 youtube@资源分享师 GB 176, server: 82.38.31.82, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: oZIoA69Q8yhcQV8ka3Pa3A, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 177, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 youtube@资源分享师 JP 183, server: 103.127.243.60, port: 55386, type: vmess, uuid: 22d4ef9c-b269-4f82-9f59-6c2c0d8ce16d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 192, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 197, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 199, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 200, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 208, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 209, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 210, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 youtube@资源分享师 RU 211, server: 195.58.49.9, port: 40901, type: ss, cipher: aes-256-gcm, password: 9f3d1a6d31468599, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 212, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 214, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 香港 youtube@资源分享师 HK 215, server: 103.181.164.145, port: 51556, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 216, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 youtube@资源分享师 JP 225, server: 185.141.219.204, port: 8388, type: ss, cipher: aes-256-gcm, password: OPfrjA9xz5nw, udp: true}
+  - {name: 塞舌尔 youtube@资源分享师 SC 226, server: 154.205.153.107, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
+  - {name: 俄罗斯 youtube@资源分享师 RU 227, server: 195.58.49.26, port: 50123, type: ss, cipher: aes-256-gcm, password: 3150466568eda87b, udp: true}
+  - {name: 香港 youtube@资源分享师 HK 228, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 youtube@资源分享师 SG 6
-      - 德国 youtube@资源分享师 DE 14
-      - 德国 youtube@资源分享师 DE 16
-      - 德国 youtube@资源分享师 DE 17
-      - 德国 youtube@资源分享师 DE 23
-      - 英国 youtube@资源分享师 GB 24
-      - 德国 youtube@资源分享师 DE 25
-      - 德国 youtube@资源分享师 DE 27
-      - 英国 youtube@资源分享师 GB 29
-      - 英国 youtube@资源分享师 GB 33
-      - 英国 youtube@资源分享师 GB 38
-      - 英国 youtube@资源分享师 GB 51
-      - 马来西亚 youtube@资源分享师 MY 55
-      - 俄罗斯 youtube@资源分享师 RU 56
-      - 俄罗斯 youtube@资源分享师 RU 66
-      - 塞舌尔 youtube@资源分享师 SC 72
-      - 韩国 youtube@资源分享师 KR 83
-      - 日本 youtube@资源分享师 JP 86
-      - 德国 youtube@资源分享师 DE 87
-      - 英国 youtube@资源分享师 GB 89
-      - 英国 youtube@资源分享师 GB 92
-      - 日本 youtube@资源分享师 JP 100
-      - 日本 youtube@资源分享师 JP 101
+      - 英国 youtube@资源分享师 GB 11
+      - 德国 youtube@资源分享师 DE 35
+      - 德国 youtube@资源分享师 DE 57
+      - 英国 youtube@资源分享师 GB 76
+      - 英国 youtube@资源分享师 GB 94
+      - 德国 youtube@资源分享师 DE 99
+      - 德国 youtube@资源分享师 DE 101
+      - 德国 youtube@资源分享师 DE 108
+      - 英国 youtube@资源分享师 GB 109
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 114
+      - 英国 youtube@资源分享师 GB 124
+      - 德国 youtube@资源分享师 DE 145
+      - 德国 youtube@资源分享师 DE 152
+      - 德国 youtube@资源分享师 DE 157
+      - 德国 youtube@资源分享师 DE 160
+      - 德国 youtube@资源分享师 DE 169
+      - 英国 youtube@资源分享师 GB 176
+      - 德国 youtube@资源分享师 DE 177
+      - 日本 youtube@资源分享师 JP 183
+      - 德国 youtube@资源分享师 DE 192
+      - 德国 youtube@资源分享师 DE 197
+      - 德国 youtube@资源分享师 DE 199
+      - 德国 youtube@资源分享师 DE 200
+      - 德国 youtube@资源分享师 DE 208
+      - 德国 youtube@资源分享师 DE 209
+      - 德国 youtube@资源分享师 DE 210
+      - 俄罗斯 youtube@资源分享师 RU 211
+      - 德国 youtube@资源分享师 DE 212
+      - 德国 youtube@资源分享师 DE 214
+      - 香港 youtube@资源分享师 HK 215
+      - 德国 youtube@资源分享师 DE 216
+      - 日本 youtube@资源分享师 JP 225
+      - 塞舌尔 youtube@资源分享师 SC 226
+      - 俄罗斯 youtube@资源分享师 RU 227
+      - 香港 youtube@资源分享师 HK 228
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 新加坡 youtube@资源分享师 SG 6
-      - 德国 youtube@资源分享师 DE 14
-      - 德国 youtube@资源分享师 DE 16
-      - 德国 youtube@资源分享师 DE 17
-      - 德国 youtube@资源分享师 DE 23
-      - 英国 youtube@资源分享师 GB 24
-      - 德国 youtube@资源分享师 DE 25
-      - 德国 youtube@资源分享师 DE 27
-      - 英国 youtube@资源分享师 GB 29
-      - 英国 youtube@资源分享师 GB 33
-      - 英国 youtube@资源分享师 GB 38
-      - 英国 youtube@资源分享师 GB 51
-      - 马来西亚 youtube@资源分享师 MY 55
-      - 俄罗斯 youtube@资源分享师 RU 56
-      - 俄罗斯 youtube@资源分享师 RU 66
-      - 塞舌尔 youtube@资源分享师 SC 72
-      - 韩国 youtube@资源分享师 KR 83
-      - 日本 youtube@资源分享师 JP 86
-      - 德国 youtube@资源分享师 DE 87
-      - 英国 youtube@资源分享师 GB 89
-      - 英国 youtube@资源分享师 GB 92
-      - 日本 youtube@资源分享师 JP 100
-      - 日本 youtube@资源分享师 JP 101
+      - 英国 youtube@资源分享师 GB 11
+      - 德国 youtube@资源分享师 DE 35
+      - 德国 youtube@资源分享师 DE 57
+      - 英国 youtube@资源分享师 GB 76
+      - 英国 youtube@资源分享师 GB 94
+      - 德国 youtube@资源分享师 DE 99
+      - 德国 youtube@资源分享师 DE 101
+      - 德国 youtube@资源分享师 DE 108
+      - 英国 youtube@资源分享师 GB 109
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 114
+      - 英国 youtube@资源分享师 GB 124
+      - 德国 youtube@资源分享师 DE 145
+      - 德国 youtube@资源分享师 DE 152
+      - 德国 youtube@资源分享师 DE 157
+      - 德国 youtube@资源分享师 DE 160
+      - 德国 youtube@资源分享师 DE 169
+      - 英国 youtube@资源分享师 GB 176
+      - 德国 youtube@资源分享师 DE 177
+      - 日本 youtube@资源分享师 JP 183
+      - 德国 youtube@资源分享师 DE 192
+      - 德国 youtube@资源分享师 DE 197
+      - 德国 youtube@资源分享师 DE 199
+      - 德国 youtube@资源分享师 DE 200
+      - 德国 youtube@资源分享师 DE 208
+      - 德国 youtube@资源分享师 DE 209
+      - 德国 youtube@资源分享师 DE 210
+      - 俄罗斯 youtube@资源分享师 RU 211
+      - 德国 youtube@资源分享师 DE 212
+      - 德国 youtube@资源分享师 DE 214
+      - 香港 youtube@资源分享师 HK 215
+      - 德国 youtube@资源分享师 DE 216
+      - 日本 youtube@资源分享师 JP 225
+      - 塞舌尔 youtube@资源分享师 SC 226
+      - 俄罗斯 youtube@资源分享师 RU 227
+      - 香港 youtube@资源分享师 HK 228
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 youtube@资源分享师 SG 6
-      - 德国 youtube@资源分享师 DE 14
-      - 德国 youtube@资源分享师 DE 16
-      - 德国 youtube@资源分享师 DE 17
-      - 德国 youtube@资源分享师 DE 23
-      - 英国 youtube@资源分享师 GB 24
-      - 德国 youtube@资源分享师 DE 25
-      - 德国 youtube@资源分享师 DE 27
-      - 英国 youtube@资源分享师 GB 29
-      - 英国 youtube@资源分享师 GB 33
-      - 英国 youtube@资源分享师 GB 38
-      - 英国 youtube@资源分享师 GB 51
-      - 马来西亚 youtube@资源分享师 MY 55
-      - 俄罗斯 youtube@资源分享师 RU 56
-      - 俄罗斯 youtube@资源分享师 RU 66
-      - 塞舌尔 youtube@资源分享师 SC 72
-      - 韩国 youtube@资源分享师 KR 83
-      - 日本 youtube@资源分享师 JP 86
-      - 德国 youtube@资源分享师 DE 87
-      - 英国 youtube@资源分享师 GB 89
-      - 英国 youtube@资源分享师 GB 92
-      - 日本 youtube@资源分享师 JP 100
-      - 日本 youtube@资源分享师 JP 101
+      - 英国 youtube@资源分享师 GB 11
+      - 德国 youtube@资源分享师 DE 35
+      - 德国 youtube@资源分享师 DE 57
+      - 英国 youtube@资源分享师 GB 76
+      - 英国 youtube@资源分享师 GB 94
+      - 德国 youtube@资源分享师 DE 99
+      - 德国 youtube@资源分享师 DE 101
+      - 德国 youtube@资源分享师 DE 108
+      - 英国 youtube@资源分享师 GB 109
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 114
+      - 英国 youtube@资源分享师 GB 124
+      - 德国 youtube@资源分享师 DE 145
+      - 德国 youtube@资源分享师 DE 152
+      - 德国 youtube@资源分享师 DE 157
+      - 德国 youtube@资源分享师 DE 160
+      - 德国 youtube@资源分享师 DE 169
+      - 英国 youtube@资源分享师 GB 176
+      - 德国 youtube@资源分享师 DE 177
+      - 日本 youtube@资源分享师 JP 183
+      - 德国 youtube@资源分享师 DE 192
+      - 德国 youtube@资源分享师 DE 197
+      - 德国 youtube@资源分享师 DE 199
+      - 德国 youtube@资源分享师 DE 200
+      - 德国 youtube@资源分享师 DE 208
+      - 德国 youtube@资源分享师 DE 209
+      - 德国 youtube@资源分享师 DE 210
+      - 俄罗斯 youtube@资源分享师 RU 211
+      - 德国 youtube@资源分享师 DE 212
+      - 德国 youtube@资源分享师 DE 214
+      - 香港 youtube@资源分享师 HK 215
+      - 德国 youtube@资源分享师 DE 216
+      - 日本 youtube@资源分享师 JP 225
+      - 塞舌尔 youtube@资源分享师 SC 226
+      - 俄罗斯 youtube@资源分享师 RU 227
+      - 香港 youtube@资源分享师 HK 228
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -132,119 +184,173 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 新加坡 youtube@资源分享师 SG 6
-      - 德国 youtube@资源分享师 DE 14
-      - 德国 youtube@资源分享师 DE 16
-      - 德国 youtube@资源分享师 DE 17
-      - 德国 youtube@资源分享师 DE 23
-      - 英国 youtube@资源分享师 GB 24
-      - 德国 youtube@资源分享师 DE 25
-      - 德国 youtube@资源分享师 DE 27
-      - 英国 youtube@资源分享师 GB 29
-      - 英国 youtube@资源分享师 GB 33
-      - 英国 youtube@资源分享师 GB 38
-      - 英国 youtube@资源分享师 GB 51
-      - 马来西亚 youtube@资源分享师 MY 55
-      - 俄罗斯 youtube@资源分享师 RU 56
-      - 俄罗斯 youtube@资源分享师 RU 66
-      - 塞舌尔 youtube@资源分享师 SC 72
-      - 韩国 youtube@资源分享师 KR 83
-      - 日本 youtube@资源分享师 JP 86
-      - 德国 youtube@资源分享师 DE 87
-      - 英国 youtube@资源分享师 GB 89
-      - 英国 youtube@资源分享师 GB 92
-      - 日本 youtube@资源分享师 JP 100
-      - 日本 youtube@资源分享师 JP 101
+      - 英国 youtube@资源分享师 GB 11
+      - 德国 youtube@资源分享师 DE 35
+      - 德国 youtube@资源分享师 DE 57
+      - 英国 youtube@资源分享师 GB 76
+      - 英国 youtube@资源分享师 GB 94
+      - 德国 youtube@资源分享师 DE 99
+      - 德国 youtube@资源分享师 DE 101
+      - 德国 youtube@资源分享师 DE 108
+      - 英国 youtube@资源分享师 GB 109
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 114
+      - 英国 youtube@资源分享师 GB 124
+      - 德国 youtube@资源分享师 DE 145
+      - 德国 youtube@资源分享师 DE 152
+      - 德国 youtube@资源分享师 DE 157
+      - 德国 youtube@资源分享师 DE 160
+      - 德国 youtube@资源分享师 DE 169
+      - 英国 youtube@资源分享师 GB 176
+      - 德国 youtube@资源分享师 DE 177
+      - 日本 youtube@资源分享师 JP 183
+      - 德国 youtube@资源分享师 DE 192
+      - 德国 youtube@资源分享师 DE 197
+      - 德国 youtube@资源分享师 DE 199
+      - 德国 youtube@资源分享师 DE 200
+      - 德国 youtube@资源分享师 DE 208
+      - 德国 youtube@资源分享师 DE 209
+      - 德国 youtube@资源分享师 DE 210
+      - 俄罗斯 youtube@资源分享师 RU 211
+      - 德国 youtube@资源分享师 DE 212
+      - 德国 youtube@资源分享师 DE 214
+      - 香港 youtube@资源分享师 HK 215
+      - 德国 youtube@资源分享师 DE 216
+      - 日本 youtube@资源分享师 JP 225
+      - 塞舌尔 youtube@资源分享师 SC 226
+      - 俄罗斯 youtube@资源分享师 RU 227
+      - 香港 youtube@资源分享师 HK 228
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 youtube@资源分享师 HK 215
+      - 香港 youtube@资源分享师 HK 228
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 新加坡 youtube@资源分享师 SG 6
-      - 德国 youtube@资源分享师 DE 14
-      - 德国 youtube@资源分享师 DE 16
-      - 德国 youtube@资源分享师 DE 17
-      - 德国 youtube@资源分享师 DE 23
-      - 英国 youtube@资源分享师 GB 24
-      - 德国 youtube@资源分享师 DE 25
-      - 德国 youtube@资源分享师 DE 27
-      - 英国 youtube@资源分享师 GB 29
-      - 英国 youtube@资源分享师 GB 33
-      - 英国 youtube@资源分享师 GB 38
-      - 英国 youtube@资源分享师 GB 51
-      - 马来西亚 youtube@资源分享师 MY 55
-      - 俄罗斯 youtube@资源分享师 RU 56
-      - 俄罗斯 youtube@资源分享师 RU 66
-      - 塞舌尔 youtube@资源分享师 SC 72
-      - 韩国 youtube@资源分享师 KR 83
-      - 日本 youtube@资源分享师 JP 86
-      - 德国 youtube@资源分享师 DE 87
-      - 英国 youtube@资源分享师 GB 89
-      - 英国 youtube@资源分享师 GB 92
-      - 日本 youtube@资源分享师 JP 100
-      - 日本 youtube@资源分享师 JP 101
+      - 英国 youtube@资源分享师 GB 11
+      - 德国 youtube@资源分享师 DE 35
+      - 德国 youtube@资源分享师 DE 57
+      - 英国 youtube@资源分享师 GB 76
+      - 英国 youtube@资源分享师 GB 94
+      - 德国 youtube@资源分享师 DE 99
+      - 德国 youtube@资源分享师 DE 101
+      - 德国 youtube@资源分享师 DE 108
+      - 英国 youtube@资源分享师 GB 109
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 114
+      - 英国 youtube@资源分享师 GB 124
+      - 德国 youtube@资源分享师 DE 145
+      - 德国 youtube@资源分享师 DE 152
+      - 德国 youtube@资源分享师 DE 157
+      - 德国 youtube@资源分享师 DE 160
+      - 德国 youtube@资源分享师 DE 169
+      - 英国 youtube@资源分享师 GB 176
+      - 德国 youtube@资源分享师 DE 177
+      - 日本 youtube@资源分享师 JP 183
+      - 德国 youtube@资源分享师 DE 192
+      - 德国 youtube@资源分享师 DE 197
+      - 德国 youtube@资源分享师 DE 199
+      - 德国 youtube@资源分享师 DE 200
+      - 德国 youtube@资源分享师 DE 208
+      - 德国 youtube@资源分享师 DE 209
+      - 德国 youtube@资源分享师 DE 210
+      - 俄罗斯 youtube@资源分享师 RU 211
+      - 德国 youtube@资源分享师 DE 212
+      - 德国 youtube@资源分享师 DE 214
+      - 香港 youtube@资源分享师 HK 215
+      - 德国 youtube@资源分享师 DE 216
+      - 日本 youtube@资源分享师 JP 225
+      - 塞舌尔 youtube@资源分享师 SC 226
+      - 俄罗斯 youtube@资源分享师 RU 227
+      - 香港 youtube@资源分享师 HK 228
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 新加坡 youtube@资源分享师 SG 6
-      - 德国 youtube@资源分享师 DE 14
-      - 德国 youtube@资源分享师 DE 16
-      - 德国 youtube@资源分享师 DE 17
-      - 德国 youtube@资源分享师 DE 23
-      - 英国 youtube@资源分享师 GB 24
-      - 德国 youtube@资源分享师 DE 25
-      - 德国 youtube@资源分享师 DE 27
-      - 英国 youtube@资源分享师 GB 29
-      - 英国 youtube@资源分享师 GB 33
-      - 英国 youtube@资源分享师 GB 38
-      - 英国 youtube@资源分享师 GB 51
-      - 马来西亚 youtube@资源分享师 MY 55
-      - 俄罗斯 youtube@资源分享师 RU 56
-      - 俄罗斯 youtube@资源分享师 RU 66
-      - 塞舌尔 youtube@资源分享师 SC 72
-      - 韩国 youtube@资源分享师 KR 83
-      - 日本 youtube@资源分享师 JP 86
-      - 德国 youtube@资源分享师 DE 87
-      - 英国 youtube@资源分享师 GB 89
-      - 英国 youtube@资源分享师 GB 92
-      - 日本 youtube@资源分享师 JP 100
-      - 日本 youtube@资源分享师 JP 101
+      - 英国 youtube@资源分享师 GB 11
+      - 德国 youtube@资源分享师 DE 35
+      - 德国 youtube@资源分享师 DE 57
+      - 英国 youtube@资源分享师 GB 76
+      - 英国 youtube@资源分享师 GB 94
+      - 德国 youtube@资源分享师 DE 99
+      - 德国 youtube@资源分享师 DE 101
+      - 德国 youtube@资源分享师 DE 108
+      - 英国 youtube@资源分享师 GB 109
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 114
+      - 英国 youtube@资源分享师 GB 124
+      - 德国 youtube@资源分享师 DE 145
+      - 德国 youtube@资源分享师 DE 152
+      - 德国 youtube@资源分享师 DE 157
+      - 德国 youtube@资源分享师 DE 160
+      - 德国 youtube@资源分享师 DE 169
+      - 英国 youtube@资源分享师 GB 176
+      - 德国 youtube@资源分享师 DE 177
+      - 日本 youtube@资源分享师 JP 183
+      - 德国 youtube@资源分享师 DE 192
+      - 德国 youtube@资源分享师 DE 197
+      - 德国 youtube@资源分享师 DE 199
+      - 德国 youtube@资源分享师 DE 200
+      - 德国 youtube@资源分享师 DE 208
+      - 德国 youtube@资源分享师 DE 209
+      - 德国 youtube@资源分享师 DE 210
+      - 俄罗斯 youtube@资源分享师 RU 211
+      - 德国 youtube@资源分享师 DE 212
+      - 德国 youtube@资源分享师 DE 214
+      - 香港 youtube@资源分享师 HK 215
+      - 德国 youtube@资源分享师 DE 216
+      - 日本 youtube@资源分享师 JP 225
+      - 塞舌尔 youtube@资源分享师 SC 226
+      - 俄罗斯 youtube@资源分享师 RU 227
+      - 香港 youtube@资源分享师 HK 228
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 youtube@资源分享师 SG 6
-      - 德国 youtube@资源分享师 DE 14
-      - 德国 youtube@资源分享师 DE 16
-      - 德国 youtube@资源分享师 DE 17
-      - 德国 youtube@资源分享师 DE 23
-      - 英国 youtube@资源分享师 GB 24
-      - 德国 youtube@资源分享师 DE 25
-      - 德国 youtube@资源分享师 DE 27
-      - 英国 youtube@资源分享师 GB 29
-      - 英国 youtube@资源分享师 GB 33
-      - 英国 youtube@资源分享师 GB 38
-      - 英国 youtube@资源分享师 GB 51
-      - 马来西亚 youtube@资源分享师 MY 55
-      - 俄罗斯 youtube@资源分享师 RU 56
-      - 俄罗斯 youtube@资源分享师 RU 66
-      - 塞舌尔 youtube@资源分享师 SC 72
-      - 韩国 youtube@资源分享师 KR 83
-      - 日本 youtube@资源分享师 JP 86
-      - 德国 youtube@资源分享师 DE 87
-      - 英国 youtube@资源分享师 GB 89
-      - 英国 youtube@资源分享师 GB 92
-      - 日本 youtube@资源分享师 JP 100
-      - 日本 youtube@资源分享师 JP 101
+      - 英国 youtube@资源分享师 GB 11
+      - 德国 youtube@资源分享师 DE 35
+      - 德国 youtube@资源分享师 DE 57
+      - 英国 youtube@资源分享师 GB 76
+      - 英国 youtube@资源分享师 GB 94
+      - 德国 youtube@资源分享师 DE 99
+      - 德国 youtube@资源分享师 DE 101
+      - 德国 youtube@资源分享师 DE 108
+      - 英国 youtube@资源分享师 GB 109
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 114
+      - 英国 youtube@资源分享师 GB 124
+      - 德国 youtube@资源分享师 DE 145
+      - 德国 youtube@资源分享师 DE 152
+      - 德国 youtube@资源分享师 DE 157
+      - 德国 youtube@资源分享师 DE 160
+      - 德国 youtube@资源分享师 DE 169
+      - 英国 youtube@资源分享师 GB 176
+      - 德国 youtube@资源分享师 DE 177
+      - 日本 youtube@资源分享师 JP 183
+      - 德国 youtube@资源分享师 DE 192
+      - 德国 youtube@资源分享师 DE 197
+      - 德国 youtube@资源分享师 DE 199
+      - 德国 youtube@资源分享师 DE 200
+      - 德国 youtube@资源分享师 DE 208
+      - 德国 youtube@资源分享师 DE 209
+      - 德国 youtube@资源分享师 DE 210
+      - 俄罗斯 youtube@资源分享师 RU 211
+      - 德国 youtube@资源分享师 DE 212
+      - 德国 youtube@资源分享师 DE 214
+      - 香港 youtube@资源分享师 HK 215
+      - 德国 youtube@资源分享师 DE 216
+      - 日本 youtube@资源分享师 JP 225
+      - 塞舌尔 youtube@资源分享师 SC 226
+      - 俄罗斯 youtube@资源分享师 RU 227
+      - 香港 youtube@资源分享师 HK 228
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -260,29 +366,42 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 新加坡 youtube@资源分享师 SG 6
-      - 德国 youtube@资源分享师 DE 14
-      - 德国 youtube@资源分享师 DE 16
-      - 德国 youtube@资源分享师 DE 17
-      - 德国 youtube@资源分享师 DE 23
-      - 英国 youtube@资源分享师 GB 24
-      - 德国 youtube@资源分享师 DE 25
-      - 德国 youtube@资源分享师 DE 27
-      - 英国 youtube@资源分享师 GB 29
-      - 英国 youtube@资源分享师 GB 33
-      - 英国 youtube@资源分享师 GB 38
-      - 英国 youtube@资源分享师 GB 51
-      - 马来西亚 youtube@资源分享师 MY 55
-      - 俄罗斯 youtube@资源分享师 RU 56
-      - 俄罗斯 youtube@资源分享师 RU 66
-      - 塞舌尔 youtube@资源分享师 SC 72
-      - 韩国 youtube@资源分享师 KR 83
-      - 日本 youtube@资源分享师 JP 86
-      - 德国 youtube@资源分享师 DE 87
-      - 英国 youtube@资源分享师 GB 89
-      - 英国 youtube@资源分享师 GB 92
-      - 日本 youtube@资源分享师 JP 100
-      - 日本 youtube@资源分享师 JP 101
+      - 英国 youtube@资源分享师 GB 11
+      - 德国 youtube@资源分享师 DE 35
+      - 德国 youtube@资源分享师 DE 57
+      - 英国 youtube@资源分享师 GB 76
+      - 英国 youtube@资源分享师 GB 94
+      - 德国 youtube@资源分享师 DE 99
+      - 德国 youtube@资源分享师 DE 101
+      - 德国 youtube@资源分享师 DE 108
+      - 英国 youtube@资源分享师 GB 109
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 114
+      - 英国 youtube@资源分享师 GB 124
+      - 德国 youtube@资源分享师 DE 145
+      - 德国 youtube@资源分享师 DE 152
+      - 德国 youtube@资源分享师 DE 157
+      - 德国 youtube@资源分享师 DE 160
+      - 德国 youtube@资源分享师 DE 169
+      - 英国 youtube@资源分享师 GB 176
+      - 德国 youtube@资源分享师 DE 177
+      - 日本 youtube@资源分享师 JP 183
+      - 德国 youtube@资源分享师 DE 192
+      - 德国 youtube@资源分享师 DE 197
+      - 德国 youtube@资源分享师 DE 199
+      - 德国 youtube@资源分享师 DE 200
+      - 德国 youtube@资源分享师 DE 208
+      - 德国 youtube@资源分享师 DE 209
+      - 德国 youtube@资源分享师 DE 210
+      - 俄罗斯 youtube@资源分享师 RU 211
+      - 德国 youtube@资源分享师 DE 212
+      - 德国 youtube@资源分享师 DE 214
+      - 香港 youtube@资源分享师 HK 215
+      - 德国 youtube@资源分享师 DE 216
+      - 日本 youtube@资源分享师 JP 225
+      - 塞舌尔 youtube@资源分享师 SC 226
+      - 俄罗斯 youtube@资源分享师 RU 227
+      - 香港 youtube@资源分享师 HK 228
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
