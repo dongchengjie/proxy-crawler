@@ -5,479 +5,375 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: youtube@资源分享师 8, server: cf.scpnb.top, port: 443, type: vmess, uuid: bee9e6f4-5731-43dc-a826-0c14e0c7111b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bee9e6f4-5731-43dc-a826-0c14e0c7111b-vm, ws-headers: {Host: samba-fri-labs-contain.trycloudflare.com}, udp: true}
-  - {name: youtube@资源分享师 9, server: cf.scpnb.top, port: 443, type: vmess, uuid: 16661981-312c-4b80-b314-c00c9c3bfef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /16661981-312c-4b80-b314-c00c9c3bfef8-vm, ws-headers: {Host: formats-hobby-verbal-scenarios.trycloudflare.com}, udp: true}
-  - {name: 美国 youtube@资源分享师 US 74, server: 167.68.4.199, port: 2053, type: trojan, password: Aimer, skip-cert-verify: true, udp: true}
-  - {name: 美国 youtube@资源分享师 US 76, server: 167.68.4.199, port: 2053, type: trojan, password: Aimer, skip-cert-verify: true, udp: true}
-  - {name: 美国 youtube@资源分享师 US 78, server: 167.68.4.199, port: 2053, type: trojan, password: Aimer, skip-cert-verify: true, udp: true}
-  - {name: 美国 youtube@资源分享师 US 80, server: 38.110.1.246, port: 18000, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 加拿大 youtube@资源分享师 CA 85, server: 134.195.196.211, port: 18000, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 94, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 95, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 97, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 98, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 100, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 114, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 资源分享师, server: 43.134.174.114, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 2, server: 159.89.205.195, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 3, server: 161.248.254.27, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 4, server: 157.245.159.88, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 5, server: 206.189.147.60, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 6, server: 150.109.11.223, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 7, server: 143.198.213.40, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 8, server: 82.153.226.158, port: 8443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 9, server: 178.128.97.53, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 10, server: 152.42.169.132, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 11, server: 178.128.90.108, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 12, server: 159.223.50.79, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 13, server: 159.223.79.119, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 14, server: 152.42.217.192, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 15, server: 103.78.133.103, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 16, server: 129.212.232.171, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 17, server: 167.71.222.177, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 18, server: 159.223.85.214, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 19, server: 167.71.221.62, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 20, server: 129.212.233.197, port: 2053, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 21, server: 194.233.67.84, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 22, server: 146.190.102.51, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 23, server: 140.245.59.102, port: 8443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 24, server: 193.122.108.223, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 25, server: 159.65.143.223, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 26, server: 129.212.231.216, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 27, server: 165.22.104.36, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 28, server: 172.104.186.30, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 29, server: 161.248.31.35, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 30, server: 160.251.209.140, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 31, server: 139.162.61.34, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 32, server: 178.128.60.89, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 33, server: 140.83.50.165, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 34, server: 141.147.144.109, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 35, server: 172.232.226.233, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 36, server: 176.97.70.51, port: 8443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 37, server: 194.87.10.77, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 38, server: 139.84.221.153, port: 8443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 39, server: 212.135.211.58, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 40, server: 66.42.61.215, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 41, server: 139.84.146.103, port: 8443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 42, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 资源分享师 43, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 资源分享师 44, server: 166.62.106.253, port: 443, type: trojan, password: 8r%3C%5B9'l6hAO%238ZQi, skip-cert-verify: true, udp: true}
-  - {name: youtube@资源分享师 8 2, server: cf.scpnb.top, port: 443, type: vmess, uuid: bee9e6f4-5731-43dc-a826-0c14e0c7111b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /bee9e6f4-5731-43dc-a826-0c14e0c7111b-vm, ws-headers: {Host: samba-fri-labs-contain.trycloudflare.com}, udp: true}
-  - {name: youtube@资源分享师 9 2, server: cf.scpnb.top, port: 443, type: vmess, uuid: 16661981-312c-4b80-b314-c00c9c3bfef8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /16661981-312c-4b80-b314-c00c9c3bfef8-vm, ws-headers: {Host: formats-hobby-verbal-scenarios.trycloudflare.com}, udp: true}
-  - {name: 美国 youtube@资源分享师 US 74 2, server: 167.68.4.199, port: 2053, type: trojan, password: Aimer, skip-cert-verify: true, udp: true}
-  - {name: 美国 youtube@资源分享师 US 76 2, server: 167.68.4.199, port: 2053, type: trojan, password: Aimer, skip-cert-verify: true, udp: true}
-  - {name: 美国 youtube@资源分享师 US 78 2, server: 167.68.4.199, port: 2053, type: trojan, password: Aimer, skip-cert-verify: true, udp: true}
-  - {name: 美国 youtube@资源分享师 US 80 2, server: 38.110.1.246, port: 18000, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 加拿大 youtube@资源分享师 CA 85 2, server: 134.195.196.211, port: 18000, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 94 2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 95 2, server: 82.198.246.37, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 97 2, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 98 2, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 100 2, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 德国 youtube@资源分享师 DE 114 2, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 资源分享师 45, server: 43.134.174.114, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 46, server: 159.89.205.195, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 47, server: 161.248.254.27, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 48, server: 157.245.159.88, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 49, server: 206.189.147.60, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 50, server: 150.109.11.223, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 51, server: 143.198.213.40, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 52, server: 82.153.226.158, port: 8443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 53, server: 178.128.97.53, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 54, server: 152.42.169.132, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 55, server: 178.128.90.108, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 56, server: 159.223.50.79, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 57, server: 159.223.79.119, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 58, server: 152.42.217.192, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 59, server: 103.78.133.103, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 60, server: 129.212.232.171, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 61, server: 167.71.222.177, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 62, server: 159.223.85.214, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 63, server: 167.71.221.62, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 64, server: 129.212.233.197, port: 2053, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 65, server: 194.233.67.84, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 66, server: 146.190.102.51, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 67, server: 140.245.59.102, port: 8443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 68, server: 193.122.108.223, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 69, server: 159.65.143.223, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 70, server: 129.212.231.216, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 71, server: 165.22.104.36, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 72, server: 172.104.186.30, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 73, server: 161.248.31.35, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 74, server: 160.251.209.140, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 75, server: 139.162.61.34, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 76, server: 178.128.60.89, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 77, server: 140.83.50.165, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 78, server: 141.147.144.109, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 79, server: 172.232.226.233, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 80, server: 176.97.70.51, port: 8443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 81, server: 194.87.10.77, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 82, server: 139.84.221.153, port: 8443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 83, server: 212.135.211.58, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 84, server: 66.42.61.215, port: 443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 85, server: 139.84.146.103, port: 8443, type: ss, cipher: none, password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2, plugin: v2ray-plugin, plugin-opts: {mode: websocket, host: woshinidie-et3.pages.dev, path: "/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\\=2560", tls: true, mux: true, skip-cert-verify: true}, udp: true}
-  - {name: 资源分享师 86, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 资源分享师 87, server: 82.198.246.250, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 资源分享师 88, server: 166.62.106.253, port: 443, type: trojan, password: 8r%3C%5B9'l6hAO%238ZQi, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 110, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 111, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 116, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 126, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 38, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 45, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 89, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 马来西亚 youtube@资源分享师 MY 21, server: jp-zljh.lilysi.bond, port: 25117, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dpcyjp26424, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 马来西亚 youtube@资源分享师 MY 35, server: u0-ukl1p.cy2511.world, port: 20012, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: u0-ukl1p.cy2511.world, skip-cert-verify: true, udp: true}
+  - {name: 美国 youtube@资源分享师 US 27, server: 38.110.1.246, port: 18000, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 youtube@资源分享师 JP 142, server: kr-isp.cylink.bond, port: 16055, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HK2025, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: 日本 youtube@资源分享师 JP 144, server: c0a-toduo.cylink.bond, port: 30055, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HK2025, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: 日本 youtube@资源分享师 JP 22, server: ro0-kstc.cy2511.world, port: 28634, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: ro0-kstc.cy2511.world, skip-cert-verify: true, udp: true}
+  - {name: 日本 youtube@资源分享师 JP 3, server: u0s.cylink.bond, port: 30044, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: u0s.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: 塞浦路斯 youtube@资源分享师 CY 61, server: csgo.com, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: csgo.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 youtube@资源分享师 HK 129, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 1, server: 555.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 555.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 100, server: pineapple03.cylink.bond, port: 30033, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: pineapple03.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 101, server: cy4.southeast.cy2511.world, port: 28623, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mama2599, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: youtube@资源分享师 130, server: jp9y3408.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: jp9y3408.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 132, server: hka.cylink.bond, port: 34486, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hy25915, ws-headers: {Host: www.youzan.com}, udp: true}
+  - {name: youtube@资源分享师 133, server: hkd.cylink.bond, port: 34489, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hy25915, ws-headers: {Host: www.youzan.com}, udp: true}
+  - {name: youtube@资源分享师 134, server: hke.cylink.bond, port: 34490, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: hke.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 135, server: hkf.cylink.bond, port: 34491, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkduo, ws-headers: {Host: www.bilibili.com}, udp: true}
+  - {name: youtube@资源分享师 138, server: pineapple02.cylink.bond, port: 10052, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: pineapple02.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 139, server: pineapple04.cylink.bond, port: 30032, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aiwawan, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: youtube@资源分享师 140, server: cyw-33.cy2511.world, port: 10053, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HK2025, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: youtube@资源分享师 141, server: cy2-dxyh.cy2511.world, port: 33038, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HK2025, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: youtube@资源分享师 143, server: us1-hbcuko.cy2511.world, port: 20400, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa25915, ws-headers: {Host: www.youzan.com}, udp: true}
+  - {name: youtube@资源分享师 145, server: flx0-hbcuko.cy2511.world, port: 28606, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fa26426, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: youtube@资源分享师 146, server: cy1-hbcuko.cy2511.world, port: 28629, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /nokunkun, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: youtube@资源分享师 147, server: cy4.southeast.cy2511.world, port: 28630, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yn2026, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: youtube@资源分享师 148, server: cy4.southeast.cy2511.world, port: 28631, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /taitai2599, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: youtube@资源分享师 2, server: sakura.cylink.bond, port: 40528, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: sakura.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 20, server: 104.19.173.68, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 23, server: cyrb.lilysi.bond, port: 25119, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dpcyus26424, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: youtube@资源分享师 24, server: hkeofhwo3.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: hkeofhwo3.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 31, server: sg083yt.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: sg083yt.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 51, server: 888.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 888.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 82, server: 666.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 666.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 83, server: 666.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 666.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 84, server: 999.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 999.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 85, server: hkg.cylink.bond, port: 34492, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: hkg.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 98, server: 777.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 777.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 110 2, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 111 2, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 116 2, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 126 2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 38 2, server: 82.198.246.9, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 45 2, server: 82.198.246.214, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 德国 youtube@资源分享师 DE 89 2, server: 82.198.246.233, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 马来西亚 youtube@资源分享师 MY 21 2, server: jp-zljh.lilysi.bond, port: 25117, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dpcyjp26424, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: 马来西亚 youtube@资源分享师 MY 35 2, server: u0-ukl1p.cy2511.world, port: 20012, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: u0-ukl1p.cy2511.world, skip-cert-verify: true, udp: true}
+  - {name: 美国 youtube@资源分享师 US 27 2, server: 38.110.1.246, port: 18000, type: vmess, uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 日本 youtube@资源分享师 JP 142 2, server: kr-isp.cylink.bond, port: 16055, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HK2025, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: 日本 youtube@资源分享师 JP 144 2, server: c0a-toduo.cylink.bond, port: 30055, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HK2025, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: 日本 youtube@资源分享师 JP 22 2, server: ro0-kstc.cy2511.world, port: 28634, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: ro0-kstc.cy2511.world, skip-cert-verify: true, udp: true}
+  - {name: 日本 youtube@资源分享师 JP 3 2, server: u0s.cylink.bond, port: 30044, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: u0s.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: 塞浦路斯 youtube@资源分享师 CY 61 2, server: csgo.com, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: csgo.com, skip-cert-verify: true, udp: true}
+  - {name: 香港 youtube@资源分享师 HK 129 2, server: 103.181.164.145, port: 54022, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 1 2, server: 555.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 555.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 100 2, server: pineapple03.cylink.bond, port: 30033, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: pineapple03.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 101 2, server: cy4.southeast.cy2511.world, port: 28623, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /mama2599, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: youtube@资源分享师 130 2, server: jp9y3408.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: jp9y3408.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 132 2, server: hka.cylink.bond, port: 34486, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hy25915, ws-headers: {Host: www.youzan.com}, udp: true}
+  - {name: youtube@资源分享师 133 2, server: hkd.cylink.bond, port: 34489, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hy25915, ws-headers: {Host: www.youzan.com}, udp: true}
+  - {name: youtube@资源分享师 134 2, server: hke.cylink.bond, port: 34490, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: hke.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 135 2, server: hkf.cylink.bond, port: 34491, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hkduo, ws-headers: {Host: www.bilibili.com}, udp: true}
+  - {name: youtube@资源分享师 138 2, server: pineapple02.cylink.bond, port: 10052, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: pineapple02.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 139 2, server: pineapple04.cylink.bond, port: 30032, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /aiwawan, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: youtube@资源分享师 140 2, server: cyw-33.cy2511.world, port: 10053, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HK2025, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: youtube@资源分享师 141 2, server: cy2-dxyh.cy2511.world, port: 33038, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /HK2025, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: youtube@资源分享师 143 2, server: us1-hbcuko.cy2511.world, port: 20400, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /usa25915, ws-headers: {Host: www.youzan.com}, udp: true}
+  - {name: youtube@资源分享师 145 2, server: flx0-hbcuko.cy2511.world, port: 28606, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /fa26426, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: youtube@资源分享师 146 2, server: cy1-hbcuko.cy2511.world, port: 28629, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /nokunkun, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: youtube@资源分享师 147 2, server: cy4.southeast.cy2511.world, port: 28630, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /yn2026, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: youtube@资源分享师 148 2, server: cy4.southeast.cy2511.world, port: 28631, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /taitai2599, ws-headers: {Host: www.bing.com}, udp: true}
+  - {name: youtube@资源分享师 2 2, server: sakura.cylink.bond, port: 40528, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: sakura.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 20 2, server: 104.19.173.68, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 23 2, server: cyrb.lilysi.bond, port: 25119, type: vmess, uuid: 50d42e95-3f75-4bf4-8036-c74c5578e55b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /dpcyus26424, ws-headers: {Host: www.microsoft.com}, udp: true}
+  - {name: youtube@资源分享师 24 2, server: hkeofhwo3.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: hkeofhwo3.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 31 2, server: sg083yt.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: sg083yt.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 51 2, server: 888.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 888.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 82 2, server: 666.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 666.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 83 2, server: 666.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 666.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 84 2, server: 999.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 999.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 85 2, server: hkg.cylink.bond, port: 34492, type: trojan, password: 50d42e95-3f75-4bf4-8036-c74c5578e55b, sni: hkg.cylink.bond, skip-cert-verify: true, udp: true}
+  - {name: youtube@资源分享师 98 2, server: 777.cloudflare.182682.xyz, port: 443, type: trojan, password: 7a67a0b5-87e9-4b69-a9b4-b48ebcc8358e, sni: 777.cloudflare.182682.xyz, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - youtube@资源分享师 8
-      - youtube@资源分享师 9
-      - 美国 youtube@资源分享师 US 74
-      - 美国 youtube@资源分享师 US 76
-      - 美国 youtube@资源分享师 US 78
-      - 美国 youtube@资源分享师 US 80
-      - 加拿大 youtube@资源分享师 CA 85
-      - 德国 youtube@资源分享师 DE 94
-      - 德国 youtube@资源分享师 DE 95
-      - 德国 youtube@资源分享师 DE 97
-      - 德国 youtube@资源分享师 DE 98
-      - 德国 youtube@资源分享师 DE 100
-      - 德国 youtube@资源分享师 DE 114
-      - 资源分享师
-      - 资源分享师 2
-      - 资源分享师 3
-      - 资源分享师 4
-      - 资源分享师 5
-      - 资源分享师 6
-      - 资源分享师 7
-      - 资源分享师 8
-      - 资源分享师 9
-      - 资源分享师 10
-      - 资源分享师 11
-      - 资源分享师 12
-      - 资源分享师 13
-      - 资源分享师 14
-      - 资源分享师 15
-      - 资源分享师 16
-      - 资源分享师 17
-      - 资源分享师 18
-      - 资源分享师 19
-      - 资源分享师 20
-      - 资源分享师 21
-      - 资源分享师 22
-      - 资源分享师 23
-      - 资源分享师 24
-      - 资源分享师 25
-      - 资源分享师 26
-      - 资源分享师 27
-      - 资源分享师 28
-      - 资源分享师 29
-      - 资源分享师 30
-      - 资源分享师 31
-      - 资源分享师 32
-      - 资源分享师 33
-      - 资源分享师 34
-      - 资源分享师 35
-      - 资源分享师 36
-      - 资源分享师 37
-      - 资源分享师 38
-      - 资源分享师 39
-      - 资源分享师 40
-      - 资源分享师 41
-      - 资源分享师 42
-      - 资源分享师 43
-      - 资源分享师 44
-      - youtube@资源分享师 8 2
-      - youtube@资源分享师 9 2
-      - 美国 youtube@资源分享师 US 74 2
-      - 美国 youtube@资源分享师 US 76 2
-      - 美国 youtube@资源分享师 US 78 2
-      - 美国 youtube@资源分享师 US 80 2
-      - 加拿大 youtube@资源分享师 CA 85 2
-      - 德国 youtube@资源分享师 DE 94 2
-      - 德国 youtube@资源分享师 DE 95 2
-      - 德国 youtube@资源分享师 DE 97 2
-      - 德国 youtube@资源分享师 DE 98 2
-      - 德国 youtube@资源分享师 DE 100 2
-      - 德国 youtube@资源分享师 DE 114 2
-      - 资源分享师 45
-      - 资源分享师 46
-      - 资源分享师 47
-      - 资源分享师 48
-      - 资源分享师 49
-      - 资源分享师 50
-      - 资源分享师 51
-      - 资源分享师 52
-      - 资源分享师 53
-      - 资源分享师 54
-      - 资源分享师 55
-      - 资源分享师 56
-      - 资源分享师 57
-      - 资源分享师 58
-      - 资源分享师 59
-      - 资源分享师 60
-      - 资源分享师 61
-      - 资源分享师 62
-      - 资源分享师 63
-      - 资源分享师 64
-      - 资源分享师 65
-      - 资源分享师 66
-      - 资源分享师 67
-      - 资源分享师 68
-      - 资源分享师 69
-      - 资源分享师 70
-      - 资源分享师 71
-      - 资源分享师 72
-      - 资源分享师 73
-      - 资源分享师 74
-      - 资源分享师 75
-      - 资源分享师 76
-      - 资源分享师 77
-      - 资源分享师 78
-      - 资源分享师 79
-      - 资源分享师 80
-      - 资源分享师 81
-      - 资源分享师 82
-      - 资源分享师 83
-      - 资源分享师 84
-      - 资源分享师 85
-      - 资源分享师 86
-      - 资源分享师 87
-      - 资源分享师 88
+      - 德国 youtube@资源分享师 DE 110
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 116
+      - 德国 youtube@资源分享师 DE 126
+      - 德国 youtube@资源分享师 DE 38
+      - 德国 youtube@资源分享师 DE 45
+      - 德国 youtube@资源分享师 DE 89
+      - 马来西亚 youtube@资源分享师 MY 21
+      - 马来西亚 youtube@资源分享师 MY 35
+      - 美国 youtube@资源分享师 US 27
+      - 日本 youtube@资源分享师 JP 142
+      - 日本 youtube@资源分享师 JP 144
+      - 日本 youtube@资源分享师 JP 22
+      - 日本 youtube@资源分享师 JP 3
+      - 塞浦路斯 youtube@资源分享师 CY 61
+      - 香港 youtube@资源分享师 HK 129
+      - youtube@资源分享师 1
+      - youtube@资源分享师 100
+      - youtube@资源分享师 101
+      - youtube@资源分享师 130
+      - youtube@资源分享师 132
+      - youtube@资源分享师 133
+      - youtube@资源分享师 134
+      - youtube@资源分享师 135
+      - youtube@资源分享师 138
+      - youtube@资源分享师 139
+      - youtube@资源分享师 140
+      - youtube@资源分享师 141
+      - youtube@资源分享师 143
+      - youtube@资源分享师 145
+      - youtube@资源分享师 146
+      - youtube@资源分享师 147
+      - youtube@资源分享师 148
+      - youtube@资源分享师 2
+      - youtube@资源分享师 20
+      - youtube@资源分享师 23
+      - youtube@资源分享师 24
+      - youtube@资源分享师 31
+      - youtube@资源分享师 51
+      - youtube@资源分享师 82
+      - youtube@资源分享师 83
+      - youtube@资源分享师 84
+      - youtube@资源分享师 85
+      - youtube@资源分享师 98
+      - 德国 youtube@资源分享师 DE 110 2
+      - 德国 youtube@资源分享师 DE 111 2
+      - 德国 youtube@资源分享师 DE 116 2
+      - 德国 youtube@资源分享师 DE 126 2
+      - 德国 youtube@资源分享师 DE 38 2
+      - 德国 youtube@资源分享师 DE 45 2
+      - 德国 youtube@资源分享师 DE 89 2
+      - 马来西亚 youtube@资源分享师 MY 21 2
+      - 马来西亚 youtube@资源分享师 MY 35 2
+      - 美国 youtube@资源分享师 US 27 2
+      - 日本 youtube@资源分享师 JP 142 2
+      - 日本 youtube@资源分享师 JP 144 2
+      - 日本 youtube@资源分享师 JP 22 2
+      - 日本 youtube@资源分享师 JP 3 2
+      - 塞浦路斯 youtube@资源分享师 CY 61 2
+      - 香港 youtube@资源分享师 HK 129 2
+      - youtube@资源分享师 1 2
+      - youtube@资源分享师 100 2
+      - youtube@资源分享师 101 2
+      - youtube@资源分享师 130 2
+      - youtube@资源分享师 132 2
+      - youtube@资源分享师 133 2
+      - youtube@资源分享师 134 2
+      - youtube@资源分享师 135 2
+      - youtube@资源分享师 138 2
+      - youtube@资源分享师 139 2
+      - youtube@资源分享师 140 2
+      - youtube@资源分享师 141 2
+      - youtube@资源分享师 143 2
+      - youtube@资源分享师 145 2
+      - youtube@资源分享师 146 2
+      - youtube@资源分享师 147 2
+      - youtube@资源分享师 148 2
+      - youtube@资源分享师 2 2
+      - youtube@资源分享师 20 2
+      - youtube@资源分享师 23 2
+      - youtube@资源分享师 24 2
+      - youtube@资源分享师 31 2
+      - youtube@资源分享师 51 2
+      - youtube@资源分享师 82 2
+      - youtube@资源分享师 83 2
+      - youtube@资源分享师 84 2
+      - youtube@资源分享师 85 2
+      - youtube@资源分享师 98 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - youtube@资源分享师 8
-      - youtube@资源分享师 9
-      - 美国 youtube@资源分享师 US 74
-      - 美国 youtube@资源分享师 US 76
-      - 美国 youtube@资源分享师 US 78
-      - 美国 youtube@资源分享师 US 80
-      - 加拿大 youtube@资源分享师 CA 85
-      - 德国 youtube@资源分享师 DE 94
-      - 德国 youtube@资源分享师 DE 95
-      - 德国 youtube@资源分享师 DE 97
-      - 德国 youtube@资源分享师 DE 98
-      - 德国 youtube@资源分享师 DE 100
-      - 德国 youtube@资源分享师 DE 114
-      - 资源分享师
-      - 资源分享师 2
-      - 资源分享师 3
-      - 资源分享师 4
-      - 资源分享师 5
-      - 资源分享师 6
-      - 资源分享师 7
-      - 资源分享师 8
-      - 资源分享师 9
-      - 资源分享师 10
-      - 资源分享师 11
-      - 资源分享师 12
-      - 资源分享师 13
-      - 资源分享师 14
-      - 资源分享师 15
-      - 资源分享师 16
-      - 资源分享师 17
-      - 资源分享师 18
-      - 资源分享师 19
-      - 资源分享师 20
-      - 资源分享师 21
-      - 资源分享师 22
-      - 资源分享师 23
-      - 资源分享师 24
-      - 资源分享师 25
-      - 资源分享师 26
-      - 资源分享师 27
-      - 资源分享师 28
-      - 资源分享师 29
-      - 资源分享师 30
-      - 资源分享师 31
-      - 资源分享师 32
-      - 资源分享师 33
-      - 资源分享师 34
-      - 资源分享师 35
-      - 资源分享师 36
-      - 资源分享师 37
-      - 资源分享师 38
-      - 资源分享师 39
-      - 资源分享师 40
-      - 资源分享师 41
-      - 资源分享师 42
-      - 资源分享师 43
-      - 资源分享师 44
-      - youtube@资源分享师 8 2
-      - youtube@资源分享师 9 2
-      - 美国 youtube@资源分享师 US 74 2
-      - 美国 youtube@资源分享师 US 76 2
-      - 美国 youtube@资源分享师 US 78 2
-      - 美国 youtube@资源分享师 US 80 2
-      - 加拿大 youtube@资源分享师 CA 85 2
-      - 德国 youtube@资源分享师 DE 94 2
-      - 德国 youtube@资源分享师 DE 95 2
-      - 德国 youtube@资源分享师 DE 97 2
-      - 德国 youtube@资源分享师 DE 98 2
-      - 德国 youtube@资源分享师 DE 100 2
-      - 德国 youtube@资源分享师 DE 114 2
-      - 资源分享师 45
-      - 资源分享师 46
-      - 资源分享师 47
-      - 资源分享师 48
-      - 资源分享师 49
-      - 资源分享师 50
-      - 资源分享师 51
-      - 资源分享师 52
-      - 资源分享师 53
-      - 资源分享师 54
-      - 资源分享师 55
-      - 资源分享师 56
-      - 资源分享师 57
-      - 资源分享师 58
-      - 资源分享师 59
-      - 资源分享师 60
-      - 资源分享师 61
-      - 资源分享师 62
-      - 资源分享师 63
-      - 资源分享师 64
-      - 资源分享师 65
-      - 资源分享师 66
-      - 资源分享师 67
-      - 资源分享师 68
-      - 资源分享师 69
-      - 资源分享师 70
-      - 资源分享师 71
-      - 资源分享师 72
-      - 资源分享师 73
-      - 资源分享师 74
-      - 资源分享师 75
-      - 资源分享师 76
-      - 资源分享师 77
-      - 资源分享师 78
-      - 资源分享师 79
-      - 资源分享师 80
-      - 资源分享师 81
-      - 资源分享师 82
-      - 资源分享师 83
-      - 资源分享师 84
-      - 资源分享师 85
-      - 资源分享师 86
-      - 资源分享师 87
-      - 资源分享师 88
+      - 德国 youtube@资源分享师 DE 110
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 116
+      - 德国 youtube@资源分享师 DE 126
+      - 德国 youtube@资源分享师 DE 38
+      - 德国 youtube@资源分享师 DE 45
+      - 德国 youtube@资源分享师 DE 89
+      - 马来西亚 youtube@资源分享师 MY 21
+      - 马来西亚 youtube@资源分享师 MY 35
+      - 美国 youtube@资源分享师 US 27
+      - 日本 youtube@资源分享师 JP 142
+      - 日本 youtube@资源分享师 JP 144
+      - 日本 youtube@资源分享师 JP 22
+      - 日本 youtube@资源分享师 JP 3
+      - 塞浦路斯 youtube@资源分享师 CY 61
+      - 香港 youtube@资源分享师 HK 129
+      - youtube@资源分享师 1
+      - youtube@资源分享师 100
+      - youtube@资源分享师 101
+      - youtube@资源分享师 130
+      - youtube@资源分享师 132
+      - youtube@资源分享师 133
+      - youtube@资源分享师 134
+      - youtube@资源分享师 135
+      - youtube@资源分享师 138
+      - youtube@资源分享师 139
+      - youtube@资源分享师 140
+      - youtube@资源分享师 141
+      - youtube@资源分享师 143
+      - youtube@资源分享师 145
+      - youtube@资源分享师 146
+      - youtube@资源分享师 147
+      - youtube@资源分享师 148
+      - youtube@资源分享师 2
+      - youtube@资源分享师 20
+      - youtube@资源分享师 23
+      - youtube@资源分享师 24
+      - youtube@资源分享师 31
+      - youtube@资源分享师 51
+      - youtube@资源分享师 82
+      - youtube@资源分享师 83
+      - youtube@资源分享师 84
+      - youtube@资源分享师 85
+      - youtube@资源分享师 98
+      - 德国 youtube@资源分享师 DE 110 2
+      - 德国 youtube@资源分享师 DE 111 2
+      - 德国 youtube@资源分享师 DE 116 2
+      - 德国 youtube@资源分享师 DE 126 2
+      - 德国 youtube@资源分享师 DE 38 2
+      - 德国 youtube@资源分享师 DE 45 2
+      - 德国 youtube@资源分享师 DE 89 2
+      - 马来西亚 youtube@资源分享师 MY 21 2
+      - 马来西亚 youtube@资源分享师 MY 35 2
+      - 美国 youtube@资源分享师 US 27 2
+      - 日本 youtube@资源分享师 JP 142 2
+      - 日本 youtube@资源分享师 JP 144 2
+      - 日本 youtube@资源分享师 JP 22 2
+      - 日本 youtube@资源分享师 JP 3 2
+      - 塞浦路斯 youtube@资源分享师 CY 61 2
+      - 香港 youtube@资源分享师 HK 129 2
+      - youtube@资源分享师 1 2
+      - youtube@资源分享师 100 2
+      - youtube@资源分享师 101 2
+      - youtube@资源分享师 130 2
+      - youtube@资源分享师 132 2
+      - youtube@资源分享师 133 2
+      - youtube@资源分享师 134 2
+      - youtube@资源分享师 135 2
+      - youtube@资源分享师 138 2
+      - youtube@资源分享师 139 2
+      - youtube@资源分享师 140 2
+      - youtube@资源分享师 141 2
+      - youtube@资源分享师 143 2
+      - youtube@资源分享师 145 2
+      - youtube@资源分享师 146 2
+      - youtube@资源分享师 147 2
+      - youtube@资源分享师 148 2
+      - youtube@资源分享师 2 2
+      - youtube@资源分享师 20 2
+      - youtube@资源分享师 23 2
+      - youtube@资源分享师 24 2
+      - youtube@资源分享师 31 2
+      - youtube@资源分享师 51 2
+      - youtube@资源分享师 82 2
+      - youtube@资源分享师 83 2
+      - youtube@资源分享师 84 2
+      - youtube@资源分享师 85 2
+      - youtube@资源分享师 98 2
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - youtube@资源分享师 8
-      - youtube@资源分享师 9
-      - 美国 youtube@资源分享师 US 74
-      - 美国 youtube@资源分享师 US 76
-      - 美国 youtube@资源分享师 US 78
-      - 美国 youtube@资源分享师 US 80
-      - 加拿大 youtube@资源分享师 CA 85
-      - 德国 youtube@资源分享师 DE 94
-      - 德国 youtube@资源分享师 DE 95
-      - 德国 youtube@资源分享师 DE 97
-      - 德国 youtube@资源分享师 DE 98
-      - 德国 youtube@资源分享师 DE 100
-      - 德国 youtube@资源分享师 DE 114
-      - 资源分享师
-      - 资源分享师 2
-      - 资源分享师 3
-      - 资源分享师 4
-      - 资源分享师 5
-      - 资源分享师 6
-      - 资源分享师 7
-      - 资源分享师 8
-      - 资源分享师 9
-      - 资源分享师 10
-      - 资源分享师 11
-      - 资源分享师 12
-      - 资源分享师 13
-      - 资源分享师 14
-      - 资源分享师 15
-      - 资源分享师 16
-      - 资源分享师 17
-      - 资源分享师 18
-      - 资源分享师 19
-      - 资源分享师 20
-      - 资源分享师 21
-      - 资源分享师 22
-      - 资源分享师 23
-      - 资源分享师 24
-      - 资源分享师 25
-      - 资源分享师 26
-      - 资源分享师 27
-      - 资源分享师 28
-      - 资源分享师 29
-      - 资源分享师 30
-      - 资源分享师 31
-      - 资源分享师 32
-      - 资源分享师 33
-      - 资源分享师 34
-      - 资源分享师 35
-      - 资源分享师 36
-      - 资源分享师 37
-      - 资源分享师 38
-      - 资源分享师 39
-      - 资源分享师 40
-      - 资源分享师 41
-      - 资源分享师 42
-      - 资源分享师 43
-      - 资源分享师 44
-      - youtube@资源分享师 8 2
-      - youtube@资源分享师 9 2
-      - 美国 youtube@资源分享师 US 74 2
-      - 美国 youtube@资源分享师 US 76 2
-      - 美国 youtube@资源分享师 US 78 2
-      - 美国 youtube@资源分享师 US 80 2
-      - 加拿大 youtube@资源分享师 CA 85 2
-      - 德国 youtube@资源分享师 DE 94 2
-      - 德国 youtube@资源分享师 DE 95 2
-      - 德国 youtube@资源分享师 DE 97 2
-      - 德国 youtube@资源分享师 DE 98 2
-      - 德国 youtube@资源分享师 DE 100 2
-      - 德国 youtube@资源分享师 DE 114 2
-      - 资源分享师 45
-      - 资源分享师 46
-      - 资源分享师 47
-      - 资源分享师 48
-      - 资源分享师 49
-      - 资源分享师 50
-      - 资源分享师 51
-      - 资源分享师 52
-      - 资源分享师 53
-      - 资源分享师 54
-      - 资源分享师 55
-      - 资源分享师 56
-      - 资源分享师 57
-      - 资源分享师 58
-      - 资源分享师 59
-      - 资源分享师 60
-      - 资源分享师 61
-      - 资源分享师 62
-      - 资源分享师 63
-      - 资源分享师 64
-      - 资源分享师 65
-      - 资源分享师 66
-      - 资源分享师 67
-      - 资源分享师 68
-      - 资源分享师 69
-      - 资源分享师 70
-      - 资源分享师 71
-      - 资源分享师 72
-      - 资源分享师 73
-      - 资源分享师 74
-      - 资源分享师 75
-      - 资源分享师 76
-      - 资源分享师 77
-      - 资源分享师 78
-      - 资源分享师 79
-      - 资源分享师 80
-      - 资源分享师 81
-      - 资源分享师 82
-      - 资源分享师 83
-      - 资源分享师 84
-      - 资源分享师 85
-      - 资源分享师 86
-      - 资源分享师 87
-      - 资源分享师 88
+      - 德国 youtube@资源分享师 DE 110
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 116
+      - 德国 youtube@资源分享师 DE 126
+      - 德国 youtube@资源分享师 DE 38
+      - 德国 youtube@资源分享师 DE 45
+      - 德国 youtube@资源分享师 DE 89
+      - 马来西亚 youtube@资源分享师 MY 21
+      - 马来西亚 youtube@资源分享师 MY 35
+      - 美国 youtube@资源分享师 US 27
+      - 日本 youtube@资源分享师 JP 142
+      - 日本 youtube@资源分享师 JP 144
+      - 日本 youtube@资源分享师 JP 22
+      - 日本 youtube@资源分享师 JP 3
+      - 塞浦路斯 youtube@资源分享师 CY 61
+      - 香港 youtube@资源分享师 HK 129
+      - youtube@资源分享师 1
+      - youtube@资源分享师 100
+      - youtube@资源分享师 101
+      - youtube@资源分享师 130
+      - youtube@资源分享师 132
+      - youtube@资源分享师 133
+      - youtube@资源分享师 134
+      - youtube@资源分享师 135
+      - youtube@资源分享师 138
+      - youtube@资源分享师 139
+      - youtube@资源分享师 140
+      - youtube@资源分享师 141
+      - youtube@资源分享师 143
+      - youtube@资源分享师 145
+      - youtube@资源分享师 146
+      - youtube@资源分享师 147
+      - youtube@资源分享师 148
+      - youtube@资源分享师 2
+      - youtube@资源分享师 20
+      - youtube@资源分享师 23
+      - youtube@资源分享师 24
+      - youtube@资源分享师 31
+      - youtube@资源分享师 51
+      - youtube@资源分享师 82
+      - youtube@资源分享师 83
+      - youtube@资源分享师 84
+      - youtube@资源分享师 85
+      - youtube@资源分享师 98
+      - 德国 youtube@资源分享师 DE 110 2
+      - 德国 youtube@资源分享师 DE 111 2
+      - 德国 youtube@资源分享师 DE 116 2
+      - 德国 youtube@资源分享师 DE 126 2
+      - 德国 youtube@资源分享师 DE 38 2
+      - 德国 youtube@资源分享师 DE 45 2
+      - 德国 youtube@资源分享师 DE 89 2
+      - 马来西亚 youtube@资源分享师 MY 21 2
+      - 马来西亚 youtube@资源分享师 MY 35 2
+      - 美国 youtube@资源分享师 US 27 2
+      - 日本 youtube@资源分享师 JP 142 2
+      - 日本 youtube@资源分享师 JP 144 2
+      - 日本 youtube@资源分享师 JP 22 2
+      - 日本 youtube@资源分享师 JP 3 2
+      - 塞浦路斯 youtube@资源分享师 CY 61 2
+      - 香港 youtube@资源分享师 HK 129 2
+      - youtube@资源分享师 1 2
+      - youtube@资源分享师 100 2
+      - youtube@资源分享师 101 2
+      - youtube@资源分享师 130 2
+      - youtube@资源分享师 132 2
+      - youtube@资源分享师 133 2
+      - youtube@资源分享师 134 2
+      - youtube@资源分享师 135 2
+      - youtube@资源分享师 138 2
+      - youtube@资源分享师 139 2
+      - youtube@资源分享师 140 2
+      - youtube@资源分享师 141 2
+      - youtube@资源分享师 143 2
+      - youtube@资源分享师 145 2
+      - youtube@资源分享师 146 2
+      - youtube@资源分享师 147 2
+      - youtube@资源分享师 148 2
+      - youtube@资源分享师 2 2
+      - youtube@资源分享师 20 2
+      - youtube@资源分享师 23 2
+      - youtube@资源分享师 24 2
+      - youtube@资源分享师 31 2
+      - youtube@资源分享师 51 2
+      - youtube@资源分享师 82 2
+      - youtube@资源分享师 83 2
+      - youtube@资源分享师 84 2
+      - youtube@资源分享师 85 2
+      - youtube@资源分享师 98 2
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -496,483 +392,381 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - youtube@资源分享师 8
-      - youtube@资源分享师 9
-      - 美国 youtube@资源分享师 US 74
-      - 美国 youtube@资源分享师 US 76
-      - 美国 youtube@资源分享师 US 78
-      - 美国 youtube@资源分享师 US 80
-      - 加拿大 youtube@资源分享师 CA 85
-      - 德国 youtube@资源分享师 DE 94
-      - 德国 youtube@资源分享师 DE 95
-      - 德国 youtube@资源分享师 DE 97
-      - 德国 youtube@资源分享师 DE 98
-      - 德国 youtube@资源分享师 DE 100
-      - 德国 youtube@资源分享师 DE 114
-      - 资源分享师
-      - 资源分享师 2
-      - 资源分享师 3
-      - 资源分享师 4
-      - 资源分享师 5
-      - 资源分享师 6
-      - 资源分享师 7
-      - 资源分享师 8
-      - 资源分享师 9
-      - 资源分享师 10
-      - 资源分享师 11
-      - 资源分享师 12
-      - 资源分享师 13
-      - 资源分享师 14
-      - 资源分享师 15
-      - 资源分享师 16
-      - 资源分享师 17
-      - 资源分享师 18
-      - 资源分享师 19
-      - 资源分享师 20
-      - 资源分享师 21
-      - 资源分享师 22
-      - 资源分享师 23
-      - 资源分享师 24
-      - 资源分享师 25
-      - 资源分享师 26
-      - 资源分享师 27
-      - 资源分享师 28
-      - 资源分享师 29
-      - 资源分享师 30
-      - 资源分享师 31
-      - 资源分享师 32
-      - 资源分享师 33
-      - 资源分享师 34
-      - 资源分享师 35
-      - 资源分享师 36
-      - 资源分享师 37
-      - 资源分享师 38
-      - 资源分享师 39
-      - 资源分享师 40
-      - 资源分享师 41
-      - 资源分享师 42
-      - 资源分享师 43
-      - 资源分享师 44
-      - youtube@资源分享师 8 2
-      - youtube@资源分享师 9 2
-      - 美国 youtube@资源分享师 US 74 2
-      - 美国 youtube@资源分享师 US 76 2
-      - 美国 youtube@资源分享师 US 78 2
-      - 美国 youtube@资源分享师 US 80 2
-      - 加拿大 youtube@资源分享师 CA 85 2
-      - 德国 youtube@资源分享师 DE 94 2
-      - 德国 youtube@资源分享师 DE 95 2
-      - 德国 youtube@资源分享师 DE 97 2
-      - 德国 youtube@资源分享师 DE 98 2
-      - 德国 youtube@资源分享师 DE 100 2
-      - 德国 youtube@资源分享师 DE 114 2
-      - 资源分享师 45
-      - 资源分享师 46
-      - 资源分享师 47
-      - 资源分享师 48
-      - 资源分享师 49
-      - 资源分享师 50
-      - 资源分享师 51
-      - 资源分享师 52
-      - 资源分享师 53
-      - 资源分享师 54
-      - 资源分享师 55
-      - 资源分享师 56
-      - 资源分享师 57
-      - 资源分享师 58
-      - 资源分享师 59
-      - 资源分享师 60
-      - 资源分享师 61
-      - 资源分享师 62
-      - 资源分享师 63
-      - 资源分享师 64
-      - 资源分享师 65
-      - 资源分享师 66
-      - 资源分享师 67
-      - 资源分享师 68
-      - 资源分享师 69
-      - 资源分享师 70
-      - 资源分享师 71
-      - 资源分享师 72
-      - 资源分享师 73
-      - 资源分享师 74
-      - 资源分享师 75
-      - 资源分享师 76
-      - 资源分享师 77
-      - 资源分享师 78
-      - 资源分享师 79
-      - 资源分享师 80
-      - 资源分享师 81
-      - 资源分享师 82
-      - 资源分享师 83
-      - 资源分享师 84
-      - 资源分享师 85
-      - 资源分享师 86
-      - 资源分享师 87
-      - 资源分享师 88
+      - 德国 youtube@资源分享师 DE 110
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 116
+      - 德国 youtube@资源分享师 DE 126
+      - 德国 youtube@资源分享师 DE 38
+      - 德国 youtube@资源分享师 DE 45
+      - 德国 youtube@资源分享师 DE 89
+      - 马来西亚 youtube@资源分享师 MY 21
+      - 马来西亚 youtube@资源分享师 MY 35
+      - 美国 youtube@资源分享师 US 27
+      - 日本 youtube@资源分享师 JP 142
+      - 日本 youtube@资源分享师 JP 144
+      - 日本 youtube@资源分享师 JP 22
+      - 日本 youtube@资源分享师 JP 3
+      - 塞浦路斯 youtube@资源分享师 CY 61
+      - 香港 youtube@资源分享师 HK 129
+      - youtube@资源分享师 1
+      - youtube@资源分享师 100
+      - youtube@资源分享师 101
+      - youtube@资源分享师 130
+      - youtube@资源分享师 132
+      - youtube@资源分享师 133
+      - youtube@资源分享师 134
+      - youtube@资源分享师 135
+      - youtube@资源分享师 138
+      - youtube@资源分享师 139
+      - youtube@资源分享师 140
+      - youtube@资源分享师 141
+      - youtube@资源分享师 143
+      - youtube@资源分享师 145
+      - youtube@资源分享师 146
+      - youtube@资源分享师 147
+      - youtube@资源分享师 148
+      - youtube@资源分享师 2
+      - youtube@资源分享师 20
+      - youtube@资源分享师 23
+      - youtube@资源分享师 24
+      - youtube@资源分享师 31
+      - youtube@资源分享师 51
+      - youtube@资源分享师 82
+      - youtube@资源分享师 83
+      - youtube@资源分享师 84
+      - youtube@资源分享师 85
+      - youtube@资源分享师 98
+      - 德国 youtube@资源分享师 DE 110 2
+      - 德国 youtube@资源分享师 DE 111 2
+      - 德国 youtube@资源分享师 DE 116 2
+      - 德国 youtube@资源分享师 DE 126 2
+      - 德国 youtube@资源分享师 DE 38 2
+      - 德国 youtube@资源分享师 DE 45 2
+      - 德国 youtube@资源分享师 DE 89 2
+      - 马来西亚 youtube@资源分享师 MY 21 2
+      - 马来西亚 youtube@资源分享师 MY 35 2
+      - 美国 youtube@资源分享师 US 27 2
+      - 日本 youtube@资源分享师 JP 142 2
+      - 日本 youtube@资源分享师 JP 144 2
+      - 日本 youtube@资源分享师 JP 22 2
+      - 日本 youtube@资源分享师 JP 3 2
+      - 塞浦路斯 youtube@资源分享师 CY 61 2
+      - 香港 youtube@资源分享师 HK 129 2
+      - youtube@资源分享师 1 2
+      - youtube@资源分享师 100 2
+      - youtube@资源分享师 101 2
+      - youtube@资源分享师 130 2
+      - youtube@资源分享师 132 2
+      - youtube@资源分享师 133 2
+      - youtube@资源分享师 134 2
+      - youtube@资源分享师 135 2
+      - youtube@资源分享师 138 2
+      - youtube@资源分享师 139 2
+      - youtube@资源分享师 140 2
+      - youtube@资源分享师 141 2
+      - youtube@资源分享师 143 2
+      - youtube@资源分享师 145 2
+      - youtube@资源分享师 146 2
+      - youtube@资源分享师 147 2
+      - youtube@资源分享师 148 2
+      - youtube@资源分享师 2 2
+      - youtube@资源分享师 20 2
+      - youtube@资源分享师 23 2
+      - youtube@资源分享师 24 2
+      - youtube@资源分享师 31 2
+      - youtube@资源分享师 51 2
+      - youtube@资源分享师 82 2
+      - youtube@资源分享师 83 2
+      - youtube@资源分享师 84 2
+      - youtube@资源分享师 85 2
+      - youtube@资源分享师 98 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - 香港 youtube@资源分享师 HK 129
+      - 香港 youtube@资源分享师 HK 129 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - youtube@资源分享师 8
-      - youtube@资源分享师 9
-      - 美国 youtube@资源分享师 US 74
-      - 美国 youtube@资源分享师 US 76
-      - 美国 youtube@资源分享师 US 78
-      - 美国 youtube@资源分享师 US 80
-      - 加拿大 youtube@资源分享师 CA 85
-      - 德国 youtube@资源分享师 DE 94
-      - 德国 youtube@资源分享师 DE 95
-      - 德国 youtube@资源分享师 DE 97
-      - 德国 youtube@资源分享师 DE 98
-      - 德国 youtube@资源分享师 DE 100
-      - 德国 youtube@资源分享师 DE 114
-      - 资源分享师
-      - 资源分享师 2
-      - 资源分享师 3
-      - 资源分享师 4
-      - 资源分享师 5
-      - 资源分享师 6
-      - 资源分享师 7
-      - 资源分享师 8
-      - 资源分享师 9
-      - 资源分享师 10
-      - 资源分享师 11
-      - 资源分享师 12
-      - 资源分享师 13
-      - 资源分享师 14
-      - 资源分享师 15
-      - 资源分享师 16
-      - 资源分享师 17
-      - 资源分享师 18
-      - 资源分享师 19
-      - 资源分享师 20
-      - 资源分享师 21
-      - 资源分享师 22
-      - 资源分享师 23
-      - 资源分享师 24
-      - 资源分享师 25
-      - 资源分享师 26
-      - 资源分享师 27
-      - 资源分享师 28
-      - 资源分享师 29
-      - 资源分享师 30
-      - 资源分享师 31
-      - 资源分享师 32
-      - 资源分享师 33
-      - 资源分享师 34
-      - 资源分享师 35
-      - 资源分享师 36
-      - 资源分享师 37
-      - 资源分享师 38
-      - 资源分享师 39
-      - 资源分享师 40
-      - 资源分享师 41
-      - 资源分享师 42
-      - 资源分享师 43
-      - 资源分享师 44
-      - youtube@资源分享师 8 2
-      - youtube@资源分享师 9 2
-      - 美国 youtube@资源分享师 US 74 2
-      - 美国 youtube@资源分享师 US 76 2
-      - 美国 youtube@资源分享师 US 78 2
-      - 美国 youtube@资源分享师 US 80 2
-      - 加拿大 youtube@资源分享师 CA 85 2
-      - 德国 youtube@资源分享师 DE 94 2
-      - 德国 youtube@资源分享师 DE 95 2
-      - 德国 youtube@资源分享师 DE 97 2
-      - 德国 youtube@资源分享师 DE 98 2
-      - 德国 youtube@资源分享师 DE 100 2
-      - 德国 youtube@资源分享师 DE 114 2
-      - 资源分享师 45
-      - 资源分享师 46
-      - 资源分享师 47
-      - 资源分享师 48
-      - 资源分享师 49
-      - 资源分享师 50
-      - 资源分享师 51
-      - 资源分享师 52
-      - 资源分享师 53
-      - 资源分享师 54
-      - 资源分享师 55
-      - 资源分享师 56
-      - 资源分享师 57
-      - 资源分享师 58
-      - 资源分享师 59
-      - 资源分享师 60
-      - 资源分享师 61
-      - 资源分享师 62
-      - 资源分享师 63
-      - 资源分享师 64
-      - 资源分享师 65
-      - 资源分享师 66
-      - 资源分享师 67
-      - 资源分享师 68
-      - 资源分享师 69
-      - 资源分享师 70
-      - 资源分享师 71
-      - 资源分享师 72
-      - 资源分享师 73
-      - 资源分享师 74
-      - 资源分享师 75
-      - 资源分享师 76
-      - 资源分享师 77
-      - 资源分享师 78
-      - 资源分享师 79
-      - 资源分享师 80
-      - 资源分享师 81
-      - 资源分享师 82
-      - 资源分享师 83
-      - 资源分享师 84
-      - 资源分享师 85
-      - 资源分享师 86
-      - 资源分享师 87
-      - 资源分享师 88
+      - 德国 youtube@资源分享师 DE 110
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 116
+      - 德国 youtube@资源分享师 DE 126
+      - 德国 youtube@资源分享师 DE 38
+      - 德国 youtube@资源分享师 DE 45
+      - 德国 youtube@资源分享师 DE 89
+      - 马来西亚 youtube@资源分享师 MY 21
+      - 马来西亚 youtube@资源分享师 MY 35
+      - 美国 youtube@资源分享师 US 27
+      - 日本 youtube@资源分享师 JP 142
+      - 日本 youtube@资源分享师 JP 144
+      - 日本 youtube@资源分享师 JP 22
+      - 日本 youtube@资源分享师 JP 3
+      - 塞浦路斯 youtube@资源分享师 CY 61
+      - 香港 youtube@资源分享师 HK 129
+      - youtube@资源分享师 1
+      - youtube@资源分享师 100
+      - youtube@资源分享师 101
+      - youtube@资源分享师 130
+      - youtube@资源分享师 132
+      - youtube@资源分享师 133
+      - youtube@资源分享师 134
+      - youtube@资源分享师 135
+      - youtube@资源分享师 138
+      - youtube@资源分享师 139
+      - youtube@资源分享师 140
+      - youtube@资源分享师 141
+      - youtube@资源分享师 143
+      - youtube@资源分享师 145
+      - youtube@资源分享师 146
+      - youtube@资源分享师 147
+      - youtube@资源分享师 148
+      - youtube@资源分享师 2
+      - youtube@资源分享师 20
+      - youtube@资源分享师 23
+      - youtube@资源分享师 24
+      - youtube@资源分享师 31
+      - youtube@资源分享师 51
+      - youtube@资源分享师 82
+      - youtube@资源分享师 83
+      - youtube@资源分享师 84
+      - youtube@资源分享师 85
+      - youtube@资源分享师 98
+      - 德国 youtube@资源分享师 DE 110 2
+      - 德国 youtube@资源分享师 DE 111 2
+      - 德国 youtube@资源分享师 DE 116 2
+      - 德国 youtube@资源分享师 DE 126 2
+      - 德国 youtube@资源分享师 DE 38 2
+      - 德国 youtube@资源分享师 DE 45 2
+      - 德国 youtube@资源分享师 DE 89 2
+      - 马来西亚 youtube@资源分享师 MY 21 2
+      - 马来西亚 youtube@资源分享师 MY 35 2
+      - 美国 youtube@资源分享师 US 27 2
+      - 日本 youtube@资源分享师 JP 142 2
+      - 日本 youtube@资源分享师 JP 144 2
+      - 日本 youtube@资源分享师 JP 22 2
+      - 日本 youtube@资源分享师 JP 3 2
+      - 塞浦路斯 youtube@资源分享师 CY 61 2
+      - 香港 youtube@资源分享师 HK 129 2
+      - youtube@资源分享师 1 2
+      - youtube@资源分享师 100 2
+      - youtube@资源分享师 101 2
+      - youtube@资源分享师 130 2
+      - youtube@资源分享师 132 2
+      - youtube@资源分享师 133 2
+      - youtube@资源分享师 134 2
+      - youtube@资源分享师 135 2
+      - youtube@资源分享师 138 2
+      - youtube@资源分享师 139 2
+      - youtube@资源分享师 140 2
+      - youtube@资源分享师 141 2
+      - youtube@资源分享师 143 2
+      - youtube@资源分享师 145 2
+      - youtube@资源分享师 146 2
+      - youtube@资源分享师 147 2
+      - youtube@资源分享师 148 2
+      - youtube@资源分享师 2 2
+      - youtube@资源分享师 20 2
+      - youtube@资源分享师 23 2
+      - youtube@资源分享师 24 2
+      - youtube@资源分享师 31 2
+      - youtube@资源分享师 51 2
+      - youtube@资源分享师 82 2
+      - youtube@资源分享师 83 2
+      - youtube@资源分享师 84 2
+      - youtube@资源分享师 85 2
+      - youtube@资源分享师 98 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - youtube@资源分享师 8
-      - youtube@资源分享师 9
-      - 美国 youtube@资源分享师 US 74
-      - 美国 youtube@资源分享师 US 76
-      - 美国 youtube@资源分享师 US 78
-      - 美国 youtube@资源分享师 US 80
-      - 加拿大 youtube@资源分享师 CA 85
-      - 德国 youtube@资源分享师 DE 94
-      - 德国 youtube@资源分享师 DE 95
-      - 德国 youtube@资源分享师 DE 97
-      - 德国 youtube@资源分享师 DE 98
-      - 德国 youtube@资源分享师 DE 100
-      - 德国 youtube@资源分享师 DE 114
-      - 资源分享师
-      - 资源分享师 2
-      - 资源分享师 3
-      - 资源分享师 4
-      - 资源分享师 5
-      - 资源分享师 6
-      - 资源分享师 7
-      - 资源分享师 8
-      - 资源分享师 9
-      - 资源分享师 10
-      - 资源分享师 11
-      - 资源分享师 12
-      - 资源分享师 13
-      - 资源分享师 14
-      - 资源分享师 15
-      - 资源分享师 16
-      - 资源分享师 17
-      - 资源分享师 18
-      - 资源分享师 19
-      - 资源分享师 20
-      - 资源分享师 21
-      - 资源分享师 22
-      - 资源分享师 23
-      - 资源分享师 24
-      - 资源分享师 25
-      - 资源分享师 26
-      - 资源分享师 27
-      - 资源分享师 28
-      - 资源分享师 29
-      - 资源分享师 30
-      - 资源分享师 31
-      - 资源分享师 32
-      - 资源分享师 33
-      - 资源分享师 34
-      - 资源分享师 35
-      - 资源分享师 36
-      - 资源分享师 37
-      - 资源分享师 38
-      - 资源分享师 39
-      - 资源分享师 40
-      - 资源分享师 41
-      - 资源分享师 42
-      - 资源分享师 43
-      - 资源分享师 44
-      - youtube@资源分享师 8 2
-      - youtube@资源分享师 9 2
-      - 美国 youtube@资源分享师 US 74 2
-      - 美国 youtube@资源分享师 US 76 2
-      - 美国 youtube@资源分享师 US 78 2
-      - 美国 youtube@资源分享师 US 80 2
-      - 加拿大 youtube@资源分享师 CA 85 2
-      - 德国 youtube@资源分享师 DE 94 2
-      - 德国 youtube@资源分享师 DE 95 2
-      - 德国 youtube@资源分享师 DE 97 2
-      - 德国 youtube@资源分享师 DE 98 2
-      - 德国 youtube@资源分享师 DE 100 2
-      - 德国 youtube@资源分享师 DE 114 2
-      - 资源分享师 45
-      - 资源分享师 46
-      - 资源分享师 47
-      - 资源分享师 48
-      - 资源分享师 49
-      - 资源分享师 50
-      - 资源分享师 51
-      - 资源分享师 52
-      - 资源分享师 53
-      - 资源分享师 54
-      - 资源分享师 55
-      - 资源分享师 56
-      - 资源分享师 57
-      - 资源分享师 58
-      - 资源分享师 59
-      - 资源分享师 60
-      - 资源分享师 61
-      - 资源分享师 62
-      - 资源分享师 63
-      - 资源分享师 64
-      - 资源分享师 65
-      - 资源分享师 66
-      - 资源分享师 67
-      - 资源分享师 68
-      - 资源分享师 69
-      - 资源分享师 70
-      - 资源分享师 71
-      - 资源分享师 72
-      - 资源分享师 73
-      - 资源分享师 74
-      - 资源分享师 75
-      - 资源分享师 76
-      - 资源分享师 77
-      - 资源分享师 78
-      - 资源分享师 79
-      - 资源分享师 80
-      - 资源分享师 81
-      - 资源分享师 82
-      - 资源分享师 83
-      - 资源分享师 84
-      - 资源分享师 85
-      - 资源分享师 86
-      - 资源分享师 87
-      - 资源分享师 88
+      - 德国 youtube@资源分享师 DE 110
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 116
+      - 德国 youtube@资源分享师 DE 126
+      - 德国 youtube@资源分享师 DE 38
+      - 德国 youtube@资源分享师 DE 45
+      - 德国 youtube@资源分享师 DE 89
+      - 马来西亚 youtube@资源分享师 MY 21
+      - 马来西亚 youtube@资源分享师 MY 35
+      - 美国 youtube@资源分享师 US 27
+      - 日本 youtube@资源分享师 JP 142
+      - 日本 youtube@资源分享师 JP 144
+      - 日本 youtube@资源分享师 JP 22
+      - 日本 youtube@资源分享师 JP 3
+      - 塞浦路斯 youtube@资源分享师 CY 61
+      - 香港 youtube@资源分享师 HK 129
+      - youtube@资源分享师 1
+      - youtube@资源分享师 100
+      - youtube@资源分享师 101
+      - youtube@资源分享师 130
+      - youtube@资源分享师 132
+      - youtube@资源分享师 133
+      - youtube@资源分享师 134
+      - youtube@资源分享师 135
+      - youtube@资源分享师 138
+      - youtube@资源分享师 139
+      - youtube@资源分享师 140
+      - youtube@资源分享师 141
+      - youtube@资源分享师 143
+      - youtube@资源分享师 145
+      - youtube@资源分享师 146
+      - youtube@资源分享师 147
+      - youtube@资源分享师 148
+      - youtube@资源分享师 2
+      - youtube@资源分享师 20
+      - youtube@资源分享师 23
+      - youtube@资源分享师 24
+      - youtube@资源分享师 31
+      - youtube@资源分享师 51
+      - youtube@资源分享师 82
+      - youtube@资源分享师 83
+      - youtube@资源分享师 84
+      - youtube@资源分享师 85
+      - youtube@资源分享师 98
+      - 德国 youtube@资源分享师 DE 110 2
+      - 德国 youtube@资源分享师 DE 111 2
+      - 德国 youtube@资源分享师 DE 116 2
+      - 德国 youtube@资源分享师 DE 126 2
+      - 德国 youtube@资源分享师 DE 38 2
+      - 德国 youtube@资源分享师 DE 45 2
+      - 德国 youtube@资源分享师 DE 89 2
+      - 马来西亚 youtube@资源分享师 MY 21 2
+      - 马来西亚 youtube@资源分享师 MY 35 2
+      - 美国 youtube@资源分享师 US 27 2
+      - 日本 youtube@资源分享师 JP 142 2
+      - 日本 youtube@资源分享师 JP 144 2
+      - 日本 youtube@资源分享师 JP 22 2
+      - 日本 youtube@资源分享师 JP 3 2
+      - 塞浦路斯 youtube@资源分享师 CY 61 2
+      - 香港 youtube@资源分享师 HK 129 2
+      - youtube@资源分享师 1 2
+      - youtube@资源分享师 100 2
+      - youtube@资源分享师 101 2
+      - youtube@资源分享师 130 2
+      - youtube@资源分享师 132 2
+      - youtube@资源分享师 133 2
+      - youtube@资源分享师 134 2
+      - youtube@资源分享师 135 2
+      - youtube@资源分享师 138 2
+      - youtube@资源分享师 139 2
+      - youtube@资源分享师 140 2
+      - youtube@资源分享师 141 2
+      - youtube@资源分享师 143 2
+      - youtube@资源分享师 145 2
+      - youtube@资源分享师 146 2
+      - youtube@资源分享师 147 2
+      - youtube@资源分享师 148 2
+      - youtube@资源分享师 2 2
+      - youtube@资源分享师 20 2
+      - youtube@资源分享师 23 2
+      - youtube@资源分享师 24 2
+      - youtube@资源分享师 31 2
+      - youtube@资源分享师 51 2
+      - youtube@资源分享师 82 2
+      - youtube@资源分享师 83 2
+      - youtube@资源分享师 84 2
+      - youtube@资源分享师 85 2
+      - youtube@资源分享师 98 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - youtube@资源分享师 8
-      - youtube@资源分享师 9
-      - 美国 youtube@资源分享师 US 74
-      - 美国 youtube@资源分享师 US 76
-      - 美国 youtube@资源分享师 US 78
-      - 美国 youtube@资源分享师 US 80
-      - 加拿大 youtube@资源分享师 CA 85
-      - 德国 youtube@资源分享师 DE 94
-      - 德国 youtube@资源分享师 DE 95
-      - 德国 youtube@资源分享师 DE 97
-      - 德国 youtube@资源分享师 DE 98
-      - 德国 youtube@资源分享师 DE 100
-      - 德国 youtube@资源分享师 DE 114
-      - 资源分享师
-      - 资源分享师 2
-      - 资源分享师 3
-      - 资源分享师 4
-      - 资源分享师 5
-      - 资源分享师 6
-      - 资源分享师 7
-      - 资源分享师 8
-      - 资源分享师 9
-      - 资源分享师 10
-      - 资源分享师 11
-      - 资源分享师 12
-      - 资源分享师 13
-      - 资源分享师 14
-      - 资源分享师 15
-      - 资源分享师 16
-      - 资源分享师 17
-      - 资源分享师 18
-      - 资源分享师 19
-      - 资源分享师 20
-      - 资源分享师 21
-      - 资源分享师 22
-      - 资源分享师 23
-      - 资源分享师 24
-      - 资源分享师 25
-      - 资源分享师 26
-      - 资源分享师 27
-      - 资源分享师 28
-      - 资源分享师 29
-      - 资源分享师 30
-      - 资源分享师 31
-      - 资源分享师 32
-      - 资源分享师 33
-      - 资源分享师 34
-      - 资源分享师 35
-      - 资源分享师 36
-      - 资源分享师 37
-      - 资源分享师 38
-      - 资源分享师 39
-      - 资源分享师 40
-      - 资源分享师 41
-      - 资源分享师 42
-      - 资源分享师 43
-      - 资源分享师 44
-      - youtube@资源分享师 8 2
-      - youtube@资源分享师 9 2
-      - 美国 youtube@资源分享师 US 74 2
-      - 美国 youtube@资源分享师 US 76 2
-      - 美国 youtube@资源分享师 US 78 2
-      - 美国 youtube@资源分享师 US 80 2
-      - 加拿大 youtube@资源分享师 CA 85 2
-      - 德国 youtube@资源分享师 DE 94 2
-      - 德国 youtube@资源分享师 DE 95 2
-      - 德国 youtube@资源分享师 DE 97 2
-      - 德国 youtube@资源分享师 DE 98 2
-      - 德国 youtube@资源分享师 DE 100 2
-      - 德国 youtube@资源分享师 DE 114 2
-      - 资源分享师 45
-      - 资源分享师 46
-      - 资源分享师 47
-      - 资源分享师 48
-      - 资源分享师 49
-      - 资源分享师 50
-      - 资源分享师 51
-      - 资源分享师 52
-      - 资源分享师 53
-      - 资源分享师 54
-      - 资源分享师 55
-      - 资源分享师 56
-      - 资源分享师 57
-      - 资源分享师 58
-      - 资源分享师 59
-      - 资源分享师 60
-      - 资源分享师 61
-      - 资源分享师 62
-      - 资源分享师 63
-      - 资源分享师 64
-      - 资源分享师 65
-      - 资源分享师 66
-      - 资源分享师 67
-      - 资源分享师 68
-      - 资源分享师 69
-      - 资源分享师 70
-      - 资源分享师 71
-      - 资源分享师 72
-      - 资源分享师 73
-      - 资源分享师 74
-      - 资源分享师 75
-      - 资源分享师 76
-      - 资源分享师 77
-      - 资源分享师 78
-      - 资源分享师 79
-      - 资源分享师 80
-      - 资源分享师 81
-      - 资源分享师 82
-      - 资源分享师 83
-      - 资源分享师 84
-      - 资源分享师 85
-      - 资源分享师 86
-      - 资源分享师 87
-      - 资源分享师 88
+      - 德国 youtube@资源分享师 DE 110
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 116
+      - 德国 youtube@资源分享师 DE 126
+      - 德国 youtube@资源分享师 DE 38
+      - 德国 youtube@资源分享师 DE 45
+      - 德国 youtube@资源分享师 DE 89
+      - 马来西亚 youtube@资源分享师 MY 21
+      - 马来西亚 youtube@资源分享师 MY 35
+      - 美国 youtube@资源分享师 US 27
+      - 日本 youtube@资源分享师 JP 142
+      - 日本 youtube@资源分享师 JP 144
+      - 日本 youtube@资源分享师 JP 22
+      - 日本 youtube@资源分享师 JP 3
+      - 塞浦路斯 youtube@资源分享师 CY 61
+      - 香港 youtube@资源分享师 HK 129
+      - youtube@资源分享师 1
+      - youtube@资源分享师 100
+      - youtube@资源分享师 101
+      - youtube@资源分享师 130
+      - youtube@资源分享师 132
+      - youtube@资源分享师 133
+      - youtube@资源分享师 134
+      - youtube@资源分享师 135
+      - youtube@资源分享师 138
+      - youtube@资源分享师 139
+      - youtube@资源分享师 140
+      - youtube@资源分享师 141
+      - youtube@资源分享师 143
+      - youtube@资源分享师 145
+      - youtube@资源分享师 146
+      - youtube@资源分享师 147
+      - youtube@资源分享师 148
+      - youtube@资源分享师 2
+      - youtube@资源分享师 20
+      - youtube@资源分享师 23
+      - youtube@资源分享师 24
+      - youtube@资源分享师 31
+      - youtube@资源分享师 51
+      - youtube@资源分享师 82
+      - youtube@资源分享师 83
+      - youtube@资源分享师 84
+      - youtube@资源分享师 85
+      - youtube@资源分享师 98
+      - 德国 youtube@资源分享师 DE 110 2
+      - 德国 youtube@资源分享师 DE 111 2
+      - 德国 youtube@资源分享师 DE 116 2
+      - 德国 youtube@资源分享师 DE 126 2
+      - 德国 youtube@资源分享师 DE 38 2
+      - 德国 youtube@资源分享师 DE 45 2
+      - 德国 youtube@资源分享师 DE 89 2
+      - 马来西亚 youtube@资源分享师 MY 21 2
+      - 马来西亚 youtube@资源分享师 MY 35 2
+      - 美国 youtube@资源分享师 US 27 2
+      - 日本 youtube@资源分享师 JP 142 2
+      - 日本 youtube@资源分享师 JP 144 2
+      - 日本 youtube@资源分享师 JP 22 2
+      - 日本 youtube@资源分享师 JP 3 2
+      - 塞浦路斯 youtube@资源分享师 CY 61 2
+      - 香港 youtube@资源分享师 HK 129 2
+      - youtube@资源分享师 1 2
+      - youtube@资源分享师 100 2
+      - youtube@资源分享师 101 2
+      - youtube@资源分享师 130 2
+      - youtube@资源分享师 132 2
+      - youtube@资源分享师 133 2
+      - youtube@资源分享师 134 2
+      - youtube@资源分享师 135 2
+      - youtube@资源分享师 138 2
+      - youtube@资源分享师 139 2
+      - youtube@资源分享师 140 2
+      - youtube@资源分享师 141 2
+      - youtube@资源分享师 143 2
+      - youtube@资源分享师 145 2
+      - youtube@资源分享师 146 2
+      - youtube@资源分享师 147 2
+      - youtube@资源分享师 148 2
+      - youtube@资源分享师 2 2
+      - youtube@资源分享师 20 2
+      - youtube@资源分享师 23 2
+      - youtube@资源分享师 24 2
+      - youtube@资源分享师 31 2
+      - youtube@资源分享师 51 2
+      - youtube@资源分享师 82 2
+      - youtube@资源分享师 83 2
+      - youtube@资源分享师 84 2
+      - youtube@资源分享师 85 2
+      - youtube@资源分享师 98 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -988,120 +782,94 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - youtube@资源分享师 8
-      - youtube@资源分享师 9
-      - 美国 youtube@资源分享师 US 74
-      - 美国 youtube@资源分享师 US 76
-      - 美国 youtube@资源分享师 US 78
-      - 美国 youtube@资源分享师 US 80
-      - 加拿大 youtube@资源分享师 CA 85
-      - 德国 youtube@资源分享师 DE 94
-      - 德国 youtube@资源分享师 DE 95
-      - 德国 youtube@资源分享师 DE 97
-      - 德国 youtube@资源分享师 DE 98
-      - 德国 youtube@资源分享师 DE 100
-      - 德国 youtube@资源分享师 DE 114
-      - 资源分享师
-      - 资源分享师 2
-      - 资源分享师 3
-      - 资源分享师 4
-      - 资源分享师 5
-      - 资源分享师 6
-      - 资源分享师 7
-      - 资源分享师 8
-      - 资源分享师 9
-      - 资源分享师 10
-      - 资源分享师 11
-      - 资源分享师 12
-      - 资源分享师 13
-      - 资源分享师 14
-      - 资源分享师 15
-      - 资源分享师 16
-      - 资源分享师 17
-      - 资源分享师 18
-      - 资源分享师 19
-      - 资源分享师 20
-      - 资源分享师 21
-      - 资源分享师 22
-      - 资源分享师 23
-      - 资源分享师 24
-      - 资源分享师 25
-      - 资源分享师 26
-      - 资源分享师 27
-      - 资源分享师 28
-      - 资源分享师 29
-      - 资源分享师 30
-      - 资源分享师 31
-      - 资源分享师 32
-      - 资源分享师 33
-      - 资源分享师 34
-      - 资源分享师 35
-      - 资源分享师 36
-      - 资源分享师 37
-      - 资源分享师 38
-      - 资源分享师 39
-      - 资源分享师 40
-      - 资源分享师 41
-      - 资源分享师 42
-      - 资源分享师 43
-      - 资源分享师 44
-      - youtube@资源分享师 8 2
-      - youtube@资源分享师 9 2
-      - 美国 youtube@资源分享师 US 74 2
-      - 美国 youtube@资源分享师 US 76 2
-      - 美国 youtube@资源分享师 US 78 2
-      - 美国 youtube@资源分享师 US 80 2
-      - 加拿大 youtube@资源分享师 CA 85 2
-      - 德国 youtube@资源分享师 DE 94 2
-      - 德国 youtube@资源分享师 DE 95 2
-      - 德国 youtube@资源分享师 DE 97 2
-      - 德国 youtube@资源分享师 DE 98 2
-      - 德国 youtube@资源分享师 DE 100 2
-      - 德国 youtube@资源分享师 DE 114 2
-      - 资源分享师 45
-      - 资源分享师 46
-      - 资源分享师 47
-      - 资源分享师 48
-      - 资源分享师 49
-      - 资源分享师 50
-      - 资源分享师 51
-      - 资源分享师 52
-      - 资源分享师 53
-      - 资源分享师 54
-      - 资源分享师 55
-      - 资源分享师 56
-      - 资源分享师 57
-      - 资源分享师 58
-      - 资源分享师 59
-      - 资源分享师 60
-      - 资源分享师 61
-      - 资源分享师 62
-      - 资源分享师 63
-      - 资源分享师 64
-      - 资源分享师 65
-      - 资源分享师 66
-      - 资源分享师 67
-      - 资源分享师 68
-      - 资源分享师 69
-      - 资源分享师 70
-      - 资源分享师 71
-      - 资源分享师 72
-      - 资源分享师 73
-      - 资源分享师 74
-      - 资源分享师 75
-      - 资源分享师 76
-      - 资源分享师 77
-      - 资源分享师 78
-      - 资源分享师 79
-      - 资源分享师 80
-      - 资源分享师 81
-      - 资源分享师 82
-      - 资源分享师 83
-      - 资源分享师 84
-      - 资源分享师 85
-      - 资源分享师 86
-      - 资源分享师 87
-      - 资源分享师 88
+      - 德国 youtube@资源分享师 DE 110
+      - 德国 youtube@资源分享师 DE 111
+      - 德国 youtube@资源分享师 DE 116
+      - 德国 youtube@资源分享师 DE 126
+      - 德国 youtube@资源分享师 DE 38
+      - 德国 youtube@资源分享师 DE 45
+      - 德国 youtube@资源分享师 DE 89
+      - 马来西亚 youtube@资源分享师 MY 21
+      - 马来西亚 youtube@资源分享师 MY 35
+      - 美国 youtube@资源分享师 US 27
+      - 日本 youtube@资源分享师 JP 142
+      - 日本 youtube@资源分享师 JP 144
+      - 日本 youtube@资源分享师 JP 22
+      - 日本 youtube@资源分享师 JP 3
+      - 塞浦路斯 youtube@资源分享师 CY 61
+      - 香港 youtube@资源分享师 HK 129
+      - youtube@资源分享师 1
+      - youtube@资源分享师 100
+      - youtube@资源分享师 101
+      - youtube@资源分享师 130
+      - youtube@资源分享师 132
+      - youtube@资源分享师 133
+      - youtube@资源分享师 134
+      - youtube@资源分享师 135
+      - youtube@资源分享师 138
+      - youtube@资源分享师 139
+      - youtube@资源分享师 140
+      - youtube@资源分享师 141
+      - youtube@资源分享师 143
+      - youtube@资源分享师 145
+      - youtube@资源分享师 146
+      - youtube@资源分享师 147
+      - youtube@资源分享师 148
+      - youtube@资源分享师 2
+      - youtube@资源分享师 20
+      - youtube@资源分享师 23
+      - youtube@资源分享师 24
+      - youtube@资源分享师 31
+      - youtube@资源分享师 51
+      - youtube@资源分享师 82
+      - youtube@资源分享师 83
+      - youtube@资源分享师 84
+      - youtube@资源分享师 85
+      - youtube@资源分享师 98
+      - 德国 youtube@资源分享师 DE 110 2
+      - 德国 youtube@资源分享师 DE 111 2
+      - 德国 youtube@资源分享师 DE 116 2
+      - 德国 youtube@资源分享师 DE 126 2
+      - 德国 youtube@资源分享师 DE 38 2
+      - 德国 youtube@资源分享师 DE 45 2
+      - 德国 youtube@资源分享师 DE 89 2
+      - 马来西亚 youtube@资源分享师 MY 21 2
+      - 马来西亚 youtube@资源分享师 MY 35 2
+      - 美国 youtube@资源分享师 US 27 2
+      - 日本 youtube@资源分享师 JP 142 2
+      - 日本 youtube@资源分享师 JP 144 2
+      - 日本 youtube@资源分享师 JP 22 2
+      - 日本 youtube@资源分享师 JP 3 2
+      - 塞浦路斯 youtube@资源分享师 CY 61 2
+      - 香港 youtube@资源分享师 HK 129 2
+      - youtube@资源分享师 1 2
+      - youtube@资源分享师 100 2
+      - youtube@资源分享师 101 2
+      - youtube@资源分享师 130 2
+      - youtube@资源分享师 132 2
+      - youtube@资源分享师 133 2
+      - youtube@资源分享师 134 2
+      - youtube@资源分享师 135 2
+      - youtube@资源分享师 138 2
+      - youtube@资源分享师 139 2
+      - youtube@资源分享师 140 2
+      - youtube@资源分享师 141 2
+      - youtube@资源分享师 143 2
+      - youtube@资源分享师 145 2
+      - youtube@资源分享师 146 2
+      - youtube@资源分享师 147 2
+      - youtube@资源分享师 148 2
+      - youtube@资源分享师 2 2
+      - youtube@资源分享师 20 2
+      - youtube@资源分享师 23 2
+      - youtube@资源分享师 24 2
+      - youtube@资源分享师 31 2
+      - youtube@资源分享师 51 2
+      - youtube@资源分享师 82 2
+      - youtube@资源分享师 83 2
+      - youtube@资源分享师 84 2
+      - youtube@资源分享师 85 2
+      - youtube@资源分享师 98 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
