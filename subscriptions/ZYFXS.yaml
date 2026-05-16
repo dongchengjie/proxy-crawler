@@ -17,99 +17,93 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
 proxies:
-  - name: 台湾-youtube@资源分享师 01
-    type: trojan
-    server: 125.227.86.45
+  - name: 香港-youtube@资源分享师 03
+    type: vmess
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 捷克-youtube@资源分享师 01
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 捷克-youtube@资源分享师 02
+    type: vless
+    server: cf.tencentapp.cn
     port: 443
-    password: 0a9f1f5a397bd427
-    sni: TG.freecodes
-    alpn:
-      - h2
-    skip-cert-verify: true
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: tptpss.pages.dev
     tls: true
-    grpc-opts:
-      grpc-service-name: db
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://91.227.97.113:443
+      headers:
+        Host: tptpss.pages.dev
     udp: true
-  - name: 韩国-youtube@资源分享师 57
-    type: ss
-    server: 222.113.253.35
-    port: 14147
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 236
-    type: ss
-    server: 222.113.18.214
-    port: 11310
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 235
-    type: ss
-    server: 222.117.215.112
-    port: 11965
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 台湾-youtube@资源分享师 02
-    type: ss
-    server: r3mrcg007117fb8.cybervena.com
-    port: 50099
-    cipher: chacha20-ietf-poly1305
-    password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-    udp: true
-  - name: 韩国-youtube@资源分享师 69
-    type: ss
-    server: 222.104.226.216
-    port: 12000
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 239
-    type: ss
-    server: 220.124.181.77
-    port: 18081
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 59
-    type: ss
-    server: 220.79.9.247
-    port: 26027
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 香港-youtube@资源分享师 01
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     udp: true
   - name: 香港-youtube@资源分享师 02
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 香港-youtube@资源分享师 04
+    type: vless
+    server: 83.229.121.78
+    port: 8443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: 1-jk1.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 1-jk1.pages.dev
+    udp: true
+  - name: 香港-youtube@资源分享师 05
+    type: vless
+    server: cl-ru-tw.fastaichat.ru
+    port: 52006
+    uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+    servername: cl-ru-tw.fastaichat.ru
+    tls: true
+    flow: xtls-rprx-vision
+    udp: true
+  - name: 香港-youtube@资源分享师 06
+    type: vless
+    server: cl-ru-tw.fastaichat.ru
+    port: 52006
+    uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+    servername: cl-ru-tw.fastaichat.ru
+    tls: true
+    client-fingerprint: chrome
+    udp: true
+  - name: 香港-youtube@资源分享师 07
     type: trojan
     server: 68.64.182.39
     port: 443
@@ -122,512 +116,141 @@ proxies:
       headers:
         Host: vpn1.rnmcnm.com
     udp: true
-  - name: 韩国-youtube@资源分享师 53
-    type: ss
-    server: 59.11.33.164
-    port: 16923
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 美国-youtube@资源分享师 01
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     udp: true
-  - name: 韩国-youtube@资源分享师 172
-    type: ss
-    server: 211.194.210.183
-    port: 25010
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 美国-youtube@资源分享师 02
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     udp: true
-  - name: 韩国-youtube@资源分享师 190
-    type: ss
-    server: 210.99.119.3
-    port: 30019
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 美国-youtube@资源分享师 03
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: aes-128-gcm
+    tls: false
+    skip-cert-verify: false
     udp: true
-  - name: 韩国-youtube@资源分享师 219
-    type: ss
-    server: 118.36.233.194
-    port: 18000
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 美国-youtube@资源分享师 04
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     udp: true
-  - name: 韩国-youtube@资源分享师 73
-    type: ss
-    server: 221.150.96.18
-    port: 10162
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 美国-youtube@资源分享师 05
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     udp: true
-  - name: 韩国-youtube@资源分享师 133
-    type: ss
-    server: 59.3.62.210
-    port: 32677
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 美国-youtube@资源分享师 06
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: aes-128-gcm
+    tls: false
+    skip-cert-verify: false
     udp: true
-  - name: 韩国-youtube@资源分享师 152
-    type: ss
-    server: 221.163.41.210
-    port: 29876
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 美国-youtube@资源分享师 07
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     udp: true
-  - name: 韩国-youtube@资源分享师 168
-    type: ss
-    server: 175.199.174.127
-    port: 20201
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 美国-youtube@资源分享师 08
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     udp: true
-  - name: 韩国-youtube@资源分享师 207
-    type: ss
-    server: 211.194.210.183
-    port: 30047
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 美国-youtube@资源分享师 09
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     udp: true
-  - name: 韩国-youtube@资源分享师 58
-    type: ss
-    server: 59.2.63.17
-    port: 10088
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 98
-    type: ss
-    server: 175.215.188.34
-    port: 26214
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 134
-    type: ss
-    server: 121.178.83.161
-    port: 10909
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 233
-    type: ss
-    server: 222.113.18.214
-    port: 37215
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 65
-    type: ss
-    server: 116.44.147.152
-    port: 22085
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 125
-    type: ss
-    server: 106.245.187.246
-    port: 34973
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 151
-    type: ss
-    server: 125.136.152.137
-    port: 10002
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 153
-    type: ss
-    server: 59.3.62.210
-    port: 10332
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 135
-    type: ss
-    server: 118.40.112.188
-    port: 22222
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 49
-    type: ss
-    server: 221.168.105.228
-    port: 11371
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 92
-    type: ss
-    server: 121.179.212.16
-    port: 28080
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 93
-    type: ss
-    server: 210.99.72.52
-    port: 29090
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 99
-    type: ss
-    server: 114.207.99.233
-    port: 11434
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 68
-    type: ss
-    server: 58.151.107.230
-    port: 14000
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 印度-youtube@资源分享师 01
-    type: ss
-    server: 20.235.105.146
+  - name: 美国-youtube@资源分享师 10
+    type: vmess
+    server: cf.scpnb.top
     port: 443
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 189
-    type: ss
-    server: 121.172.210.22
-    port: 18790
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 187
-    type: ss
-    server: 59.8.153.65
-    port: 30303
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 188
-    type: ss
-    server: 183.99.227.24
-    port: 35342
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 美国-youtube@资源分享师 36
-    type: vless
-    server: 104.129.164.30
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /?https://t.me/YouTube@小青科学网🇨🇳
-      headers:
-        Host: vms.lifetime40.workers.dev
-    udp: true
-  - name: 韩国-youtube@资源分享师 48
-    type: ss
-    server: 183.107.78.213
-    port: 20880
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 169
-    type: ss
-    server: 125.138.95.125
-    port: 10000
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 170
-    type: ss
-    server: 211.199.27.72
-    port: 10002
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 171
-    type: ss
-    server: 183.99.58.243
-    port: 10909
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 美国-youtube@资源分享师 35
-    type: vless
-    server: 45.153.7.50
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /?https://t.me/YouTube@小青科学网🇨🇳
-      headers:
-        Host: vms.lifetime11.workers.dev
-    udp: true
-  - name: 韩国-youtube@资源分享师 54
-    type: ss
-    server: 121.153.34.206
-    port: 29999
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 87
-    type: ss
-    server: 112.184.13.229
-    port: 10911
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 139
-    type: ss
-    server: 183.107.78.213
-    port: 10005
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 美国-youtube@资源分享师 31
-    type: vless
-    server: 45.153.7.30
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /?https://t.me/YouTube@小青科学网🇨🇳
-      headers:
-        Host: vms.lifetime11.workers.dev
-    udp: true
-  - name: 韩国-youtube@资源分享师 89
-    type: ss
-    server: 49.142.200.31
-    port: 28017
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 132
-    type: ss
-    server: 221.147.196.150
-    port: 18810
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 韩国-youtube@资源分享师 09
-    type: trojan
-    server: 14.40.27.140
-    port: 18889
-    password: GKHWMe2R4qwNcNxu6l3KMkdd
-    sni: vpn1.rnmcnm.com
-    skip-cert-verify: true
+    uuid: b4bb30b1-b4a2-4b76-90ed-c7d54ec71d69
+    alterId: 0
+    cipher: auto
     tls: true
-    ws-opts:
-      path: /trj-ws
-      headers:
-        Host: vpn1.rnmcnm.com
-    udp: true
-  - name: 美国-youtube@资源分享师 33
-    type: vless
-    server: 45.153.7.40
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    skip-cert-verify: false
+    servername: partition-shepherd-vic-behalf.trycloudflare.com
     network: ws
-    tls: false
     ws-opts:
-      path: /?https://t.me/YouTube@小青科学网🇨🇳
-      headers:
-        Host: vms.lifetime11.workers.dev
+      path: /b4bb30b1-b4a2-4b76-90ed-c7d54ec71d69-vm
     udp: true
-  - name: 韩国-youtube@资源分享师 50
-    type: ss
-    server: 59.31.102.62
-    port: 25565
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 美国-youtube@资源分享师 11
+    type: vmess
+    server: 103.181.164.145
+    port: 54022
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     udp: true
-  - name: 美国-youtube@资源分享师 40
+  - name: 美国-youtube@资源分享师 12
+    type: vmess
+    server: 82.198.246.9
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: aes-128-gcm
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国-youtube@资源分享师 13
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国-youtube@资源分享师 14
     type: ss
     server: www.gov.se
     port: 443
@@ -639,294 +262,21 @@ proxies:
       host: cfp.freen2.de5.net
       path: /c88b2c46-14c3-4ad8-9157-d9b4c5631450/?ed\=2560
     udp: true
-  - name: 韩国-youtube@资源分享师 100
-    type: ss
-    server: 211.230.64.93
-    port: 26257
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 美国-youtube@资源分享师 29
+  - name: 美国-youtube@资源分享师 15
     type: vless
-    server: 89.117.112.40
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /?https://t.me/YouTube@小青科学网🇨🇳
-      headers:
-        Host: vms.lifetime11.workers.dev
-    udp: true
-  - name: 美国-youtube@资源分享师 30
-    type: vless
-    server: 89.117.112.30
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /?https://t.me/YouTube@小青科学网🇨🇳
-      headers:
-        Host: vms.lifetime11.workers.dev
-    udp: true
-  - name: 德国-youtube@资源分享师 11
-    type: vmess
-    server: 82.198.246.233
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 德国-youtube@资源分享师 10
-    type: vmess
-    server: 82.198.246.9
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 韩国-youtube@资源分享师 29
-    type: ss
-    server: 152.70.253.84
-    port: 8443
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
-    udp: true
-  - name: 美国-youtube@资源分享师 34
-    type: vless
-    server: 91.206.71.50
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /?https://t.me/YouTube@小青科学网🇨🇳
-      headers:
-        Host: vms.lifetime15.workers.dev
-    udp: true
-  - name: 荷兰-youtube@资源分享师 12
-    type: ss
-    server: 82.38.31.61
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: 德国-youtube@资源分享师 09
-    type: vmess
-    server: 82.198.246.250
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国-youtube@资源分享师 74
-    type: vmess
-    server: 82.198.246.233
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: aes-128-gcm
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 罗马尼亚-youtube@资源分享师 02
-    type: vless
-    server: 185.120.16.208
-    port: 2083
-    uuid: 1a8d7f2a-94d7-4a26-872a-f81aba86c137
-    servername: endfield.gryphline.com
-    tls: true
-    flow: xtls-rprx-vision
-    reality-opts:
-      public-key: x96ArUs8nUC5GQpePNy8mGpekkN0Td4ky-cPF59eMBM
-      short-id: 8a9b1c2d3e4f5067
-    udp: true
-  - name: 美国-youtube@资源分享师 83
-    type: vmess
-    server: 82.198.246.9
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: aes-128-gcm
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 荷兰-youtube@资源分享师 08
-    type: ss
-    server: 82.38.31.205
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: 英国-youtube@资源分享师 46
-    type: vmess
-    server: 82.198.246.37
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国-youtube@资源分享师 67
-    type: vmess
-    server: 82.198.246.214
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: aes-128-gcm
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 法国-youtube@资源分享师 04
-    type: vmess
-    server: 82.198.246.97
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国-youtube@资源分享师 02
-    type: trojan
-    server: 167.68.4.199
-    port: 2053
-    password: Aimer
-    sni: epge.muarua.filegear-sg.me
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /?proxyip=ts.hpc.tw&ed=2560
-      headers:
-        Host: epge.muarua.filegear-sg.me
-    udp: true
-  - name: 英国-youtube@资源分享师 44
-    type: vmess
-    server: 82.198.246.214
-    port: 180
-    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国-youtube@资源分享师 12
-    type: trojan
-    server: 167.68.4.199
-    port: 2053
-    password: Aimer
-    sni: epge.muarua.filegear-sg.me
-    skip-cert-verify: false
-    tls: true
-    ws-opts:
-      path: /?ed
-      headers:
-        Host: epge.muarua.filegear-sg.me
-    udp: true
-  - name: 荷兰-youtube@资源分享师 10
-    type: ss
-    server: 82.38.31.66
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
-    udp: true
-  - name: 韩国-youtube@资源分享师 06
-    type: trojan
-    server: 121.162.61.37
-    port: 20031
-    password: GKHWMe2R4qwNcNxu6l3KMkdd
-    sni: vpn1.rnmcnm.com
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /trj-ws
-      headers:
-        Host: vpn1.rnmcnm.com
-    udp: true
-  - name: 美国-youtube@资源分享师 32
-    type: vless
-    server: 192.200.160.50
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    network: ws
-    tls: false
-    ws-opts:
-      path: /?https://t.me/WangCai2🇨🇳
-      headers:
-        Host: vms.lifetime43.workers.dev
-    udp: true
-  - name: 美国-youtube@资源分享师 28
-    type: vless
-    server: 185.184.70.120
+    server: 104.19.58.118
     port: 443
-    uuid: 145adeb9-279d-4c1d-a97c-93fe28ca071e
-    servername: time.is
+    uuid: fadab0a4-861d-4ebf-89ac-c9b34aef631a
+    network: ws
+    servername: us1-us1.aiopen.sbs
     tls: true
-    flow: xtls-rprx-vision
     client-fingerprint: chrome
-    reality-opts:
-      public-key: KUD5RiuqMRrhOoN6X2FcXpYZfoN_7z8BcviSBlyxOBw
-      short-id: cbd8f4
-    udp: true
-  - name: 美国-youtube@资源分享师 17
-    type: trojan
-    server: 167.68.4.199
-    port: 2053
-    password: Aimer
-    sni: epge.muarua.filegear-sg.me
-    skip-cert-verify: false
-    tls: true
     ws-opts:
-      path: /
+      path: /kbjc/us1
       headers:
-        Host: epge.muarua.filegear-sg.me
+        Host: us1-us1.aiopen.sbs
     udp: true
-  - name: 俄罗斯-youtube@资源分享师 06
-    type: vless
-    server: 83.147.255.191
-    port: 8443
-    uuid: 4cb46f0c-4f4e-468d-a834-bc2a4e404835
-    network: grpc
-    servername: ads.x5.ru
-    tls: true
-    client-fingerprint: qq
-    grpc-opts:
-      grpc-service-name: xyz
-    reality-opts:
-      public-key: wSQIBnAc0cYO9JitaNcgZ2LwkTix0_dXVpDjnZxDrCE
-    udp: true
-  - name: 立陶宛-youtube@资源分享师 01
-    type: vless
-    server: vltch.mostserv.xyz
-    port: 443
-    uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791
-    servername: vltch.mostserv.xyz
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI
-      short-id: 226509f017e4c36d
-    udp: true
-  - name: 美国-youtube@资源分享师 25
+  - name: 美国-youtube@资源分享师 16
     type: vless
     server: 209.166.46.195
     port: 443
@@ -939,24 +289,283 @@ proxies:
       public-key: wIFJUBk4GRYT8Oim0-cPDwlGaTHh3kUYP2tOlKz1xlc
       short-id: 9f4380a6
     udp: true
-  - name: 荷兰-youtube@资源分享师 13
-    type: ss
-    server: 82.38.31.146
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: oZIoA69Q8yhcQV8ka3Pa3A
+  - name: 美国-youtube@资源分享师 17
+    type: vless
+    server: us.gryaz-vpn.com
+    port: 19131
+    uuid: 3275a667-4a67-4d43-b0ba-54da2d1145dd
+    servername: cloudflare.com
+    tls: true
+    client-fingerprint: random
+    reality-opts:
+      public-key: yxRy8t-W5pCOglMeGNTeen8vQPK1SG0sM49vL6GLpjo
+      short-id: 0a8a84dcb5
     udp: true
-  - name: 新加坡-youtube@资源分享师 06
-    type: ss
-    server: 159.89.207.154
+  - name: 美国-youtube@资源分享师 18
+    type: vless
+    server: r1.mizulina.top
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    servername: r1.mizulina.top
+    tls: true
+    client-fingerprint: edge
+    udp: true
+  - name: 美国-youtube@资源分享师 19
+    type: vless
+    server: 144.31.207.111
     port: 443
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    uuid: 2001daf3-5c56-4bef-8ea6-8dd0493c5a4c
+    servername: www.deepl.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+      short-id: 1a
+    udp: true
+  - name: 美国-youtube@资源分享师 20
+    type: vless
+    server: cf.tencentapp.cn
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: tptpss.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://128.84.46.176:443
+      headers:
+        Host: tptpss.pages.dev
+    udp: true
+  - name: 美国-youtube@资源分享师 21
+    type: vless
+    server: cf.tencentapp.cn
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: tptpss.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://50.184.176.222:8090
+      headers:
+        Host: tptpss.pages.dev
+    udp: true
+  - name: 美国-youtube@资源分享师 22
+    type: vless
+    server: 44.242.50.106
+    port: 36895
+    uuid: 5c875449-ae7d-46f8-b919-5a29f271dfce
+    servername: www.icloud.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: SKJQzoN8Lh8kqrDEyKzevbHHmfRhKe8XmzBxPYXF2A4
+      short-id: 5a585c3e894bf074
+    udp: true
+  - name: 美国-youtube@资源分享师 34
+    type: hysteria2
+    server: vpn-us-005.fastervpn.world
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    sni: vpn-us-005.fastervpn.world
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 35
+    type: hysteria2
+    server: 34.215.145.62
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    sni: 34.215.145.62
+    skip-cert-verify: true
+    udp: true
+  - name: 英国-youtube@资源分享师 01
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 02
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 03
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 04
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 05
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 06
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 07
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 08
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 09
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 10
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 11
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 12
+    type: vmess
+    server: 82.198.246.214
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 13
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国-youtube@资源分享师 14
+    type: vless
+    server: 185.184.70.120
+    port: 443
+    uuid: 145adeb9-279d-4c1d-a97c-93fe28ca071e
+    servername: time.is
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: KUD5RiuqMRrhOoN6X2FcXpYZfoN_7z8BcviSBlyxOBw
+      short-id: cbd8f4
+    udp: true
+  - name: 法国-youtube@资源分享师 01
+    type: vmess
+    server: 82.198.246.97
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 法国-youtube@资源分享师 02
+    type: vless
+    server: time.is
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: https.kmj.qzz.io
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://178.237.108.214:443
+      headers:
+        Host: https.kmj.qzz.io
+    udp: true
+  - name: 德国-youtube@资源分享师 01
+    type: vmess
+    server: 82.198.246.37
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 德国-youtube@资源分享师 02
+    type: vmess
+    server: 82.198.246.233
+    port: 180
+    uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
     udp: true
   - name: 德国-youtube@资源分享师 03
     type: vless
@@ -971,7 +580,648 @@ proxies:
       public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg
       short-id: 2344766a270a6298
     udp: true
-  - name: 新加坡-youtube@资源分享师 08
+  - name: 德国-youtube@资源分享师 04
+    type: vless
+    server: 144.31.157.163
+    port: 443
+    uuid: ae8ddd8e-00af-48e5-bd57-05074a1bbffb
+    servername: www.deepl.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+      short-id: 0123456789abcdef
+    udp: true
+  - name: 日本-youtube@资源分享师 01
+    type: vmess
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 日本-youtube@资源分享师 02
+    type: vmess
+    server: 103.181.164.145
+    port: 51556
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: false
+    udp: true
+  - name: 日本-youtube@资源分享师 03
+    type: ss
+    server: 176.97.70.51
+    port: 8443
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 日本-youtube@资源分享师 04
+    type: vless
+    server: 84.247.153.71
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: 1-aym.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 1-aym.pages.dev
+    udp: true
+  - name: 日本-youtube@资源分享师 05
+    type: vless
+    server: cf.tencentapp.cn
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: tptpss.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://133.9.6.10:443
+      headers:
+        Host: tptpss.pages.dev
+    udp: true
+  - name: 日本-youtube@资源分享师 06
+    type: vless
+    server: 2.jp.chuanyun-endpoint.cc
+    port: 443
+    uuid: d7eaac0a-2de0-4b96-8b80-f84bfa3ae7c4
+    servername: learn.microsoft.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    reality-opts:
+      public-key: aeil2HSYXMmovfUYVO8nYLfq11yOkQyM1A_klY2UwQ0
+      short-id: "144537"
+    udp: true
+  - name: 日本-youtube@资源分享师 07
+    type: vless
+    server: 89.125.244.207
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: 3-85q.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 3-85q.pages.dev
+    udp: true
+  - name: 日本-youtube@资源分享师 09
+    type: trojan
+    server: 219.103.68.164
+    port: 20770
+    password: GKHWMe2R4qwNcNxu6l3KMkdd
+    sni: vpn1.rnmcnm.com
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /trj-ws
+      headers:
+        Host: vpn1.rnmcnm.com
+    udp: true
+  - name: 韩国-youtube@资源分享师 03
+    type: ss
+    server: 222.113.18.214
+    port: 37215
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 09
+    type: ss
+    server: 59.11.33.164
+    port: 16923
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 13
+    type: ss
+    server: 121.172.210.22
+    port: 18790
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 15
+    type: ss
+    server: 211.194.210.183
+    port: 25010
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 21
+    type: ss
+    server: 218.150.34.228
+    port: 10912
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 23
+    type: ss
+    server: 221.163.41.210
+    port: 29876
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 25
+    type: ss
+    server: 175.215.188.34
+    port: 26214
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 30
+    type: ss
+    server: 125.136.152.137
+    port: 10002
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 48
+    type: ss
+    server: 221.168.105.228
+    port: 11371
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 50
+    type: ss
+    server: 183.99.58.243
+    port: 10909
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 53
+    type: ss
+    server: 59.2.63.17
+    port: 10088
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 63
+    type: ss
+    server: 59.8.153.65
+    port: 30303
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 64
+    type: ss
+    server: 121.153.34.206
+    port: 29999
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 65
+    type: ss
+    server: 59.3.62.210
+    port: 32677
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 68
+    type: ss
+    server: 175.199.174.127
+    port: 20201
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 72
+    type: ss
+    server: 183.99.227.24
+    port: 35342
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 93
+    type: ss
+    server: 211.230.64.93
+    port: 26257
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 95
+    type: ss
+    server: 106.245.187.246
+    port: 34973
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 97
+    type: ss
+    server: 59.3.62.210
+    port: 10332
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 101
+    type: ss
+    server: 211.199.27.72
+    port: 10002
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 103
+    type: ss
+    server: 116.44.147.152
+    port: 22085
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 107
+    type: ss
+    server: 118.40.112.188
+    port: 22222
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 110
+    type: ss
+    server: 49.142.200.31
+    port: 28017
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 114
+    type: ss
+    server: 183.107.78.213
+    port: 20880
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 120
+    type: ss
+    server: 222.104.226.216
+    port: 12000
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 124
+    type: ss
+    server: 112.184.13.229
+    port: 10911
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 127
+    type: ss
+    server: 210.99.72.52
+    port: 29090
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 131
+    type: ss
+    server: 183.107.78.213
+    port: 10005
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 133
+    type: ss
+    server: 222.113.18.214
+    port: 11310
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 134
+    type: ss
+    server: 222.117.215.112
+    port: 11965
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 140
+    type: ss
+    server: 121.178.83.161
+    port: 10909
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 141
+    type: ss
+    server: 121.179.212.16
+    port: 28080
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 148
+    type: ss
+    server: 58.151.107.230
+    port: 14000
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 151
+    type: ss
+    server: 118.36.233.194
+    port: 18000
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 154
+    type: ss
+    server: 221.150.96.18
+    port: 10162
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 179
+    type: ss
+    server: 152.70.253.84
+    port: 8443
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 180
+    type: ss
+    server: 222.113.253.35
+    port: 14147
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 182
+    type: ss
+    server: 115.21.105.223
+    port: 10443
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 183
+    type: ss
+    server: 125.138.95.125
+    port: 10000
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 191
+    type: ss
+    server: 210.99.119.3
+    port: 30019
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 203
+    type: ss
+    server: 220.79.9.247
+    port: 26027
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 205
+    type: ss
+    server: 114.207.99.233
+    port: 11434
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 206
+    type: ss
+    server: 220.124.181.77
+    port: 18081
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 韩国-youtube@资源分享师 209
+    type: ss
+    server: 211.194.210.183
+    port: 30047
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 新加坡-youtube@资源分享师 03
     type: ss
     server: 164.52.2.98
     port: 443
@@ -983,20 +1233,31 @@ proxies:
       host: woshinidie-et3.pages.dev
       path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
     udp: true
-  - name: 韩国-youtube@资源分享师 07
-    type: trojan
-    server: 221.149.34.13
-    port: 10909
-    password: GKHWMe2R4qwNcNxu6l3KMkdd
-    sni: vpn1.rnmcnm.com
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /trj-ws
-      headers:
-        Host: vpn1.rnmcnm.com
-    udp: true
   - name: 新加坡-youtube@资源分享师 12
+    type: ss
+    server: 159.89.207.154
+    port: 443
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 新加坡-youtube@资源分享师 13
+    type: ss
+    server: 47.82.155.79
+    port: 2053
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 新加坡-youtube@资源分享师 14
     type: ss
     server: 152.42.169.132
     port: 443
@@ -1008,228 +1269,116 @@ proxies:
       host: woshinidie-et3.pages.dev
       path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
     udp: true
-  - name: 美国-youtube@资源分享师 26
+  - name: 新加坡-youtube@资源分享师 15
     type: vless
-    server: us.gryaz-vpn.com
-    port: 19131
-    uuid: 3275a667-4a67-4d43-b0ba-54da2d1145dd
-    servername: cloudflare.com
+    server: 2.sg.chuanyun-endpoint.cc
+    port: 443
+    uuid: d7eaac0a-2de0-4b96-8b80-f84bfa3ae7c4
+    servername: www.python.org
     tls: true
-    client-fingerprint: random
-    reality-opts:
-      public-key: yxRy8t-W5pCOglMeGNTeen8vQPK1SG0sM49vL6GLpjo
-      short-id: 0a8a84dcb5
-    udp: true
-  - name: 美国-youtube@资源分享师 24
-    type: vless
-    server: r1.mizulina.top
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    servername: r1.mizulina.top
-    tls: true
+    flow: xtls-rprx-vision
     client-fingerprint: edge
+    reality-opts:
+      public-key: WV1ON7psajIFpYByhzaaYmC2qUT3sRuO7F4AoMRtwQg
+      short-id: 2b74dfcf
     udp: true
-  - name: 荷兰-youtube@资源分享师 09
+  - name: 新加坡-youtube@资源分享师 16
+    type: vless
+    server: 1.sg.chuanyun-endpoint.cc
+    port: 443
+    uuid: d7eaac0a-2de0-4b96-8b80-f84bfa3ae7c4
+    servername: www.python.org
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: edge
+    reality-opts:
+      public-key: Hgf35udksGDAfyg1rkfNajDDIE0Dm1sTYJzp5KrOljw
+      short-id: 13c43cdf
+    udp: true
+  - name: 新加坡-youtube@资源分享师 17
+    type: vless
+    server: time.is
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: https.kmj.qzz.io
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://165.22.60.108:443
+      headers:
+        Host: https.kmj.qzz.io
+    udp: true
+  - name: 新加坡-youtube@资源分享师 18
+    type: vless
+    server: 116.251.216.12
+    port: 8443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: 3-93f.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 3-93f.pages.dev
+    udp: true
+  - name: 新加坡-youtube@资源分享师 21
+    type: hysteria2
+    server: 54.179.147.86
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    sni: 54.179.147.86
+    skip-cert-verify: true
+    udp: true
+  - name: 印度-youtube@资源分享师 02
     type: ss
-    server: 82.38.31.103
+    server: 20.235.105.146
+    port: 443
+    cipher: none
+    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket
+      host: woshinidie-et3.pages.dev
+      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+    udp: true
+  - name: 印度-youtube@资源分享师 03
+    type: vless
+    server: time.is
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: https.kmj.qzz.io
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://14.99.141.239:443
+      headers:
+        Host: https.kmj.qzz.io
+    udp: true
+  - name: 荷兰-youtube@资源分享师 01
+    type: ss
+    server: 82.38.31.66
     port: 8080
     cipher: chacha20-ietf-poly1305
     password: oZIoA69Q8yhcQV8ka3Pa3A
     udp: true
-  - name: 美国-youtube@资源分享师 21
+  - name: 荷兰-youtube@资源分享师 02
     type: vless
-    server: r1.mizulina.top
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    servername: r1.mizulina.top
+    server: 31.130.129.33
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: 3-2ll.pages.dev
     tls: true
     client-fingerprint: chrome
-    udp: true
-  - name: 韩国-youtube@资源分享师 05
-    type: trojan
-    server: 59.21.203.65
-    port: 10443
-    password: GKHWMe2R4qwNcNxu6l3KMkdd
-    sni: vpn1.rnmcnm.com
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /trj-ws
-      headers:
-        Host: vpn1.rnmcnm.com
-    udp: true
-  - name: 美国-youtube@资源分享师 22
-    type: vless
-    server: r1.mizulina.top
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    servername: r1.mizulina.top
-    tls: true
-    udp: true
-  - name: 韩国-youtube@资源分享师 08
-    type: trojan
-    server: 59.12.158.224
-    port: 11001
-    password: GKHWMe2R4qwNcNxu6l3KMkdd
-    sni: vpn1.rnmcnm.com
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /trj-ws
-      headers:
-        Host: vpn1.rnmcnm.com
-    udp: true
-  - name: 美国-youtube@资源分享师 06
-    type: trojan
-    server: 146.19.84.90
-    port: 2053
-    password: "162534"
-    sni: cchh2.pages.dev
-    skip-cert-verify: false
-    tls: true
     ws-opts:
       path: /
       headers:
-        Host: cchh2.pages.dev
+        Host: 3-2ll.pages.dev
     udp: true
-  - name: 加拿大-youtube@资源分享师 01
-    type: vless
-    server: 23.173.104.195
-    port: 2053
-    uuid: 0862024f-f4fb-47f7-a022-9721f04d6ab7
-    network: ws
-    servername: tiyun.ysuzy.com
-    tls: true
-    ws-opts:
-      path: /?Telegram🇨🇳@WangCai2
-      headers:
-        Host: tiyun.ysuzy.com
-    udp: true
-  - name: 美国-youtube@资源分享师 19
-    type: vless
-    server: 2.27.63.99
-    port: 443
-    uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
-    servername: download.spectrum.vu
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: sXC7sPCzHG_uYfvk3GSUdYQKfHAwirOVWMhO50Y9Pn8
-      short-id: ad8c7a6ace2f
-    udp: true
-  - name: 香港-youtube@资源分享师 03
-    type: vless
-    server: cl-ru-tw.fastaichat.ru
-    port: 52006
-    uuid: 75807638-6f19-07d0-ae08-38492ee85c88
-    servername: cl-ru-tw.fastaichat.ru
-    tls: true
-    client-fingerprint: chrome
-    udp: true
-  - name: 香港-youtube@资源分享师 04
-    type: vless
-    server: cl-ru-tw.fastaichat.ru
-    port: 52006
-    uuid: 75807638-6f19-07d0-ae08-38492ee85c88
-    servername: cl-ru-tw.fastaichat.ru
-    tls: true
-    flow: xtls-rprx-vision
-    udp: true
-  - name: 美国-youtube@资源分享师 23
-    type: vless
-    server: r1.mizulina.top
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    servername: r1.mizulina.top
-    tls: true
-    flow: xtls-rprx-vision
-    udp: true
-  - name: 俄罗斯-youtube@资源分享师 05
-    type: vless
-    server: cl-de-2.edgeflux.ru
-    port: 52006
-    uuid: 75807638-6f19-01f4-ae08-38492ee85c88
-    servername: cl-de-2.edgeflux.ru
-    tls: true
-    flow: xtls-rprx-vision
-    udp: true
-  - name: 美国-youtube@资源分享师 27
-    type: vless
-    server: r1.mizulina.top
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    servername: r1.mizulina.top
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: edge
-    udp: true
-  - name: 韩国-youtube@资源分享师 10
-    type: trojan
-    server: 112.163.117.142
-    port: 30005
-    password: GKHWMe2R4qwNcNxu6l3KMkdd
-    sni: vpn1.rnmcnm.com
-    skip-cert-verify: true
-    tls: true
-    ws-opts:
-      path: /trj-ws
-      headers:
-        Host: vpn1.rnmcnm.com
-    udp: true
-  - name: 法国-youtube@资源分享师 02
-    type: vless
-    server: 194.226.169.189
-    port: 443
-    uuid: 701bab46-9453-41e6-ad47-009aa3df47e9
-    servername: stats.vk-portal.net
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do
-      short-id: 3c6fc84d
-    udp: true
-  - name: 挪威-youtube@资源分享师 01
-    type: vless
-    server: nv01.myxavpn.com
-    port: 443
-    uuid: 6a09b684-1a73-4d4b-9dd7-7da5caf6cfd2
-    servername: nv01.myxavpn.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
-      short-id: d67ec5a8fc40ebea
-    udp: true
-  - name: 俄罗斯-youtube@资源分享师 03
-    type: vless
-    server: s28233.cdn.ngenix.net
-    port: 443
-    uuid: c3f112fc-1041-Fade-b85c-5ed478daeeb9
-    network: ws
-    servername: s28233.cdn.ngenix.net
-    tls: true
-    ws-opts:
-      path: /
-      headers:
-        Host: s28233.cdn.ngenix.net
-    udp: true
-  - name: 美国-youtube@资源分享师 20
-    type: vless
-    server: 144.31.207.111
-    port: 443
-    uuid: 2001daf3-5c56-4bef-8ea6-8dd0493c5a4c
-    servername: www.deepl.com
-    tls: true
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
-      short-id: 1a
-    udp: true
-  - name: 荷兰-youtube@资源分享师 07
+  - name: 荷兰-youtube@资源分享师 03
     type: vless
     server: 144.31.157.163
     port: 443
@@ -1244,215 +1393,163 @@ proxies:
     udp: true
   - name: 荷兰-youtube@资源分享师 04
     type: vless
-    server: 141.11.197.127
-    port: 55269
-    uuid: 231e88bb-3a39-4f26-848e-908f83070283
-    servername: vk.ru
+    server: 31.130.128.197
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: 2-eox.pages.dev
     tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 2-eox.pages.dev
+    udp: true
+  - name: 荷兰-youtube@资源分享师 05
+    type: vless
+    server: 144.31.157.163
+    port: 443
+    uuid: ae8ddd8e-00af-48e5-bd57-05074a1bbffb
+    servername: www.deepl.com
+    tls: true
+    flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
-      public-key: i1e3hqslC-n7XGp72HmDKU7ZuRk72pHbzujbNaYF-0s
-      short-id: 8f
+      public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+      short-id: 0123456789abcdef
     udp: true
-  - name: 日本-youtube@资源分享师 02
-    type: ss
-    server: 176.97.70.51
-    port: 8443
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 拉脱维亚-youtube@资源分享师 01
+    type: vless
+    server: 31.128.32.98
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: 177-e06.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /
+      headers:
+        Host: 177-e06.pages.dev
     udp: true
-  - name: 新加坡-youtube@资源分享师 04
-    type: ss
-    server: 47.82.155.79
-    port: 2053
-    cipher: none
-    password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
-    plugin: v2ray-plugin
-    plugin-opts:
-      mode: websocket
-      host: woshinidie-et3.pages.dev
-      path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560
+  - name: 阿尔巴尼亚-youtube@资源分享师 01
+    type: vless
+    server: time.is
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: https.kmj.qzz.io
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://134.0.63.185:443
+      headers:
+        Host: https.kmj.qzz.io
     udp: true
-  - name: 日本-youtube@资源分享师 01
+  - name: 俄罗斯-youtube@资源分享师 01
+    type: vless
+    server: cl-de-2.edgeflux.ru
+    port: 52006
+    uuid: 75807638-6f19-01f4-ae08-38492ee85c88
+    servername: cl-de-2.edgeflux.ru
+    tls: true
+    flow: xtls-rprx-vision
+    udp: true
+  - name: 俄罗斯-youtube@资源分享师 02
+    type: vless
+    server: s28233.cdn.ngenix.net
+    port: 443
+    uuid: c3f112fc-1041-Fade-b85c-5ed478daeeb9
+    network: ws
+    servername: s28233.cdn.ngenix.net
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: s28233.cdn.ngenix.net
+    udp: true
+  - name: 台湾-youtube@资源分享师 01
+    type: vless
+    server: time.is
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: https.kmj.qzz.io
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://118.163.99.115:443
+      headers:
+        Host: https.kmj.qzz.io
+    udp: true
+  - name: 台湾-youtube@资源分享师 02
+    type: vless
+    server: cf.tencentapp.cn
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: tptpss.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://203.69.23.34:443
+      headers:
+        Host: tptpss.pages.dev
+    udp: true
+  - name: 台湾-youtube@资源分享师 03
     type: trojan
-    server: 219.103.68.164
-    port: 20770
-    password: GKHWMe2R4qwNcNxu6l3KMkdd
-    sni: vpn1.rnmcnm.com
+    server: 125.227.86.48
+    port: 443
+    password: 3f5bc61547b1f0d9
+    sni: TG.freecodes
+    alpn:
+      - h2
     skip-cert-verify: true
     tls: true
-    ws-opts:
-      path: /trj-ws
-      headers:
-        Host: vpn1.rnmcnm.com
+    grpc-opts:
+      grpc-service-name: db
     udp: true
-  - name: 澳大利亚-youtube@资源分享师 01
-    type: ss
-    server: 45.15.185.70
-    port: 990
-    cipher: chacha20-ietf-poly1305
-    password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-    udp: true
-  - name: 日本-youtube@资源分享师 03
-    type: vmess
-    server: 103.181.164.145
-    port: 51556
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 韩国-youtube@资源分享师 24
+  - name: 博茨瓦纳-youtube@资源分享师 01
     type: vless
-    server: 116.44.147.152
-    port: 22085
-    uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
-    network: ws
-    servername: vpn2.rnmcnm.com
-    tls: true
-    ws-opts:
-      path: /ray
-    udp: true
-  - name: 韩国-youtube@资源分享师 26
-    type: vless
-    server: 14.39.13.221
-    port: 34567
-    uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
-    network: ws
-    servername: vpn2.rnmcnm.com
-    tls: true
-    ws-opts:
-      path: /ray
-    udp: true
-  - name: 韩国-youtube@资源分享师 20
-    type: vless
-    server: 222.113.18.214
-    port: 11310
-    uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
-    network: ws
-    servername: vpn2.rnmcnm.com
-    tls: true
-    ws-opts:
-      path: /ray
-    udp: true
-  - name: 韩国-youtube@资源分享师 25
-    type: vless
-    server: 211.221.8.71
-    port: 11300
-    uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
-    network: ws
-    servername: vpn2.rnmcnm.com
-    tls: true
-    ws-opts:
-      path: /ray
-    udp: true
-  - name: 韩国-youtube@资源分享师 17
-    type: vless
-    server: 183.102.55.197
-    port: 10003
-    uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
-    network: ws
-    servername: vpn2.rnmcnm.com
-    tls: true
-    ws-opts:
-      path: /ray
-    udp: true
-  - name: 韩国-youtube@资源分享师 22
-    type: vless
-    server: 59.9.104.98
-    port: 18979
-    uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
-    network: ws
-    servername: vpn2.rnmcnm.com
-    tls: true
-    ws-opts:
-      path: /ray
-    udp: true
-  - name: 韩国-youtube@资源分享师 19
-    type: vless
-    server: 121.173.15.62
-    port: 20002
-    uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
-    network: ws
-    servername: vpn2.rnmcnm.com
-    tls: true
-    ws-opts:
-      path: /ray
-    udp: true
-  - name: 香港-youtube@资源分享师 07
-    type: vmess
-    server: 103.181.164.145
-    port: 54022
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: false
-    udp: true
-  - name: 韩国-youtube@资源分享师 21
-    type: vless
-    server: 210.99.72.52
-    port: 29090
-    uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
-    network: ws
-    servername: vpn2.rnmcnm.com
-    tls: true
-    ws-opts:
-      path: /ray
-    udp: true
-  - name: 韩国-youtube@资源分享师 23
-    type: vless
-    server: 175.215.188.34
-    port: 26214
-    uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
-    network: ws
-    servername: vpn2.rnmcnm.com
-    tls: true
-    ws-opts:
-      path: /ray
-    udp: true
-  - name: 韩国-youtube@资源分享师 18
-    type: vless
-    server: 121.165.93.96
-    port: 20332
-    uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
-    network: ws
-    servername: vpn2.rnmcnm.com
-    tls: true
-    ws-opts:
-      path: /ray
-    udp: true
-  - name: 荷兰-youtube@资源分享师 11
-    type: ss
-    server: 82.38.31.210
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: 德国-youtube@资源分享师 01
-    type: vless
-    server: frankfurt1.ap221.com
+    server: cf.tencentapp.cn
     port: 443
-    uuid: 03491a57-f071-4c0c-84f2-f4ec9062ede1
-    servername: frankfurt.ap221.com
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: tptpss.pages.dev
     tls: true
-    flow: xtls-rprx-vision
-    udp: true
-  - name: 德国-youtube@资源分享师 02
-    type: vless
-    server: frankfurt1.ap221.com
-    port: 443
-    uuid: 03491a57-f071-4c0c-84f2-f4ec9062ede1
-    servername: frankfurt.ap221.com
-    tls: true
-    flow: xtls-rprx-vision
     client-fingerprint: chrome
+    ws-opts:
+      path: /https://168.167.220.27:443
+      headers:
+        Host: tptpss.pages.dev
+    udp: true
+  - name: 意大利-youtube@资源分享师 01
+    type: vless
+    server: time.is
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: https.kmj.qzz.io
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://5.158.70.34:443
+      headers:
+        Host: https.kmj.qzz.io
+    udp: true
+  - name: 波兰-youtube@资源分享师 01
+    type: vless
+    server: cf.tencentapp.cn
+    port: 443
+    uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+    network: ws
+    servername: tptpss.pages.dev
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /https://193.25.2.239:443
+      headers:
+        Host: tptpss.pages.dev
     udp: true
 proxy-groups:
   - name: 🚀 节点选择
@@ -1460,261 +1557,271 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 台湾-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 57
-      - 韩国-youtube@资源分享师 236
-      - 韩国-youtube@资源分享师 235
-      - 台湾-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 69
-      - 韩国-youtube@资源分享师 239
-      - 韩国-youtube@资源分享师 59
-      - 香港-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 53
-      - 韩国-youtube@资源分享师 172
-      - 韩国-youtube@资源分享师 190
-      - 韩国-youtube@资源分享师 219
-      - 韩国-youtube@资源分享师 73
-      - 韩国-youtube@资源分享师 133
-      - 韩国-youtube@资源分享师 152
-      - 韩国-youtube@资源分享师 168
-      - 韩国-youtube@资源分享师 207
-      - 韩国-youtube@资源分享师 58
-      - 韩国-youtube@资源分享师 98
-      - 韩国-youtube@资源分享师 134
-      - 韩国-youtube@资源分享师 233
-      - 韩国-youtube@资源分享师 65
-      - 韩国-youtube@资源分享师 125
-      - 韩国-youtube@资源分享师 151
-      - 韩国-youtube@资源分享师 153
-      - 韩国-youtube@资源分享师 135
-      - 韩国-youtube@资源分享师 49
-      - 韩国-youtube@资源分享师 92
-      - 韩国-youtube@资源分享师 93
-      - 韩国-youtube@资源分享师 99
-      - 韩国-youtube@资源分享师 68
-      - 印度-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 189
-      - 韩国-youtube@资源分享师 187
-      - 韩国-youtube@资源分享师 188
-      - 美国-youtube@资源分享师 36
-      - 韩国-youtube@资源分享师 48
-      - 韩国-youtube@资源分享师 169
-      - 韩国-youtube@资源分享师 170
-      - 韩国-youtube@资源分享师 171
-      - 美国-youtube@资源分享师 35
-      - 韩国-youtube@资源分享师 54
-      - 韩国-youtube@资源分享师 87
-      - 韩国-youtube@资源分享师 139
-      - 美国-youtube@资源分享师 31
-      - 韩国-youtube@资源分享师 89
-      - 韩国-youtube@资源分享师 132
-      - 韩国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 33
-      - 韩国-youtube@资源分享师 50
-      - 美国-youtube@资源分享师 40
-      - 韩国-youtube@资源分享师 100
-      - 美国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 30
-      - 德国-youtube@资源分享师 11
-      - 德国-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 34
-      - 荷兰-youtube@资源分享师 12
-      - 德国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 74
-      - 罗马尼亚-youtube@资源分享师 02
-      - 美国-youtube@资源分享师 83
-      - 荷兰-youtube@资源分享师 08
-      - 英国-youtube@资源分享师 46
-      - 美国-youtube@资源分享师 67
-      - 法国-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 02
-      - 英国-youtube@资源分享师 44
-      - 美国-youtube@资源分享师 12
-      - 荷兰-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 06
-      - 美国-youtube@资源分享师 32
-      - 美国-youtube@资源分享师 28
-      - 美国-youtube@资源分享师 17
-      - 俄罗斯-youtube@资源分享师 06
-      - 立陶宛-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 25
-      - 荷兰-youtube@资源分享师 13
-      - 新加坡-youtube@资源分享师 06
-      - 德国-youtube@资源分享师 03
-      - 新加坡-youtube@资源分享师 08
-      - 韩国-youtube@资源分享师 07
-      - 新加坡-youtube@资源分享师 12
-      - 美国-youtube@资源分享师 26
-      - 美国-youtube@资源分享师 24
-      - 荷兰-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 08
-      - 美国-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 19
       - 香港-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 23
-      - 俄罗斯-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 27
-      - 韩国-youtube@资源分享师 10
-      - 法国-youtube@资源分享师 02
-      - 挪威-youtube@资源分享师 01
-      - 俄罗斯-youtube@资源分享师 03
-      - 美国-youtube@资源分享师 20
-      - 荷兰-youtube@资源分享师 07
-      - 荷兰-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 01
-      - 澳大利亚-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 03
-      - 韩国-youtube@资源分享师 24
-      - 韩国-youtube@资源分享师 26
-      - 韩国-youtube@资源分享师 20
-      - 韩国-youtube@资源分享师 25
-      - 韩国-youtube@资源分享师 17
-      - 韩国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 19
+      - 香港-youtube@资源分享师 05
+      - 香港-youtube@资源分享师 06
       - 香港-youtube@资源分享师 07
-      - 韩国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 23
-      - 韩国-youtube@资源分享师 18
-      - 荷兰-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 14
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 美国-youtube@资源分享师 20
+      - 美国-youtube@资源分享师 21
+      - 美国-youtube@资源分享师 22
+      - 美国-youtube@资源分享师 34
+      - 美国-youtube@资源分享师 35
+      - 英国-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 02
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 英国-youtube@资源分享师 05
+      - 英国-youtube@资源分享师 06
+      - 英国-youtube@资源分享师 07
+      - 英国-youtube@资源分享师 08
+      - 英国-youtube@资源分享师 09
+      - 英国-youtube@资源分享师 10
+      - 英国-youtube@资源分享师 11
+      - 英国-youtube@资源分享师 12
+      - 英国-youtube@资源分享师 13
+      - 英国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 02
       - 德国-youtube@资源分享师 01
       - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 13
+      - 韩国-youtube@资源分享师 15
+      - 韩国-youtube@资源分享师 21
+      - 韩国-youtube@资源分享师 23
+      - 韩国-youtube@资源分享师 25
+      - 韩国-youtube@资源分享师 30
+      - 韩国-youtube@资源分享师 48
+      - 韩国-youtube@资源分享师 50
+      - 韩国-youtube@资源分享师 53
+      - 韩国-youtube@资源分享师 63
+      - 韩国-youtube@资源分享师 64
+      - 韩国-youtube@资源分享师 65
+      - 韩国-youtube@资源分享师 68
+      - 韩国-youtube@资源分享师 72
+      - 韩国-youtube@资源分享师 93
+      - 韩国-youtube@资源分享师 95
+      - 韩国-youtube@资源分享师 97
+      - 韩国-youtube@资源分享师 101
+      - 韩国-youtube@资源分享师 103
+      - 韩国-youtube@资源分享师 107
+      - 韩国-youtube@资源分享师 110
+      - 韩国-youtube@资源分享师 114
+      - 韩国-youtube@资源分享师 120
+      - 韩国-youtube@资源分享师 124
+      - 韩国-youtube@资源分享师 127
+      - 韩国-youtube@资源分享师 131
+      - 韩国-youtube@资源分享师 133
+      - 韩国-youtube@资源分享师 134
+      - 韩国-youtube@资源分享师 140
+      - 韩国-youtube@资源分享师 141
+      - 韩国-youtube@资源分享师 148
+      - 韩国-youtube@资源分享师 151
+      - 韩国-youtube@资源分享师 154
+      - 韩国-youtube@资源分享师 179
+      - 韩国-youtube@资源分享师 180
+      - 韩国-youtube@资源分享师 182
+      - 韩国-youtube@资源分享师 183
+      - 韩国-youtube@资源分享师 191
+      - 韩国-youtube@资源分享师 203
+      - 韩国-youtube@资源分享师 205
+      - 韩国-youtube@资源分享师 206
+      - 韩国-youtube@资源分享师 209
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 12
+      - 新加坡-youtube@资源分享师 13
+      - 新加坡-youtube@资源分享师 14
+      - 新加坡-youtube@资源分享师 15
+      - 新加坡-youtube@资源分享师 16
+      - 新加坡-youtube@资源分享师 17
+      - 新加坡-youtube@资源分享师 18
+      - 新加坡-youtube@资源分享师 21
+      - 印度-youtube@资源分享师 02
+      - 印度-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 拉脱维亚-youtube@资源分享师 01
+      - 阿尔巴尼亚-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 博茨瓦纳-youtube@资源分享师 01
+      - 意大利-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
   - name: ♻️ 自动选择
     type: url-test
     proxies:
-      - 台湾-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 57
-      - 韩国-youtube@资源分享师 236
-      - 韩国-youtube@资源分享师 235
-      - 台湾-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 69
-      - 韩国-youtube@资源分享师 239
-      - 韩国-youtube@资源分享师 59
-      - 香港-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 53
-      - 韩国-youtube@资源分享师 172
-      - 韩国-youtube@资源分享师 190
-      - 韩国-youtube@资源分享师 219
-      - 韩国-youtube@资源分享师 73
-      - 韩国-youtube@资源分享师 133
-      - 韩国-youtube@资源分享师 152
-      - 韩国-youtube@资源分享师 168
-      - 韩国-youtube@资源分享师 207
-      - 韩国-youtube@资源分享师 58
-      - 韩国-youtube@资源分享师 98
-      - 韩国-youtube@资源分享师 134
-      - 韩国-youtube@资源分享师 233
-      - 韩国-youtube@资源分享师 65
-      - 韩国-youtube@资源分享师 125
-      - 韩国-youtube@资源分享师 151
-      - 韩国-youtube@资源分享师 153
-      - 韩国-youtube@资源分享师 135
-      - 韩国-youtube@资源分享师 49
-      - 韩国-youtube@资源分享师 92
-      - 韩国-youtube@资源分享师 93
-      - 韩国-youtube@资源分享师 99
-      - 韩国-youtube@资源分享师 68
-      - 印度-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 189
-      - 韩国-youtube@资源分享师 187
-      - 韩国-youtube@资源分享师 188
-      - 美国-youtube@资源分享师 36
-      - 韩国-youtube@资源分享师 48
-      - 韩国-youtube@资源分享师 169
-      - 韩国-youtube@资源分享师 170
-      - 韩国-youtube@资源分享师 171
-      - 美国-youtube@资源分享师 35
-      - 韩国-youtube@资源分享师 54
-      - 韩国-youtube@资源分享师 87
-      - 韩国-youtube@资源分享师 139
-      - 美国-youtube@资源分享师 31
-      - 韩国-youtube@资源分享师 89
-      - 韩国-youtube@资源分享师 132
-      - 韩国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 33
-      - 韩国-youtube@资源分享师 50
-      - 美国-youtube@资源分享师 40
-      - 韩国-youtube@资源分享师 100
-      - 美国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 30
-      - 德国-youtube@资源分享师 11
-      - 德国-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 34
-      - 荷兰-youtube@资源分享师 12
-      - 德国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 74
-      - 罗马尼亚-youtube@资源分享师 02
-      - 美国-youtube@资源分享师 83
-      - 荷兰-youtube@资源分享师 08
-      - 英国-youtube@资源分享师 46
-      - 美国-youtube@资源分享师 67
-      - 法国-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 02
-      - 英国-youtube@资源分享师 44
-      - 美国-youtube@资源分享师 12
-      - 荷兰-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 06
-      - 美国-youtube@资源分享师 32
-      - 美国-youtube@资源分享师 28
-      - 美国-youtube@资源分享师 17
-      - 俄罗斯-youtube@资源分享师 06
-      - 立陶宛-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 25
-      - 荷兰-youtube@资源分享师 13
-      - 新加坡-youtube@资源分享师 06
-      - 德国-youtube@资源分享师 03
-      - 新加坡-youtube@资源分享师 08
-      - 韩国-youtube@资源分享师 07
-      - 新加坡-youtube@资源分享师 12
-      - 美国-youtube@资源分享师 26
-      - 美国-youtube@资源分享师 24
-      - 荷兰-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 08
-      - 美国-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 19
       - 香港-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 23
-      - 俄罗斯-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 27
-      - 韩国-youtube@资源分享师 10
-      - 法国-youtube@资源分享师 02
-      - 挪威-youtube@资源分享师 01
-      - 俄罗斯-youtube@资源分享师 03
-      - 美国-youtube@资源分享师 20
-      - 荷兰-youtube@资源分享师 07
-      - 荷兰-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 01
-      - 澳大利亚-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 03
-      - 韩国-youtube@资源分享师 24
-      - 韩国-youtube@资源分享师 26
-      - 韩国-youtube@资源分享师 20
-      - 韩国-youtube@资源分享师 25
-      - 韩国-youtube@资源分享师 17
-      - 韩国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 19
+      - 香港-youtube@资源分享师 05
+      - 香港-youtube@资源分享师 06
       - 香港-youtube@资源分享师 07
-      - 韩国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 23
-      - 韩国-youtube@资源分享师 18
-      - 荷兰-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 14
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 美国-youtube@资源分享师 20
+      - 美国-youtube@资源分享师 21
+      - 美国-youtube@资源分享师 22
+      - 美国-youtube@资源分享师 34
+      - 美国-youtube@资源分享师 35
+      - 英国-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 02
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 英国-youtube@资源分享师 05
+      - 英国-youtube@资源分享师 06
+      - 英国-youtube@资源分享师 07
+      - 英国-youtube@资源分享师 08
+      - 英国-youtube@资源分享师 09
+      - 英国-youtube@资源分享师 10
+      - 英国-youtube@资源分享师 11
+      - 英国-youtube@资源分享师 12
+      - 英国-youtube@资源分享师 13
+      - 英国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 02
       - 德国-youtube@资源分享师 01
       - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 13
+      - 韩国-youtube@资源分享师 15
+      - 韩国-youtube@资源分享师 21
+      - 韩国-youtube@资源分享师 23
+      - 韩国-youtube@资源分享师 25
+      - 韩国-youtube@资源分享师 30
+      - 韩国-youtube@资源分享师 48
+      - 韩国-youtube@资源分享师 50
+      - 韩国-youtube@资源分享师 53
+      - 韩国-youtube@资源分享师 63
+      - 韩国-youtube@资源分享师 64
+      - 韩国-youtube@资源分享师 65
+      - 韩国-youtube@资源分享师 68
+      - 韩国-youtube@资源分享师 72
+      - 韩国-youtube@资源分享师 93
+      - 韩国-youtube@资源分享师 95
+      - 韩国-youtube@资源分享师 97
+      - 韩国-youtube@资源分享师 101
+      - 韩国-youtube@资源分享师 103
+      - 韩国-youtube@资源分享师 107
+      - 韩国-youtube@资源分享师 110
+      - 韩国-youtube@资源分享师 114
+      - 韩国-youtube@资源分享师 120
+      - 韩国-youtube@资源分享师 124
+      - 韩国-youtube@资源分享师 127
+      - 韩国-youtube@资源分享师 131
+      - 韩国-youtube@资源分享师 133
+      - 韩国-youtube@资源分享师 134
+      - 韩国-youtube@资源分享师 140
+      - 韩国-youtube@资源分享师 141
+      - 韩国-youtube@资源分享师 148
+      - 韩国-youtube@资源分享师 151
+      - 韩国-youtube@资源分享师 154
+      - 韩国-youtube@资源分享师 179
+      - 韩国-youtube@资源分享师 180
+      - 韩国-youtube@资源分享师 182
+      - 韩国-youtube@资源分享师 183
+      - 韩国-youtube@资源分享师 191
+      - 韩国-youtube@资源分享师 203
+      - 韩国-youtube@资源分享师 205
+      - 韩国-youtube@资源分享师 206
+      - 韩国-youtube@资源分享师 209
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 12
+      - 新加坡-youtube@资源分享师 13
+      - 新加坡-youtube@资源分享师 14
+      - 新加坡-youtube@资源分享师 15
+      - 新加坡-youtube@资源分享师 16
+      - 新加坡-youtube@资源分享师 17
+      - 新加坡-youtube@资源分享师 18
+      - 新加坡-youtube@资源分享师 21
+      - 印度-youtube@资源分享师 02
+      - 印度-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 拉脱维亚-youtube@资源分享师 01
+      - 阿尔巴尼亚-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 博茨瓦纳-youtube@资源分享师 01
+      - 意大利-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
@@ -1724,525 +1831,545 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 台湾-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 57
-      - 韩国-youtube@资源分享师 236
-      - 韩国-youtube@资源分享师 235
-      - 台湾-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 69
-      - 韩国-youtube@资源分享师 239
-      - 韩国-youtube@资源分享师 59
-      - 香港-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 53
-      - 韩国-youtube@资源分享师 172
-      - 韩国-youtube@资源分享师 190
-      - 韩国-youtube@资源分享师 219
-      - 韩国-youtube@资源分享师 73
-      - 韩国-youtube@资源分享师 133
-      - 韩国-youtube@资源分享师 152
-      - 韩国-youtube@资源分享师 168
-      - 韩国-youtube@资源分享师 207
-      - 韩国-youtube@资源分享师 58
-      - 韩国-youtube@资源分享师 98
-      - 韩国-youtube@资源分享师 134
-      - 韩国-youtube@资源分享师 233
-      - 韩国-youtube@资源分享师 65
-      - 韩国-youtube@资源分享师 125
-      - 韩国-youtube@资源分享师 151
-      - 韩国-youtube@资源分享师 153
-      - 韩国-youtube@资源分享师 135
-      - 韩国-youtube@资源分享师 49
-      - 韩国-youtube@资源分享师 92
-      - 韩国-youtube@资源分享师 93
-      - 韩国-youtube@资源分享师 99
-      - 韩国-youtube@资源分享师 68
-      - 印度-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 189
-      - 韩国-youtube@资源分享师 187
-      - 韩国-youtube@资源分享师 188
-      - 美国-youtube@资源分享师 36
-      - 韩国-youtube@资源分享师 48
-      - 韩国-youtube@资源分享师 169
-      - 韩国-youtube@资源分享师 170
-      - 韩国-youtube@资源分享师 171
-      - 美国-youtube@资源分享师 35
-      - 韩国-youtube@资源分享师 54
-      - 韩国-youtube@资源分享师 87
-      - 韩国-youtube@资源分享师 139
-      - 美国-youtube@资源分享师 31
-      - 韩国-youtube@资源分享师 89
-      - 韩国-youtube@资源分享师 132
-      - 韩国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 33
-      - 韩国-youtube@资源分享师 50
-      - 美国-youtube@资源分享师 40
-      - 韩国-youtube@资源分享师 100
-      - 美国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 30
-      - 德国-youtube@资源分享师 11
-      - 德国-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 34
-      - 荷兰-youtube@资源分享师 12
-      - 德国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 74
-      - 罗马尼亚-youtube@资源分享师 02
-      - 美国-youtube@资源分享师 83
-      - 荷兰-youtube@资源分享师 08
-      - 英国-youtube@资源分享师 46
-      - 美国-youtube@资源分享师 67
-      - 法国-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 02
-      - 英国-youtube@资源分享师 44
-      - 美国-youtube@资源分享师 12
-      - 荷兰-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 06
-      - 美国-youtube@资源分享师 32
-      - 美国-youtube@资源分享师 28
-      - 美国-youtube@资源分享师 17
-      - 俄罗斯-youtube@资源分享师 06
-      - 立陶宛-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 25
-      - 荷兰-youtube@资源分享师 13
-      - 新加坡-youtube@资源分享师 06
-      - 德国-youtube@资源分享师 03
-      - 新加坡-youtube@资源分享师 08
-      - 韩国-youtube@资源分享师 07
-      - 新加坡-youtube@资源分享师 12
-      - 美国-youtube@资源分享师 26
-      - 美国-youtube@资源分享师 24
-      - 荷兰-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 08
-      - 美国-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 19
       - 香港-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 23
-      - 俄罗斯-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 27
-      - 韩国-youtube@资源分享师 10
-      - 法国-youtube@资源分享师 02
-      - 挪威-youtube@资源分享师 01
-      - 俄罗斯-youtube@资源分享师 03
-      - 美国-youtube@资源分享师 20
-      - 荷兰-youtube@资源分享师 07
-      - 荷兰-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 01
-      - 澳大利亚-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 03
-      - 韩国-youtube@资源分享师 24
-      - 韩国-youtube@资源分享师 26
-      - 韩国-youtube@资源分享师 20
-      - 韩国-youtube@资源分享师 25
-      - 韩国-youtube@资源分享师 17
-      - 韩国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 19
+      - 香港-youtube@资源分享师 05
+      - 香港-youtube@资源分享师 06
       - 香港-youtube@资源分享师 07
-      - 韩国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 23
-      - 韩国-youtube@资源分享师 18
-      - 荷兰-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 14
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 美国-youtube@资源分享师 20
+      - 美国-youtube@资源分享师 21
+      - 美国-youtube@资源分享师 22
+      - 美国-youtube@资源分享师 34
+      - 美国-youtube@资源分享师 35
+      - 英国-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 02
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 英国-youtube@资源分享师 05
+      - 英国-youtube@资源分享师 06
+      - 英国-youtube@资源分享师 07
+      - 英国-youtube@资源分享师 08
+      - 英国-youtube@资源分享师 09
+      - 英国-youtube@资源分享师 10
+      - 英国-youtube@资源分享师 11
+      - 英国-youtube@资源分享师 12
+      - 英国-youtube@资源分享师 13
+      - 英国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 02
       - 德国-youtube@资源分享师 01
       - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 13
+      - 韩国-youtube@资源分享师 15
+      - 韩国-youtube@资源分享师 21
+      - 韩国-youtube@资源分享师 23
+      - 韩国-youtube@资源分享师 25
+      - 韩国-youtube@资源分享师 30
+      - 韩国-youtube@资源分享师 48
+      - 韩国-youtube@资源分享师 50
+      - 韩国-youtube@资源分享师 53
+      - 韩国-youtube@资源分享师 63
+      - 韩国-youtube@资源分享师 64
+      - 韩国-youtube@资源分享师 65
+      - 韩国-youtube@资源分享师 68
+      - 韩国-youtube@资源分享师 72
+      - 韩国-youtube@资源分享师 93
+      - 韩国-youtube@资源分享师 95
+      - 韩国-youtube@资源分享师 97
+      - 韩国-youtube@资源分享师 101
+      - 韩国-youtube@资源分享师 103
+      - 韩国-youtube@资源分享师 107
+      - 韩国-youtube@资源分享师 110
+      - 韩国-youtube@资源分享师 114
+      - 韩国-youtube@资源分享师 120
+      - 韩国-youtube@资源分享师 124
+      - 韩国-youtube@资源分享师 127
+      - 韩国-youtube@资源分享师 131
+      - 韩国-youtube@资源分享师 133
+      - 韩国-youtube@资源分享师 134
+      - 韩国-youtube@资源分享师 140
+      - 韩国-youtube@资源分享师 141
+      - 韩国-youtube@资源分享师 148
+      - 韩国-youtube@资源分享师 151
+      - 韩国-youtube@资源分享师 154
+      - 韩国-youtube@资源分享师 179
+      - 韩国-youtube@资源分享师 180
+      - 韩国-youtube@资源分享师 182
+      - 韩国-youtube@资源分享师 183
+      - 韩国-youtube@资源分享师 191
+      - 韩国-youtube@资源分享师 203
+      - 韩国-youtube@资源分享师 205
+      - 韩国-youtube@资源分享师 206
+      - 韩国-youtube@资源分享师 209
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 12
+      - 新加坡-youtube@资源分享师 13
+      - 新加坡-youtube@资源分享师 14
+      - 新加坡-youtube@资源分享师 15
+      - 新加坡-youtube@资源分享师 16
+      - 新加坡-youtube@资源分享师 17
+      - 新加坡-youtube@资源分享师 18
+      - 新加坡-youtube@资源分享师 21
+      - 印度-youtube@资源分享师 02
+      - 印度-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 拉脱维亚-youtube@资源分享师 01
+      - 阿尔巴尼亚-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 博茨瓦纳-youtube@资源分享师 01
+      - 意大利-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 台湾-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 57
-      - 韩国-youtube@资源分享师 236
-      - 韩国-youtube@资源分享师 235
-      - 台湾-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 69
-      - 韩国-youtube@资源分享师 239
-      - 韩国-youtube@资源分享师 59
-      - 香港-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 53
-      - 韩国-youtube@资源分享师 172
-      - 韩国-youtube@资源分享师 190
-      - 韩国-youtube@资源分享师 219
-      - 韩国-youtube@资源分享师 73
-      - 韩国-youtube@资源分享师 133
-      - 韩国-youtube@资源分享师 152
-      - 韩国-youtube@资源分享师 168
-      - 韩国-youtube@资源分享师 207
-      - 韩国-youtube@资源分享师 58
-      - 韩国-youtube@资源分享师 98
-      - 韩国-youtube@资源分享师 134
-      - 韩国-youtube@资源分享师 233
-      - 韩国-youtube@资源分享师 65
-      - 韩国-youtube@资源分享师 125
-      - 韩国-youtube@资源分享师 151
-      - 韩国-youtube@资源分享师 153
-      - 韩国-youtube@资源分享师 135
-      - 韩国-youtube@资源分享师 49
-      - 韩国-youtube@资源分享师 92
-      - 韩国-youtube@资源分享师 93
-      - 韩国-youtube@资源分享师 99
-      - 韩国-youtube@资源分享师 68
-      - 印度-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 189
-      - 韩国-youtube@资源分享师 187
-      - 韩国-youtube@资源分享师 188
-      - 美国-youtube@资源分享师 36
-      - 韩国-youtube@资源分享师 48
-      - 韩国-youtube@资源分享师 169
-      - 韩国-youtube@资源分享师 170
-      - 韩国-youtube@资源分享师 171
-      - 美国-youtube@资源分享师 35
-      - 韩国-youtube@资源分享师 54
-      - 韩国-youtube@资源分享师 87
-      - 韩国-youtube@资源分享师 139
-      - 美国-youtube@资源分享师 31
-      - 韩国-youtube@资源分享师 89
-      - 韩国-youtube@资源分享师 132
-      - 韩国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 33
-      - 韩国-youtube@资源分享师 50
-      - 美国-youtube@资源分享师 40
-      - 韩国-youtube@资源分享师 100
-      - 美国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 30
-      - 德国-youtube@资源分享师 11
-      - 德国-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 34
-      - 荷兰-youtube@资源分享师 12
-      - 德国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 74
-      - 罗马尼亚-youtube@资源分享师 02
-      - 美国-youtube@资源分享师 83
-      - 荷兰-youtube@资源分享师 08
-      - 英国-youtube@资源分享师 46
-      - 美国-youtube@资源分享师 67
-      - 法国-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 02
-      - 英国-youtube@资源分享师 44
-      - 美国-youtube@资源分享师 12
-      - 荷兰-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 06
-      - 美国-youtube@资源分享师 32
-      - 美国-youtube@资源分享师 28
-      - 美国-youtube@资源分享师 17
-      - 俄罗斯-youtube@资源分享师 06
-      - 立陶宛-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 25
-      - 荷兰-youtube@资源分享师 13
-      - 新加坡-youtube@资源分享师 06
-      - 德国-youtube@资源分享师 03
-      - 新加坡-youtube@资源分享师 08
-      - 韩国-youtube@资源分享师 07
-      - 新加坡-youtube@资源分享师 12
-      - 美国-youtube@资源分享师 26
-      - 美国-youtube@资源分享师 24
-      - 荷兰-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 08
-      - 美国-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 19
       - 香港-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 23
-      - 俄罗斯-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 27
-      - 韩国-youtube@资源分享师 10
-      - 法国-youtube@资源分享师 02
-      - 挪威-youtube@资源分享师 01
-      - 俄罗斯-youtube@资源分享师 03
-      - 美国-youtube@资源分享师 20
-      - 荷兰-youtube@资源分享师 07
-      - 荷兰-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 01
-      - 澳大利亚-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 03
-      - 韩国-youtube@资源分享师 24
-      - 韩国-youtube@资源分享师 26
-      - 韩国-youtube@资源分享师 20
-      - 韩国-youtube@资源分享师 25
-      - 韩国-youtube@资源分享师 17
-      - 韩国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 19
+      - 香港-youtube@资源分享师 05
+      - 香港-youtube@资源分享师 06
       - 香港-youtube@资源分享师 07
-      - 韩国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 23
-      - 韩国-youtube@资源分享师 18
-      - 荷兰-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 14
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 美国-youtube@资源分享师 20
+      - 美国-youtube@资源分享师 21
+      - 美国-youtube@资源分享师 22
+      - 美国-youtube@资源分享师 34
+      - 美国-youtube@资源分享师 35
+      - 英国-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 02
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 英国-youtube@资源分享师 05
+      - 英国-youtube@资源分享师 06
+      - 英国-youtube@资源分享师 07
+      - 英国-youtube@资源分享师 08
+      - 英国-youtube@资源分享师 09
+      - 英国-youtube@资源分享师 10
+      - 英国-youtube@资源分享师 11
+      - 英国-youtube@资源分享师 12
+      - 英国-youtube@资源分享师 13
+      - 英国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 02
       - 德国-youtube@资源分享师 01
       - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 13
+      - 韩国-youtube@资源分享师 15
+      - 韩国-youtube@资源分享师 21
+      - 韩国-youtube@资源分享师 23
+      - 韩国-youtube@资源分享师 25
+      - 韩国-youtube@资源分享师 30
+      - 韩国-youtube@资源分享师 48
+      - 韩国-youtube@资源分享师 50
+      - 韩国-youtube@资源分享师 53
+      - 韩国-youtube@资源分享师 63
+      - 韩国-youtube@资源分享师 64
+      - 韩国-youtube@资源分享师 65
+      - 韩国-youtube@资源分享师 68
+      - 韩国-youtube@资源分享师 72
+      - 韩国-youtube@资源分享师 93
+      - 韩国-youtube@资源分享师 95
+      - 韩国-youtube@资源分享师 97
+      - 韩国-youtube@资源分享师 101
+      - 韩国-youtube@资源分享师 103
+      - 韩国-youtube@资源分享师 107
+      - 韩国-youtube@资源分享师 110
+      - 韩国-youtube@资源分享师 114
+      - 韩国-youtube@资源分享师 120
+      - 韩国-youtube@资源分享师 124
+      - 韩国-youtube@资源分享师 127
+      - 韩国-youtube@资源分享师 131
+      - 韩国-youtube@资源分享师 133
+      - 韩国-youtube@资源分享师 134
+      - 韩国-youtube@资源分享师 140
+      - 韩国-youtube@资源分享师 141
+      - 韩国-youtube@资源分享师 148
+      - 韩国-youtube@资源分享师 151
+      - 韩国-youtube@资源分享师 154
+      - 韩国-youtube@资源分享师 179
+      - 韩国-youtube@资源分享师 180
+      - 韩国-youtube@资源分享师 182
+      - 韩国-youtube@资源分享师 183
+      - 韩国-youtube@资源分享师 191
+      - 韩国-youtube@资源分享师 203
+      - 韩国-youtube@资源分享师 205
+      - 韩国-youtube@资源分享师 206
+      - 韩国-youtube@资源分享师 209
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 12
+      - 新加坡-youtube@资源分享师 13
+      - 新加坡-youtube@资源分享师 14
+      - 新加坡-youtube@资源分享师 15
+      - 新加坡-youtube@资源分享师 16
+      - 新加坡-youtube@资源分享师 17
+      - 新加坡-youtube@资源分享师 18
+      - 新加坡-youtube@资源分享师 21
+      - 印度-youtube@资源分享师 02
+      - 印度-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 拉脱维亚-youtube@资源分享师 01
+      - 阿尔巴尼亚-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 博茨瓦纳-youtube@资源分享师 01
+      - 意大利-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 台湾-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 57
-      - 韩国-youtube@资源分享师 236
-      - 韩国-youtube@资源分享师 235
-      - 台湾-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 69
-      - 韩国-youtube@资源分享师 239
-      - 韩国-youtube@资源分享师 59
-      - 香港-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 53
-      - 韩国-youtube@资源分享师 172
-      - 韩国-youtube@资源分享师 190
-      - 韩国-youtube@资源分享师 219
-      - 韩国-youtube@资源分享师 73
-      - 韩国-youtube@资源分享师 133
-      - 韩国-youtube@资源分享师 152
-      - 韩国-youtube@资源分享师 168
-      - 韩国-youtube@资源分享师 207
-      - 韩国-youtube@资源分享师 58
-      - 韩国-youtube@资源分享师 98
-      - 韩国-youtube@资源分享师 134
-      - 韩国-youtube@资源分享师 233
-      - 韩国-youtube@资源分享师 65
-      - 韩国-youtube@资源分享师 125
-      - 韩国-youtube@资源分享师 151
-      - 韩国-youtube@资源分享师 153
-      - 韩国-youtube@资源分享师 135
-      - 韩国-youtube@资源分享师 49
-      - 韩国-youtube@资源分享师 92
-      - 韩国-youtube@资源分享师 93
-      - 韩国-youtube@资源分享师 99
-      - 韩国-youtube@资源分享师 68
-      - 印度-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 189
-      - 韩国-youtube@资源分享师 187
-      - 韩国-youtube@资源分享师 188
-      - 美国-youtube@资源分享师 36
-      - 韩国-youtube@资源分享师 48
-      - 韩国-youtube@资源分享师 169
-      - 韩国-youtube@资源分享师 170
-      - 韩国-youtube@资源分享师 171
-      - 美国-youtube@资源分享师 35
-      - 韩国-youtube@资源分享师 54
-      - 韩国-youtube@资源分享师 87
-      - 韩国-youtube@资源分享师 139
-      - 美国-youtube@资源分享师 31
-      - 韩国-youtube@资源分享师 89
-      - 韩国-youtube@资源分享师 132
-      - 韩国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 33
-      - 韩国-youtube@资源分享师 50
-      - 美国-youtube@资源分享师 40
-      - 韩国-youtube@资源分享师 100
-      - 美国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 30
-      - 德国-youtube@资源分享师 11
-      - 德国-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 34
-      - 荷兰-youtube@资源分享师 12
-      - 德国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 74
-      - 罗马尼亚-youtube@资源分享师 02
-      - 美国-youtube@资源分享师 83
-      - 荷兰-youtube@资源分享师 08
-      - 英国-youtube@资源分享师 46
-      - 美国-youtube@资源分享师 67
-      - 法国-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 02
-      - 英国-youtube@资源分享师 44
-      - 美国-youtube@资源分享师 12
-      - 荷兰-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 06
-      - 美国-youtube@资源分享师 32
-      - 美国-youtube@资源分享师 28
-      - 美国-youtube@资源分享师 17
-      - 俄罗斯-youtube@资源分享师 06
-      - 立陶宛-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 25
-      - 荷兰-youtube@资源分享师 13
-      - 新加坡-youtube@资源分享师 06
-      - 德国-youtube@资源分享师 03
-      - 新加坡-youtube@资源分享师 08
-      - 韩国-youtube@资源分享师 07
-      - 新加坡-youtube@资源分享师 12
-      - 美国-youtube@资源分享师 26
-      - 美国-youtube@资源分享师 24
-      - 荷兰-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 08
-      - 美国-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 19
       - 香港-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 23
-      - 俄罗斯-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 27
-      - 韩国-youtube@资源分享师 10
-      - 法国-youtube@资源分享师 02
-      - 挪威-youtube@资源分享师 01
-      - 俄罗斯-youtube@资源分享师 03
-      - 美国-youtube@资源分享师 20
-      - 荷兰-youtube@资源分享师 07
-      - 荷兰-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 01
-      - 澳大利亚-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 03
-      - 韩国-youtube@资源分享师 24
-      - 韩国-youtube@资源分享师 26
-      - 韩国-youtube@资源分享师 20
-      - 韩国-youtube@资源分享师 25
-      - 韩国-youtube@资源分享师 17
-      - 韩国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 19
+      - 香港-youtube@资源分享师 05
+      - 香港-youtube@资源分享师 06
       - 香港-youtube@资源分享师 07
-      - 韩国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 23
-      - 韩国-youtube@资源分享师 18
-      - 荷兰-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 14
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 美国-youtube@资源分享师 20
+      - 美国-youtube@资源分享师 21
+      - 美国-youtube@资源分享师 22
+      - 美国-youtube@资源分享师 34
+      - 美国-youtube@资源分享师 35
+      - 英国-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 02
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 英国-youtube@资源分享师 05
+      - 英国-youtube@资源分享师 06
+      - 英国-youtube@资源分享师 07
+      - 英国-youtube@资源分享师 08
+      - 英国-youtube@资源分享师 09
+      - 英国-youtube@资源分享师 10
+      - 英国-youtube@资源分享师 11
+      - 英国-youtube@资源分享师 12
+      - 英国-youtube@资源分享师 13
+      - 英国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 02
       - 德国-youtube@资源分享师 01
       - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 13
+      - 韩国-youtube@资源分享师 15
+      - 韩国-youtube@资源分享师 21
+      - 韩国-youtube@资源分享师 23
+      - 韩国-youtube@资源分享师 25
+      - 韩国-youtube@资源分享师 30
+      - 韩国-youtube@资源分享师 48
+      - 韩国-youtube@资源分享师 50
+      - 韩国-youtube@资源分享师 53
+      - 韩国-youtube@资源分享师 63
+      - 韩国-youtube@资源分享师 64
+      - 韩国-youtube@资源分享师 65
+      - 韩国-youtube@资源分享师 68
+      - 韩国-youtube@资源分享师 72
+      - 韩国-youtube@资源分享师 93
+      - 韩国-youtube@资源分享师 95
+      - 韩国-youtube@资源分享师 97
+      - 韩国-youtube@资源分享师 101
+      - 韩国-youtube@资源分享师 103
+      - 韩国-youtube@资源分享师 107
+      - 韩国-youtube@资源分享师 110
+      - 韩国-youtube@资源分享师 114
+      - 韩国-youtube@资源分享师 120
+      - 韩国-youtube@资源分享师 124
+      - 韩国-youtube@资源分享师 127
+      - 韩国-youtube@资源分享师 131
+      - 韩国-youtube@资源分享师 133
+      - 韩国-youtube@资源分享师 134
+      - 韩国-youtube@资源分享师 140
+      - 韩国-youtube@资源分享师 141
+      - 韩国-youtube@资源分享师 148
+      - 韩国-youtube@资源分享师 151
+      - 韩国-youtube@资源分享师 154
+      - 韩国-youtube@资源分享师 179
+      - 韩国-youtube@资源分享师 180
+      - 韩国-youtube@资源分享师 182
+      - 韩国-youtube@资源分享师 183
+      - 韩国-youtube@资源分享师 191
+      - 韩国-youtube@资源分享师 203
+      - 韩国-youtube@资源分享师 205
+      - 韩国-youtube@资源分享师 206
+      - 韩国-youtube@资源分享师 209
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 12
+      - 新加坡-youtube@资源分享师 13
+      - 新加坡-youtube@资源分享师 14
+      - 新加坡-youtube@资源分享师 15
+      - 新加坡-youtube@资源分享师 16
+      - 新加坡-youtube@资源分享师 17
+      - 新加坡-youtube@资源分享师 18
+      - 新加坡-youtube@资源分享师 21
+      - 印度-youtube@资源分享师 02
+      - 印度-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 拉脱维亚-youtube@资源分享师 01
+      - 阿尔巴尼亚-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 博茨瓦纳-youtube@资源分享师 01
+      - 意大利-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 台湾-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 57
-      - 韩国-youtube@资源分享师 236
-      - 韩国-youtube@资源分享师 235
-      - 台湾-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 69
-      - 韩国-youtube@资源分享师 239
-      - 韩国-youtube@资源分享师 59
-      - 香港-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 53
-      - 韩国-youtube@资源分享师 172
-      - 韩国-youtube@资源分享师 190
-      - 韩国-youtube@资源分享师 219
-      - 韩国-youtube@资源分享师 73
-      - 韩国-youtube@资源分享师 133
-      - 韩国-youtube@资源分享师 152
-      - 韩国-youtube@资源分享师 168
-      - 韩国-youtube@资源分享师 207
-      - 韩国-youtube@资源分享师 58
-      - 韩国-youtube@资源分享师 98
-      - 韩国-youtube@资源分享师 134
-      - 韩国-youtube@资源分享师 233
-      - 韩国-youtube@资源分享师 65
-      - 韩国-youtube@资源分享师 125
-      - 韩国-youtube@资源分享师 151
-      - 韩国-youtube@资源分享师 153
-      - 韩国-youtube@资源分享师 135
-      - 韩国-youtube@资源分享师 49
-      - 韩国-youtube@资源分享师 92
-      - 韩国-youtube@资源分享师 93
-      - 韩国-youtube@资源分享师 99
-      - 韩国-youtube@资源分享师 68
-      - 印度-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 189
-      - 韩国-youtube@资源分享师 187
-      - 韩国-youtube@资源分享师 188
-      - 美国-youtube@资源分享师 36
-      - 韩国-youtube@资源分享师 48
-      - 韩国-youtube@资源分享师 169
-      - 韩国-youtube@资源分享师 170
-      - 韩国-youtube@资源分享师 171
-      - 美国-youtube@资源分享师 35
-      - 韩国-youtube@资源分享师 54
-      - 韩国-youtube@资源分享师 87
-      - 韩国-youtube@资源分享师 139
-      - 美国-youtube@资源分享师 31
-      - 韩国-youtube@资源分享师 89
-      - 韩国-youtube@资源分享师 132
-      - 韩国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 33
-      - 韩国-youtube@资源分享师 50
-      - 美国-youtube@资源分享师 40
-      - 韩国-youtube@资源分享师 100
-      - 美国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 30
-      - 德国-youtube@资源分享师 11
-      - 德国-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 34
-      - 荷兰-youtube@资源分享师 12
-      - 德国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 74
-      - 罗马尼亚-youtube@资源分享师 02
-      - 美国-youtube@资源分享师 83
-      - 荷兰-youtube@资源分享师 08
-      - 英国-youtube@资源分享师 46
-      - 美国-youtube@资源分享师 67
-      - 法国-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 02
-      - 英国-youtube@资源分享师 44
-      - 美国-youtube@资源分享师 12
-      - 荷兰-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 06
-      - 美国-youtube@资源分享师 32
-      - 美国-youtube@资源分享师 28
-      - 美国-youtube@资源分享师 17
-      - 俄罗斯-youtube@资源分享师 06
-      - 立陶宛-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 25
-      - 荷兰-youtube@资源分享师 13
-      - 新加坡-youtube@资源分享师 06
-      - 德国-youtube@资源分享师 03
-      - 新加坡-youtube@资源分享师 08
-      - 韩国-youtube@资源分享师 07
-      - 新加坡-youtube@资源分享师 12
-      - 美国-youtube@资源分享师 26
-      - 美国-youtube@资源分享师 24
-      - 荷兰-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 08
-      - 美国-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 19
       - 香港-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 23
-      - 俄罗斯-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 27
-      - 韩国-youtube@资源分享师 10
-      - 法国-youtube@资源分享师 02
-      - 挪威-youtube@资源分享师 01
-      - 俄罗斯-youtube@资源分享师 03
-      - 美国-youtube@资源分享师 20
-      - 荷兰-youtube@资源分享师 07
-      - 荷兰-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 01
-      - 澳大利亚-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 03
-      - 韩国-youtube@资源分享师 24
-      - 韩国-youtube@资源分享师 26
-      - 韩国-youtube@资源分享师 20
-      - 韩国-youtube@资源分享师 25
-      - 韩国-youtube@资源分享师 17
-      - 韩国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 19
+      - 香港-youtube@资源分享师 05
+      - 香港-youtube@资源分享师 06
       - 香港-youtube@资源分享师 07
-      - 韩国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 23
-      - 韩国-youtube@资源分享师 18
-      - 荷兰-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 14
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 美国-youtube@资源分享师 20
+      - 美国-youtube@资源分享师 21
+      - 美国-youtube@资源分享师 22
+      - 美国-youtube@资源分享师 34
+      - 美国-youtube@资源分享师 35
+      - 英国-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 02
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 英国-youtube@资源分享师 05
+      - 英国-youtube@资源分享师 06
+      - 英国-youtube@资源分享师 07
+      - 英国-youtube@资源分享师 08
+      - 英国-youtube@资源分享师 09
+      - 英国-youtube@资源分享师 10
+      - 英国-youtube@资源分享师 11
+      - 英国-youtube@资源分享师 12
+      - 英国-youtube@资源分享师 13
+      - 英国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 02
       - 德国-youtube@资源分享师 01
       - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 13
+      - 韩国-youtube@资源分享师 15
+      - 韩国-youtube@资源分享师 21
+      - 韩国-youtube@资源分享师 23
+      - 韩国-youtube@资源分享师 25
+      - 韩国-youtube@资源分享师 30
+      - 韩国-youtube@资源分享师 48
+      - 韩国-youtube@资源分享师 50
+      - 韩国-youtube@资源分享师 53
+      - 韩国-youtube@资源分享师 63
+      - 韩国-youtube@资源分享师 64
+      - 韩国-youtube@资源分享师 65
+      - 韩国-youtube@资源分享师 68
+      - 韩国-youtube@资源分享师 72
+      - 韩国-youtube@资源分享师 93
+      - 韩国-youtube@资源分享师 95
+      - 韩国-youtube@资源分享师 97
+      - 韩国-youtube@资源分享师 101
+      - 韩国-youtube@资源分享师 103
+      - 韩国-youtube@资源分享师 107
+      - 韩国-youtube@资源分享师 110
+      - 韩国-youtube@资源分享师 114
+      - 韩国-youtube@资源分享师 120
+      - 韩国-youtube@资源分享师 124
+      - 韩国-youtube@资源分享师 127
+      - 韩国-youtube@资源分享师 131
+      - 韩国-youtube@资源分享师 133
+      - 韩国-youtube@资源分享师 134
+      - 韩国-youtube@资源分享师 140
+      - 韩国-youtube@资源分享师 141
+      - 韩国-youtube@资源分享师 148
+      - 韩国-youtube@资源分享师 151
+      - 韩国-youtube@资源分享师 154
+      - 韩国-youtube@资源分享师 179
+      - 韩国-youtube@资源分享师 180
+      - 韩国-youtube@资源分享师 182
+      - 韩国-youtube@资源分享师 183
+      - 韩国-youtube@资源分享师 191
+      - 韩国-youtube@资源分享师 203
+      - 韩国-youtube@资源分享师 205
+      - 韩国-youtube@资源分享师 206
+      - 韩国-youtube@资源分享师 209
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 12
+      - 新加坡-youtube@资源分享师 13
+      - 新加坡-youtube@资源分享师 14
+      - 新加坡-youtube@资源分享师 15
+      - 新加坡-youtube@资源分享师 16
+      - 新加坡-youtube@资源分享师 17
+      - 新加坡-youtube@资源分享师 18
+      - 新加坡-youtube@资源分享师 21
+      - 印度-youtube@资源分享师 02
+      - 印度-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 拉脱维亚-youtube@资源分享师 01
+      - 阿尔巴尼亚-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 博茨瓦纳-youtube@资源分享师 01
+      - 意大利-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2265,132 +2392,137 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 台湾-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 57
-      - 韩国-youtube@资源分享师 236
-      - 韩国-youtube@资源分享师 235
-      - 台湾-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 69
-      - 韩国-youtube@资源分享师 239
-      - 韩国-youtube@资源分享师 59
-      - 香港-youtube@资源分享师 02
-      - 韩国-youtube@资源分享师 53
-      - 韩国-youtube@资源分享师 172
-      - 韩国-youtube@资源分享师 190
-      - 韩国-youtube@资源分享师 219
-      - 韩国-youtube@资源分享师 73
-      - 韩国-youtube@资源分享师 133
-      - 韩国-youtube@资源分享师 152
-      - 韩国-youtube@资源分享师 168
-      - 韩国-youtube@资源分享师 207
-      - 韩国-youtube@资源分享师 58
-      - 韩国-youtube@资源分享师 98
-      - 韩国-youtube@资源分享师 134
-      - 韩国-youtube@资源分享师 233
-      - 韩国-youtube@资源分享师 65
-      - 韩国-youtube@资源分享师 125
-      - 韩国-youtube@资源分享师 151
-      - 韩国-youtube@资源分享师 153
-      - 韩国-youtube@资源分享师 135
-      - 韩国-youtube@资源分享师 49
-      - 韩国-youtube@资源分享师 92
-      - 韩国-youtube@资源分享师 93
-      - 韩国-youtube@资源分享师 99
-      - 韩国-youtube@资源分享师 68
-      - 印度-youtube@资源分享师 01
-      - 韩国-youtube@资源分享师 189
-      - 韩国-youtube@资源分享师 187
-      - 韩国-youtube@资源分享师 188
-      - 美国-youtube@资源分享师 36
-      - 韩国-youtube@资源分享师 48
-      - 韩国-youtube@资源分享师 169
-      - 韩国-youtube@资源分享师 170
-      - 韩国-youtube@资源分享师 171
-      - 美国-youtube@资源分享师 35
-      - 韩国-youtube@资源分享师 54
-      - 韩国-youtube@资源分享师 87
-      - 韩国-youtube@资源分享师 139
-      - 美国-youtube@资源分享师 31
-      - 韩国-youtube@资源分享师 89
-      - 韩国-youtube@资源分享师 132
-      - 韩国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 33
-      - 韩国-youtube@资源分享师 50
-      - 美国-youtube@资源分享师 40
-      - 韩国-youtube@资源分享师 100
-      - 美国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 30
-      - 德国-youtube@资源分享师 11
-      - 德国-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 29
-      - 美国-youtube@资源分享师 34
-      - 荷兰-youtube@资源分享师 12
-      - 德国-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 74
-      - 罗马尼亚-youtube@资源分享师 02
-      - 美国-youtube@资源分享师 83
-      - 荷兰-youtube@资源分享师 08
-      - 英国-youtube@资源分享师 46
-      - 美国-youtube@资源分享师 67
-      - 法国-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 02
-      - 英国-youtube@资源分享师 44
-      - 美国-youtube@资源分享师 12
-      - 荷兰-youtube@资源分享师 10
-      - 韩国-youtube@资源分享师 06
-      - 美国-youtube@资源分享师 32
-      - 美国-youtube@资源分享师 28
-      - 美国-youtube@资源分享师 17
-      - 俄罗斯-youtube@资源分享师 06
-      - 立陶宛-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 25
-      - 荷兰-youtube@资源分享师 13
-      - 新加坡-youtube@资源分享师 06
-      - 德国-youtube@资源分享师 03
-      - 新加坡-youtube@资源分享师 08
-      - 韩国-youtube@资源分享师 07
-      - 新加坡-youtube@资源分享师 12
-      - 美国-youtube@资源分享师 26
-      - 美国-youtube@资源分享师 24
-      - 荷兰-youtube@资源分享师 09
-      - 美国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 08
-      - 美国-youtube@资源分享师 06
-      - 加拿大-youtube@资源分享师 01
-      - 美国-youtube@资源分享师 19
       - 香港-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
       - 香港-youtube@资源分享师 04
-      - 美国-youtube@资源分享师 23
-      - 俄罗斯-youtube@资源分享师 05
-      - 美国-youtube@资源分享师 27
-      - 韩国-youtube@资源分享师 10
-      - 法国-youtube@资源分享师 02
-      - 挪威-youtube@资源分享师 01
-      - 俄罗斯-youtube@资源分享师 03
-      - 美国-youtube@资源分享师 20
-      - 荷兰-youtube@资源分享师 07
-      - 荷兰-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 02
-      - 新加坡-youtube@资源分享师 04
-      - 日本-youtube@资源分享师 01
-      - 澳大利亚-youtube@资源分享师 01
-      - 日本-youtube@资源分享师 03
-      - 韩国-youtube@资源分享师 24
-      - 韩国-youtube@资源分享师 26
-      - 韩国-youtube@资源分享师 20
-      - 韩国-youtube@资源分享师 25
-      - 韩国-youtube@资源分享师 17
-      - 韩国-youtube@资源分享师 22
-      - 韩国-youtube@资源分享师 19
+      - 香港-youtube@资源分享师 05
+      - 香港-youtube@资源分享师 06
       - 香港-youtube@资源分享师 07
-      - 韩国-youtube@资源分享师 21
-      - 韩国-youtube@资源分享师 23
-      - 韩国-youtube@资源分享师 18
-      - 荷兰-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 14
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 美国-youtube@资源分享师 20
+      - 美国-youtube@资源分享师 21
+      - 美国-youtube@资源分享师 22
+      - 美国-youtube@资源分享师 34
+      - 美国-youtube@资源分享师 35
+      - 英国-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 02
+      - 英国-youtube@资源分享师 03
+      - 英国-youtube@资源分享师 04
+      - 英国-youtube@资源分享师 05
+      - 英国-youtube@资源分享师 06
+      - 英国-youtube@资源分享师 07
+      - 英国-youtube@资源分享师 08
+      - 英国-youtube@资源分享师 09
+      - 英国-youtube@资源分享师 10
+      - 英国-youtube@资源分享师 11
+      - 英国-youtube@资源分享师 12
+      - 英国-youtube@资源分享师 13
+      - 英国-youtube@资源分享师 14
+      - 法国-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 02
       - 德国-youtube@资源分享师 01
       - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 13
+      - 韩国-youtube@资源分享师 15
+      - 韩国-youtube@资源分享师 21
+      - 韩国-youtube@资源分享师 23
+      - 韩国-youtube@资源分享师 25
+      - 韩国-youtube@资源分享师 30
+      - 韩国-youtube@资源分享师 48
+      - 韩国-youtube@资源分享师 50
+      - 韩国-youtube@资源分享师 53
+      - 韩国-youtube@资源分享师 63
+      - 韩国-youtube@资源分享师 64
+      - 韩国-youtube@资源分享师 65
+      - 韩国-youtube@资源分享师 68
+      - 韩国-youtube@资源分享师 72
+      - 韩国-youtube@资源分享师 93
+      - 韩国-youtube@资源分享师 95
+      - 韩国-youtube@资源分享师 97
+      - 韩国-youtube@资源分享师 101
+      - 韩国-youtube@资源分享师 103
+      - 韩国-youtube@资源分享师 107
+      - 韩国-youtube@资源分享师 110
+      - 韩国-youtube@资源分享师 114
+      - 韩国-youtube@资源分享师 120
+      - 韩国-youtube@资源分享师 124
+      - 韩国-youtube@资源分享师 127
+      - 韩国-youtube@资源分享师 131
+      - 韩国-youtube@资源分享师 133
+      - 韩国-youtube@资源分享师 134
+      - 韩国-youtube@资源分享师 140
+      - 韩国-youtube@资源分享师 141
+      - 韩国-youtube@资源分享师 148
+      - 韩国-youtube@资源分享师 151
+      - 韩国-youtube@资源分享师 154
+      - 韩国-youtube@资源分享师 179
+      - 韩国-youtube@资源分享师 180
+      - 韩国-youtube@资源分享师 182
+      - 韩国-youtube@资源分享师 183
+      - 韩国-youtube@资源分享师 191
+      - 韩国-youtube@资源分享师 203
+      - 韩国-youtube@资源分享师 205
+      - 韩国-youtube@资源分享师 206
+      - 韩国-youtube@资源分享师 209
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 12
+      - 新加坡-youtube@资源分享师 13
+      - 新加坡-youtube@资源分享师 14
+      - 新加坡-youtube@资源分享师 15
+      - 新加坡-youtube@资源分享师 16
+      - 新加坡-youtube@资源分享师 17
+      - 新加坡-youtube@资源分享师 18
+      - 新加坡-youtube@资源分享师 21
+      - 印度-youtube@资源分享师 02
+      - 印度-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 拉脱维亚-youtube@资源分享师 01
+      - 阿尔巴尼亚-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 博茨瓦纳-youtube@资源分享师 01
+      - 意大利-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 01
 rule-providers:
   LocalAreaNetwork:
     type: http
