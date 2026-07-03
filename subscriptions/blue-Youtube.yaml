@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2026-07-02 11:51:34
+#  创建时间：2026-07-03 12:05:19
 #  模版：v2rayse默认模版
-#  节点数量：64
+#  节点数量：52
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,6 +13,14 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
+  - {"type":"vless","name":"US美国","server":"78.159.250.32","port":1111,"uuid":"9d748910-8306-411a-9b2e-11f0a2a4486f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"api-maps.yandex.ru","tls":false,"udp":true}
+  - {"type":"vless","name":"🇳🇱NL","server":"185.245.40.251","port":443,"uuid":"a2415a12-3f92-4636-9823-9828d3ceb818","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"sun6-20.userapi.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇸🇬SG_1|⬇️553KB/s_1","server":"hkt05.344211.cc","port":8443,"uuid":"51d686b6-d209-4257-be19-f939b590b5bb","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.python.org","tls":false,"udp":true}
+  - {"type":"vless","name":"🇹🇷TR_1|⬇️120KB/s_1","server":"157.66.27.86","port":33165,"uuid":"9402e506-6907-4fe6-9c41-c5e60c86b621","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"pypi.org","tls":false,"udp":true}
+  - {"type":"vless","name":"🇭🇰HK_7|⬇️1.2MB/s","server":"45.144.174.72","port":60000,"uuid":"9402e506-6907-4fe6-9c41-c5e60c86b621","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"forex.prod.cnyes.cool","tls":false,"udp":true}
+  - {"type":"vless","name":"🇹🇷TR_1|⬇️120KB/s_2","server":"157.66.27.86","port":33165,"uuid":"9402e506-6907-4fe6-9c41-c5e60c86b621","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"pypi.org","tls":false,"udp":true}
+  - {"type":"vless","name":"🇸🇬SG_1|⬇️553KB/s_2","server":"hkt05.344211.cc","port":8443,"uuid":"51d686b6-d209-4257-be19-f939b590b5bb","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.python.org","tls":false,"udp":true}
+  - {"type":"vless","name":"vl-reality-huihlzff","server":"157.85.230.247","port":64371,"uuid":"85357d35-492e-4814-835a-aba4cb7f00ad","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"apple.com","tls":false,"udp":true}
   - {"type":"trojan","name":"未知TROJAN-30|free-nodes","server":"104.20.6.134","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
   - {"type":"trojan","name":"🇳🇱荷兰1.42MB/s_1","server":"172.64.146.198","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.gossipglove.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.gossipglove.com"}}}
   - {"type":"trojan","name":"🇳🇱荷兰1.42MB/s_2","server":"172.64.146.198","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.gossipglove.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.gossipglove.com"}}}
@@ -24,65 +32,53 @@ proxies:
   - {"type":"trojan","name":"🏳️_未知_9","server":"ip4.vpean2.qzz.io","port":443,"password":"rYuChHcwQZskq9E0zdoR","udp":true,"skip-cert-verify":true,"sni":"vpn5.rnmcnm.com","network":"ws","ws-opts":{"path":"/ws-79dffb8106db","headers":{"host":"vpn5.rnmcnm.com"}}}
   - {"type":"trojan","name":"🇦🇺澳大利亚0.84MB/s_2","server":"ip4.vpean2.qzz.io","port":443,"password":"rYuChHcwQZskq9E0zdoR","udp":true,"skip-cert-verify":true,"sni":"vpn5.rnmcnm.com","network":"ws","ws-opts":{"path":"/ws-79dffb8106db","headers":{"host":"vpn5.rnmcnm.com"}}}
   - {"type":"trojan","name":"🇦🇺澳大利亚0.84MB/s_3","server":"ip4.vpean2.qzz.io","port":443,"password":"rYuChHcwQZskq9E0zdoR","udp":true,"skip-cert-verify":true,"sni":"vpn5.rnmcnm.com","network":"ws","ws-opts":{"path":"/ws-79dffb8106db","headers":{"host":"vpn5.rnmcnm.com"}}}
-  - {"type":"trojan","name":"|USNode_1","server":"www.calmlunch.com","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmlunch.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmlunch.com"}}}
   - {"type":"trojan","name":"|USTROJAN76986266","server":"www.calmlunch.com","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/assignment"}}
-  - {"type":"trojan","name":"|USTROJAN101428557","server":"172.67.180.92","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.multiplydose.com"}}}
-  - {"type":"trojan","name":"|USNode_2","server":"172.64.152.23","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmlunch.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmlunch.com"}}}
-  - {"type":"trojan","name":"|USNode_3","server":"188.114.98.0","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.creationlong.org","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.creationlong.org"}}}
-  - {"type":"trojan","name":"|USNode_4","server":"www.gossipglove.com","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/assignment"}}
+  - {"type":"trojan","name":"|USNode_1","server":"172.64.152.23","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmlunch.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmlunch.com"}}}
+  - {"type":"trojan","name":"|USNode_2","server":"188.114.98.0","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.creationlong.org","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.creationlong.org"}}}
+  - {"type":"trojan","name":"|USNode_3","server":"www.gossipglove.com","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/assignment"}}
   - {"type":"trojan","name":"|USNode|HOST_1","server":"104.18.139.67","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.creationlong.org","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.creationlong.org"}}}
-  - {"type":"trojan","name":"|USNode_5","server":"104.18.152.219","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
-  - {"type":"trojan","name":"|USNode_6","server":"www.ignitelimit.com","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/assignment"}}
-  - {"type":"trojan","name":"|USNode_7","server":"104.19.208.184","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"//assignment","headers":{"host":"www.multiplydose.com"}}}
+  - {"type":"trojan","name":"|USNode_4","server":"104.18.152.219","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
+  - {"type":"trojan","name":"|USNode_5","server":"www.ignitelimit.com","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/assignment"}}
+  - {"type":"trojan","name":"|USNode_6","server":"104.19.208.184","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"//assignment","headers":{"host":"www.multiplydose.com"}}}
   - {"type":"trojan","name":"|USTROJAN77052539|HOST","server":"www.gossipglove.com","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.gossipglove.com","network":"ws","ws-opts":{"path":"/assignment"}}
-  - {"type":"trojan","name":"|USNode_8","server":"104.18.7.147","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.gossipglove.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.gossipglove.com"}}}
-  - {"type":"trojan","name":"|USNode_9","server":"104.18.12.149","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.multiplydose.com"}}}
+  - {"type":"trojan","name":"|USNode_7","server":"104.18.7.147","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.gossipglove.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.gossipglove.com"}}}
+  - {"type":"trojan","name":"|USNode_8","server":"104.18.12.149","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.multiplydose.com"}}}
   - {"type":"trojan","name":"|USTROJAN77052500|HOST","server":"www.creationlong.org","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.creationlong.org","network":"ws","ws-opts":{"path":"/assignment"}}
-  - {"type":"trojan","name":"|USNode_10","server":"104.18.152.229","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
+  - {"type":"trojan","name":"|USNode_9","server":"104.18.152.229","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
   - {"type":"trojan","name":"|USTROJAN101399730","server":"www.multiplydose.com","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/assignment"}}
   - {"type":"trojan","name":"|USNode|HOST_2","server":"104.19.64.105","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmlunch.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmlunch.com"}}}
   - {"type":"trojan","name":"|USapw5","server":"188.114.96.3","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.gossipglove.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.gossipglove.com"}}}
-  - {"type":"trojan","name":"|USNode_11","server":"104.18.152.246","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
-  - {"type":"trojan","name":"|USNode_12","server":"104.16.174.117","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
-  - {"type":"trojan","name":"|USNode_13","server":"sourceforge.net","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
+  - {"type":"trojan","name":"|USNode_10","server":"104.18.152.246","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
+  - {"type":"trojan","name":"|USNode_11","server":"104.16.174.117","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
+  - {"type":"trojan","name":"|USNode_12","server":"sourceforge.net","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
   - {"type":"trojan","name":"|SCNode_1","server":"45.130.125.0","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
-  - {"type":"trojan","name":"|USNode_14","server":"104.18.152.225","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
+  - {"type":"trojan","name":"|USNode_13","server":"104.18.152.225","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
   - {"type":"trojan","name":"|USTROJAN101642916|HOST","server":"blog.webex.com","port":443,"password":"afbcd89a-5a90-4a44-a42a-be08f444aa3f","udp":true,"skip-cert-verify":true,"sni":"unnes.ac.id.yxls.eu.cc","network":"ws","ws-opts":{"path":"/br-orcl","headers":{"host":"unnes.ac.id.yxls.eu.cc"}}}
   - {"type":"trojan","name":"|SCNode_2","server":"45.130.125.126","port":443,"password":"86957ec0-b213-433b-a43b-51f2175e0ec3","udp":true,"skip-cert-verify":true,"sni":"space.byu.id.yxls.eu.cc","network":"ws","ws-opts":{"path":"/au-do","headers":{"host":"space.byu.id.yxls.eu.cc"}}}
   - {"type":"trojan","name":"🇳🇱荷兰1.67MB/s","server":"172.66.47.69","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.multiplydose.com"}}}
   - {"type":"trojan","name":"🇫🇷法国TG搜:原生IP1.65MB/s","server":"104.16.174.34","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
   - {"type":"trojan","name":"🇫🇷法国TG搜:原生IP1.67MB/s","server":"104.18.152.219","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
   - {"type":"trojan","name":"🇫🇷法国TG搜:原生IP1.62MB/s","server":"104.17.177.143","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
-  - {"type":"vless","name":"🇰🇷韩国(baidu365.org免费节点)5.58MB/s","server":"43.108.23.174","port":32521,"uuid":"4ecdf2bd-3ef1-4356-8323-420ed29e8e89","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇮芬兰7.42MB/s","server":"qow91.enterquality.online","port":2443,"uuid":"e08e7045-abd0-47aa-aa52-2820c4b869be","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"qow91.enterquality.online","tls":true,"udp":true}
-  - {"type":"vless","name":"🇪🇸ES19.38MB/s","server":"206.251.49.44","port":443,"uuid":"a2415a12-3f92-4636-9823-9828d3ceb818","skip-cert-verify":true,"network":"tcp","servername":"www.intel.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸美国1.87MB/s","server":"45.158.127.48","port":443,"uuid":"f421e67c-64f3-45a1-d7b4-40cf42c844f6","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"us2.wxgqlfx.icu","ws-opts":{"path":"/TG@wxgqlfx","headers":{"host":"us2.wxgqlfx.icu"}}}
-  - {"type":"vless","name":"US美国_1","server":"78.159.250.32","port":1111,"uuid":"9d748910-8306-411a-9b2e-11f0a2a4486f","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"api-maps.yandex.ru","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸美国10.57MB/s","server":"185.226.181.184","port":2053,"uuid":"f421e67c-64f3-45a1-d7b4-40cf42c844f6","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"us2.wxgqlfx.icu","ws-opts":{"path":"/TG@wxgqlfx","headers":{"host":"us2.wxgqlfx.icu"}}}
-  - {"type":"vless","name":"🇺🇸美国1.95MB/s","server":"185.203.243.56","port":443,"uuid":"f421e67c-64f3-45a1-d7b4-40cf42c844f6","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"us2.wxgqlfx.icu","ws-opts":{"path":"/TG@wxgqlfx","headers":{"host":"us2.wxgqlfx.icu"}}}
-  - {"type":"vless","name":"US美国_2","server":"104.17.52.188","port":8080,"uuid":"SoonTeam","skip-cert-verify":true}
-  - {"type":"vless","name":"🇺🇸美国10.05MB/s","server":"37.120.186.205","port":2087,"uuid":"f421e67c-64f3-45a1-d7b4-40cf42c844f6","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"us2.wxgqlfx.icu","ws-opts":{"path":"/TG@wxgqlfx","headers":{"host":"us2.wxgqlfx.icu"}}}
-  - {"type":"vless","name":"CA加拿大","server":"108.162.194.165","port":2086,"uuid":"a0fe052d-6ca1-4a9c-b626-7ecf78f386cb","skip-cert-verify":true}
-  - {"type":"vless","name":"新加坡78","server":"support.zoom.us","port":80,"uuid":"cac6ec8f-99f0-44c5-814f-2f3f65e4db74","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"speed.dulacloud.store","ws-opts":{"path":"/dula","headers":{"host":"speed.dulacloud.store"}}}
-  - {"type":"vless","name":"德国51","server":"104.16.75.224","port":443,"uuid":"b3bd8d0e-3cbe-4241-a4f1-e3dd0a9e432c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"server-ir-3.ariyuz.org","ws-opts":{"path":"/page=2","headers":{"host":"server-ir-3.ariyuz.org"}}}
-  - {"type":"vless","name":"新加坡02","server":"3696b38bsg.murphyweb.sbs","port":32432,"uuid":"d44ed678-88ff-4bb4-b170-1a397a2f7ee2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"台湾08","server":"zzt.murphyweb.sbs","port":32432,"uuid":"d44ed678-88ff-4bb4-b170-1a397a2f7ee2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"芬兰02","server":"qow91.enterquality.online","port":2443,"uuid":"e08e7045-abd0-47aa-aa52-2820c4b869be","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"qow91.enterquality.online","tls":true,"udp":true}
-  - {"type":"vless","name":"新加坡03","server":"3696b38bsg.murphyweb.sbs","port":59647,"uuid":"d44ed678-88ff-4bb4-b170-1a397a2f7ee2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"新加坡15","server":"3696b38bsg.murphyweb.sbs","port":32166,"uuid":"d44ed678-88ff-4bb4-b170-1a397a2f7ee2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"buylite.music.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"新加坡31","server":"3696b38bsg.murphyweb.sbs","port":23699,"uuid":"d44ed678-88ff-4bb4-b170-1a397a2f7ee2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"buylite.music.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"新加坡22","server":"3696b38bsg.murphyweb.sbs","port":45701,"uuid":"d44ed678-88ff-4bb4-b170-1a397a2f7ee2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"buylite.music.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"新加坡32","server":"3696b38bsg.murphyweb.sbs","port":32134,"uuid":"d44ed678-88ff-4bb4-b170-1a397a2f7ee2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"buylite.music.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"新加坡30","server":"3696b38bsg.murphyweb.sbs","port":42576,"uuid":"d44ed678-88ff-4bb4-b170-1a397a2f7ee2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.yahoo.com","tls":false,"udp":true}
-  - {"type":"vless","name":"台湾09","server":"zzt.murphyweb.sbs","port":32166,"uuid":"d44ed678-88ff-4bb4-b170-1a397a2f7ee2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"buylite.music.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"台湾10","server":"zzt.murphyweb.sbs","port":42340,"uuid":"d44ed678-88ff-4bb4-b170-1a397a2f7ee2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"buylite.music.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"台湾03","server":"zzt.murphyweb.sbs","port":20007,"uuid":"d44ed678-88ff-4bb4-b170-1a397a2f7ee2","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"buylite.music.apple.com","tls":false,"udp":true}
+  - {"type":"trojan","name":"🇹🇼TW_1|⬇️1.6MB/s_1","server":"103.159.89.90","port":443,"password":"9bae11fd9fc7b41b4dcffc0bfbc63613","udp":true,"skip-cert-verify":true,"sni":"tw.pitopone.com","network":"tcp"}
+  - {"type":"trojan","name":"🇯🇵JP_6|⬇️1.2MB/s_1","server":"jp-002.pg13900.com","port":443,"password":"a4dbc061021f2931c0e28901a602f3c5","udp":true,"skip-cert-verify":true,"sni":"jp-002.pg13900.com","network":"ws","ws-opts":{"path":"/atlas-cdn","headers":{"host":"jp-002.pg13900.com"}}}
+  - {"type":"trojan","name":"🇭🇰HK_6|⬇️486KB/s_1","server":"hk-007.pg13900.com","port":443,"password":"a4dbc061021f2931c0e28901a602f3c5","udp":true,"skip-cert-verify":true,"sni":"hk-007.pg13900.com","network":"ws","ws-opts":{"path":"/atlas-cdn","headers":{"host":"hk-007.pg13900.com"}}}
+  - {"type":"trojan","name":"🇭🇰HK_6|⬇️486KB/s_2","server":"hk-007.pg13900.com","port":443,"password":"a4dbc061021f2931c0e28901a602f3c5","udp":true,"skip-cert-verify":true,"sni":"hk-007.pg13900.com","network":"ws","ws-opts":{"path":"/atlas-cdn","headers":{"host":"hk-007.pg13900.com"}}}
+  - {"type":"trojan","name":"🇯🇵JP_6|⬇️1.2MB/s_2","server":"jp-002.pg13900.com","port":443,"password":"a4dbc061021f2931c0e28901a602f3c5","udp":true,"skip-cert-verify":true,"sni":"jp-002.pg13900.com","network":"ws","ws-opts":{"path":"/atlas-cdn","headers":{"host":"jp-002.pg13900.com"}}}
+  - {"type":"trojan","name":"🇹🇼TW_1|⬇️1.6MB/s_2","server":"103.159.89.90","port":443,"password":"9bae11fd9fc7b41b4dcffc0bfbc63613","udp":true,"skip-cert-verify":true,"sni":"tw.pitopone.com","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - US美国
+      - 🇳🇱NL
+      - 🇸🇬SG_1|⬇️553KB/s_1
+      - 🇹🇷TR_1|⬇️120KB/s_1
+      - 🇭🇰HK_7|⬇️1.2MB/s
+      - 🇹🇷TR_1|⬇️120KB/s_2
+      - 🇸🇬SG_1|⬇️553KB/s_2
+      - vl-reality-huihlzff
       - 未知TROJAN-30|free-nodes
       - 🇳🇱荷兰1.42MB/s_1
       - 🇳🇱荷兰1.42MB/s_2
@@ -94,65 +90,53 @@ proxy-groups:
       - 🏳️_未知_9
       - 🇦🇺澳大利亚0.84MB/s_2
       - 🇦🇺澳大利亚0.84MB/s_3
-      - '|USNode_1'
       - '|USTROJAN76986266'
-      - '|USTROJAN101428557'
+      - '|USNode_1'
       - '|USNode_2'
       - '|USNode_3'
-      - '|USNode_4'
       - '|USNode|HOST_1'
+      - '|USNode_4'
       - '|USNode_5'
       - '|USNode_6'
-      - '|USNode_7'
       - '|USTROJAN77052539|HOST'
+      - '|USNode_7'
       - '|USNode_8'
-      - '|USNode_9'
       - '|USTROJAN77052500|HOST'
-      - '|USNode_10'
+      - '|USNode_9'
       - '|USTROJAN101399730'
       - '|USNode|HOST_2'
       - '|USapw5'
+      - '|USNode_10'
       - '|USNode_11'
       - '|USNode_12'
-      - '|USNode_13'
       - '|SCNode_1'
-      - '|USNode_14'
+      - '|USNode_13'
       - '|USTROJAN101642916|HOST'
       - '|SCNode_2'
       - 🇳🇱荷兰1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.65MB/s
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - 🇰🇷韩国(baidu365.org免费节点)5.58MB/s
-      - 🇫🇮芬兰7.42MB/s
-      - 🇪🇸ES19.38MB/s
-      - 🇺🇸美国1.87MB/s
-      - US美国_1
-      - 🇺🇸美国10.57MB/s
-      - 🇺🇸美国1.95MB/s
-      - US美国_2
-      - 🇺🇸美国10.05MB/s
-      - CA加拿大
-      - 新加坡78
-      - 德国51
-      - 新加坡02
-      - 台湾08
-      - 芬兰02
-      - 新加坡03
-      - 新加坡15
-      - 新加坡31
-      - 新加坡22
-      - 新加坡32
-      - 新加坡30
-      - 台湾09
-      - 台湾10
-      - 台湾03
+      - 🇹🇼TW_1|⬇️1.6MB/s_1
+      - 🇯🇵JP_6|⬇️1.2MB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_2
+      - 🇯🇵JP_6|⬇️1.2MB/s_2
+      - 🇹🇼TW_1|⬇️1.6MB/s_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - US美国
+      - 🇳🇱NL
+      - 🇸🇬SG_1|⬇️553KB/s_1
+      - 🇹🇷TR_1|⬇️120KB/s_1
+      - 🇭🇰HK_7|⬇️1.2MB/s
+      - 🇹🇷TR_1|⬇️120KB/s_2
+      - 🇸🇬SG_1|⬇️553KB/s_2
+      - vl-reality-huihlzff
       - 未知TROJAN-30|free-nodes
       - 🇳🇱荷兰1.42MB/s_1
       - 🇳🇱荷兰1.42MB/s_2
@@ -164,65 +148,53 @@ proxy-groups:
       - 🏳️_未知_9
       - 🇦🇺澳大利亚0.84MB/s_2
       - 🇦🇺澳大利亚0.84MB/s_3
-      - '|USNode_1'
       - '|USTROJAN76986266'
-      - '|USTROJAN101428557'
+      - '|USNode_1'
       - '|USNode_2'
       - '|USNode_3'
-      - '|USNode_4'
       - '|USNode|HOST_1'
+      - '|USNode_4'
       - '|USNode_5'
       - '|USNode_6'
-      - '|USNode_7'
       - '|USTROJAN77052539|HOST'
+      - '|USNode_7'
       - '|USNode_8'
-      - '|USNode_9'
       - '|USTROJAN77052500|HOST'
-      - '|USNode_10'
+      - '|USNode_9'
       - '|USTROJAN101399730'
       - '|USNode|HOST_2'
       - '|USapw5'
+      - '|USNode_10'
       - '|USNode_11'
       - '|USNode_12'
-      - '|USNode_13'
       - '|SCNode_1'
-      - '|USNode_14'
+      - '|USNode_13'
       - '|USTROJAN101642916|HOST'
       - '|SCNode_2'
       - 🇳🇱荷兰1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.65MB/s
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - 🇰🇷韩国(baidu365.org免费节点)5.58MB/s
-      - 🇫🇮芬兰7.42MB/s
-      - 🇪🇸ES19.38MB/s
-      - 🇺🇸美国1.87MB/s
-      - US美国_1
-      - 🇺🇸美国10.57MB/s
-      - 🇺🇸美国1.95MB/s
-      - US美国_2
-      - 🇺🇸美国10.05MB/s
-      - CA加拿大
-      - 新加坡78
-      - 德国51
-      - 新加坡02
-      - 台湾08
-      - 芬兰02
-      - 新加坡03
-      - 新加坡15
-      - 新加坡31
-      - 新加坡22
-      - 新加坡32
-      - 新加坡30
-      - 台湾09
-      - 台湾10
-      - 台湾03
+      - 🇹🇼TW_1|⬇️1.6MB/s_1
+      - 🇯🇵JP_6|⬇️1.2MB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_2
+      - 🇯🇵JP_6|⬇️1.2MB/s_2
+      - 🇹🇼TW_1|⬇️1.6MB/s_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - US美国
+      - 🇳🇱NL
+      - 🇸🇬SG_1|⬇️553KB/s_1
+      - 🇹🇷TR_1|⬇️120KB/s_1
+      - 🇭🇰HK_7|⬇️1.2MB/s
+      - 🇹🇷TR_1|⬇️120KB/s_2
+      - 🇸🇬SG_1|⬇️553KB/s_2
+      - vl-reality-huihlzff
       - 未知TROJAN-30|free-nodes
       - 🇳🇱荷兰1.42MB/s_1
       - 🇳🇱荷兰1.42MB/s_2
@@ -234,64 +206,52 @@ proxy-groups:
       - 🏳️_未知_9
       - 🇦🇺澳大利亚0.84MB/s_2
       - 🇦🇺澳大利亚0.84MB/s_3
-      - '|USNode_1'
       - '|USTROJAN76986266'
-      - '|USTROJAN101428557'
+      - '|USNode_1'
       - '|USNode_2'
       - '|USNode_3'
-      - '|USNode_4'
       - '|USNode|HOST_1'
+      - '|USNode_4'
       - '|USNode_5'
       - '|USNode_6'
-      - '|USNode_7'
       - '|USTROJAN77052539|HOST'
+      - '|USNode_7'
       - '|USNode_8'
-      - '|USNode_9'
       - '|USTROJAN77052500|HOST'
-      - '|USNode_10'
+      - '|USNode_9'
       - '|USTROJAN101399730'
       - '|USNode|HOST_2'
       - '|USapw5'
+      - '|USNode_10'
       - '|USNode_11'
       - '|USNode_12'
-      - '|USNode_13'
       - '|SCNode_1'
-      - '|USNode_14'
+      - '|USNode_13'
       - '|USTROJAN101642916|HOST'
       - '|SCNode_2'
       - 🇳🇱荷兰1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.65MB/s
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - 🇰🇷韩国(baidu365.org免费节点)5.58MB/s
-      - 🇫🇮芬兰7.42MB/s
-      - 🇪🇸ES19.38MB/s
-      - 🇺🇸美国1.87MB/s
-      - US美国_1
-      - 🇺🇸美国10.57MB/s
-      - 🇺🇸美国1.95MB/s
-      - US美国_2
-      - 🇺🇸美国10.05MB/s
-      - CA加拿大
-      - 新加坡78
-      - 德国51
-      - 新加坡02
-      - 台湾08
-      - 芬兰02
-      - 新加坡03
-      - 新加坡15
-      - 新加坡31
-      - 新加坡22
-      - 新加坡32
-      - 新加坡30
-      - 台湾09
-      - 台湾10
-      - 台湾03
+      - 🇹🇼TW_1|⬇️1.6MB/s_1
+      - 🇯🇵JP_6|⬇️1.2MB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_2
+      - 🇯🇵JP_6|⬇️1.2MB/s_2
+      - 🇹🇼TW_1|⬇️1.6MB/s_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - US美国
+      - 🇳🇱NL
+      - 🇸🇬SG_1|⬇️553KB/s_1
+      - 🇹🇷TR_1|⬇️120KB/s_1
+      - 🇭🇰HK_7|⬇️1.2MB/s
+      - 🇹🇷TR_1|⬇️120KB/s_2
+      - 🇸🇬SG_1|⬇️553KB/s_2
+      - vl-reality-huihlzff
       - 未知TROJAN-30|free-nodes
       - 🇳🇱荷兰1.42MB/s_1
       - 🇳🇱荷兰1.42MB/s_2
@@ -303,64 +263,52 @@ proxy-groups:
       - 🏳️_未知_9
       - 🇦🇺澳大利亚0.84MB/s_2
       - 🇦🇺澳大利亚0.84MB/s_3
-      - '|USNode_1'
       - '|USTROJAN76986266'
-      - '|USTROJAN101428557'
+      - '|USNode_1'
       - '|USNode_2'
       - '|USNode_3'
-      - '|USNode_4'
       - '|USNode|HOST_1'
+      - '|USNode_4'
       - '|USNode_5'
       - '|USNode_6'
-      - '|USNode_7'
       - '|USTROJAN77052539|HOST'
+      - '|USNode_7'
       - '|USNode_8'
-      - '|USNode_9'
       - '|USTROJAN77052500|HOST'
-      - '|USNode_10'
+      - '|USNode_9'
       - '|USTROJAN101399730'
       - '|USNode|HOST_2'
       - '|USapw5'
+      - '|USNode_10'
       - '|USNode_11'
       - '|USNode_12'
-      - '|USNode_13'
       - '|SCNode_1'
-      - '|USNode_14'
+      - '|USNode_13'
       - '|USTROJAN101642916|HOST'
       - '|SCNode_2'
       - 🇳🇱荷兰1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.65MB/s
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - 🇰🇷韩国(baidu365.org免费节点)5.58MB/s
-      - 🇫🇮芬兰7.42MB/s
-      - 🇪🇸ES19.38MB/s
-      - 🇺🇸美国1.87MB/s
-      - US美国_1
-      - 🇺🇸美国10.57MB/s
-      - 🇺🇸美国1.95MB/s
-      - US美国_2
-      - 🇺🇸美国10.05MB/s
-      - CA加拿大
-      - 新加坡78
-      - 德国51
-      - 新加坡02
-      - 台湾08
-      - 芬兰02
-      - 新加坡03
-      - 新加坡15
-      - 新加坡31
-      - 新加坡22
-      - 新加坡32
-      - 新加坡30
-      - 台湾09
-      - 台湾10
-      - 台湾03
+      - 🇹🇼TW_1|⬇️1.6MB/s_1
+      - 🇯🇵JP_6|⬇️1.2MB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_2
+      - 🇯🇵JP_6|⬇️1.2MB/s_2
+      - 🇹🇼TW_1|⬇️1.6MB/s_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - US美国
+      - 🇳🇱NL
+      - 🇸🇬SG_1|⬇️553KB/s_1
+      - 🇹🇷TR_1|⬇️120KB/s_1
+      - 🇭🇰HK_7|⬇️1.2MB/s
+      - 🇹🇷TR_1|⬇️120KB/s_2
+      - 🇸🇬SG_1|⬇️553KB/s_2
+      - vl-reality-huihlzff
       - 未知TROJAN-30|free-nodes
       - 🇳🇱荷兰1.42MB/s_1
       - 🇳🇱荷兰1.42MB/s_2
@@ -372,64 +320,52 @@ proxy-groups:
       - 🏳️_未知_9
       - 🇦🇺澳大利亚0.84MB/s_2
       - 🇦🇺澳大利亚0.84MB/s_3
-      - '|USNode_1'
       - '|USTROJAN76986266'
-      - '|USTROJAN101428557'
+      - '|USNode_1'
       - '|USNode_2'
       - '|USNode_3'
-      - '|USNode_4'
       - '|USNode|HOST_1'
+      - '|USNode_4'
       - '|USNode_5'
       - '|USNode_6'
-      - '|USNode_7'
       - '|USTROJAN77052539|HOST'
+      - '|USNode_7'
       - '|USNode_8'
-      - '|USNode_9'
       - '|USTROJAN77052500|HOST'
-      - '|USNode_10'
+      - '|USNode_9'
       - '|USTROJAN101399730'
       - '|USNode|HOST_2'
       - '|USapw5'
+      - '|USNode_10'
       - '|USNode_11'
       - '|USNode_12'
-      - '|USNode_13'
       - '|SCNode_1'
-      - '|USNode_14'
+      - '|USNode_13'
       - '|USTROJAN101642916|HOST'
       - '|SCNode_2'
       - 🇳🇱荷兰1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.65MB/s
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - 🇰🇷韩国(baidu365.org免费节点)5.58MB/s
-      - 🇫🇮芬兰7.42MB/s
-      - 🇪🇸ES19.38MB/s
-      - 🇺🇸美国1.87MB/s
-      - US美国_1
-      - 🇺🇸美国10.57MB/s
-      - 🇺🇸美国1.95MB/s
-      - US美国_2
-      - 🇺🇸美国10.05MB/s
-      - CA加拿大
-      - 新加坡78
-      - 德国51
-      - 新加坡02
-      - 台湾08
-      - 芬兰02
-      - 新加坡03
-      - 新加坡15
-      - 新加坡31
-      - 新加坡22
-      - 新加坡32
-      - 新加坡30
-      - 台湾09
-      - 台湾10
-      - 台湾03
+      - 🇹🇼TW_1|⬇️1.6MB/s_1
+      - 🇯🇵JP_6|⬇️1.2MB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_2
+      - 🇯🇵JP_6|⬇️1.2MB/s_2
+      - 🇹🇼TW_1|⬇️1.6MB/s_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - US美国
+      - 🇳🇱NL
+      - 🇸🇬SG_1|⬇️553KB/s_1
+      - 🇹🇷TR_1|⬇️120KB/s_1
+      - 🇭🇰HK_7|⬇️1.2MB/s
+      - 🇹🇷TR_1|⬇️120KB/s_2
+      - 🇸🇬SG_1|⬇️553KB/s_2
+      - vl-reality-huihlzff
       - 未知TROJAN-30|free-nodes
       - 🇳🇱荷兰1.42MB/s_1
       - 🇳🇱荷兰1.42MB/s_2
@@ -441,59 +377,39 @@ proxy-groups:
       - 🏳️_未知_9
       - 🇦🇺澳大利亚0.84MB/s_2
       - 🇦🇺澳大利亚0.84MB/s_3
-      - '|USNode_1'
       - '|USTROJAN76986266'
-      - '|USTROJAN101428557'
+      - '|USNode_1'
       - '|USNode_2'
       - '|USNode_3'
-      - '|USNode_4'
       - '|USNode|HOST_1'
+      - '|USNode_4'
       - '|USNode_5'
       - '|USNode_6'
-      - '|USNode_7'
       - '|USTROJAN77052539|HOST'
+      - '|USNode_7'
       - '|USNode_8'
-      - '|USNode_9'
       - '|USTROJAN77052500|HOST'
-      - '|USNode_10'
+      - '|USNode_9'
       - '|USTROJAN101399730'
       - '|USNode|HOST_2'
       - '|USapw5'
+      - '|USNode_10'
       - '|USNode_11'
       - '|USNode_12'
-      - '|USNode_13'
       - '|SCNode_1'
-      - '|USNode_14'
+      - '|USNode_13'
       - '|USTROJAN101642916|HOST'
       - '|SCNode_2'
       - 🇳🇱荷兰1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.65MB/s
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - 🇰🇷韩国(baidu365.org免费节点)5.58MB/s
-      - 🇫🇮芬兰7.42MB/s
-      - 🇪🇸ES19.38MB/s
-      - 🇺🇸美国1.87MB/s
-      - US美国_1
-      - 🇺🇸美国10.57MB/s
-      - 🇺🇸美国1.95MB/s
-      - US美国_2
-      - 🇺🇸美国10.05MB/s
-      - CA加拿大
-      - 新加坡78
-      - 德国51
-      - 新加坡02
-      - 台湾08
-      - 芬兰02
-      - 新加坡03
-      - 新加坡15
-      - 新加坡31
-      - 新加坡22
-      - 新加坡32
-      - 新加坡30
-      - 台湾09
-      - 台湾10
-      - 台湾03
+      - 🇹🇼TW_1|⬇️1.6MB/s_1
+      - 🇯🇵JP_6|⬇️1.2MB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_2
+      - 🇯🇵JP_6|⬇️1.2MB/s_2
+      - 🇹🇼TW_1|⬇️1.6MB/s_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -516,6 +432,14 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - US美国
+      - 🇳🇱NL
+      - 🇸🇬SG_1|⬇️553KB/s_1
+      - 🇹🇷TR_1|⬇️120KB/s_1
+      - 🇭🇰HK_7|⬇️1.2MB/s
+      - 🇹🇷TR_1|⬇️120KB/s_2
+      - 🇸🇬SG_1|⬇️553KB/s_2
+      - vl-reality-huihlzff
       - 未知TROJAN-30|free-nodes
       - 🇳🇱荷兰1.42MB/s_1
       - 🇳🇱荷兰1.42MB/s_2
@@ -527,59 +451,39 @@ proxy-groups:
       - 🏳️_未知_9
       - 🇦🇺澳大利亚0.84MB/s_2
       - 🇦🇺澳大利亚0.84MB/s_3
-      - '|USNode_1'
       - '|USTROJAN76986266'
-      - '|USTROJAN101428557'
+      - '|USNode_1'
       - '|USNode_2'
       - '|USNode_3'
-      - '|USNode_4'
       - '|USNode|HOST_1'
+      - '|USNode_4'
       - '|USNode_5'
       - '|USNode_6'
-      - '|USNode_7'
       - '|USTROJAN77052539|HOST'
+      - '|USNode_7'
       - '|USNode_8'
-      - '|USNode_9'
       - '|USTROJAN77052500|HOST'
-      - '|USNode_10'
+      - '|USNode_9'
       - '|USTROJAN101399730'
       - '|USNode|HOST_2'
       - '|USapw5'
+      - '|USNode_10'
       - '|USNode_11'
       - '|USNode_12'
-      - '|USNode_13'
       - '|SCNode_1'
-      - '|USNode_14'
+      - '|USNode_13'
       - '|USTROJAN101642916|HOST'
       - '|SCNode_2'
       - 🇳🇱荷兰1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.65MB/s
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - 🇰🇷韩国(baidu365.org免费节点)5.58MB/s
-      - 🇫🇮芬兰7.42MB/s
-      - 🇪🇸ES19.38MB/s
-      - 🇺🇸美国1.87MB/s
-      - US美国_1
-      - 🇺🇸美国10.57MB/s
-      - 🇺🇸美国1.95MB/s
-      - US美国_2
-      - 🇺🇸美国10.05MB/s
-      - CA加拿大
-      - 新加坡78
-      - 德国51
-      - 新加坡02
-      - 台湾08
-      - 芬兰02
-      - 新加坡03
-      - 新加坡15
-      - 新加坡31
-      - 新加坡22
-      - 新加坡32
-      - 新加坡30
-      - 台湾09
-      - 台湾10
-      - 台湾03
+      - 🇹🇼TW_1|⬇️1.6MB/s_1
+      - 🇯🇵JP_6|⬇️1.2MB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_1
+      - 🇭🇰HK_6|⬇️486KB/s_2
+      - 🇯🇵JP_6|⬇️1.2MB/s_2
+      - 🇹🇼TW_1|⬇️1.6MB/s_2
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
