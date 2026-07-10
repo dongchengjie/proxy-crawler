@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2026-07-09 11:48:27
+#  创建时间：2026-07-10 11:32:24
 #  模版：v2rayse默认模版
-#  节点数量：127
+#  节点数量：93
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,10 +13,20 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"vless","name":"🌐zhuhai.uk|🇧🇾🇵🇱|[BL]","server":"bc-ua-hn.ray-balance.space","port":4443,"uuid":"f6431ff1-dec0-4a6c-be4a-ce917913b589","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true}
   - {"type":"vless","name":"未知VLESS-538|free-nodes","server":"gr1.fifapes.monster","port":8882,"uuid":"eab915bc-d2df-73d1-47d0-6eb240497055","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
   - {"type":"vless","name":"未知VLESS-539|free-nodes","server":"gr1.fifapes.monster","port":8882,"uuid":"eab915bc-d2df-73d1-47d0-6eb240497055","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
   - {"type":"vless","name":"未知VLESS-540|free-nodes","server":"it.fifapes.monster","port":29148,"uuid":"eab915bc-d2df-73d1-47d0-6eb240497055","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
+  - {"type":"vless","name":"🇬🇧英国zhuhai.uk0.16MB/s277","server":"t1.hhaakk9922.com","port":46780,"uuid":"eefe7517-7167-33e0-8f1d-8ea1aaca7098","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"ljfxz"},"servername":"t1.hhaakk9922.com"}
+  - {"type":"vless","name":"🏳️未知zhuhai.uk22.14MB/s219","server":"91.107.146.206","port":8035,"uuid":"e9398602-cf13-48eb-9b81-fc639549782c","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
+  - {"type":"vless","name":"🏳️未知zhuhai.uk6.87MB/s444","server":"190.97.165.84","port":448,"uuid":"54bb59cf-96fc-4a66-8488-fa2391f2e650","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.cloudflare.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🏳️未知zhuhai.uk20.45MB/s264","server":"securitytrails.com","port":2083,"uuid":"58be4691-5430-417a-96e3-02736d151490","skip-cert-verify":true}
+  - {"type":"vless","name":"🇸🇪瑞典zhuhai.uk1.55MB/s273","server":"81.90.21.104","port":9443,"uuid":"fe604665-7c82-44cf-a067-869fe9b2abae","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"se.realitynetwork.eu","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪德国zhuhai.uk22.66MB/s220","server":"64.188.79.129","port":443,"uuid":"45c876f9-4900-40c0-b269-94871e78df54","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"ger.port-server.online","tls":false,"udp":true}
+  - {"type":"vless","name":"🇩🇪德国zhuhai.uk21.39MB/s217","server":"ger.port-server.online","port":443,"uuid":"45c876f9-4900-40c0-b269-94871e78df54","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"ger.port-server.online","tls":false,"udp":true}
+  - {"type":"vless","name":"🇸🇬新加坡zhuhai.uk5.33MB/s395","server":"43.160.247.127","port":443,"uuid":"9108e766-14ba-4514-8b6e-1e5842727a01","skip-cert-verify":true,"network":"tcp","servername":"www.bing.com","tls":false,"udp":true}
+  - {"type":"vless","name":"🇨🇦加拿大zhuhai.uk56.50MB/s166","server":"cf.877774.xyz","port":443,"uuid":"5dc15e15-f285-4a9d-959b-0e4fbdd77b63","skip-cert-verify":true}
+  - {"type":"vless","name":"🇸🇪瑞典zhuhai.uk10.69MB/s426","server":"zadefree-hyperlink.hyperfreelink.com","port":443,"uuid":"3e725086-dabd-ae9d-ffa5-3bab782249e1","skip-cert-verify":true}
+  - {"type":"vless","name":"🏳️未知zhuhai.uk23.10MB/s218","server":"91.107.146.206","port":1804,"uuid":"e9398602-cf13-48eb-9b81-fc639549782c","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
   - {"type":"trojan","name":"🏳️_未知_6","server":"172.64.146.198","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.gossipglove.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.gossipglove.com"}}}
   - {"type":"trojan","name":"|USTROJAN76986266","server":"www.calmlunch.com","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/assignment"}}
   - {"type":"trojan","name":"|USNode_1","server":"172.64.152.23","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmlunch.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmlunch.com"}}}
@@ -35,10 +45,6 @@ proxies:
   - {"type":"trojan","name":"|USNode_7","server":"104.18.152.225","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
   - {"type":"trojan","name":"🇫🇷法国TG搜:原生IP1.67MB/s","server":"104.18.152.219","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
   - {"type":"trojan","name":"🇫🇷法国TG搜:原生IP1.62MB/s","server":"104.17.177.143","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
-  - {"type":"trojan","name":"NONE_1","server":"45.130.125.126","port":443,"password":"86957ec0-b213-433b-a43b-51f2175e0ec3","udp":true,"skip-cert-verify":true,"sni":"space.byu.id.yxls.eu.cc","network":"ws","ws-opts":{"path":"/au-do","headers":{"host":"space.byu.id.yxls.eu.cc"}}}
-  - {"type":"trojan","name":"NONE_2","server":"104.18.153.10","port":443,"password":"86957ec0-b213-433b-a43b-51f2175e0ec3","udp":true,"skip-cert-verify":true,"sni":"space.byu.id.yxls.eu.cc","network":"ws","ws-opts":{"path":"/au-do","headers":{"host":"space.byu.id.yxls.eu.cc"}}}
-  - {"type":"trojan","name":"NONE_3","server":"104.16.72.2","port":443,"password":"86957ec0-b213-433b-a43b-51f2175e0ec3","udp":true,"skip-cert-verify":true,"sni":"space.byu.id.yxls.eu.cc","network":"ws","ws-opts":{"path":"/au-do","headers":{"host":"space.byu.id.yxls.eu.cc"}}}
-  - {"type":"trojan","name":"NONE_4","server":"104.16.72.101","port":443,"password":"86957ec0-b213-433b-a43b-51f2175e0ec3","udp":true,"skip-cert-verify":true,"sni":"space.byu.id.yxls.eu.cc","network":"ws","ws-opts":{"path":"/au-do","headers":{"host":"space.byu.id.yxls.eu.cc"}}}
   - {"type":"trojan","name":"FR_1","server":"104.17.131.88","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.gossipglove.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.gossipglove.com"}}}
   - {"type":"trojan","name":"FR_2","server":"104.16.174.117","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
   - {"type":"trojan","name":"FR_3","server":"104.18.152.233","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
@@ -53,103 +59,73 @@ proxies:
   - {"type":"trojan","name":"NL_3","server":"45.130.125.126","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.multiplydose.com"}}}
   - {"type":"trojan","name":"FR_10","server":"8.6.112.6","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
   - {"type":"trojan","name":"FR_11","server":"199.181.197.143","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
-  - {"type":"trojan","name":"FR_12","server":"8.6.112.6","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmloud.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmloud.com"}}}
   - {"type":"trojan","name":"PL_1","server":"188.114.96.3","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.creationlong.org","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.creationlong.org"}}}
-  - {"type":"trojan","name":"FR_13","server":"212.183.88.136","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmlunch.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmlunch.com"}}}
+  - {"type":"trojan","name":"FR_12","server":"212.183.88.136","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmlunch.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmlunch.com"}}}
   - {"type":"trojan","name":"NL_4","server":"162.159.17.189","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.multiplydose.com"}}}
-  - {"type":"trojan","name":"FR_14","server":"104.17.121.71","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmlunch.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmlunch.com"}}}
+  - {"type":"trojan","name":"FR_13","server":"104.17.121.71","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.calmlunch.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.calmlunch.com"}}}
   - {"type":"trojan","name":"PL_2","server":"www.creationlong.org","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/assignment"}}
   - {"type":"trojan","name":"NL_5","server":"8.6.112.0","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.multiplydose.com"}}}
-  - {"type":"trojan","name":"FR_15","server":"141.101.90.101","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
+  - {"type":"trojan","name":"FR_14","server":"141.101.90.101","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
   - {"type":"trojan","name":"🇳🇱NL_8|1.1MB/s|福利姬:https://t.me/fuliji_Arrest","server":"104.17.121.71","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.multiplydose.com"}}}
   - {"type":"trojan","name":"🇳🇱NL_6|1.0MB/s|更多节点:https://t.me/byxiaoxi","server":"104.18.12.149","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.multiplydose.com"}}}
   - {"type":"trojan","name":"🇳🇱NL_7|1.0MB/s|网盘搜宝:https://t.me/diskseeker","server":"172.66.47.69","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.multiplydose.com"}}}
   - {"type":"trojan","name":"🇳🇱NL_9|1.1MB/s|网盘搜宝:https://t.me/diskseeker","server":"172.66.44.211","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.multiplydose.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.multiplydose.com"}}}
   - {"type":"trojan","name":"🇫🇷FR_7|1.1MB/s|更多节点:https://t.me/byxiaoxi","server":"141.101.90.101","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.ignitelimit.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.ignitelimit.com"}}}
-  - {"type":"trojan","name":"🇭🇰【亚洲】香港03丨专线【3x】","server":"pokemonhk-02.yunjnet.com","port":55035,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇭🇰【亚洲】香港04丨专线【3x】","server":"pokemonhk-02.yunjnet.com","port":55035,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇯🇵【亚洲】日本01丨V6【1x】","server":"ptxlv6-01.yunjnet.com","port":54261,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.bing.com","network":"tcp"}
-  - {"type":"trojan","name":"🇸🇬【亚洲】新加坡08丨V6【1x】","server":"ptxlv6-2.yunjnet.com","port":54258,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.bing.com","network":"tcp"}
-  - {"type":"trojan","name":"🇭🇰【亚洲】香港05丨IPLC【10x】","server":"pokemon-02.yunjnet.com","port":55046,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇸🇬【亚洲】新加坡04丨专线【3x】","server":"pokemonsg-02.yunjnet.com","port":55017,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.sg","network":"tcp"}
-  - {"type":"trojan","name":"🇸🇬【亚洲】新加坡03丨专线【3x】","server":"pokemonsg-02.yunjnet.com","port":55017,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.sg","network":"tcp"}
-  - {"type":"trojan","name":"🇭🇰【亚洲】香港06丨IPLC【10x】","server":"pokemon-02.yunjnet.com","port":55046,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇸🇬【亚洲】新加坡01丨专线【3x】","server":"pokemonsg-01.yunjnet.com","port":55016,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.sg","network":"tcp"}
-  - {"type":"trojan","name":"🇸🇬【亚洲】新加坡02丨专线【3x】","server":"pokemonsg-01.yunjnet.com","port":55016,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.sg","network":"tcp"}
-  - {"type":"trojan","name":"🇯🇵【亚洲】日本02丨专线【3x】","server":"pokemonjp-01.yunjnet.com","port":54032,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.apple.com.cn","network":"tcp"}
-  - {"type":"trojan","name":"🇯🇵【亚洲】日本01丨专线【3x】","server":"pokemonjp-01.yunjnet.com","port":54032,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.apple.com.cn","network":"tcp"}
-  - {"type":"trojan","name":"🇸🇬【亚洲】新加坡09丨IPLC【10x】","server":"pokemon-02.yunjnet.com","port":55027,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.sg","network":"tcp"}
-  - {"type":"trojan","name":"🇭🇰【亚洲】香港家宽01丨专线【3x】","server":"pokemonhk-01.yunjnet.com","port":55024,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇲🇴【亚洲】澳门【8x】","server":"pokemon-01.yunjnet.com","port":59010,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇭🇰【亚洲】香港02丨V6【1x】","server":"ptxlv6-2.yunjnet.com","port":54357,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇭🇰【亚洲】香港家宽02丨专线【3x】","server":"pokemonhk-01.yunjnet.com","port":55024,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇭🇰【亚洲】香港01丨V6【1x】","server":"ptxlv6-01.yunjnet.com","port":54357,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇸🇬【亚洲】新加坡10丨IPLC【10x】","server":"pokemon-02.yunjnet.com","port":55027,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.sg","network":"tcp"}
-  - {"type":"trojan","name":"🇸🇬【亚洲】新加坡07丨V6【1x】","server":"ptxlv6-01.yunjnet.com","port":54258,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.bing.com","network":"tcp"}
-  - {"type":"trojan","name":"🇹🇼【亚洲】台湾03丨专线【3x】","server":"pokemon-01.yunjnet.com","port":54212,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇹🇼【亚洲】台湾04丨专线【3x】","server":"pokemon-01.yunjnet.com","port":54212,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇯🇵【亚洲】日本02丨IPLC游戏专线【10x】","server":"pokemon-02.yunjnet.com","port":54029,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.apple.com.cn","network":"tcp"}
-  - {"type":"trojan","name":"🇵🇭【东南亚】菲律宾【3x】","server":"pokemon-01.yunjnet.com","port":59005,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇯🇵【亚洲】日本02丨V6【1x】","server":"ptxlv6-2.yunjnet.com","port":54261,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.bing.com","network":"tcp"}
-  - {"type":"trojan","name":"🇹🇼【亚洲】台湾家宽01丨专线【3x】","server":"pokemon-01.yunjnet.com","port":54211,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇯🇵【亚洲】日本01丨IPLC游戏专线【10x】","server":"pokemon-02.yunjnet.com","port":54029,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.apple.com.cn","network":"tcp"}
-  - {"type":"trojan","name":"🇹🇼【亚洲】台湾家宽02丨专线【3x】","server":"pokemon-01.yunjnet.com","port":54211,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇯🇵【亚洲】日本04丨专线【3x】","server":"pokemonjp-02.yunjnet.com","port":54032,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.apple.com.cn","network":"tcp"}
-  - {"type":"trojan","name":"🇺🇸【北美洲】美国01丨V6【1x】","server":"ptxlv6-01.yunjnet.com","port":54273,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.bing.com","network":"tcp"}
-  - {"type":"trojan","name":"🇯🇵【亚洲】日本03丨专线【3x】","server":"pokemonjp-02.yunjnet.com","port":54032,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.apple.com.cn","network":"tcp"}
-  - {"type":"trojan","name":"🇮🇩【东南亚】印度尼西亚【3x】","server":"pokemon-01.yunjnet.com","port":59111,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇲🇾【东南亚】马来西亚丨原生【6x】","server":"pokemon-01.yunjnet.com","port":59027,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇹🇭【东南亚】泰国【3x】","server":"pokemon-01.yunjnet.com","port":59224,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇮🇳【南亚洲】印度【3x】","server":"pokemon-01.yunjnet.com","port":59009,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇺🇸【北美洲】美国02丨专线【3x】","server":"pokemonus-01.yunjnet.com","port":56115,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇻🇳【东南亚】越南【3x】","server":"pokemon-01.yunjnet.com","port":59006,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇰🇷【亚洲】韩国家宽02丨专线【6x】","server":"pokemon-01.yunjnet.com","port":59099,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇺🇸【北美洲】美国01丨专线【3x】","server":"pokemonus-01.yunjnet.com","port":56115,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇰🇷【亚洲】韩国家宽01丨专线【6x】","server":"pokemon-01.yunjnet.com","port":59110,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.lamer.com.hk","network":"tcp"}
-  - {"type":"trojan","name":"🇺🇸【北美洲】美国04丨专线【3x】","server":"pokemonus-02.yunjnet.com","port":56017,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇰🇭【东南亚】柬埔寨【3x】","server":"pokemon-01.yunjnet.com","port":59048,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇺🇸【北美洲】美国03丨专线【3x】","server":"pokemonus-02.yunjnet.com","port":56017,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇺🇸【北美洲】美国05丨IPLC【10x】","server":"pokemon-02.yunjnet.com","port":56019,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇦🇪【中东】阿联酋迪拜【4x】","server":"pokemon-01.yunjnet.com","port":59016,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇺🇸【北美洲】美国02丨V6【1x】","server":"ptxlv6-2.yunjnet.com","port":54273,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.bing.com","network":"tcp"}
-  - {"type":"trojan","name":"🇺🇸【北美洲】美国06丨IPLC【10x】","server":"pokemon-02.yunjnet.com","port":56019,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇦🇺【大洋洲】澳大利亚【3x】","server":"pokemon-01.yunjnet.com","port":59119,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇪🇸【欧洲】西班牙家宽【4x】","server":"pokemon-01.yunjnet.com","port":59146,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇷🇺【欧洲】俄罗斯【3x】","server":"pokemon-01.yunjnet.com","port":59032,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇰🇿【中亚】哈萨克斯坦【4x】","server":"pokemon-01.yunjnet.com","port":59127,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇳🇿【大洋洲】新西兰【10x】","server":"pokemon-01.yunjnet.com","port":59120,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇮🇹【欧洲】意大利【3x】","server":"pokemon-01.yunjnet.com","port":59028,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇩🇪【欧洲】德国01【3x】","server":"pokemon-01.yunjnet.com","port":59023,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇬🇧【欧洲】英国01【3x】","server":"pokemon-01.yunjnet.com","port":56006,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇬🇧【欧洲】英国02【3x】","server":"pokemon-01.yunjnet.com","port":56007,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇳🇱【欧洲】荷兰【3x】","server":"pokemon-01.yunjnet.com","port":48111,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇨🇿【欧洲】捷克【3x】","server":"pokemon-01.yunjnet.com","port":59047,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇹🇷【中东】土耳其-原生【3x】","server":"pokemon-01.yunjnet.com","port":59117,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇨🇦【北美洲】加拿大【3x】","server":"pokemon-01.yunjnet.com","port":59025,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇺🇦【欧洲】乌克兰【3x】","server":"pokemon-01.yunjnet.com","port":58113,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇲🇽【北美洲】墨西哥【3x】","server":"pokemon-03.yunjnet.com","port":50123,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇫🇷【欧洲】法国【3x】","server":"pokemon-01.yunjnet.com","port":59022,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇦🇹【欧洲】奥地利【3x】","server":"pokemon-01.yunjnet.com","port":59046,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇵🇱【欧洲】波兰原生【3x】","server":"pokemon-01.yunjnet.com","port":59017,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇸🇦【中东】沙特阿拉伯【3x】","server":"pokemon-01.yunjnet.com","port":59044,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇳🇬【非洲】尼日利亚【3x】","server":"pokemon-01.yunjnet.com","port":59013,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇧🇷【南美洲】巴西【3x】","server":"pokemon-01.yunjnet.com","port":59214,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇵🇪【南美洲】秘鲁【3x】","server":"pokemon-01.yunjnet.com","port":59021,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇳🇬【非洲】尼日利亚住宅【10x】","server":"pokemon-01.yunjnet.com","port":59014,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇦🇷【南美洲】阿根廷原生【6x】","server":"pokemon-01.yunjnet.com","port":59019,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇰🇷【亚洲】韩国家宽03丨IPLC【10x】","server":"pokemon-02.yunjnet.com","port":59111,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"www.apple.com.cn","network":"tcp"}
-  - {"type":"trojan","name":"🇿🇦【非洲】南非约翰内斯堡【6x】","server":"pokemon-01.yunjnet.com","port":59045,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
-  - {"type":"trojan","name":"🇨🇭【欧洲】瑞士【3x】","server":"pokemon-01.yunjnet.com","port":58031,"password":"81691dd5-32b9-41ba-b0a9-f32b522d3548","udp":true,"skip-cert-verify":true,"sni":"iosapps.itunes.apple.com","network":"tcp"}
+  - {"type":"trojan","name":"🇸🇬新加坡zhuhai.uk8.14MB/s375","server":"45.92.158.56","port":443,"password":"666","udp":true,"skip-cert-verify":true,"sni":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc","network":"ws","ws-opts":{"path":"/glasspanel/guest000_0_5de14443985f/","headers":{"host":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc"}}}
+  - {"type":"trojan","name":"🇰🇷韩国zhuhai.uk1.18MB/s367","server":"kr04021338.tmdsb.org","port":1864,"password":"3632736327","udp":true,"skip-cert-verify":true,"sni":"kr04021338.tmdsb.org","network":"tcp"}
+  - {"type":"trojan","name":"🇭🇰香港zhuhai.uk6.83MB/s344","server":"104.253.175.202","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇵🇭PHzhuhai.uk0.70MB/s371","server":"flb06181447.tmdsb.org","port":2398,"password":"3632736327","udp":true,"skip-cert-verify":true,"sni":"flb06181447.tmdsb.org","network":"tcp"}
+  - {"type":"trojan","name":"🇰🇷韩国zhuhai.uk1.15MB/s398","server":"kr04231525.tmdsb.org","port":1622,"password":"3632736327","udp":true,"skip-cert-verify":true,"sni":"kr04231525.tmdsb.org","network":"tcp"}
+  - {"type":"trojan","name":"🇯🇵日本zhuhai.uk2.76MB/s389","server":"126.220.82.161","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇮🇩IDzhuhai.uk0.17MB/s374","server":"ine07011438.tmdsb.org","port":3367,"password":"3632736327","udp":true,"skip-cert-verify":true,"sni":"ine07011438.tmdsb.org","network":"tcp"}
+  - {"type":"trojan","name":"🇹🇷TRzhuhai.uk0.14MB/s411","server":"78.135.73.38","port":449,"password":"0ds_NIm933rf_Nxio294_nbZi3","udp":true,"skip-cert-verify":true,"sni":"grape-ataturk-tr.yyuyy.com","network":"tcp"}
+  - {"type":"trojan","name":"🇦🇺澳大利亚zhuhai.uk4.75MB/s466","server":"161.33.76.218","port":8443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇨🇦加拿大zhuhai.uk83.37MB/s385","server":"104.18.39.216","port":443,"password":"666","udp":true,"skip-cert-verify":true,"sni":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc","network":"ws","ws-opts":{"path":"/glasspanel/guest000_0_5de14443985f/","headers":{"host":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc"}}}
+  - {"type":"trojan","name":"🇸🇬新加坡zhuhai.uk5.28MB/s355","server":"129.212.239.178","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇸🇬新加坡zhuhai.uk0.89MB/s349","server":"129.212.225.217","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇸🇬新加坡zhuhai.uk5.37MB/s343","server":"134.209.101.154","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇸🇬新加坡zhuhai.uk4.69MB/s357","server":"128.199.82.20","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇨🇳台湾zhuhai.uk0.40MB/s372","server":"103.137.63.227","port":8443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇸🇬新加坡zhuhai.uk4.48MB/s347","server":"129.212.232.171","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇨🇦加拿大zhuhai.uk56.71MB/s391","server":"104.18.33.225","port":443,"password":"666","udp":true,"skip-cert-verify":true,"sni":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc","network":"ws","ws-opts":{"path":"/glasspanel/guest000_0_5de14443985f/","headers":{"host":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc"}}}
+  - {"type":"trojan","name":"🇨🇦加拿大zhuhai.uk76.75MB/s378","server":"104.17.158.12","port":443,"password":"666","udp":true,"skip-cert-verify":true,"sni":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc","network":"ws","ws-opts":{"path":"/glasspanel/guest000_0_5de14443985f/","headers":{"host":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc"}}}
+  - {"type":"trojan","name":"🇯🇵日本zhuhai.uk2.80MB/s354","server":"138.3.212.160","port":8443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇸🇬新加坡zhuhai.uk5.23MB/s366","server":"109.121.39.70","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇯🇵日本zhuhai.uk10.48MB/s363","server":"140.83.50.165","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇸🇬新加坡zhuhai.uk6.35MB/s346","server":"116.251.216.23","port":8443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇨🇦加拿大zhuhai.uk36.61MB/s359","server":"104.18.33.209","port":443,"password":"666","udp":true,"skip-cert-verify":true,"sni":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc","network":"ws","ws-opts":{"path":"/glasspanel/guest000_0_5de14443985f/","headers":{"host":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc"}}}
+  - {"type":"trojan","name":"🇭🇰香港zhuhai.uk0.38MB/s339","server":"103.192.179.132","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇨🇦加拿大zhuhai.uk77.86MB/s376","server":"saas.sin.fan","port":443,"password":"666","udp":true,"skip-cert-verify":true,"sni":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc","network":"ws","ws-opts":{"path":"/glasspanel/guest000_0_5de14443985f/","headers":{"host":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc"}}}
+  - {"type":"trojan","name":"🇮🇪IEzhuhai.uk26.62MB/s226","server":"singular-lark.rooster465.autos","port":443,"password":"XG59623478","udp":true,"skip-cert-verify":true,"sni":"singular-lark.rooster465.autos","network":"tcp"}
+  - {"type":"trojan","name":"🇯🇵日本zhuhai.uk17.29MB/s368","server":"212.135.212.26","port":443,"password":"666","udp":true,"skip-cert-verify":true,"sni":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc","network":"ws","ws-opts":{"path":"/glasspanel/guest000_0_5de14443985f/","headers":{"host":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc"}}}
+  - {"type":"trojan","name":"🇰🇷韩国zhuhai.uk1.10MB/s414","server":"kr04212337.tmdsb.org","port":1738,"password":"3632736327","udp":true,"skip-cert-verify":true,"sni":"kr04212337.tmdsb.org","network":"tcp"}
+  - {"type":"trojan","name":"🇨🇳台湾zhuhai.uk2.10MB/s342","server":"220.135.92.105","port":2087,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇭🇰香港zhuhai.uk1.08MB/s338","server":"122.10.119.252","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇯🇵日本zhuhai.uk1.75MB/s352","server":"18.180.0.203","port":443,"password":"666","udp":true,"skip-cert-verify":true,"sni":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc","network":"ws","ws-opts":{"path":"/glasspanel/guest000_0_5de14443985f/","headers":{"host":"gdurt.ia6o.2s1.hh.penqiask.ccwu.cc"}}}
+  - {"type":"trojan","name":"🇰🇷韩国zhuhai.uk0.87MB/s394","server":"kr04212339.tmdsb.org","port":2648,"password":"3632736327","udp":true,"skip-cert-verify":true,"sni":"kr04212339.tmdsb.org","network":"tcp"}
+  - {"type":"trojan","name":"🇺🇸美国zhuhai.uk0.14MB/s460","server":"us04031316.tmdsb.org","port":3480,"password":"3632736327","udp":true,"skip-cert-verify":true,"sni":"us04031316.tmdsb.org","network":"tcp"}
+  - {"type":"trojan","name":"🇭🇰香港zhuhai.uk7.75MB/s358","server":"103.193.172.164","port":443,"password":"521314","udp":true,"skip-cert-verify":true,"sni":"tjplay.lxdxo.kdns.fr","network":"ws","ws-opts":{"path":"/","headers":{"host":"tjplay.lxdxo.kdns.fr"}}}
+  - {"type":"trojan","name":"🇦🇺澳大利亚zhuhai.uk17.33MB/s452","server":"stirring-dane.rooster465.autos","port":443,"password":"XG59623478","udp":true,"skip-cert-verify":true,"sni":"stirring-dane.rooster465.autos","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🌐zhuhai.uk|🇧🇾🇵🇱|[BL]
       - 未知VLESS-538|free-nodes
       - 未知VLESS-539|free-nodes
       - 未知VLESS-540|free-nodes
+      - 🇬🇧英国zhuhai.uk0.16MB/s277
+      - 🏳️未知zhuhai.uk22.14MB/s219
+      - 🏳️未知zhuhai.uk6.87MB/s444
+      - 🏳️未知zhuhai.uk20.45MB/s264
+      - 🇸🇪瑞典zhuhai.uk1.55MB/s273
+      - 🇩🇪德国zhuhai.uk22.66MB/s220
+      - 🇩🇪德国zhuhai.uk21.39MB/s217
+      - 🇸🇬新加坡zhuhai.uk5.33MB/s395
+      - 🇨🇦加拿大zhuhai.uk56.50MB/s166
+      - 🇸🇪瑞典zhuhai.uk10.69MB/s426
+      - 🏳️未知zhuhai.uk23.10MB/s218
       - 🏳️_未知_6
       - '|USTROJAN76986266'
       - '|USNode_1'
@@ -168,10 +144,6 @@ proxy-groups:
       - '|USNode_7'
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - NONE_1
-      - NONE_2
-      - NONE_3
-      - NONE_4
       - FR_1
       - FR_2
       - FR_3
@@ -186,103 +158,73 @@ proxy-groups:
       - NL_3
       - FR_10
       - FR_11
-      - FR_12
       - PL_1
-      - FR_13
+      - FR_12
       - NL_4
-      - FR_14
+      - FR_13
       - PL_2
       - NL_5
-      - FR_15
+      - FR_14
       - 🇳🇱NL_8|1.1MB/s|福利姬:https://t.me/fuliji_Arrest
       - 🇳🇱NL_6|1.0MB/s|更多节点:https://t.me/byxiaoxi
       - 🇳🇱NL_7|1.0MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇳🇱NL_9|1.1MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇫🇷FR_7|1.1MB/s|更多节点:https://t.me/byxiaoxi
-      - 🇭🇰【亚洲】香港03丨专线【3x】
-      - 🇭🇰【亚洲】香港04丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡08丨V6【1x】
-      - 🇭🇰【亚洲】香港05丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡04丨专线【3x】
-      - 🇸🇬【亚洲】新加坡03丨专线【3x】
-      - 🇭🇰【亚洲】香港06丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡02丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡09丨IPLC【10x】
-      - 🇭🇰【亚洲】香港家宽01丨专线【3x】
-      - 🇲🇴【亚洲】澳门【8x】
-      - 🇭🇰【亚洲】香港02丨V6【1x】
-      - 🇭🇰【亚洲】香港家宽02丨专线【3x】
-      - 🇭🇰【亚洲】香港01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡10丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡07丨V6【1x】
-      - 🇹🇼【亚洲】台湾03丨专线【3x】
-      - 🇹🇼【亚洲】台湾04丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨IPLC游戏专线【10x】
-      - 🇵🇭【东南亚】菲律宾【3x】
-      - 🇯🇵【亚洲】日本02丨V6【1x】
-      - 🇹🇼【亚洲】台湾家宽01丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨IPLC游戏专线【10x】
-      - 🇹🇼【亚洲】台湾家宽02丨专线【3x】
-      - 🇯🇵【亚洲】日本04丨专线【3x】
-      - 🇺🇸【北美洲】美国01丨V6【1x】
-      - 🇯🇵【亚洲】日本03丨专线【3x】
-      - 🇮🇩【东南亚】印度尼西亚【3x】
-      - 🇲🇾【东南亚】马来西亚丨原生【6x】
-      - 🇹🇭【东南亚】泰国【3x】
-      - 🇮🇳【南亚洲】印度【3x】
-      - 🇺🇸【北美洲】美国02丨专线【3x】
-      - 🇻🇳【东南亚】越南【3x】
-      - 🇰🇷【亚洲】韩国家宽02丨专线【6x】
-      - 🇺🇸【北美洲】美国01丨专线【3x】
-      - 🇰🇷【亚洲】韩国家宽01丨专线【6x】
-      - 🇺🇸【北美洲】美国04丨专线【3x】
-      - 🇰🇭【东南亚】柬埔寨【3x】
-      - 🇺🇸【北美洲】美国03丨专线【3x】
-      - 🇺🇸【北美洲】美国05丨IPLC【10x】
-      - 🇦🇪【中东】阿联酋迪拜【4x】
-      - 🇺🇸【北美洲】美国02丨V6【1x】
-      - 🇺🇸【北美洲】美国06丨IPLC【10x】
-      - 🇦🇺【大洋洲】澳大利亚【3x】
-      - 🇪🇸【欧洲】西班牙家宽【4x】
-      - 🇷🇺【欧洲】俄罗斯【3x】
-      - 🇰🇿【中亚】哈萨克斯坦【4x】
-      - 🇳🇿【大洋洲】新西兰【10x】
-      - 🇮🇹【欧洲】意大利【3x】
-      - 🇩🇪【欧洲】德国01【3x】
-      - 🇬🇧【欧洲】英国01【3x】
-      - 🇬🇧【欧洲】英国02【3x】
-      - 🇳🇱【欧洲】荷兰【3x】
-      - 🇨🇿【欧洲】捷克【3x】
-      - 🇹🇷【中东】土耳其-原生【3x】
-      - 🇨🇦【北美洲】加拿大【3x】
-      - 🇺🇦【欧洲】乌克兰【3x】
-      - 🇲🇽【北美洲】墨西哥【3x】
-      - 🇫🇷【欧洲】法国【3x】
-      - 🇦🇹【欧洲】奥地利【3x】
-      - 🇵🇱【欧洲】波兰原生【3x】
-      - 🇸🇦【中东】沙特阿拉伯【3x】
-      - 🇳🇬【非洲】尼日利亚【3x】
-      - 🇧🇷【南美洲】巴西【3x】
-      - 🇵🇪【南美洲】秘鲁【3x】
-      - 🇳🇬【非洲】尼日利亚住宅【10x】
-      - 🇦🇷【南美洲】阿根廷原生【6x】
-      - 🇰🇷【亚洲】韩国家宽03丨IPLC【10x】
-      - 🇿🇦【非洲】南非约翰内斯堡【6x】
-      - 🇨🇭【欧洲】瑞士【3x】
+      - 🇸🇬新加坡zhuhai.uk8.14MB/s375
+      - 🇰🇷韩国zhuhai.uk1.18MB/s367
+      - 🇭🇰香港zhuhai.uk6.83MB/s344
+      - 🇵🇭PHzhuhai.uk0.70MB/s371
+      - 🇰🇷韩国zhuhai.uk1.15MB/s398
+      - 🇯🇵日本zhuhai.uk2.76MB/s389
+      - 🇮🇩IDzhuhai.uk0.17MB/s374
+      - 🇹🇷TRzhuhai.uk0.14MB/s411
+      - 🇦🇺澳大利亚zhuhai.uk4.75MB/s466
+      - 🇨🇦加拿大zhuhai.uk83.37MB/s385
+      - 🇸🇬新加坡zhuhai.uk5.28MB/s355
+      - 🇸🇬新加坡zhuhai.uk0.89MB/s349
+      - 🇸🇬新加坡zhuhai.uk5.37MB/s343
+      - 🇸🇬新加坡zhuhai.uk4.69MB/s357
+      - 🇨🇳台湾zhuhai.uk0.40MB/s372
+      - 🇸🇬新加坡zhuhai.uk4.48MB/s347
+      - 🇨🇦加拿大zhuhai.uk56.71MB/s391
+      - 🇨🇦加拿大zhuhai.uk76.75MB/s378
+      - 🇯🇵日本zhuhai.uk2.80MB/s354
+      - 🇸🇬新加坡zhuhai.uk5.23MB/s366
+      - 🇯🇵日本zhuhai.uk10.48MB/s363
+      - 🇸🇬新加坡zhuhai.uk6.35MB/s346
+      - 🇨🇦加拿大zhuhai.uk36.61MB/s359
+      - 🇭🇰香港zhuhai.uk0.38MB/s339
+      - 🇨🇦加拿大zhuhai.uk77.86MB/s376
+      - 🇮🇪IEzhuhai.uk26.62MB/s226
+      - 🇯🇵日本zhuhai.uk17.29MB/s368
+      - 🇰🇷韩国zhuhai.uk1.10MB/s414
+      - 🇨🇳台湾zhuhai.uk2.10MB/s342
+      - 🇭🇰香港zhuhai.uk1.08MB/s338
+      - 🇯🇵日本zhuhai.uk1.75MB/s352
+      - 🇰🇷韩国zhuhai.uk0.87MB/s394
+      - 🇺🇸美国zhuhai.uk0.14MB/s460
+      - 🇭🇰香港zhuhai.uk7.75MB/s358
+      - 🇦🇺澳大利亚zhuhai.uk17.33MB/s452
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🌐zhuhai.uk|🇧🇾🇵🇱|[BL]
       - 未知VLESS-538|free-nodes
       - 未知VLESS-539|free-nodes
       - 未知VLESS-540|free-nodes
+      - 🇬🇧英国zhuhai.uk0.16MB/s277
+      - 🏳️未知zhuhai.uk22.14MB/s219
+      - 🏳️未知zhuhai.uk6.87MB/s444
+      - 🏳️未知zhuhai.uk20.45MB/s264
+      - 🇸🇪瑞典zhuhai.uk1.55MB/s273
+      - 🇩🇪德国zhuhai.uk22.66MB/s220
+      - 🇩🇪德国zhuhai.uk21.39MB/s217
+      - 🇸🇬新加坡zhuhai.uk5.33MB/s395
+      - 🇨🇦加拿大zhuhai.uk56.50MB/s166
+      - 🇸🇪瑞典zhuhai.uk10.69MB/s426
+      - 🏳️未知zhuhai.uk23.10MB/s218
       - 🏳️_未知_6
       - '|USTROJAN76986266'
       - '|USNode_1'
@@ -301,10 +243,6 @@ proxy-groups:
       - '|USNode_7'
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - NONE_1
-      - NONE_2
-      - NONE_3
-      - NONE_4
       - FR_1
       - FR_2
       - FR_3
@@ -319,103 +257,73 @@ proxy-groups:
       - NL_3
       - FR_10
       - FR_11
-      - FR_12
       - PL_1
-      - FR_13
+      - FR_12
       - NL_4
-      - FR_14
+      - FR_13
       - PL_2
       - NL_5
-      - FR_15
+      - FR_14
       - 🇳🇱NL_8|1.1MB/s|福利姬:https://t.me/fuliji_Arrest
       - 🇳🇱NL_6|1.0MB/s|更多节点:https://t.me/byxiaoxi
       - 🇳🇱NL_7|1.0MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇳🇱NL_9|1.1MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇫🇷FR_7|1.1MB/s|更多节点:https://t.me/byxiaoxi
-      - 🇭🇰【亚洲】香港03丨专线【3x】
-      - 🇭🇰【亚洲】香港04丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡08丨V6【1x】
-      - 🇭🇰【亚洲】香港05丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡04丨专线【3x】
-      - 🇸🇬【亚洲】新加坡03丨专线【3x】
-      - 🇭🇰【亚洲】香港06丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡02丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡09丨IPLC【10x】
-      - 🇭🇰【亚洲】香港家宽01丨专线【3x】
-      - 🇲🇴【亚洲】澳门【8x】
-      - 🇭🇰【亚洲】香港02丨V6【1x】
-      - 🇭🇰【亚洲】香港家宽02丨专线【3x】
-      - 🇭🇰【亚洲】香港01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡10丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡07丨V6【1x】
-      - 🇹🇼【亚洲】台湾03丨专线【3x】
-      - 🇹🇼【亚洲】台湾04丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨IPLC游戏专线【10x】
-      - 🇵🇭【东南亚】菲律宾【3x】
-      - 🇯🇵【亚洲】日本02丨V6【1x】
-      - 🇹🇼【亚洲】台湾家宽01丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨IPLC游戏专线【10x】
-      - 🇹🇼【亚洲】台湾家宽02丨专线【3x】
-      - 🇯🇵【亚洲】日本04丨专线【3x】
-      - 🇺🇸【北美洲】美国01丨V6【1x】
-      - 🇯🇵【亚洲】日本03丨专线【3x】
-      - 🇮🇩【东南亚】印度尼西亚【3x】
-      - 🇲🇾【东南亚】马来西亚丨原生【6x】
-      - 🇹🇭【东南亚】泰国【3x】
-      - 🇮🇳【南亚洲】印度【3x】
-      - 🇺🇸【北美洲】美国02丨专线【3x】
-      - 🇻🇳【东南亚】越南【3x】
-      - 🇰🇷【亚洲】韩国家宽02丨专线【6x】
-      - 🇺🇸【北美洲】美国01丨专线【3x】
-      - 🇰🇷【亚洲】韩国家宽01丨专线【6x】
-      - 🇺🇸【北美洲】美国04丨专线【3x】
-      - 🇰🇭【东南亚】柬埔寨【3x】
-      - 🇺🇸【北美洲】美国03丨专线【3x】
-      - 🇺🇸【北美洲】美国05丨IPLC【10x】
-      - 🇦🇪【中东】阿联酋迪拜【4x】
-      - 🇺🇸【北美洲】美国02丨V6【1x】
-      - 🇺🇸【北美洲】美国06丨IPLC【10x】
-      - 🇦🇺【大洋洲】澳大利亚【3x】
-      - 🇪🇸【欧洲】西班牙家宽【4x】
-      - 🇷🇺【欧洲】俄罗斯【3x】
-      - 🇰🇿【中亚】哈萨克斯坦【4x】
-      - 🇳🇿【大洋洲】新西兰【10x】
-      - 🇮🇹【欧洲】意大利【3x】
-      - 🇩🇪【欧洲】德国01【3x】
-      - 🇬🇧【欧洲】英国01【3x】
-      - 🇬🇧【欧洲】英国02【3x】
-      - 🇳🇱【欧洲】荷兰【3x】
-      - 🇨🇿【欧洲】捷克【3x】
-      - 🇹🇷【中东】土耳其-原生【3x】
-      - 🇨🇦【北美洲】加拿大【3x】
-      - 🇺🇦【欧洲】乌克兰【3x】
-      - 🇲🇽【北美洲】墨西哥【3x】
-      - 🇫🇷【欧洲】法国【3x】
-      - 🇦🇹【欧洲】奥地利【3x】
-      - 🇵🇱【欧洲】波兰原生【3x】
-      - 🇸🇦【中东】沙特阿拉伯【3x】
-      - 🇳🇬【非洲】尼日利亚【3x】
-      - 🇧🇷【南美洲】巴西【3x】
-      - 🇵🇪【南美洲】秘鲁【3x】
-      - 🇳🇬【非洲】尼日利亚住宅【10x】
-      - 🇦🇷【南美洲】阿根廷原生【6x】
-      - 🇰🇷【亚洲】韩国家宽03丨IPLC【10x】
-      - 🇿🇦【非洲】南非约翰内斯堡【6x】
-      - 🇨🇭【欧洲】瑞士【3x】
+      - 🇸🇬新加坡zhuhai.uk8.14MB/s375
+      - 🇰🇷韩国zhuhai.uk1.18MB/s367
+      - 🇭🇰香港zhuhai.uk6.83MB/s344
+      - 🇵🇭PHzhuhai.uk0.70MB/s371
+      - 🇰🇷韩国zhuhai.uk1.15MB/s398
+      - 🇯🇵日本zhuhai.uk2.76MB/s389
+      - 🇮🇩IDzhuhai.uk0.17MB/s374
+      - 🇹🇷TRzhuhai.uk0.14MB/s411
+      - 🇦🇺澳大利亚zhuhai.uk4.75MB/s466
+      - 🇨🇦加拿大zhuhai.uk83.37MB/s385
+      - 🇸🇬新加坡zhuhai.uk5.28MB/s355
+      - 🇸🇬新加坡zhuhai.uk0.89MB/s349
+      - 🇸🇬新加坡zhuhai.uk5.37MB/s343
+      - 🇸🇬新加坡zhuhai.uk4.69MB/s357
+      - 🇨🇳台湾zhuhai.uk0.40MB/s372
+      - 🇸🇬新加坡zhuhai.uk4.48MB/s347
+      - 🇨🇦加拿大zhuhai.uk56.71MB/s391
+      - 🇨🇦加拿大zhuhai.uk76.75MB/s378
+      - 🇯🇵日本zhuhai.uk2.80MB/s354
+      - 🇸🇬新加坡zhuhai.uk5.23MB/s366
+      - 🇯🇵日本zhuhai.uk10.48MB/s363
+      - 🇸🇬新加坡zhuhai.uk6.35MB/s346
+      - 🇨🇦加拿大zhuhai.uk36.61MB/s359
+      - 🇭🇰香港zhuhai.uk0.38MB/s339
+      - 🇨🇦加拿大zhuhai.uk77.86MB/s376
+      - 🇮🇪IEzhuhai.uk26.62MB/s226
+      - 🇯🇵日本zhuhai.uk17.29MB/s368
+      - 🇰🇷韩国zhuhai.uk1.10MB/s414
+      - 🇨🇳台湾zhuhai.uk2.10MB/s342
+      - 🇭🇰香港zhuhai.uk1.08MB/s338
+      - 🇯🇵日本zhuhai.uk1.75MB/s352
+      - 🇰🇷韩国zhuhai.uk0.87MB/s394
+      - 🇺🇸美国zhuhai.uk0.14MB/s460
+      - 🇭🇰香港zhuhai.uk7.75MB/s358
+      - 🇦🇺澳大利亚zhuhai.uk17.33MB/s452
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🌐zhuhai.uk|🇧🇾🇵🇱|[BL]
       - 未知VLESS-538|free-nodes
       - 未知VLESS-539|free-nodes
       - 未知VLESS-540|free-nodes
+      - 🇬🇧英国zhuhai.uk0.16MB/s277
+      - 🏳️未知zhuhai.uk22.14MB/s219
+      - 🏳️未知zhuhai.uk6.87MB/s444
+      - 🏳️未知zhuhai.uk20.45MB/s264
+      - 🇸🇪瑞典zhuhai.uk1.55MB/s273
+      - 🇩🇪德国zhuhai.uk22.66MB/s220
+      - 🇩🇪德国zhuhai.uk21.39MB/s217
+      - 🇸🇬新加坡zhuhai.uk5.33MB/s395
+      - 🇨🇦加拿大zhuhai.uk56.50MB/s166
+      - 🇸🇪瑞典zhuhai.uk10.69MB/s426
+      - 🏳️未知zhuhai.uk23.10MB/s218
       - 🏳️_未知_6
       - '|USTROJAN76986266'
       - '|USNode_1'
@@ -434,10 +342,6 @@ proxy-groups:
       - '|USNode_7'
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - NONE_1
-      - NONE_2
-      - NONE_3
-      - NONE_4
       - FR_1
       - FR_2
       - FR_3
@@ -452,102 +356,72 @@ proxy-groups:
       - NL_3
       - FR_10
       - FR_11
-      - FR_12
       - PL_1
-      - FR_13
+      - FR_12
       - NL_4
-      - FR_14
+      - FR_13
       - PL_2
       - NL_5
-      - FR_15
+      - FR_14
       - 🇳🇱NL_8|1.1MB/s|福利姬:https://t.me/fuliji_Arrest
       - 🇳🇱NL_6|1.0MB/s|更多节点:https://t.me/byxiaoxi
       - 🇳🇱NL_7|1.0MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇳🇱NL_9|1.1MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇫🇷FR_7|1.1MB/s|更多节点:https://t.me/byxiaoxi
-      - 🇭🇰【亚洲】香港03丨专线【3x】
-      - 🇭🇰【亚洲】香港04丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡08丨V6【1x】
-      - 🇭🇰【亚洲】香港05丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡04丨专线【3x】
-      - 🇸🇬【亚洲】新加坡03丨专线【3x】
-      - 🇭🇰【亚洲】香港06丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡02丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡09丨IPLC【10x】
-      - 🇭🇰【亚洲】香港家宽01丨专线【3x】
-      - 🇲🇴【亚洲】澳门【8x】
-      - 🇭🇰【亚洲】香港02丨V6【1x】
-      - 🇭🇰【亚洲】香港家宽02丨专线【3x】
-      - 🇭🇰【亚洲】香港01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡10丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡07丨V6【1x】
-      - 🇹🇼【亚洲】台湾03丨专线【3x】
-      - 🇹🇼【亚洲】台湾04丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨IPLC游戏专线【10x】
-      - 🇵🇭【东南亚】菲律宾【3x】
-      - 🇯🇵【亚洲】日本02丨V6【1x】
-      - 🇹🇼【亚洲】台湾家宽01丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨IPLC游戏专线【10x】
-      - 🇹🇼【亚洲】台湾家宽02丨专线【3x】
-      - 🇯🇵【亚洲】日本04丨专线【3x】
-      - 🇺🇸【北美洲】美国01丨V6【1x】
-      - 🇯🇵【亚洲】日本03丨专线【3x】
-      - 🇮🇩【东南亚】印度尼西亚【3x】
-      - 🇲🇾【东南亚】马来西亚丨原生【6x】
-      - 🇹🇭【东南亚】泰国【3x】
-      - 🇮🇳【南亚洲】印度【3x】
-      - 🇺🇸【北美洲】美国02丨专线【3x】
-      - 🇻🇳【东南亚】越南【3x】
-      - 🇰🇷【亚洲】韩国家宽02丨专线【6x】
-      - 🇺🇸【北美洲】美国01丨专线【3x】
-      - 🇰🇷【亚洲】韩国家宽01丨专线【6x】
-      - 🇺🇸【北美洲】美国04丨专线【3x】
-      - 🇰🇭【东南亚】柬埔寨【3x】
-      - 🇺🇸【北美洲】美国03丨专线【3x】
-      - 🇺🇸【北美洲】美国05丨IPLC【10x】
-      - 🇦🇪【中东】阿联酋迪拜【4x】
-      - 🇺🇸【北美洲】美国02丨V6【1x】
-      - 🇺🇸【北美洲】美国06丨IPLC【10x】
-      - 🇦🇺【大洋洲】澳大利亚【3x】
-      - 🇪🇸【欧洲】西班牙家宽【4x】
-      - 🇷🇺【欧洲】俄罗斯【3x】
-      - 🇰🇿【中亚】哈萨克斯坦【4x】
-      - 🇳🇿【大洋洲】新西兰【10x】
-      - 🇮🇹【欧洲】意大利【3x】
-      - 🇩🇪【欧洲】德国01【3x】
-      - 🇬🇧【欧洲】英国01【3x】
-      - 🇬🇧【欧洲】英国02【3x】
-      - 🇳🇱【欧洲】荷兰【3x】
-      - 🇨🇿【欧洲】捷克【3x】
-      - 🇹🇷【中东】土耳其-原生【3x】
-      - 🇨🇦【北美洲】加拿大【3x】
-      - 🇺🇦【欧洲】乌克兰【3x】
-      - 🇲🇽【北美洲】墨西哥【3x】
-      - 🇫🇷【欧洲】法国【3x】
-      - 🇦🇹【欧洲】奥地利【3x】
-      - 🇵🇱【欧洲】波兰原生【3x】
-      - 🇸🇦【中东】沙特阿拉伯【3x】
-      - 🇳🇬【非洲】尼日利亚【3x】
-      - 🇧🇷【南美洲】巴西【3x】
-      - 🇵🇪【南美洲】秘鲁【3x】
-      - 🇳🇬【非洲】尼日利亚住宅【10x】
-      - 🇦🇷【南美洲】阿根廷原生【6x】
-      - 🇰🇷【亚洲】韩国家宽03丨IPLC【10x】
-      - 🇿🇦【非洲】南非约翰内斯堡【6x】
-      - 🇨🇭【欧洲】瑞士【3x】
+      - 🇸🇬新加坡zhuhai.uk8.14MB/s375
+      - 🇰🇷韩国zhuhai.uk1.18MB/s367
+      - 🇭🇰香港zhuhai.uk6.83MB/s344
+      - 🇵🇭PHzhuhai.uk0.70MB/s371
+      - 🇰🇷韩国zhuhai.uk1.15MB/s398
+      - 🇯🇵日本zhuhai.uk2.76MB/s389
+      - 🇮🇩IDzhuhai.uk0.17MB/s374
+      - 🇹🇷TRzhuhai.uk0.14MB/s411
+      - 🇦🇺澳大利亚zhuhai.uk4.75MB/s466
+      - 🇨🇦加拿大zhuhai.uk83.37MB/s385
+      - 🇸🇬新加坡zhuhai.uk5.28MB/s355
+      - 🇸🇬新加坡zhuhai.uk0.89MB/s349
+      - 🇸🇬新加坡zhuhai.uk5.37MB/s343
+      - 🇸🇬新加坡zhuhai.uk4.69MB/s357
+      - 🇨🇳台湾zhuhai.uk0.40MB/s372
+      - 🇸🇬新加坡zhuhai.uk4.48MB/s347
+      - 🇨🇦加拿大zhuhai.uk56.71MB/s391
+      - 🇨🇦加拿大zhuhai.uk76.75MB/s378
+      - 🇯🇵日本zhuhai.uk2.80MB/s354
+      - 🇸🇬新加坡zhuhai.uk5.23MB/s366
+      - 🇯🇵日本zhuhai.uk10.48MB/s363
+      - 🇸🇬新加坡zhuhai.uk6.35MB/s346
+      - 🇨🇦加拿大zhuhai.uk36.61MB/s359
+      - 🇭🇰香港zhuhai.uk0.38MB/s339
+      - 🇨🇦加拿大zhuhai.uk77.86MB/s376
+      - 🇮🇪IEzhuhai.uk26.62MB/s226
+      - 🇯🇵日本zhuhai.uk17.29MB/s368
+      - 🇰🇷韩国zhuhai.uk1.10MB/s414
+      - 🇨🇳台湾zhuhai.uk2.10MB/s342
+      - 🇭🇰香港zhuhai.uk1.08MB/s338
+      - 🇯🇵日本zhuhai.uk1.75MB/s352
+      - 🇰🇷韩国zhuhai.uk0.87MB/s394
+      - 🇺🇸美国zhuhai.uk0.14MB/s460
+      - 🇭🇰香港zhuhai.uk7.75MB/s358
+      - 🇦🇺澳大利亚zhuhai.uk17.33MB/s452
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🌐zhuhai.uk|🇧🇾🇵🇱|[BL]
       - 未知VLESS-538|free-nodes
       - 未知VLESS-539|free-nodes
       - 未知VLESS-540|free-nodes
+      - 🇬🇧英国zhuhai.uk0.16MB/s277
+      - 🏳️未知zhuhai.uk22.14MB/s219
+      - 🏳️未知zhuhai.uk6.87MB/s444
+      - 🏳️未知zhuhai.uk20.45MB/s264
+      - 🇸🇪瑞典zhuhai.uk1.55MB/s273
+      - 🇩🇪德国zhuhai.uk22.66MB/s220
+      - 🇩🇪德国zhuhai.uk21.39MB/s217
+      - 🇸🇬新加坡zhuhai.uk5.33MB/s395
+      - 🇨🇦加拿大zhuhai.uk56.50MB/s166
+      - 🇸🇪瑞典zhuhai.uk10.69MB/s426
+      - 🏳️未知zhuhai.uk23.10MB/s218
       - 🏳️_未知_6
       - '|USTROJAN76986266'
       - '|USNode_1'
@@ -566,10 +440,6 @@ proxy-groups:
       - '|USNode_7'
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - NONE_1
-      - NONE_2
-      - NONE_3
-      - NONE_4
       - FR_1
       - FR_2
       - FR_3
@@ -584,102 +454,72 @@ proxy-groups:
       - NL_3
       - FR_10
       - FR_11
-      - FR_12
       - PL_1
-      - FR_13
+      - FR_12
       - NL_4
-      - FR_14
+      - FR_13
       - PL_2
       - NL_5
-      - FR_15
+      - FR_14
       - 🇳🇱NL_8|1.1MB/s|福利姬:https://t.me/fuliji_Arrest
       - 🇳🇱NL_6|1.0MB/s|更多节点:https://t.me/byxiaoxi
       - 🇳🇱NL_7|1.0MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇳🇱NL_9|1.1MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇫🇷FR_7|1.1MB/s|更多节点:https://t.me/byxiaoxi
-      - 🇭🇰【亚洲】香港03丨专线【3x】
-      - 🇭🇰【亚洲】香港04丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡08丨V6【1x】
-      - 🇭🇰【亚洲】香港05丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡04丨专线【3x】
-      - 🇸🇬【亚洲】新加坡03丨专线【3x】
-      - 🇭🇰【亚洲】香港06丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡02丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡09丨IPLC【10x】
-      - 🇭🇰【亚洲】香港家宽01丨专线【3x】
-      - 🇲🇴【亚洲】澳门【8x】
-      - 🇭🇰【亚洲】香港02丨V6【1x】
-      - 🇭🇰【亚洲】香港家宽02丨专线【3x】
-      - 🇭🇰【亚洲】香港01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡10丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡07丨V6【1x】
-      - 🇹🇼【亚洲】台湾03丨专线【3x】
-      - 🇹🇼【亚洲】台湾04丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨IPLC游戏专线【10x】
-      - 🇵🇭【东南亚】菲律宾【3x】
-      - 🇯🇵【亚洲】日本02丨V6【1x】
-      - 🇹🇼【亚洲】台湾家宽01丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨IPLC游戏专线【10x】
-      - 🇹🇼【亚洲】台湾家宽02丨专线【3x】
-      - 🇯🇵【亚洲】日本04丨专线【3x】
-      - 🇺🇸【北美洲】美国01丨V6【1x】
-      - 🇯🇵【亚洲】日本03丨专线【3x】
-      - 🇮🇩【东南亚】印度尼西亚【3x】
-      - 🇲🇾【东南亚】马来西亚丨原生【6x】
-      - 🇹🇭【东南亚】泰国【3x】
-      - 🇮🇳【南亚洲】印度【3x】
-      - 🇺🇸【北美洲】美国02丨专线【3x】
-      - 🇻🇳【东南亚】越南【3x】
-      - 🇰🇷【亚洲】韩国家宽02丨专线【6x】
-      - 🇺🇸【北美洲】美国01丨专线【3x】
-      - 🇰🇷【亚洲】韩国家宽01丨专线【6x】
-      - 🇺🇸【北美洲】美国04丨专线【3x】
-      - 🇰🇭【东南亚】柬埔寨【3x】
-      - 🇺🇸【北美洲】美国03丨专线【3x】
-      - 🇺🇸【北美洲】美国05丨IPLC【10x】
-      - 🇦🇪【中东】阿联酋迪拜【4x】
-      - 🇺🇸【北美洲】美国02丨V6【1x】
-      - 🇺🇸【北美洲】美国06丨IPLC【10x】
-      - 🇦🇺【大洋洲】澳大利亚【3x】
-      - 🇪🇸【欧洲】西班牙家宽【4x】
-      - 🇷🇺【欧洲】俄罗斯【3x】
-      - 🇰🇿【中亚】哈萨克斯坦【4x】
-      - 🇳🇿【大洋洲】新西兰【10x】
-      - 🇮🇹【欧洲】意大利【3x】
-      - 🇩🇪【欧洲】德国01【3x】
-      - 🇬🇧【欧洲】英国01【3x】
-      - 🇬🇧【欧洲】英国02【3x】
-      - 🇳🇱【欧洲】荷兰【3x】
-      - 🇨🇿【欧洲】捷克【3x】
-      - 🇹🇷【中东】土耳其-原生【3x】
-      - 🇨🇦【北美洲】加拿大【3x】
-      - 🇺🇦【欧洲】乌克兰【3x】
-      - 🇲🇽【北美洲】墨西哥【3x】
-      - 🇫🇷【欧洲】法国【3x】
-      - 🇦🇹【欧洲】奥地利【3x】
-      - 🇵🇱【欧洲】波兰原生【3x】
-      - 🇸🇦【中东】沙特阿拉伯【3x】
-      - 🇳🇬【非洲】尼日利亚【3x】
-      - 🇧🇷【南美洲】巴西【3x】
-      - 🇵🇪【南美洲】秘鲁【3x】
-      - 🇳🇬【非洲】尼日利亚住宅【10x】
-      - 🇦🇷【南美洲】阿根廷原生【6x】
-      - 🇰🇷【亚洲】韩国家宽03丨IPLC【10x】
-      - 🇿🇦【非洲】南非约翰内斯堡【6x】
-      - 🇨🇭【欧洲】瑞士【3x】
+      - 🇸🇬新加坡zhuhai.uk8.14MB/s375
+      - 🇰🇷韩国zhuhai.uk1.18MB/s367
+      - 🇭🇰香港zhuhai.uk6.83MB/s344
+      - 🇵🇭PHzhuhai.uk0.70MB/s371
+      - 🇰🇷韩国zhuhai.uk1.15MB/s398
+      - 🇯🇵日本zhuhai.uk2.76MB/s389
+      - 🇮🇩IDzhuhai.uk0.17MB/s374
+      - 🇹🇷TRzhuhai.uk0.14MB/s411
+      - 🇦🇺澳大利亚zhuhai.uk4.75MB/s466
+      - 🇨🇦加拿大zhuhai.uk83.37MB/s385
+      - 🇸🇬新加坡zhuhai.uk5.28MB/s355
+      - 🇸🇬新加坡zhuhai.uk0.89MB/s349
+      - 🇸🇬新加坡zhuhai.uk5.37MB/s343
+      - 🇸🇬新加坡zhuhai.uk4.69MB/s357
+      - 🇨🇳台湾zhuhai.uk0.40MB/s372
+      - 🇸🇬新加坡zhuhai.uk4.48MB/s347
+      - 🇨🇦加拿大zhuhai.uk56.71MB/s391
+      - 🇨🇦加拿大zhuhai.uk76.75MB/s378
+      - 🇯🇵日本zhuhai.uk2.80MB/s354
+      - 🇸🇬新加坡zhuhai.uk5.23MB/s366
+      - 🇯🇵日本zhuhai.uk10.48MB/s363
+      - 🇸🇬新加坡zhuhai.uk6.35MB/s346
+      - 🇨🇦加拿大zhuhai.uk36.61MB/s359
+      - 🇭🇰香港zhuhai.uk0.38MB/s339
+      - 🇨🇦加拿大zhuhai.uk77.86MB/s376
+      - 🇮🇪IEzhuhai.uk26.62MB/s226
+      - 🇯🇵日本zhuhai.uk17.29MB/s368
+      - 🇰🇷韩国zhuhai.uk1.10MB/s414
+      - 🇨🇳台湾zhuhai.uk2.10MB/s342
+      - 🇭🇰香港zhuhai.uk1.08MB/s338
+      - 🇯🇵日本zhuhai.uk1.75MB/s352
+      - 🇰🇷韩国zhuhai.uk0.87MB/s394
+      - 🇺🇸美国zhuhai.uk0.14MB/s460
+      - 🇭🇰香港zhuhai.uk7.75MB/s358
+      - 🇦🇺澳大利亚zhuhai.uk17.33MB/s452
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🌐zhuhai.uk|🇧🇾🇵🇱|[BL]
       - 未知VLESS-538|free-nodes
       - 未知VLESS-539|free-nodes
       - 未知VLESS-540|free-nodes
+      - 🇬🇧英国zhuhai.uk0.16MB/s277
+      - 🏳️未知zhuhai.uk22.14MB/s219
+      - 🏳️未知zhuhai.uk6.87MB/s444
+      - 🏳️未知zhuhai.uk20.45MB/s264
+      - 🇸🇪瑞典zhuhai.uk1.55MB/s273
+      - 🇩🇪德国zhuhai.uk22.66MB/s220
+      - 🇩🇪德国zhuhai.uk21.39MB/s217
+      - 🇸🇬新加坡zhuhai.uk5.33MB/s395
+      - 🇨🇦加拿大zhuhai.uk56.50MB/s166
+      - 🇸🇪瑞典zhuhai.uk10.69MB/s426
+      - 🏳️未知zhuhai.uk23.10MB/s218
       - 🏳️_未知_6
       - '|USTROJAN76986266'
       - '|USNode_1'
@@ -698,10 +538,6 @@ proxy-groups:
       - '|USNode_7'
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - NONE_1
-      - NONE_2
-      - NONE_3
-      - NONE_4
       - FR_1
       - FR_2
       - FR_3
@@ -716,102 +552,72 @@ proxy-groups:
       - NL_3
       - FR_10
       - FR_11
-      - FR_12
       - PL_1
-      - FR_13
+      - FR_12
       - NL_4
-      - FR_14
+      - FR_13
       - PL_2
       - NL_5
-      - FR_15
+      - FR_14
       - 🇳🇱NL_8|1.1MB/s|福利姬:https://t.me/fuliji_Arrest
       - 🇳🇱NL_6|1.0MB/s|更多节点:https://t.me/byxiaoxi
       - 🇳🇱NL_7|1.0MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇳🇱NL_9|1.1MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇫🇷FR_7|1.1MB/s|更多节点:https://t.me/byxiaoxi
-      - 🇭🇰【亚洲】香港03丨专线【3x】
-      - 🇭🇰【亚洲】香港04丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡08丨V6【1x】
-      - 🇭🇰【亚洲】香港05丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡04丨专线【3x】
-      - 🇸🇬【亚洲】新加坡03丨专线【3x】
-      - 🇭🇰【亚洲】香港06丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡02丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡09丨IPLC【10x】
-      - 🇭🇰【亚洲】香港家宽01丨专线【3x】
-      - 🇲🇴【亚洲】澳门【8x】
-      - 🇭🇰【亚洲】香港02丨V6【1x】
-      - 🇭🇰【亚洲】香港家宽02丨专线【3x】
-      - 🇭🇰【亚洲】香港01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡10丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡07丨V6【1x】
-      - 🇹🇼【亚洲】台湾03丨专线【3x】
-      - 🇹🇼【亚洲】台湾04丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨IPLC游戏专线【10x】
-      - 🇵🇭【东南亚】菲律宾【3x】
-      - 🇯🇵【亚洲】日本02丨V6【1x】
-      - 🇹🇼【亚洲】台湾家宽01丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨IPLC游戏专线【10x】
-      - 🇹🇼【亚洲】台湾家宽02丨专线【3x】
-      - 🇯🇵【亚洲】日本04丨专线【3x】
-      - 🇺🇸【北美洲】美国01丨V6【1x】
-      - 🇯🇵【亚洲】日本03丨专线【3x】
-      - 🇮🇩【东南亚】印度尼西亚【3x】
-      - 🇲🇾【东南亚】马来西亚丨原生【6x】
-      - 🇹🇭【东南亚】泰国【3x】
-      - 🇮🇳【南亚洲】印度【3x】
-      - 🇺🇸【北美洲】美国02丨专线【3x】
-      - 🇻🇳【东南亚】越南【3x】
-      - 🇰🇷【亚洲】韩国家宽02丨专线【6x】
-      - 🇺🇸【北美洲】美国01丨专线【3x】
-      - 🇰🇷【亚洲】韩国家宽01丨专线【6x】
-      - 🇺🇸【北美洲】美国04丨专线【3x】
-      - 🇰🇭【东南亚】柬埔寨【3x】
-      - 🇺🇸【北美洲】美国03丨专线【3x】
-      - 🇺🇸【北美洲】美国05丨IPLC【10x】
-      - 🇦🇪【中东】阿联酋迪拜【4x】
-      - 🇺🇸【北美洲】美国02丨V6【1x】
-      - 🇺🇸【北美洲】美国06丨IPLC【10x】
-      - 🇦🇺【大洋洲】澳大利亚【3x】
-      - 🇪🇸【欧洲】西班牙家宽【4x】
-      - 🇷🇺【欧洲】俄罗斯【3x】
-      - 🇰🇿【中亚】哈萨克斯坦【4x】
-      - 🇳🇿【大洋洲】新西兰【10x】
-      - 🇮🇹【欧洲】意大利【3x】
-      - 🇩🇪【欧洲】德国01【3x】
-      - 🇬🇧【欧洲】英国01【3x】
-      - 🇬🇧【欧洲】英国02【3x】
-      - 🇳🇱【欧洲】荷兰【3x】
-      - 🇨🇿【欧洲】捷克【3x】
-      - 🇹🇷【中东】土耳其-原生【3x】
-      - 🇨🇦【北美洲】加拿大【3x】
-      - 🇺🇦【欧洲】乌克兰【3x】
-      - 🇲🇽【北美洲】墨西哥【3x】
-      - 🇫🇷【欧洲】法国【3x】
-      - 🇦🇹【欧洲】奥地利【3x】
-      - 🇵🇱【欧洲】波兰原生【3x】
-      - 🇸🇦【中东】沙特阿拉伯【3x】
-      - 🇳🇬【非洲】尼日利亚【3x】
-      - 🇧🇷【南美洲】巴西【3x】
-      - 🇵🇪【南美洲】秘鲁【3x】
-      - 🇳🇬【非洲】尼日利亚住宅【10x】
-      - 🇦🇷【南美洲】阿根廷原生【6x】
-      - 🇰🇷【亚洲】韩国家宽03丨IPLC【10x】
-      - 🇿🇦【非洲】南非约翰内斯堡【6x】
-      - 🇨🇭【欧洲】瑞士【3x】
+      - 🇸🇬新加坡zhuhai.uk8.14MB/s375
+      - 🇰🇷韩国zhuhai.uk1.18MB/s367
+      - 🇭🇰香港zhuhai.uk6.83MB/s344
+      - 🇵🇭PHzhuhai.uk0.70MB/s371
+      - 🇰🇷韩国zhuhai.uk1.15MB/s398
+      - 🇯🇵日本zhuhai.uk2.76MB/s389
+      - 🇮🇩IDzhuhai.uk0.17MB/s374
+      - 🇹🇷TRzhuhai.uk0.14MB/s411
+      - 🇦🇺澳大利亚zhuhai.uk4.75MB/s466
+      - 🇨🇦加拿大zhuhai.uk83.37MB/s385
+      - 🇸🇬新加坡zhuhai.uk5.28MB/s355
+      - 🇸🇬新加坡zhuhai.uk0.89MB/s349
+      - 🇸🇬新加坡zhuhai.uk5.37MB/s343
+      - 🇸🇬新加坡zhuhai.uk4.69MB/s357
+      - 🇨🇳台湾zhuhai.uk0.40MB/s372
+      - 🇸🇬新加坡zhuhai.uk4.48MB/s347
+      - 🇨🇦加拿大zhuhai.uk56.71MB/s391
+      - 🇨🇦加拿大zhuhai.uk76.75MB/s378
+      - 🇯🇵日本zhuhai.uk2.80MB/s354
+      - 🇸🇬新加坡zhuhai.uk5.23MB/s366
+      - 🇯🇵日本zhuhai.uk10.48MB/s363
+      - 🇸🇬新加坡zhuhai.uk6.35MB/s346
+      - 🇨🇦加拿大zhuhai.uk36.61MB/s359
+      - 🇭🇰香港zhuhai.uk0.38MB/s339
+      - 🇨🇦加拿大zhuhai.uk77.86MB/s376
+      - 🇮🇪IEzhuhai.uk26.62MB/s226
+      - 🇯🇵日本zhuhai.uk17.29MB/s368
+      - 🇰🇷韩国zhuhai.uk1.10MB/s414
+      - 🇨🇳台湾zhuhai.uk2.10MB/s342
+      - 🇭🇰香港zhuhai.uk1.08MB/s338
+      - 🇯🇵日本zhuhai.uk1.75MB/s352
+      - 🇰🇷韩国zhuhai.uk0.87MB/s394
+      - 🇺🇸美国zhuhai.uk0.14MB/s460
+      - 🇭🇰香港zhuhai.uk7.75MB/s358
+      - 🇦🇺澳大利亚zhuhai.uk17.33MB/s452
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🌐zhuhai.uk|🇧🇾🇵🇱|[BL]
       - 未知VLESS-538|free-nodes
       - 未知VLESS-539|free-nodes
       - 未知VLESS-540|free-nodes
+      - 🇬🇧英国zhuhai.uk0.16MB/s277
+      - 🏳️未知zhuhai.uk22.14MB/s219
+      - 🏳️未知zhuhai.uk6.87MB/s444
+      - 🏳️未知zhuhai.uk20.45MB/s264
+      - 🇸🇪瑞典zhuhai.uk1.55MB/s273
+      - 🇩🇪德国zhuhai.uk22.66MB/s220
+      - 🇩🇪德国zhuhai.uk21.39MB/s217
+      - 🇸🇬新加坡zhuhai.uk5.33MB/s395
+      - 🇨🇦加拿大zhuhai.uk56.50MB/s166
+      - 🇸🇪瑞典zhuhai.uk10.69MB/s426
+      - 🏳️未知zhuhai.uk23.10MB/s218
       - 🏳️_未知_6
       - '|USTROJAN76986266'
       - '|USNode_1'
@@ -830,10 +636,6 @@ proxy-groups:
       - '|USNode_7'
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - NONE_1
-      - NONE_2
-      - NONE_3
-      - NONE_4
       - FR_1
       - FR_2
       - FR_3
@@ -848,93 +650,53 @@ proxy-groups:
       - NL_3
       - FR_10
       - FR_11
-      - FR_12
       - PL_1
-      - FR_13
+      - FR_12
       - NL_4
-      - FR_14
+      - FR_13
       - PL_2
       - NL_5
-      - FR_15
+      - FR_14
       - 🇳🇱NL_8|1.1MB/s|福利姬:https://t.me/fuliji_Arrest
       - 🇳🇱NL_6|1.0MB/s|更多节点:https://t.me/byxiaoxi
       - 🇳🇱NL_7|1.0MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇳🇱NL_9|1.1MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇫🇷FR_7|1.1MB/s|更多节点:https://t.me/byxiaoxi
-      - 🇭🇰【亚洲】香港03丨专线【3x】
-      - 🇭🇰【亚洲】香港04丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡08丨V6【1x】
-      - 🇭🇰【亚洲】香港05丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡04丨专线【3x】
-      - 🇸🇬【亚洲】新加坡03丨专线【3x】
-      - 🇭🇰【亚洲】香港06丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡02丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡09丨IPLC【10x】
-      - 🇭🇰【亚洲】香港家宽01丨专线【3x】
-      - 🇲🇴【亚洲】澳门【8x】
-      - 🇭🇰【亚洲】香港02丨V6【1x】
-      - 🇭🇰【亚洲】香港家宽02丨专线【3x】
-      - 🇭🇰【亚洲】香港01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡10丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡07丨V6【1x】
-      - 🇹🇼【亚洲】台湾03丨专线【3x】
-      - 🇹🇼【亚洲】台湾04丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨IPLC游戏专线【10x】
-      - 🇵🇭【东南亚】菲律宾【3x】
-      - 🇯🇵【亚洲】日本02丨V6【1x】
-      - 🇹🇼【亚洲】台湾家宽01丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨IPLC游戏专线【10x】
-      - 🇹🇼【亚洲】台湾家宽02丨专线【3x】
-      - 🇯🇵【亚洲】日本04丨专线【3x】
-      - 🇺🇸【北美洲】美国01丨V6【1x】
-      - 🇯🇵【亚洲】日本03丨专线【3x】
-      - 🇮🇩【东南亚】印度尼西亚【3x】
-      - 🇲🇾【东南亚】马来西亚丨原生【6x】
-      - 🇹🇭【东南亚】泰国【3x】
-      - 🇮🇳【南亚洲】印度【3x】
-      - 🇺🇸【北美洲】美国02丨专线【3x】
-      - 🇻🇳【东南亚】越南【3x】
-      - 🇰🇷【亚洲】韩国家宽02丨专线【6x】
-      - 🇺🇸【北美洲】美国01丨专线【3x】
-      - 🇰🇷【亚洲】韩国家宽01丨专线【6x】
-      - 🇺🇸【北美洲】美国04丨专线【3x】
-      - 🇰🇭【东南亚】柬埔寨【3x】
-      - 🇺🇸【北美洲】美国03丨专线【3x】
-      - 🇺🇸【北美洲】美国05丨IPLC【10x】
-      - 🇦🇪【中东】阿联酋迪拜【4x】
-      - 🇺🇸【北美洲】美国02丨V6【1x】
-      - 🇺🇸【北美洲】美国06丨IPLC【10x】
-      - 🇦🇺【大洋洲】澳大利亚【3x】
-      - 🇪🇸【欧洲】西班牙家宽【4x】
-      - 🇷🇺【欧洲】俄罗斯【3x】
-      - 🇰🇿【中亚】哈萨克斯坦【4x】
-      - 🇳🇿【大洋洲】新西兰【10x】
-      - 🇮🇹【欧洲】意大利【3x】
-      - 🇩🇪【欧洲】德国01【3x】
-      - 🇬🇧【欧洲】英国01【3x】
-      - 🇬🇧【欧洲】英国02【3x】
-      - 🇳🇱【欧洲】荷兰【3x】
-      - 🇨🇿【欧洲】捷克【3x】
-      - 🇹🇷【中东】土耳其-原生【3x】
-      - 🇨🇦【北美洲】加拿大【3x】
-      - 🇺🇦【欧洲】乌克兰【3x】
-      - 🇲🇽【北美洲】墨西哥【3x】
-      - 🇫🇷【欧洲】法国【3x】
-      - 🇦🇹【欧洲】奥地利【3x】
-      - 🇵🇱【欧洲】波兰原生【3x】
-      - 🇸🇦【中东】沙特阿拉伯【3x】
-      - 🇳🇬【非洲】尼日利亚【3x】
-      - 🇧🇷【南美洲】巴西【3x】
-      - 🇵🇪【南美洲】秘鲁【3x】
-      - 🇳🇬【非洲】尼日利亚住宅【10x】
-      - 🇦🇷【南美洲】阿根廷原生【6x】
-      - 🇰🇷【亚洲】韩国家宽03丨IPLC【10x】
-      - 🇿🇦【非洲】南非约翰内斯堡【6x】
-      - 🇨🇭【欧洲】瑞士【3x】
+      - 🇸🇬新加坡zhuhai.uk8.14MB/s375
+      - 🇰🇷韩国zhuhai.uk1.18MB/s367
+      - 🇭🇰香港zhuhai.uk6.83MB/s344
+      - 🇵🇭PHzhuhai.uk0.70MB/s371
+      - 🇰🇷韩国zhuhai.uk1.15MB/s398
+      - 🇯🇵日本zhuhai.uk2.76MB/s389
+      - 🇮🇩IDzhuhai.uk0.17MB/s374
+      - 🇹🇷TRzhuhai.uk0.14MB/s411
+      - 🇦🇺澳大利亚zhuhai.uk4.75MB/s466
+      - 🇨🇦加拿大zhuhai.uk83.37MB/s385
+      - 🇸🇬新加坡zhuhai.uk5.28MB/s355
+      - 🇸🇬新加坡zhuhai.uk0.89MB/s349
+      - 🇸🇬新加坡zhuhai.uk5.37MB/s343
+      - 🇸🇬新加坡zhuhai.uk4.69MB/s357
+      - 🇨🇳台湾zhuhai.uk0.40MB/s372
+      - 🇸🇬新加坡zhuhai.uk4.48MB/s347
+      - 🇨🇦加拿大zhuhai.uk56.71MB/s391
+      - 🇨🇦加拿大zhuhai.uk76.75MB/s378
+      - 🇯🇵日本zhuhai.uk2.80MB/s354
+      - 🇸🇬新加坡zhuhai.uk5.23MB/s366
+      - 🇯🇵日本zhuhai.uk10.48MB/s363
+      - 🇸🇬新加坡zhuhai.uk6.35MB/s346
+      - 🇨🇦加拿大zhuhai.uk36.61MB/s359
+      - 🇭🇰香港zhuhai.uk0.38MB/s339
+      - 🇨🇦加拿大zhuhai.uk77.86MB/s376
+      - 🇮🇪IEzhuhai.uk26.62MB/s226
+      - 🇯🇵日本zhuhai.uk17.29MB/s368
+      - 🇰🇷韩国zhuhai.uk1.10MB/s414
+      - 🇨🇳台湾zhuhai.uk2.10MB/s342
+      - 🇭🇰香港zhuhai.uk1.08MB/s338
+      - 🇯🇵日本zhuhai.uk1.75MB/s352
+      - 🇰🇷韩国zhuhai.uk0.87MB/s394
+      - 🇺🇸美国zhuhai.uk0.14MB/s460
+      - 🇭🇰香港zhuhai.uk7.75MB/s358
+      - 🇦🇺澳大利亚zhuhai.uk17.33MB/s452
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -957,10 +719,20 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🌐zhuhai.uk|🇧🇾🇵🇱|[BL]
       - 未知VLESS-538|free-nodes
       - 未知VLESS-539|free-nodes
       - 未知VLESS-540|free-nodes
+      - 🇬🇧英国zhuhai.uk0.16MB/s277
+      - 🏳️未知zhuhai.uk22.14MB/s219
+      - 🏳️未知zhuhai.uk6.87MB/s444
+      - 🏳️未知zhuhai.uk20.45MB/s264
+      - 🇸🇪瑞典zhuhai.uk1.55MB/s273
+      - 🇩🇪德国zhuhai.uk22.66MB/s220
+      - 🇩🇪德国zhuhai.uk21.39MB/s217
+      - 🇸🇬新加坡zhuhai.uk5.33MB/s395
+      - 🇨🇦加拿大zhuhai.uk56.50MB/s166
+      - 🇸🇪瑞典zhuhai.uk10.69MB/s426
+      - 🏳️未知zhuhai.uk23.10MB/s218
       - 🏳️_未知_6
       - '|USTROJAN76986266'
       - '|USNode_1'
@@ -979,10 +751,6 @@ proxy-groups:
       - '|USNode_7'
       - 🇫🇷法国TG搜:原生IP1.67MB/s
       - 🇫🇷法国TG搜:原生IP1.62MB/s
-      - NONE_1
-      - NONE_2
-      - NONE_3
-      - NONE_4
       - FR_1
       - FR_2
       - FR_3
@@ -997,93 +765,53 @@ proxy-groups:
       - NL_3
       - FR_10
       - FR_11
-      - FR_12
       - PL_1
-      - FR_13
+      - FR_12
       - NL_4
-      - FR_14
+      - FR_13
       - PL_2
       - NL_5
-      - FR_15
+      - FR_14
       - 🇳🇱NL_8|1.1MB/s|福利姬:https://t.me/fuliji_Arrest
       - 🇳🇱NL_6|1.0MB/s|更多节点:https://t.me/byxiaoxi
       - 🇳🇱NL_7|1.0MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇳🇱NL_9|1.1MB/s|网盘搜宝:https://t.me/diskseeker
       - 🇫🇷FR_7|1.1MB/s|更多节点:https://t.me/byxiaoxi
-      - 🇭🇰【亚洲】香港03丨专线【3x】
-      - 🇭🇰【亚洲】香港04丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡08丨V6【1x】
-      - 🇭🇰【亚洲】香港05丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡04丨专线【3x】
-      - 🇸🇬【亚洲】新加坡03丨专线【3x】
-      - 🇭🇰【亚洲】香港06丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡02丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨专线【3x】
-      - 🇸🇬【亚洲】新加坡09丨IPLC【10x】
-      - 🇭🇰【亚洲】香港家宽01丨专线【3x】
-      - 🇲🇴【亚洲】澳门【8x】
-      - 🇭🇰【亚洲】香港02丨V6【1x】
-      - 🇭🇰【亚洲】香港家宽02丨专线【3x】
-      - 🇭🇰【亚洲】香港01丨V6【1x】
-      - 🇸🇬【亚洲】新加坡10丨IPLC【10x】
-      - 🇸🇬【亚洲】新加坡07丨V6【1x】
-      - 🇹🇼【亚洲】台湾03丨专线【3x】
-      - 🇹🇼【亚洲】台湾04丨专线【3x】
-      - 🇯🇵【亚洲】日本02丨IPLC游戏专线【10x】
-      - 🇵🇭【东南亚】菲律宾【3x】
-      - 🇯🇵【亚洲】日本02丨V6【1x】
-      - 🇹🇼【亚洲】台湾家宽01丨专线【3x】
-      - 🇯🇵【亚洲】日本01丨IPLC游戏专线【10x】
-      - 🇹🇼【亚洲】台湾家宽02丨专线【3x】
-      - 🇯🇵【亚洲】日本04丨专线【3x】
-      - 🇺🇸【北美洲】美国01丨V6【1x】
-      - 🇯🇵【亚洲】日本03丨专线【3x】
-      - 🇮🇩【东南亚】印度尼西亚【3x】
-      - 🇲🇾【东南亚】马来西亚丨原生【6x】
-      - 🇹🇭【东南亚】泰国【3x】
-      - 🇮🇳【南亚洲】印度【3x】
-      - 🇺🇸【北美洲】美国02丨专线【3x】
-      - 🇻🇳【东南亚】越南【3x】
-      - 🇰🇷【亚洲】韩国家宽02丨专线【6x】
-      - 🇺🇸【北美洲】美国01丨专线【3x】
-      - 🇰🇷【亚洲】韩国家宽01丨专线【6x】
-      - 🇺🇸【北美洲】美国04丨专线【3x】
-      - 🇰🇭【东南亚】柬埔寨【3x】
-      - 🇺🇸【北美洲】美国03丨专线【3x】
-      - 🇺🇸【北美洲】美国05丨IPLC【10x】
-      - 🇦🇪【中东】阿联酋迪拜【4x】
-      - 🇺🇸【北美洲】美国02丨V6【1x】
-      - 🇺🇸【北美洲】美国06丨IPLC【10x】
-      - 🇦🇺【大洋洲】澳大利亚【3x】
-      - 🇪🇸【欧洲】西班牙家宽【4x】
-      - 🇷🇺【欧洲】俄罗斯【3x】
-      - 🇰🇿【中亚】哈萨克斯坦【4x】
-      - 🇳🇿【大洋洲】新西兰【10x】
-      - 🇮🇹【欧洲】意大利【3x】
-      - 🇩🇪【欧洲】德国01【3x】
-      - 🇬🇧【欧洲】英国01【3x】
-      - 🇬🇧【欧洲】英国02【3x】
-      - 🇳🇱【欧洲】荷兰【3x】
-      - 🇨🇿【欧洲】捷克【3x】
-      - 🇹🇷【中东】土耳其-原生【3x】
-      - 🇨🇦【北美洲】加拿大【3x】
-      - 🇺🇦【欧洲】乌克兰【3x】
-      - 🇲🇽【北美洲】墨西哥【3x】
-      - 🇫🇷【欧洲】法国【3x】
-      - 🇦🇹【欧洲】奥地利【3x】
-      - 🇵🇱【欧洲】波兰原生【3x】
-      - 🇸🇦【中东】沙特阿拉伯【3x】
-      - 🇳🇬【非洲】尼日利亚【3x】
-      - 🇧🇷【南美洲】巴西【3x】
-      - 🇵🇪【南美洲】秘鲁【3x】
-      - 🇳🇬【非洲】尼日利亚住宅【10x】
-      - 🇦🇷【南美洲】阿根廷原生【6x】
-      - 🇰🇷【亚洲】韩国家宽03丨IPLC【10x】
-      - 🇿🇦【非洲】南非约翰内斯堡【6x】
-      - 🇨🇭【欧洲】瑞士【3x】
+      - 🇸🇬新加坡zhuhai.uk8.14MB/s375
+      - 🇰🇷韩国zhuhai.uk1.18MB/s367
+      - 🇭🇰香港zhuhai.uk6.83MB/s344
+      - 🇵🇭PHzhuhai.uk0.70MB/s371
+      - 🇰🇷韩国zhuhai.uk1.15MB/s398
+      - 🇯🇵日本zhuhai.uk2.76MB/s389
+      - 🇮🇩IDzhuhai.uk0.17MB/s374
+      - 🇹🇷TRzhuhai.uk0.14MB/s411
+      - 🇦🇺澳大利亚zhuhai.uk4.75MB/s466
+      - 🇨🇦加拿大zhuhai.uk83.37MB/s385
+      - 🇸🇬新加坡zhuhai.uk5.28MB/s355
+      - 🇸🇬新加坡zhuhai.uk0.89MB/s349
+      - 🇸🇬新加坡zhuhai.uk5.37MB/s343
+      - 🇸🇬新加坡zhuhai.uk4.69MB/s357
+      - 🇨🇳台湾zhuhai.uk0.40MB/s372
+      - 🇸🇬新加坡zhuhai.uk4.48MB/s347
+      - 🇨🇦加拿大zhuhai.uk56.71MB/s391
+      - 🇨🇦加拿大zhuhai.uk76.75MB/s378
+      - 🇯🇵日本zhuhai.uk2.80MB/s354
+      - 🇸🇬新加坡zhuhai.uk5.23MB/s366
+      - 🇯🇵日本zhuhai.uk10.48MB/s363
+      - 🇸🇬新加坡zhuhai.uk6.35MB/s346
+      - 🇨🇦加拿大zhuhai.uk36.61MB/s359
+      - 🇭🇰香港zhuhai.uk0.38MB/s339
+      - 🇨🇦加拿大zhuhai.uk77.86MB/s376
+      - 🇮🇪IEzhuhai.uk26.62MB/s226
+      - 🇯🇵日本zhuhai.uk17.29MB/s368
+      - 🇰🇷韩国zhuhai.uk1.10MB/s414
+      - 🇨🇳台湾zhuhai.uk2.10MB/s342
+      - 🇭🇰香港zhuhai.uk1.08MB/s338
+      - 🇯🇵日本zhuhai.uk1.75MB/s352
+      - 🇰🇷韩国zhuhai.uk0.87MB/s394
+      - 🇺🇸美国zhuhai.uk0.14MB/s460
+      - 🇭🇰香港zhuhai.uk7.75MB/s358
+      - 🇦🇺澳大利亚zhuhai.uk17.33MB/s452
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
