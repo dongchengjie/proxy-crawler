@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2026-07-29 11:27:30
+#  创建时间：2026-07-30 08:00:31
 #  模版：v2rayse默认模版
-#  节点数量：112
+#  节点数量：52
 #-------------------------------------------------------------#
 #
 port: 7890
@@ -13,823 +13,403 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - {"type":"ss","name":"未知SS-08|free-nodes_1","server":"ss.045.node-for-bigairport.win","port":19000,"cipher":"chacha20-ietf-poly1305","password":"792e0bdb-01db-450c-94c4-925151eb396e"}
-  - {"type":"ss","name":"未知SS-08|free-nodes_2","server":"ss.045.node-for-bigairport.win","port":19000,"cipher":"chacha20-ietf-poly1305","password":"792e0bdb-01db-450c-94c4-925151eb396e"}
   - {"type":"vless","name":"未知VLESS-239|free-nodes","server":"45.155.52.231","port":443,"uuid":"219f9fec-8983-4f6f-af8c-31bd0c6dbf19","skip-cert-verify":true,"network":"tcp","servername":"ru2.skydrgn-online.online","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸美国1.66MB/s_1","server":"5.42.106.202","port":9878,"uuid":"884d811f-577b-421e-aabb-608660b0ecfa","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"grpc-tunnel"},"servername":"dl.google.com"}
   - {"type":"vless","name":"🇺🇸US844|⬇️130KB/s_1","server":"154.193.55.183","port":443,"uuid":"11e57eeb-ffdf-4983-a9fa-ad352dea7253","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US846|⬇️137KB/s_1","server":"154.193.55.183","port":443,"uuid":"f75814f6-8f81-4847-b792-168c41f2dc85","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
-  - {"type":"vless","name":"🇩🇪DE136|⬇️40KB/s","server":"151.101.56.7","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"151.101.56.7","ws-opts":{"path":"/","headers":{"host":"151.101.56.7"}}}
   - {"type":"vless","name":"🇺🇸US849|⬇️165KB/s_1","server":"154.193.55.183","port":443,"uuid":"11e57eeb-ffdf-4983-a9fa-ad352dea7253","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US286|⬇️118KB/s_1","server":"154.193.55.183","port":443,"uuid":"11e57eeb-ffdf-4983-a9fa-ad352dea7253","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸美国1.01MB/s_1","server":"72.56.38.194","port":9892,"uuid":"884d811f-577b-421e-aabb-608660b0ecfa","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"grpc-tunnel"},"servername":"dl.google.com"}
-  - {"type":"vless","name":"🇺🇸美国1.66MB/s_2","server":"5.42.106.202","port":9878,"uuid":"884d811f-577b-421e-aabb-608660b0ecfa","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"grpc-tunnel"},"servername":"dl.google.com"}
   - {"type":"vless","name":"🇺🇸US286|⬇️118KB/s_2","server":"154.193.55.183","port":443,"uuid":"11e57eeb-ffdf-4983-a9fa-ad352dea7253","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸美国1.01MB/s_2","server":"72.56.38.194","port":9892,"uuid":"884d811f-577b-421e-aabb-608660b0ecfa","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"grpc-tunnel"},"servername":"dl.google.com"}
   - {"type":"vless","name":"🇺🇸US849|⬇️165KB/s_2","server":"154.193.55.183","port":443,"uuid":"11e57eeb-ffdf-4983-a9fa-ad352dea7253","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
-  - {"type":"vless","name":"🇺🇸US846|⬇️137KB/s_2","server":"154.193.55.183","port":443,"uuid":"f75814f6-8f81-4847-b792-168c41f2dc85","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
+  - {"type":"vless","name":"🇺🇸US846|⬇️137KB/s","server":"154.193.55.183","port":443,"uuid":"f75814f6-8f81-4847-b792-168c41f2dc85","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸US844|⬇️130KB/s_2","server":"154.193.55.183","port":443,"uuid":"11e57eeb-ffdf-4983-a9fa-ad352dea7253","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇫🇮芬兰24.26MB/s","server":"31.59.120.124","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.sub-flow.online","ws-opts":{"path":"/","headers":{"host":"forfreeuse.sub-flow.online"}}}
-  - {"type":"vless","name":"🇺🇸美国1.66MB/s_3","server":"5.42.106.202","port":9878,"uuid":"884d811f-577b-421e-aabb-608660b0ecfa","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"grpc-tunnel"},"servername":"dl.google.com"}
-  - {"type":"vless","name":"🇫🇮芬兰5.25MB/s","server":"150.230.146.170","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.sub-flow.online","ws-opts":{"path":"/","headers":{"host":"forfreeuse.sub-flow.online"}}}
-  - {"type":"vless","name":"🇨🇭CH3.91MB/s","server":"fat-sp.arpozan.cloud","port":8443,"uuid":"1f29762d-3f23-4207-9e39-f774de5d49ba","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"grpc"},"servername":"fat-sp.arpozan.cloud"}
-  - {"type":"vless","name":"🇩🇪德国25.84MB/s","server":"89.222.123.209","port":16923,"uuid":"a8a98c3e-0b0d-47c4-b4a0-1402ba3252ca","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"neurex"},"servername":"api-maps.yandex.ru"}
-  - {"type":"vless","name":"🇫🇮芬兰10.58MB/s","server":"147.45.196.240","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.sub-flow.online","ws-opts":{"path":"/","headers":{"host":"forfreeuse.sub-flow.online"}}}
   - {"type":"vless","name":"🇺🇸US849|⬇️165KB/s_3","server":"154.193.55.183","port":443,"uuid":"11e57eeb-ffdf-4983-a9fa-ad352dea7253","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
-  - {"type":"vless","name":"🇨🇴CO29.26MB/s","server":"157.137.239.173","port":62145,"uuid":"8fb65472-5957-4f64-ba2d-b5812b2f155a","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"vless","name":"🇨🇿CZ858|⬇️215KB/s","server":"141.133.172.222","port":20342,"uuid":"5eecb34f-c905-4c77-b7fb-d830b451cd11","skip-cert-verify":true,"network":"tcp","servername":"141.133.172.222","tls":false,"udp":true}
-  - {"type":"vless","name":"🇩🇪德国22.86MB/s","server":"94.249.197.147","port":8443,"uuid":"a21678d7-2024-4370-8d2e-255b344b3e1b","skip-cert-verify":true,"network":"tcp","servername":"images.apple.com","tls":false,"udp":true}
-  - {"type":"vless","name":"🇳🇱荷兰26.40MB/s","server":"150.230.20.164","port":62145,"uuid":"8fb65472-5957-4f64-ba2d-b5812b2f155a","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"vless","name":"🇳🇱荷兰26.56MB/s","server":"141.144.204.163","port":62145,"uuid":"8fb65472-5957-4f64-ba2d-b5812b2f155a","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"vless","name":"未知VLESS-695|free-nodes","server":"fn.fifapes.monster","port":2090,"uuid":"eab915bc-d2df-73d1-47d0-6eb240497055","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"vless","name":"未知VLESS-706|free-nodes","server":"www.true.th","port":80,"uuid":"ff485c50-b364-4b4f-90be-ea576b949dd3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"d3gxy6d0a9fs18.cloudfront.net","ws-opts":{"path":"/fnetvpn2026","headers":{"host":"d3gxy6d0a9fs18.cloudfront.net"}}}
-  - {"type":"vless","name":"美国_1","server":"151.101.56.7","port":80,"uuid":"c9380ef8-23f8-422e-81fe-ebbb032202cf","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt.","ws-opts":{"path":"/","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt."}}}
   - {"type":"vless","name":"印度","server":"103.54.16.230","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.sub-flow.online","ws-opts":{"path":"/","headers":{"host":"forfreeuse.sub-flow.online"}}}
-  - {"type":"vless","name":"伊朗","server":"fn.fifapes.monster","port":2090,"uuid":"eab915bc-d2df-73d1-47d0-6eb240497055","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"vless","name":"美国_2","server":"www.true.th","port":80,"uuid":"f27894bf-349c-44e6-a0ce-4c787e18476f","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"duatoup3wk8q2.cloudfront.net","ws-opts":{"path":"/GDkX4xpB/","headers":{"host":"duatoup3wk8q2.cloudfront.net"}}}
   - {"type":"vless","name":"🇹🇭泰国|THA_1","server":"www.true.th","port":80,"uuid":"ff485c50-b364-4b4f-90be-ea576b949dd3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"d3gxy6d0a9fs18.cloudfront.net","ws-opts":{"path":"/fnetvpn2026","headers":{"host":"d3gxy6d0a9fs18.cloudfront.net"}}}
-  - {"type":"vless","name":"🇵🇱波兰|POL_1","server":"77.105.163.46","port":443,"uuid":"7c61a2a5-c7e4-4d52-baf7-a9406ad89b4c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ov186.ochmaybrooooo.online","ws-opts":{"path":"/","headers":{"host":"ov186.ochmaybrooooo.online"}}}
-  - {"type":"vless","name":"🇫🇷法国|FRA_1","server":"199.232.170.214","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
   - {"type":"vless","name":"🇺🇸美国|USA_1","server":"154.193.55.183","port":443,"uuid":"11e57eeb-ffdf-4983-a9fa-ad352dea7253","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸美国|USA_2","server":"154.193.55.183","port":443,"uuid":"f75814f6-8f81-4847-b792-168c41f2dc85","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸美国|USA_3","server":"154.193.55.183","port":443,"uuid":"f75814f6-8f81-4847-b792-168c41f2dc85","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"vless","name":"🇺🇸美国|USA_4","server":"154.193.55.183","port":443,"uuid":"11e57eeb-ffdf-4983-a9fa-ad352dea7253","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
-  - {"type":"vless","name":"🇫🇷法国|FRA_2","server":"199.232.170.214","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"🇵🇱波兰|POL_2","server":"77.105.163.46","port":443,"uuid":"7c61a2a5-c7e4-4d52-baf7-a9406ad89b4c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ov186.ochmaybrooooo.online","ws-opts":{"path":"/","headers":{"host":"ov186.ochmaybrooooo.online"}}}
   - {"type":"vless","name":"🇹🇭泰国|THA_2","server":"www.true.th","port":80,"uuid":"ff485c50-b364-4b4f-90be-ea576b949dd3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"d3gxy6d0a9fs18.cloudfront.net","ws-opts":{"path":"/fnetvpn2026","headers":{"host":"d3gxy6d0a9fs18.cloudfront.net"}}}
-  - {"type":"vless","name":"泰国02","server":"18.244.214.28","port":80,"uuid":"f27894bf-349c-44e6-a0ce-4c787e18476f","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"duatoup3wk8q2.cloudfront.net","ws-opts":{"path":"/GDkX4xpB/","headers":{"host":"duatoup3wk8q2.cloudfront.net"}}}
-  - {"type":"vless","name":"德国018","server":"167.82.0.17","port":80,"uuid":"a69d5300-8101-47b5-9448-6730f228af37","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt.","ws-opts":{"path":"/","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt."}}}
   - {"type":"vless","name":"香港02","server":"180.178.60.252","port":10000,"uuid":"431fe973-a43a-4fac-bf83-2a772e0d0625","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"vless","name":"香港03","server":"43.255.156.59","port":40118,"uuid":"57beeeb0-03fc-4fc9-94da-7604488a7134","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"www.lamer.com.sg","tls":false,"udp":true}
-  - {"type":"vless","name":"芬兰03","server":"167.82.0.4","port":80,"uuid":"c9380ef8-23f8-422e-81fe-ebbb032202cf","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt.","ws-opts":{"path":"/","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt."}}}
-  - {"type":"vless","name":"德国077","server":"167.82.0.17","port":80,"uuid":"c9380ef8-23f8-422e-81fe-ebbb032202cf","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt.","ws-opts":{"path":"/","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt."}}}
-  - {"type":"vless","name":"德国036","server":"167.82.0.1","port":80,"uuid":"a69d5300-8101-47b5-9448-6730f228af37","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt.","ws-opts":{"path":"/","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt."}}}
-  - {"type":"vless","name":"英国14","server":"103.133.1.160","port":80,"uuid":"eaf76557-2219-4799-8171-d7020adfefd0","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"soft-shadow-1e33.xicav73335.workers.dev","ws-opts":{"path":"/ws","headers":{"host":"soft-shadow-1e33.xicav73335.workers.dev"}}}
-  - {"type":"vless","name":"德国048","server":"151.101.193.54","port":80,"uuid":"6bd7815d-9fb0-41c6-87ef-ffc713bf6b8f","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt.","ws-opts":{"path":"/","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt."}}}
-  - {"type":"vless","name":"德国064","server":"199.232.170.54","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国016","server":"147.45.196.240","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.sub-flow.online","ws-opts":{"path":"/","headers":{"host":"forfreeuse.sub-flow.online"}}}
-  - {"type":"vless","name":"芬兰16","server":"199.232.170.107","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国074","server":"199.232.170.169","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国054","server":"199.232.170.3","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国090","server":"151.101.193.54","port":80,"uuid":"c9380ef8-23f8-422e-81fe-ebbb032202cf","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt.","ws-opts":{"path":"/","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt."}}}
-  - {"type":"vless","name":"德国071","server":"199.232.170.252","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国040","server":"199.232.170.219","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国094","server":"199.232.170.80","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国032","server":"199.232.170.86","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国019","server":"199.232.170.4","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"芬兰17","server":"199.232.170.195","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国095","server":"199.232.170.73","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国014","server":"195.133.94.188","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.sub-flow.online","ws-opts":{"path":"/","headers":{"host":"forfreeuse.sub-flow.online"}}}
-  - {"type":"vless","name":"德国076","server":"199.232.170.6","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国045","server":"199.232.170.49","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国020","server":"199.232.170.76","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国029","server":"199.232.170.55","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国061","server":"199.232.170.40","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国062","server":"199.232.170.74","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国065","server":"199.232.170.180","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国033","server":"199.232.170.228","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国041","server":"199.232.170.77","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"芬兰14","server":"199.232.170.10","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国097","server":"199.232.170.56","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国082","server":"199.232.170.27","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国069","server":"199.232.170.201","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国089","server":"199.232.170.246","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国073","server":"199.232.170.156","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国063","server":"199.232.170.53","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"芬兰09","server":"199.232.170.57","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国087","server":"199.232.170.227","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"德国066","server":"199.232.170.183","port":80,"uuid":"cfde0aba-0985-4034-ab92-50b1534b126c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt","ws-opts":{"path":"/?Telegram-WangCai2🇨🇳","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt"}}}
-  - {"type":"vless","name":"香港11","server":"172.66.1.111","port":8443,"uuid":"a1de0630-5786-48a0-84f6-dc6f2de10d6d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"vlso2.1d.mom","ws-opts":{"path":"/socks5=888:888@hkip.1d.mom:1080","headers":{"host":"vlso2.1d.mom"}}}
   - {"type":"vless","name":"德国012","server":"51.89.23.94","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.sub-flow.online","ws-opts":{"path":"/","headers":{"host":"forfreeuse.sub-flow.online"}}}
-  - {"type":"vless","name":"美国01","server":"63.141.128.30","port":8880,"uuid":"6202b230-417c-4d8e-b624-0f71afa9c75d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"vms.lifetime42.workers.dev","ws-opts":{"path":"/","headers":{"host":"vms.lifetime42.workers.dev"}}}
-  - {"type":"vless","name":"德国044","server":"151.101.56.7","port":80,"uuid":"c9380ef8-23f8-422e-81fe-ebbb032202cf","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"BankMelat.glObal.ssl.faStly.nEt.","ws-opts":{"path":"/","headers":{"host":"BankMelat.glObal.ssl.faStly.nEt."}}}
+  - {"type":"vless","name":"🇪🇸ES29.68MB/s","server":"173.245.49.116","port":443,"uuid":"9e5e0a3f-0fdc-4272-9c6b-bc6f00000001","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"amirweb1388.dpdns.org","ws-opts":{"path":"/mr","headers":{"host":"amirweb1388.dpdns.org"}}}
+  - {"type":"vless","name":"🇹🇷TR3.45MB/s","server":"170.168.97.3","port":8443,"uuid":"5e243126-4a2a-84b6-782a-73b14797fb5f","skip-cert-verify":true,"udp":true,"network":"grpc","tls":true,"grpc-opts":{"grpc-service-name":"TunService"},"servername":"download.nvidia.com"}
+  - {"type":"vless","name":"🇨🇳CN19.38MB/s","server":"157.22.19.5","port":443,"uuid":"c97b2158-64c9-1f55-8167-72970d347288","skip-cert-verify":true}
+  - {"type":"vless","name":"🇨🇳CN11.21MB/s","server":"157.22.19.5","port":443,"uuid":"c97b2158-64c9-1f55-8167-72970d347288","skip-cert-verify":true}
+  - {"type":"vless","name":"未知VLESS-717|free-nodes","server":"18.239.134.69","port":80,"uuid":"f55ce6cc-3f6b-40fc-9e3b-abe26db17009","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com","ws-opts":{"path":"/","headers":{"host":"d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com"}}}
+  - {"type":"vless","name":"未知VLESS-724|free-nodes","server":"www.true.th","port":80,"uuid":"ff485c50-b364-4b4f-90be-ea576b949dd3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"d3gxy6d0a9fs18.cloudfront.net","ws-opts":{"path":"/fnetvpn2026","headers":{"host":"d3gxy6d0a9fs18.cloudfront.net"}}}
+  - {"type":"vless","name":"未知VLESS-682|free-nodes","server":"103.54.16.230","port":2053,"uuid":"c7e9c591-2764-423a-afca-efbd010fd396","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"forfreeuse.sub-flow.online","ws-opts":{"path":"/","headers":{"host":"forfreeuse.sub-flow.online"}}}
+  - {"type":"vless","name":"GBVLESS-1127|free-nodes","server":"[2a13","port":29,"uuid":"5d02517f-63d5-3e9f-b467-1bcf4d4e25d3","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"u695099u775a58bcs124.ccgfw.top","tls":true,"udp":true}
+  - {"type":"vless","name":"USVLESS-1077|free-nodes","server":"[2605","port":6400,"uuid":"5d02517f-63d5-3e9f-b467-1bcf4d4e25d3","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"u695099u402ce52bs552.okgfw.top","tls":true,"udp":true}
+  - {"type":"vless","name":"GBVLESS-1108|free-nodes","server":"[2a13","port":29,"uuid":"5d02517f-63d5-3e9f-b467-1bcf4d4e25d3","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"u695099u775a58bcs124.ccgfw.top","tls":true,"udp":true}
+  - {"type":"vless","name":"USVLESS-1067|free-nodes","server":"[2605","port":6400,"uuid":"5d02517f-63d5-3e9f-b467-1bcf4d4e25d3","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"u695099u402ce52bs552.okgfw.top","tls":true,"udp":true}
+  - {"type":"vless","name":"GBVLESS-1128|free-nodes","server":"[2a13","port":29,"uuid":"5d02517f-63d5-3e9f-b467-1bcf4d4e25d3","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"u695099u775a58bcs124.ccgfw.top","tls":true,"udp":true}
+  - {"type":"vless","name":"未知VLESS-720|free-nodes","server":"154.193.55.183","port":443,"uuid":"f75814f6-8f81-4847-b792-168c41f2dc85","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"storage.yandex.net","tls":false,"udp":true}
   - {"type":"trojan","name":"🇩🇪德国14.21MB/s","server":"hkdcrtc-e.catcat321.com","port":20041,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"de.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"未知TROJAN-190|free-nodes_1","server":"oplosgru-c.catcat321.com","port":20068,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"未知TROJAN-191|free-nodes","server":"oplosgru-c.catcat321.com","port":20068,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"未知TROJAN-187|free-nodes_1","server":"oplosgru-c.catcat321.com","port":20004,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"未知TROJAN-185|free-nodes","server":"hkdcrtc-e.catcat321.com","port":20129,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"未知TROJAN-187|free-nodes_2","server":"hkdcrtc-e.catcat321.com","port":20129,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
   - {"type":"trojan","name":"未知TROJAN-189|free-nodes","server":"oplosgru-c.catcat321.com","port":20066,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"未知TROJAN-190|free-nodes_2","server":"oplosgru-c.catcat321.com","port":20066,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
+  - {"type":"trojan","name":"未知TROJAN-190|free-nodes","server":"oplosgru-c.catcat321.com","port":20066,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
   - {"type":"trojan","name":"未知TROJAN-186|free-nodes","server":"hkdcrtc-e.catcat321.com","port":20041,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"de.catxstar.com","network":"tcp"}
   - {"type":"trojan","name":"🇬🇧英国|GBR_1","server":"hkdcrtc-e.catcat321.com","port":20041,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"de.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"🇬🇧英国|GBR_2","server":"hkdcrtc-e.catcat321.com","port":20041,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"de.catxstar.com","network":"tcp"}
   - {"type":"trojan","name":"🇺🇦乌克兰|UKR_1","server":"oplosgru-c.catcat321.com","port":20066,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"🇮🇩印尼|IDN_1","server":"oplosgru-c.catcat321.com","port":20056,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"🇮🇩印尼|IDN_2","server":"oplosgru-c.catcat321.com","port":20056,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
   - {"type":"trojan","name":"🇺🇦乌克兰|UKR_2","server":"oplosgru-c.catcat321.com","port":20066,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
+  - {"type":"trojan","name":"🇬🇧英国|GBR_2","server":"hkdcrtc-e.catcat321.com","port":20041,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"de.catxstar.com","network":"tcp"}
   - {"type":"trojan","name":"🇬🇧英国|GBR_3","server":"hkdcrtc-e.catcat321.com","port":20041,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"de.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"🇬🇧英国|GBR_4","server":"hkdcrtc-e.catcat321.com","port":20041,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"de.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"通用19","server":"hkdcrtc-e.catcat321.com","port":20129,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
   - {"type":"trojan","name":"通用02","server":"hkdcrtc-e.catcat321.com","port":20041,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"network":"tcp"}
   - {"type":"trojan","name":"通用11","server":"oplosgru-c.catcat321.com","port":20066,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
-  - {"type":"trojan","name":"通用18","server":"oplosgru-c.catcat321.com","port":20056,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"network":"tcp"}
-  - {"type":"trojan","name":"通用43","server":"oplosgru-c.catcat321.com","port":20004,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
+  - {"type":"trojan","name":"🇨🇦加拿大6.07MB/s","server":"104.18.6.178","port":2087,"password":"MiTiVPN","udp":true,"skip-cert-verify":true,"sni":"g-o-MiTiVPN---MiTiVPNj.kingnetwork.ir","network":"ws","ws-opts":{"path":"/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/nl","headers":{"host":"g-o-MiTiVPN---MiTiVPNj.kingnetwork.ir"}}}
+  - {"type":"trojan","name":"🇩🇪德国4.05MB/s","server":"hkdcrtc-e.catcat321.com","port":20041,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"de.catxstar.com","network":"tcp"}
+  - {"type":"trojan","name":"🇰🇷韩国3.06MB/s","server":"rr2.tube-cat.com","port":9450,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"未知TROJAN-201|free-nodes","server":"172.64.147.224","port":443,"password":"humanity","udp":true,"skip-cert-verify":true,"sni":"www.gossipglove.com","network":"ws","ws-opts":{"path":"/assignment","headers":{"host":"www.gossipglove.com"}}}
+  - {"type":"trojan","name":"未知TROJAN-194|free-nodes","server":"hkdcrtc-e.catcat321.com","port":20041,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hkdcrtc-e.catcat321.com","network":"tcp"}
+  - {"type":"trojan","name":"未知TROJAN-196|free-nodes","server":"oplosgru-c.catcat321.com","port":20066,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"oplosgru-c.catcat321.com","network":"tcp"}
+  - {"type":"trojan","name":"未知TROJAN-198|free-nodes","server":"rr1.tube-cat.com","port":9450,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"network":"tcp"}
+  - {"type":"trojan","name":"未知TROJAN-193|free-nodes","server":"hkdcrtc-e.catcat321.com","port":20129,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
+  - {"type":"trojan","name":"未知TROJAN-195|free-nodes","server":"oplosgru-c.catcat321.com","port":20004,"password":"ba07a8af-5544-48ac-ab62-3b6c00a44fa6","udp":true,"skip-cert-verify":true,"sni":"hk.catxstar.com","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 未知SS-08|free-nodes_1
-      - 未知SS-08|free-nodes_2
       - 未知VLESS-239|free-nodes
-      - 🇺🇸美国1.66MB/s_1
       - 🇺🇸US844|⬇️130KB/s_1
-      - 🇺🇸US846|⬇️137KB/s_1
-      - 🇩🇪DE136|⬇️40KB/s
       - 🇺🇸US849|⬇️165KB/s_1
       - 🇺🇸US286|⬇️118KB/s_1
-      - 🇺🇸美国1.01MB/s_1
-      - 🇺🇸美国1.66MB/s_2
       - 🇺🇸US286|⬇️118KB/s_2
-      - 🇺🇸美国1.01MB/s_2
       - 🇺🇸US849|⬇️165KB/s_2
-      - 🇺🇸US846|⬇️137KB/s_2
+      - 🇺🇸US846|⬇️137KB/s
       - 🇺🇸US844|⬇️130KB/s_2
       - 🇫🇮芬兰24.26MB/s
-      - 🇺🇸美国1.66MB/s_3
-      - 🇫🇮芬兰5.25MB/s
-      - 🇨🇭CH3.91MB/s
-      - 🇩🇪德国25.84MB/s
-      - 🇫🇮芬兰10.58MB/s
       - 🇺🇸US849|⬇️165KB/s_3
-      - 🇨🇴CO29.26MB/s
-      - 🇨🇿CZ858|⬇️215KB/s
-      - 🇩🇪德国22.86MB/s
-      - 🇳🇱荷兰26.40MB/s
-      - 🇳🇱荷兰26.56MB/s
-      - 未知VLESS-695|free-nodes
-      - 未知VLESS-706|free-nodes
-      - 美国_1
       - 印度
-      - 伊朗
-      - 美国_2
       - 🇹🇭泰国|THA_1
-      - 🇵🇱波兰|POL_1
-      - 🇫🇷法国|FRA_1
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
       - 🇺🇸美国|USA_3
       - 🇺🇸美国|USA_4
-      - 🇫🇷法国|FRA_2
-      - 🇵🇱波兰|POL_2
       - 🇹🇭泰国|THA_2
-      - 泰国02
-      - 德国018
       - 香港02
-      - 香港03
-      - 芬兰03
-      - 德国077
-      - 德国036
-      - 英国14
-      - 德国048
-      - 德国064
-      - 德国016
-      - 芬兰16
-      - 德国074
-      - 德国054
-      - 德国090
-      - 德国071
-      - 德国040
-      - 德国094
-      - 德国032
-      - 德国019
-      - 芬兰17
-      - 德国095
-      - 德国014
-      - 德国076
-      - 德国045
-      - 德国020
-      - 德国029
-      - 德国061
-      - 德国062
-      - 德国065
-      - 德国033
-      - 德国041
-      - 芬兰14
-      - 德国097
-      - 德国082
-      - 德国069
-      - 德国089
-      - 德国073
-      - 德国063
-      - 芬兰09
-      - 德国087
-      - 德国066
-      - 香港11
       - 德国012
-      - 美国01
-      - 德国044
+      - 🇪🇸ES29.68MB/s
+      - 🇹🇷TR3.45MB/s
+      - 🇨🇳CN19.38MB/s
+      - 🇨🇳CN11.21MB/s
+      - 未知VLESS-717|free-nodes
+      - 未知VLESS-724|free-nodes
+      - 未知VLESS-682|free-nodes
+      - GBVLESS-1127|free-nodes
+      - USVLESS-1077|free-nodes
+      - GBVLESS-1108|free-nodes
+      - USVLESS-1067|free-nodes
+      - GBVLESS-1128|free-nodes
+      - 未知VLESS-720|free-nodes
       - 🇩🇪德国14.21MB/s
-      - 未知TROJAN-190|free-nodes_1
-      - 未知TROJAN-191|free-nodes
-      - 未知TROJAN-187|free-nodes_1
-      - 未知TROJAN-185|free-nodes
-      - 未知TROJAN-187|free-nodes_2
       - 未知TROJAN-189|free-nodes
-      - 未知TROJAN-190|free-nodes_2
+      - 未知TROJAN-190|free-nodes
       - 未知TROJAN-186|free-nodes
       - 🇬🇧英国|GBR_1
-      - 🇬🇧英国|GBR_2
       - 🇺🇦乌克兰|UKR_1
-      - 🇮🇩印尼|IDN_1
-      - 🇮🇩印尼|IDN_2
       - 🇺🇦乌克兰|UKR_2
+      - 🇬🇧英国|GBR_2
       - 🇬🇧英国|GBR_3
-      - 🇬🇧英国|GBR_4
-      - 通用19
       - 通用02
       - 通用11
-      - 通用18
-      - 通用43
+      - 🇨🇦加拿大6.07MB/s
+      - 🇩🇪德国4.05MB/s
+      - 🇰🇷韩国3.06MB/s
+      - 未知TROJAN-201|free-nodes
+      - 未知TROJAN-194|free-nodes
+      - 未知TROJAN-196|free-nodes
+      - 未知TROJAN-198|free-nodes
+      - 未知TROJAN-193|free-nodes
+      - 未知TROJAN-195|free-nodes
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 未知SS-08|free-nodes_1
-      - 未知SS-08|free-nodes_2
       - 未知VLESS-239|free-nodes
-      - 🇺🇸美国1.66MB/s_1
       - 🇺🇸US844|⬇️130KB/s_1
-      - 🇺🇸US846|⬇️137KB/s_1
-      - 🇩🇪DE136|⬇️40KB/s
       - 🇺🇸US849|⬇️165KB/s_1
       - 🇺🇸US286|⬇️118KB/s_1
-      - 🇺🇸美国1.01MB/s_1
-      - 🇺🇸美国1.66MB/s_2
       - 🇺🇸US286|⬇️118KB/s_2
-      - 🇺🇸美国1.01MB/s_2
       - 🇺🇸US849|⬇️165KB/s_2
-      - 🇺🇸US846|⬇️137KB/s_2
+      - 🇺🇸US846|⬇️137KB/s
       - 🇺🇸US844|⬇️130KB/s_2
       - 🇫🇮芬兰24.26MB/s
-      - 🇺🇸美国1.66MB/s_3
-      - 🇫🇮芬兰5.25MB/s
-      - 🇨🇭CH3.91MB/s
-      - 🇩🇪德国25.84MB/s
-      - 🇫🇮芬兰10.58MB/s
       - 🇺🇸US849|⬇️165KB/s_3
-      - 🇨🇴CO29.26MB/s
-      - 🇨🇿CZ858|⬇️215KB/s
-      - 🇩🇪德国22.86MB/s
-      - 🇳🇱荷兰26.40MB/s
-      - 🇳🇱荷兰26.56MB/s
-      - 未知VLESS-695|free-nodes
-      - 未知VLESS-706|free-nodes
-      - 美国_1
       - 印度
-      - 伊朗
-      - 美国_2
       - 🇹🇭泰国|THA_1
-      - 🇵🇱波兰|POL_1
-      - 🇫🇷法国|FRA_1
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
       - 🇺🇸美国|USA_3
       - 🇺🇸美国|USA_4
-      - 🇫🇷法国|FRA_2
-      - 🇵🇱波兰|POL_2
       - 🇹🇭泰国|THA_2
-      - 泰国02
-      - 德国018
       - 香港02
-      - 香港03
-      - 芬兰03
-      - 德国077
-      - 德国036
-      - 英国14
-      - 德国048
-      - 德国064
-      - 德国016
-      - 芬兰16
-      - 德国074
-      - 德国054
-      - 德国090
-      - 德国071
-      - 德国040
-      - 德国094
-      - 德国032
-      - 德国019
-      - 芬兰17
-      - 德国095
-      - 德国014
-      - 德国076
-      - 德国045
-      - 德国020
-      - 德国029
-      - 德国061
-      - 德国062
-      - 德国065
-      - 德国033
-      - 德国041
-      - 芬兰14
-      - 德国097
-      - 德国082
-      - 德国069
-      - 德国089
-      - 德国073
-      - 德国063
-      - 芬兰09
-      - 德国087
-      - 德国066
-      - 香港11
       - 德国012
-      - 美国01
-      - 德国044
+      - 🇪🇸ES29.68MB/s
+      - 🇹🇷TR3.45MB/s
+      - 🇨🇳CN19.38MB/s
+      - 🇨🇳CN11.21MB/s
+      - 未知VLESS-717|free-nodes
+      - 未知VLESS-724|free-nodes
+      - 未知VLESS-682|free-nodes
+      - GBVLESS-1127|free-nodes
+      - USVLESS-1077|free-nodes
+      - GBVLESS-1108|free-nodes
+      - USVLESS-1067|free-nodes
+      - GBVLESS-1128|free-nodes
+      - 未知VLESS-720|free-nodes
       - 🇩🇪德国14.21MB/s
-      - 未知TROJAN-190|free-nodes_1
-      - 未知TROJAN-191|free-nodes
-      - 未知TROJAN-187|free-nodes_1
-      - 未知TROJAN-185|free-nodes
-      - 未知TROJAN-187|free-nodes_2
       - 未知TROJAN-189|free-nodes
-      - 未知TROJAN-190|free-nodes_2
+      - 未知TROJAN-190|free-nodes
       - 未知TROJAN-186|free-nodes
       - 🇬🇧英国|GBR_1
-      - 🇬🇧英国|GBR_2
       - 🇺🇦乌克兰|UKR_1
-      - 🇮🇩印尼|IDN_1
-      - 🇮🇩印尼|IDN_2
       - 🇺🇦乌克兰|UKR_2
+      - 🇬🇧英国|GBR_2
       - 🇬🇧英国|GBR_3
-      - 🇬🇧英国|GBR_4
-      - 通用19
       - 通用02
       - 通用11
-      - 通用18
-      - 通用43
+      - 🇨🇦加拿大6.07MB/s
+      - 🇩🇪德国4.05MB/s
+      - 🇰🇷韩国3.06MB/s
+      - 未知TROJAN-201|free-nodes
+      - 未知TROJAN-194|free-nodes
+      - 未知TROJAN-196|free-nodes
+      - 未知TROJAN-198|free-nodes
+      - 未知TROJAN-193|free-nodes
+      - 未知TROJAN-195|free-nodes
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 未知SS-08|free-nodes_1
-      - 未知SS-08|free-nodes_2
       - 未知VLESS-239|free-nodes
-      - 🇺🇸美国1.66MB/s_1
       - 🇺🇸US844|⬇️130KB/s_1
-      - 🇺🇸US846|⬇️137KB/s_1
-      - 🇩🇪DE136|⬇️40KB/s
       - 🇺🇸US849|⬇️165KB/s_1
       - 🇺🇸US286|⬇️118KB/s_1
-      - 🇺🇸美国1.01MB/s_1
-      - 🇺🇸美国1.66MB/s_2
       - 🇺🇸US286|⬇️118KB/s_2
-      - 🇺🇸美国1.01MB/s_2
       - 🇺🇸US849|⬇️165KB/s_2
-      - 🇺🇸US846|⬇️137KB/s_2
+      - 🇺🇸US846|⬇️137KB/s
       - 🇺🇸US844|⬇️130KB/s_2
       - 🇫🇮芬兰24.26MB/s
-      - 🇺🇸美国1.66MB/s_3
-      - 🇫🇮芬兰5.25MB/s
-      - 🇨🇭CH3.91MB/s
-      - 🇩🇪德国25.84MB/s
-      - 🇫🇮芬兰10.58MB/s
       - 🇺🇸US849|⬇️165KB/s_3
-      - 🇨🇴CO29.26MB/s
-      - 🇨🇿CZ858|⬇️215KB/s
-      - 🇩🇪德国22.86MB/s
-      - 🇳🇱荷兰26.40MB/s
-      - 🇳🇱荷兰26.56MB/s
-      - 未知VLESS-695|free-nodes
-      - 未知VLESS-706|free-nodes
-      - 美国_1
       - 印度
-      - 伊朗
-      - 美国_2
       - 🇹🇭泰国|THA_1
-      - 🇵🇱波兰|POL_1
-      - 🇫🇷法国|FRA_1
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
       - 🇺🇸美国|USA_3
       - 🇺🇸美国|USA_4
-      - 🇫🇷法国|FRA_2
-      - 🇵🇱波兰|POL_2
       - 🇹🇭泰国|THA_2
-      - 泰国02
-      - 德国018
       - 香港02
-      - 香港03
-      - 芬兰03
-      - 德国077
-      - 德国036
-      - 英国14
-      - 德国048
-      - 德国064
-      - 德国016
-      - 芬兰16
-      - 德国074
-      - 德国054
-      - 德国090
-      - 德国071
-      - 德国040
-      - 德国094
-      - 德国032
-      - 德国019
-      - 芬兰17
-      - 德国095
-      - 德国014
-      - 德国076
-      - 德国045
-      - 德国020
-      - 德国029
-      - 德国061
-      - 德国062
-      - 德国065
-      - 德国033
-      - 德国041
-      - 芬兰14
-      - 德国097
-      - 德国082
-      - 德国069
-      - 德国089
-      - 德国073
-      - 德国063
-      - 芬兰09
-      - 德国087
-      - 德国066
-      - 香港11
       - 德国012
-      - 美国01
-      - 德国044
+      - 🇪🇸ES29.68MB/s
+      - 🇹🇷TR3.45MB/s
+      - 🇨🇳CN19.38MB/s
+      - 🇨🇳CN11.21MB/s
+      - 未知VLESS-717|free-nodes
+      - 未知VLESS-724|free-nodes
+      - 未知VLESS-682|free-nodes
+      - GBVLESS-1127|free-nodes
+      - USVLESS-1077|free-nodes
+      - GBVLESS-1108|free-nodes
+      - USVLESS-1067|free-nodes
+      - GBVLESS-1128|free-nodes
+      - 未知VLESS-720|free-nodes
       - 🇩🇪德国14.21MB/s
-      - 未知TROJAN-190|free-nodes_1
-      - 未知TROJAN-191|free-nodes
-      - 未知TROJAN-187|free-nodes_1
-      - 未知TROJAN-185|free-nodes
-      - 未知TROJAN-187|free-nodes_2
       - 未知TROJAN-189|free-nodes
-      - 未知TROJAN-190|free-nodes_2
+      - 未知TROJAN-190|free-nodes
       - 未知TROJAN-186|free-nodes
       - 🇬🇧英国|GBR_1
-      - 🇬🇧英国|GBR_2
       - 🇺🇦乌克兰|UKR_1
-      - 🇮🇩印尼|IDN_1
-      - 🇮🇩印尼|IDN_2
       - 🇺🇦乌克兰|UKR_2
+      - 🇬🇧英国|GBR_2
       - 🇬🇧英国|GBR_3
-      - 🇬🇧英国|GBR_4
-      - 通用19
       - 通用02
       - 通用11
-      - 通用18
-      - 通用43
+      - 🇨🇦加拿大6.07MB/s
+      - 🇩🇪德国4.05MB/s
+      - 🇰🇷韩国3.06MB/s
+      - 未知TROJAN-201|free-nodes
+      - 未知TROJAN-194|free-nodes
+      - 未知TROJAN-196|free-nodes
+      - 未知TROJAN-198|free-nodes
+      - 未知TROJAN-193|free-nodes
+      - 未知TROJAN-195|free-nodes
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 未知SS-08|free-nodes_1
-      - 未知SS-08|free-nodes_2
       - 未知VLESS-239|free-nodes
-      - 🇺🇸美国1.66MB/s_1
       - 🇺🇸US844|⬇️130KB/s_1
-      - 🇺🇸US846|⬇️137KB/s_1
-      - 🇩🇪DE136|⬇️40KB/s
       - 🇺🇸US849|⬇️165KB/s_1
       - 🇺🇸US286|⬇️118KB/s_1
-      - 🇺🇸美国1.01MB/s_1
-      - 🇺🇸美国1.66MB/s_2
       - 🇺🇸US286|⬇️118KB/s_2
-      - 🇺🇸美国1.01MB/s_2
       - 🇺🇸US849|⬇️165KB/s_2
-      - 🇺🇸US846|⬇️137KB/s_2
+      - 🇺🇸US846|⬇️137KB/s
       - 🇺🇸US844|⬇️130KB/s_2
       - 🇫🇮芬兰24.26MB/s
-      - 🇺🇸美国1.66MB/s_3
-      - 🇫🇮芬兰5.25MB/s
-      - 🇨🇭CH3.91MB/s
-      - 🇩🇪德国25.84MB/s
-      - 🇫🇮芬兰10.58MB/s
       - 🇺🇸US849|⬇️165KB/s_3
-      - 🇨🇴CO29.26MB/s
-      - 🇨🇿CZ858|⬇️215KB/s
-      - 🇩🇪德国22.86MB/s
-      - 🇳🇱荷兰26.40MB/s
-      - 🇳🇱荷兰26.56MB/s
-      - 未知VLESS-695|free-nodes
-      - 未知VLESS-706|free-nodes
-      - 美国_1
       - 印度
-      - 伊朗
-      - 美国_2
       - 🇹🇭泰国|THA_1
-      - 🇵🇱波兰|POL_1
-      - 🇫🇷法国|FRA_1
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
       - 🇺🇸美国|USA_3
       - 🇺🇸美国|USA_4
-      - 🇫🇷法国|FRA_2
-      - 🇵🇱波兰|POL_2
       - 🇹🇭泰国|THA_2
-      - 泰国02
-      - 德国018
       - 香港02
-      - 香港03
-      - 芬兰03
-      - 德国077
-      - 德国036
-      - 英国14
-      - 德国048
-      - 德国064
-      - 德国016
-      - 芬兰16
-      - 德国074
-      - 德国054
-      - 德国090
-      - 德国071
-      - 德国040
-      - 德国094
-      - 德国032
-      - 德国019
-      - 芬兰17
-      - 德国095
-      - 德国014
-      - 德国076
-      - 德国045
-      - 德国020
-      - 德国029
-      - 德国061
-      - 德国062
-      - 德国065
-      - 德国033
-      - 德国041
-      - 芬兰14
-      - 德国097
-      - 德国082
-      - 德国069
-      - 德国089
-      - 德国073
-      - 德国063
-      - 芬兰09
-      - 德国087
-      - 德国066
-      - 香港11
       - 德国012
-      - 美国01
-      - 德国044
+      - 🇪🇸ES29.68MB/s
+      - 🇹🇷TR3.45MB/s
+      - 🇨🇳CN19.38MB/s
+      - 🇨🇳CN11.21MB/s
+      - 未知VLESS-717|free-nodes
+      - 未知VLESS-724|free-nodes
+      - 未知VLESS-682|free-nodes
+      - GBVLESS-1127|free-nodes
+      - USVLESS-1077|free-nodes
+      - GBVLESS-1108|free-nodes
+      - USVLESS-1067|free-nodes
+      - GBVLESS-1128|free-nodes
+      - 未知VLESS-720|free-nodes
       - 🇩🇪德国14.21MB/s
-      - 未知TROJAN-190|free-nodes_1
-      - 未知TROJAN-191|free-nodes
-      - 未知TROJAN-187|free-nodes_1
-      - 未知TROJAN-185|free-nodes
-      - 未知TROJAN-187|free-nodes_2
       - 未知TROJAN-189|free-nodes
-      - 未知TROJAN-190|free-nodes_2
+      - 未知TROJAN-190|free-nodes
       - 未知TROJAN-186|free-nodes
       - 🇬🇧英国|GBR_1
-      - 🇬🇧英国|GBR_2
       - 🇺🇦乌克兰|UKR_1
-      - 🇮🇩印尼|IDN_1
-      - 🇮🇩印尼|IDN_2
       - 🇺🇦乌克兰|UKR_2
+      - 🇬🇧英国|GBR_2
       - 🇬🇧英国|GBR_3
-      - 🇬🇧英国|GBR_4
-      - 通用19
       - 通用02
       - 通用11
-      - 通用18
-      - 通用43
+      - 🇨🇦加拿大6.07MB/s
+      - 🇩🇪德国4.05MB/s
+      - 🇰🇷韩国3.06MB/s
+      - 未知TROJAN-201|free-nodes
+      - 未知TROJAN-194|free-nodes
+      - 未知TROJAN-196|free-nodes
+      - 未知TROJAN-198|free-nodes
+      - 未知TROJAN-193|free-nodes
+      - 未知TROJAN-195|free-nodes
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 未知SS-08|free-nodes_1
-      - 未知SS-08|free-nodes_2
       - 未知VLESS-239|free-nodes
-      - 🇺🇸美国1.66MB/s_1
       - 🇺🇸US844|⬇️130KB/s_1
-      - 🇺🇸US846|⬇️137KB/s_1
-      - 🇩🇪DE136|⬇️40KB/s
       - 🇺🇸US849|⬇️165KB/s_1
       - 🇺🇸US286|⬇️118KB/s_1
-      - 🇺🇸美国1.01MB/s_1
-      - 🇺🇸美国1.66MB/s_2
       - 🇺🇸US286|⬇️118KB/s_2
-      - 🇺🇸美国1.01MB/s_2
       - 🇺🇸US849|⬇️165KB/s_2
-      - 🇺🇸US846|⬇️137KB/s_2
+      - 🇺🇸US846|⬇️137KB/s
       - 🇺🇸US844|⬇️130KB/s_2
       - 🇫🇮芬兰24.26MB/s
-      - 🇺🇸美国1.66MB/s_3
-      - 🇫🇮芬兰5.25MB/s
-      - 🇨🇭CH3.91MB/s
-      - 🇩🇪德国25.84MB/s
-      - 🇫🇮芬兰10.58MB/s
       - 🇺🇸US849|⬇️165KB/s_3
-      - 🇨🇴CO29.26MB/s
-      - 🇨🇿CZ858|⬇️215KB/s
-      - 🇩🇪德国22.86MB/s
-      - 🇳🇱荷兰26.40MB/s
-      - 🇳🇱荷兰26.56MB/s
-      - 未知VLESS-695|free-nodes
-      - 未知VLESS-706|free-nodes
-      - 美国_1
       - 印度
-      - 伊朗
-      - 美国_2
       - 🇹🇭泰国|THA_1
-      - 🇵🇱波兰|POL_1
-      - 🇫🇷法国|FRA_1
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
       - 🇺🇸美国|USA_3
       - 🇺🇸美国|USA_4
-      - 🇫🇷法国|FRA_2
-      - 🇵🇱波兰|POL_2
       - 🇹🇭泰国|THA_2
-      - 泰国02
-      - 德国018
       - 香港02
-      - 香港03
-      - 芬兰03
-      - 德国077
-      - 德国036
-      - 英国14
-      - 德国048
-      - 德国064
-      - 德国016
-      - 芬兰16
-      - 德国074
-      - 德国054
-      - 德国090
-      - 德国071
-      - 德国040
-      - 德国094
-      - 德国032
-      - 德国019
-      - 芬兰17
-      - 德国095
-      - 德国014
-      - 德国076
-      - 德国045
-      - 德国020
-      - 德国029
-      - 德国061
-      - 德国062
-      - 德国065
-      - 德国033
-      - 德国041
-      - 芬兰14
-      - 德国097
-      - 德国082
-      - 德国069
-      - 德国089
-      - 德国073
-      - 德国063
-      - 芬兰09
-      - 德国087
-      - 德国066
-      - 香港11
       - 德国012
-      - 美国01
-      - 德国044
+      - 🇪🇸ES29.68MB/s
+      - 🇹🇷TR3.45MB/s
+      - 🇨🇳CN19.38MB/s
+      - 🇨🇳CN11.21MB/s
+      - 未知VLESS-717|free-nodes
+      - 未知VLESS-724|free-nodes
+      - 未知VLESS-682|free-nodes
+      - GBVLESS-1127|free-nodes
+      - USVLESS-1077|free-nodes
+      - GBVLESS-1108|free-nodes
+      - USVLESS-1067|free-nodes
+      - GBVLESS-1128|free-nodes
+      - 未知VLESS-720|free-nodes
       - 🇩🇪德国14.21MB/s
-      - 未知TROJAN-190|free-nodes_1
-      - 未知TROJAN-191|free-nodes
-      - 未知TROJAN-187|free-nodes_1
-      - 未知TROJAN-185|free-nodes
-      - 未知TROJAN-187|free-nodes_2
       - 未知TROJAN-189|free-nodes
-      - 未知TROJAN-190|free-nodes_2
+      - 未知TROJAN-190|free-nodes
       - 未知TROJAN-186|free-nodes
       - 🇬🇧英国|GBR_1
-      - 🇬🇧英国|GBR_2
       - 🇺🇦乌克兰|UKR_1
-      - 🇮🇩印尼|IDN_1
-      - 🇮🇩印尼|IDN_2
       - 🇺🇦乌克兰|UKR_2
+      - 🇬🇧英国|GBR_2
       - 🇬🇧英国|GBR_3
-      - 🇬🇧英国|GBR_4
-      - 通用19
       - 通用02
       - 通用11
-      - 通用18
-      - 通用43
+      - 🇨🇦加拿大6.07MB/s
+      - 🇩🇪德国4.05MB/s
+      - 🇰🇷韩国3.06MB/s
+      - 未知TROJAN-201|free-nodes
+      - 未知TROJAN-194|free-nodes
+      - 未知TROJAN-196|free-nodes
+      - 未知TROJAN-198|free-nodes
+      - 未知TROJAN-193|free-nodes
+      - 未知TROJAN-195|free-nodes
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 未知SS-08|free-nodes_1
-      - 未知SS-08|free-nodes_2
       - 未知VLESS-239|free-nodes
-      - 🇺🇸美国1.66MB/s_1
       - 🇺🇸US844|⬇️130KB/s_1
-      - 🇺🇸US846|⬇️137KB/s_1
-      - 🇩🇪DE136|⬇️40KB/s
       - 🇺🇸US849|⬇️165KB/s_1
       - 🇺🇸US286|⬇️118KB/s_1
-      - 🇺🇸美国1.01MB/s_1
-      - 🇺🇸美国1.66MB/s_2
       - 🇺🇸US286|⬇️118KB/s_2
-      - 🇺🇸美国1.01MB/s_2
       - 🇺🇸US849|⬇️165KB/s_2
-      - 🇺🇸US846|⬇️137KB/s_2
+      - 🇺🇸US846|⬇️137KB/s
       - 🇺🇸US844|⬇️130KB/s_2
       - 🇫🇮芬兰24.26MB/s
-      - 🇺🇸美国1.66MB/s_3
-      - 🇫🇮芬兰5.25MB/s
-      - 🇨🇭CH3.91MB/s
-      - 🇩🇪德国25.84MB/s
-      - 🇫🇮芬兰10.58MB/s
       - 🇺🇸US849|⬇️165KB/s_3
-      - 🇨🇴CO29.26MB/s
-      - 🇨🇿CZ858|⬇️215KB/s
-      - 🇩🇪德国22.86MB/s
-      - 🇳🇱荷兰26.40MB/s
-      - 🇳🇱荷兰26.56MB/s
-      - 未知VLESS-695|free-nodes
-      - 未知VLESS-706|free-nodes
-      - 美国_1
       - 印度
-      - 伊朗
-      - 美国_2
       - 🇹🇭泰国|THA_1
-      - 🇵🇱波兰|POL_1
-      - 🇫🇷法国|FRA_1
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
       - 🇺🇸美国|USA_3
       - 🇺🇸美国|USA_4
-      - 🇫🇷法国|FRA_2
-      - 🇵🇱波兰|POL_2
       - 🇹🇭泰国|THA_2
-      - 泰国02
-      - 德国018
       - 香港02
-      - 香港03
-      - 芬兰03
-      - 德国077
-      - 德国036
-      - 英国14
-      - 德国048
-      - 德国064
-      - 德国016
-      - 芬兰16
-      - 德国074
-      - 德国054
-      - 德国090
-      - 德国071
-      - 德国040
-      - 德国094
-      - 德国032
-      - 德国019
-      - 芬兰17
-      - 德国095
-      - 德国014
-      - 德国076
-      - 德国045
-      - 德国020
-      - 德国029
-      - 德国061
-      - 德国062
-      - 德国065
-      - 德国033
-      - 德国041
-      - 芬兰14
-      - 德国097
-      - 德国082
-      - 德国069
-      - 德国089
-      - 德国073
-      - 德国063
-      - 芬兰09
-      - 德国087
-      - 德国066
-      - 香港11
       - 德国012
-      - 美国01
-      - 德国044
+      - 🇪🇸ES29.68MB/s
+      - 🇹🇷TR3.45MB/s
+      - 🇨🇳CN19.38MB/s
+      - 🇨🇳CN11.21MB/s
+      - 未知VLESS-717|free-nodes
+      - 未知VLESS-724|free-nodes
+      - 未知VLESS-682|free-nodes
+      - GBVLESS-1127|free-nodes
+      - USVLESS-1077|free-nodes
+      - GBVLESS-1108|free-nodes
+      - USVLESS-1067|free-nodes
+      - GBVLESS-1128|free-nodes
+      - 未知VLESS-720|free-nodes
       - 🇩🇪德国14.21MB/s
-      - 未知TROJAN-190|free-nodes_1
-      - 未知TROJAN-191|free-nodes
-      - 未知TROJAN-187|free-nodes_1
-      - 未知TROJAN-185|free-nodes
-      - 未知TROJAN-187|free-nodes_2
       - 未知TROJAN-189|free-nodes
-      - 未知TROJAN-190|free-nodes_2
+      - 未知TROJAN-190|free-nodes
       - 未知TROJAN-186|free-nodes
       - 🇬🇧英国|GBR_1
-      - 🇬🇧英国|GBR_2
       - 🇺🇦乌克兰|UKR_1
-      - 🇮🇩印尼|IDN_1
-      - 🇮🇩印尼|IDN_2
       - 🇺🇦乌克兰|UKR_2
+      - 🇬🇧英国|GBR_2
       - 🇬🇧英国|GBR_3
-      - 🇬🇧英国|GBR_4
-      - 通用19
       - 通用02
       - 通用11
-      - 通用18
-      - 通用43
+      - 🇨🇦加拿大6.07MB/s
+      - 🇩🇪德国4.05MB/s
+      - 🇰🇷韩国3.06MB/s
+      - 未知TROJAN-201|free-nodes
+      - 未知TROJAN-194|free-nodes
+      - 未知TROJAN-196|free-nodes
+      - 未知TROJAN-198|free-nodes
+      - 未知TROJAN-193|free-nodes
+      - 未知TROJAN-195|free-nodes
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -852,118 +432,58 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 未知SS-08|free-nodes_1
-      - 未知SS-08|free-nodes_2
       - 未知VLESS-239|free-nodes
-      - 🇺🇸美国1.66MB/s_1
       - 🇺🇸US844|⬇️130KB/s_1
-      - 🇺🇸US846|⬇️137KB/s_1
-      - 🇩🇪DE136|⬇️40KB/s
       - 🇺🇸US849|⬇️165KB/s_1
       - 🇺🇸US286|⬇️118KB/s_1
-      - 🇺🇸美国1.01MB/s_1
-      - 🇺🇸美国1.66MB/s_2
       - 🇺🇸US286|⬇️118KB/s_2
-      - 🇺🇸美国1.01MB/s_2
       - 🇺🇸US849|⬇️165KB/s_2
-      - 🇺🇸US846|⬇️137KB/s_2
+      - 🇺🇸US846|⬇️137KB/s
       - 🇺🇸US844|⬇️130KB/s_2
       - 🇫🇮芬兰24.26MB/s
-      - 🇺🇸美国1.66MB/s_3
-      - 🇫🇮芬兰5.25MB/s
-      - 🇨🇭CH3.91MB/s
-      - 🇩🇪德国25.84MB/s
-      - 🇫🇮芬兰10.58MB/s
       - 🇺🇸US849|⬇️165KB/s_3
-      - 🇨🇴CO29.26MB/s
-      - 🇨🇿CZ858|⬇️215KB/s
-      - 🇩🇪德国22.86MB/s
-      - 🇳🇱荷兰26.40MB/s
-      - 🇳🇱荷兰26.56MB/s
-      - 未知VLESS-695|free-nodes
-      - 未知VLESS-706|free-nodes
-      - 美国_1
       - 印度
-      - 伊朗
-      - 美国_2
       - 🇹🇭泰国|THA_1
-      - 🇵🇱波兰|POL_1
-      - 🇫🇷法国|FRA_1
       - 🇺🇸美国|USA_1
       - 🇺🇸美国|USA_2
       - 🇺🇸美国|USA_3
       - 🇺🇸美国|USA_4
-      - 🇫🇷法国|FRA_2
-      - 🇵🇱波兰|POL_2
       - 🇹🇭泰国|THA_2
-      - 泰国02
-      - 德国018
       - 香港02
-      - 香港03
-      - 芬兰03
-      - 德国077
-      - 德国036
-      - 英国14
-      - 德国048
-      - 德国064
-      - 德国016
-      - 芬兰16
-      - 德国074
-      - 德国054
-      - 德国090
-      - 德国071
-      - 德国040
-      - 德国094
-      - 德国032
-      - 德国019
-      - 芬兰17
-      - 德国095
-      - 德国014
-      - 德国076
-      - 德国045
-      - 德国020
-      - 德国029
-      - 德国061
-      - 德国062
-      - 德国065
-      - 德国033
-      - 德国041
-      - 芬兰14
-      - 德国097
-      - 德国082
-      - 德国069
-      - 德国089
-      - 德国073
-      - 德国063
-      - 芬兰09
-      - 德国087
-      - 德国066
-      - 香港11
       - 德国012
-      - 美国01
-      - 德国044
+      - 🇪🇸ES29.68MB/s
+      - 🇹🇷TR3.45MB/s
+      - 🇨🇳CN19.38MB/s
+      - 🇨🇳CN11.21MB/s
+      - 未知VLESS-717|free-nodes
+      - 未知VLESS-724|free-nodes
+      - 未知VLESS-682|free-nodes
+      - GBVLESS-1127|free-nodes
+      - USVLESS-1077|free-nodes
+      - GBVLESS-1108|free-nodes
+      - USVLESS-1067|free-nodes
+      - GBVLESS-1128|free-nodes
+      - 未知VLESS-720|free-nodes
       - 🇩🇪德国14.21MB/s
-      - 未知TROJAN-190|free-nodes_1
-      - 未知TROJAN-191|free-nodes
-      - 未知TROJAN-187|free-nodes_1
-      - 未知TROJAN-185|free-nodes
-      - 未知TROJAN-187|free-nodes_2
       - 未知TROJAN-189|free-nodes
-      - 未知TROJAN-190|free-nodes_2
+      - 未知TROJAN-190|free-nodes
       - 未知TROJAN-186|free-nodes
       - 🇬🇧英国|GBR_1
-      - 🇬🇧英国|GBR_2
       - 🇺🇦乌克兰|UKR_1
-      - 🇮🇩印尼|IDN_1
-      - 🇮🇩印尼|IDN_2
       - 🇺🇦乌克兰|UKR_2
+      - 🇬🇧英国|GBR_2
       - 🇬🇧英国|GBR_3
-      - 🇬🇧英国|GBR_4
-      - 通用19
       - 通用02
       - 通用11
-      - 通用18
-      - 通用43
+      - 🇨🇦加拿大6.07MB/s
+      - 🇩🇪德国4.05MB/s
+      - 🇰🇷韩国3.06MB/s
+      - 未知TROJAN-201|free-nodes
+      - 未知TROJAN-194|free-nodes
+      - 未知TROJAN-196|free-nodes
+      - 未知TROJAN-198|free-nodes
+      - 未知TROJAN-193|free-nodes
+      - 未知TROJAN-195|free-nodes
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
