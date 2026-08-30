@@ -1,7 +1,7 @@
 #
-#  2026-08-29 节点配置
-#  节点源：最终测速 V
-#  VMess：按工作流规则跳过
+#  2026-08-30 节点配置
+#  V 测速阶段不去重；重复连接作为独立节点保留
+#  VMess 按工作流规则不写入 C
 #
 port: 7890
 socks-port: 7891
@@ -10,499 +10,13 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-- name: 瑞士01
-  type: hysteria2
-  server: 140.238.213.114
-  port: 50160
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 美国08
-  type: hysteria2
-  server: 152.69.173.189
-  port: 20000
-  password: a34f3990b69f44bfa0d32385
-  ports: 20000-30000
-  sni: rmgyvpn.rest
-  obfs: salamander
-  obfs-password: a34f3990b69f44bfa0d32385
-- name: 美国02
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 27315937-5479-49fd-867d-6b2f17246708
-  udp: true
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER
-    headers:
-      Host: pan1.global.ssl.fastly.net
-- name: 美国03
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 27315937-5479-49fd-867d-6b2f17246708
-  udp: true
-  tls: true
-  servername: ssl.fastly.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
-    headers:
-      Host: pan1.global.ssl.fastly.net
-- name: 美国04
-  type: vless
-  server: 199.232.78.159
-  port: 443
-  uuid: 27315937-5479-49fd-867d-6b2f17246708
-  udp: true
-  tls: true
-  servername: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER
-    headers:
-      Host: pan1.global.ssl.fastly.net
-- name: 法国04
-  type: vless
-  server: 2001:bc8:32d7:302::10
-  port: 65513
-  uuid: 2567e2e0-8d4c-4c51-aee9-5d1f36024472
-  udp: true
-  tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg
-    short-id: 21569dd6
-  network: xhttp
-  xhttp-opts:
-    path: /6eg3r4an
-- name: 德国01
-  type: vless
-  server: 31.76.61.232
-  port: 443
-  uuid: 4829c2f5-f45a-4330-9b3c-d381b9efdbec
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: policies.google.com
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  reality-opts:
-    public-key: CMTA5uuaIVIeqHslZMT3CbFwP8F5ysMLii72ybsTlyY
-    short-id: e2a4c6b8
-  network: tcp
-- name: 德国02
-  type: vless
-  server: 31.76.61.232
-  port: 443
-  uuid: 4829c2f5-f45a-4330-9b3c-d381b9efdbec
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: policies.google.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: CMTA5uuaIVIeqHslZMT3CbFwP8F5ysMLii72ybsTlyY
-    short-id: e2a4c6b8
-  network: tcp
-- name: 美国06
-  type: hysteria2
-  server: 31.76.70.107
-  port: 8443
-  password: 523486c6-c0b5-4e5b-8896-4af2375b41cc
-  sni: quic.tyr-agentstvo.tech
-  skip-cert-verify: true
-- name: 俄罗斯02
-  type: vless
-  server: 46.29.235.9
-  port: 443
-  uuid: d67af820-f54c-48ab-862c-19086357f276
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: telegraf.lv
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
-    short-id: a1b2c3d4
-  network: tcp
-- name: 法国05
+- name: 法国01
   type: hysteria2
   server: 62.210.7.139
   port: 60111
   password: github.com/Alvin9999-newpac/fanqiang
   sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-- name: 韩国03
-  type: trojan
-  server: 99.cdn.aewe.de
-  port: 8443
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638138715.206353.xyz
-  network: ws
-  ws-opts:
-    path: /agrbniuh
-    headers:
-      Host: 17879638136056.206353.xyz
-- name: 加拿大01
-  type: trojan
-  server: 99.cdn.aewe.de
-  port: 2083
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638136196.206356.xyz
-  network: ws
-  ws-opts:
-    path: /dmusicmuaawe
-    headers:
-      Host: 17879638135575.206356.xyz
-- name: 葡萄牙01
-  type: trojan
-  server: 99.cdn.aewe.de
-  port: 2096
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638136830.206352.xyz
-  network: ws
-  ws-opts:
-    path: /agraeabtegrrh
-    headers:
-      Host: 17879638138896.206352.xyz
-- name: 芬兰02
-  type: trojan
-  server: 99.cdn.aewe.de
-  port: 2083
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638138112.168381.xyz
-  network: ws
-  ws-opts:
-    path: /tianboephth
-    headers:
-      Host: 17879638132303.168381.xyz
-- name: 新加坡03
-  type: trojan
-  server: 99.cdn.aewe.de
-  port: 2083
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638131415.206355.xyz
-  network: ws
-  ws-opts:
-    path: /videomuaawe
-    headers:
-      Host: 17879638132175.206355.xyz
-- name: 英国02
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 2087
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638133535.682637.xyz
-  network: ws
-  ws-opts:
-    path: /ahyrtuyjykl
-    headers:
-      Host: 17879638136949.682637.xyz
-- name: 瑞典01
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 2087
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638139768.682637.xyz
-  network: ws
-  ws-opts:
-    path: /ahyrtuyjykl
-    headers:
-      Host: 17879638136508.682637.xyz
-- name: 芬兰01
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 8443
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638139316.682637.xyz
-  network: ws
-  ws-opts:
-    path: /ahyrtuyjykl
-    headers:
-      Host: 17879638138600.682637.xyz
-- name: 波兰01
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 8443
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638132650.682637.xyz
-  network: ws
-  ws-opts:
-    path: /ahyrtuyjykl
-    headers:
-      Host: 17879638138613.682637.xyz
-- name: 奥地利01
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 2087
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638138197.682637.xyz
-  network: ws
-  ws-opts:
-    path: /ahyrtuyjykl
-    headers:
-      Host: 17879638139713.682637.xyz
-- name: 意大利01
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 2087
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638132185.682637.xyz
-  network: ws
-  ws-opts:
-    path: /ahyrtuyjykl
-    headers:
-      Host: 17879638135776.682637.xyz
-- name: 挪威01
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 2096
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638136311.682637.xyz
-  network: ws
-  ws-opts:
-    path: /ahyrtuyjykl
-    headers:
-      Host: 17879638134682.682637.xyz
-- name: 丹麦01
-  type: trojan
-  server: bestcdn0.868863.xyz
-  port: 2053
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638137460.682637.xyz
-  network: ws
-  ws-opts:
-    path: /ahyrtuyjykl
-    headers:
-      Host: 17879638138661.682637.xyz
-- name: 英国01
-  type: trojan
-  server: bestcdn1.868863.xyz
-  port: 2053
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638136834.206352.xyz
-  network: ws
-  ws-opts:
-    path: /agraeabtegrrh
-    headers:
-      Host: 17879638137161.206352.xyz
-- name: 法国06
-  type: trojan
-  server: bestcdn1.868863.xyz
-  port: 2096
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638139852.206353.xyz
-  network: ws
-  ws-opts:
-    path: /agrbniuh
-    headers:
-      Host: 17879638132586.206353.xyz
-- name: 澳大利亚01
-  type: trojan
-  server: bestcdn1.868863.xyz
-  port: 2087
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638131938.206356.xyz
-  network: ws
-  ws-opts:
-    path: /dmusicmuaawe
-    headers:
-      Host: 17879638137339.206356.xyz
-- name: 西班牙01
-  type: trojan
-  server: bestcdn1.868863.xyz
-  port: 2087
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638139867.168381.xyz
-  network: ws
-  ws-opts:
-    path: /tianboephth
-    headers:
-      Host: 17879638136152.168381.xyz
-- name: 日本02
-  type: trojan
-  server: bestcdn1.868863.xyz
-  port: 2087
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638137586.206355.xyz
-  network: ws
-  ws-opts:
-    path: /videomuaawe
-    headers:
-      Host: 17879638135638.206355.xyz
-- name: 新加坡02
-  type: trojan
-  server: bestcdn2.868863.xyz
-  port: 2087
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638137251.206353.xyz
-  network: ws
-  ws-opts:
-    path: /agrbniuh
-    headers:
-      Host: 17879638135146.206353.xyz
-- name: 香港01
-  type: trojan
-  server: bestcdn2.868863.xyz
-  port: 2096
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638136994.206356.xyz
-  network: ws
-  ws-opts:
-    path: /dmusicmuaawe
-    headers:
-      Host: 17879638136813.206356.xyz
-- name: 德国03
-  type: trojan
-  server: bestcdn2.868863.xyz
-  port: 2083
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638136031.206352.xyz
-  network: ws
-  ws-opts:
-    path: /agraeabtegrrh
-    headers:
-      Host: 17879638132340.206352.xyz
-- name: 捷克01
-  type: trojan
-  server: bestcdn2.868863.xyz
-  port: 2096
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638135428.168381.xyz
-  network: ws
-  ws-opts:
-    path: /tianboephth
-    headers:
-      Host: 17879638139786.168381.xyz
-- name: 爱尔兰01
-  type: trojan
-  server: bestcdn2.868863.xyz
-  port: 2096
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638136475.206355.xyz
-  network: ws
-  ws-opts:
-    path: /videomuaawe
-    headers:
-      Host: 17879638134049.206355.xyz
-- name: 日本01
-  type: trojan
-  server: bestcdn3.868863.xyz
-  port: 2083
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638136918.206353.xyz
-  network: ws
-  ws-opts:
-    path: /agrbniuh
-    headers:
-      Host: 17879638135514.206353.xyz
-- name: 美国05
-  type: trojan
-  server: bestcdn3.868863.xyz
-  port: 2053
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638132825.206356.xyz
-  network: ws
-  ws-opts:
-    path: /dmusicmuaawe
-    headers:
-      Host: 17879638137939.206356.xyz
-- name: 荷兰02
-  type: trojan
-  server: bestcdn3.868863.xyz
-  port: 2087
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638138421.206352.xyz
-  network: ws
-  ws-opts:
-    path: /agraeabtegrrh
-    headers:
-      Host: 17879638139569.206352.xyz
-- name: 比利时01
-  type: trojan
-  server: bestcdn3.868863.xyz
-  port: 2053
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638134694.168381.xyz
-  network: ws
-  ws-opts:
-    path: /tianboephth
-    headers:
-      Host: 17879638134238.168381.xyz
-- name: 瑞士02
-  type: trojan
-  server: bestcdn3.868863.xyz
-  port: 2053
-  password: ea6b12ab-af10-4b13-b193-c6cf4d9d7fc4
-  udp: true
-  tls: true
-  sni: 17879638138062.206355.xyz
-  network: ws
-  ws-opts:
-    path: /videomuaawe
-    headers:
-      Host: 17879638131182.206355.xyz
 - name: 美国01
   type: vless
   server: dey.lnmarketplace.net
@@ -511,27 +25,6 @@ proxies:
   udp: true
   tls: true
   servername: dey.lnmarketplace.net
-  alpn:
-  - h2
-  network: xhttp
-  xhttp-opts:
-    path: /kavir
-    host: dey.lnmarketplace.net
-    mode: stream-one
-    no-grpc-header: true
-    headers:
-      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
-    reuse-settings:
-      max-concurrency: '6'
-      h-keep-alive-period: 12
-- name: 荷兰01
-  type: vless
-  server: dey.lnmarketplace.net
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  udp: true
-  tls: true
-  servername: dey.lnmarketplace.net
   client-fingerprint: firefox
   alpn:
   - h2
@@ -544,7 +37,7 @@ proxies:
     reuse-settings:
       max-concurrency: '6'
       h-keep-alive-period: 12
-- name: 美国07
+- name: 美国02
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -568,43 +61,83 @@ proxies:
   password: 41f0d6d3-4a45-4635-8225-2abd2284189b
   sni: els2.mangshe.xyz
   skip-cert-verify: true
-- name: 阿联酋01
-  type: hysteria2
-  server: fin14qr.wwwinternetvideo.click
+- name: 荷兰01
+  type: vless
+  server: dey.lnmarketplace.net
   port: 443
-  password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
-  sni: fin14qr.wwwinternetvideo.click
-- name: 韩国02
-  type: vless
-  server: kr1-r.link-t7.com
-  port: 10046
-  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   udp: true
   tls: true
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  network: grpc
-  grpc-opts:
-    grpc-service-name: update
-- name: 韩国01
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 美国03
   type: vless
-  server: kr2-r.link-t7.com
-  port: 10047
-  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   udp: true
   tls: true
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
+  servername: dey.lnmarketplace.net
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    headers:
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 美国04
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    headers:
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 俄罗斯02
+  type: vless
+  server: 46.29.235.9
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: firefox
   reality-opts:
-    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
-    short-id: 686c0ef0
-  network: grpc
-  grpc-opts:
-    grpc-service-name: update
-- name: 美国02_2
+    public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
+    short-id: a1b2c3d4
+  network: tcp
+- name: 美国05
   type: vless
   server: 2a14:3f87:f001:46::a
   port: 443
@@ -626,7 +159,7 @@ proxies:
     reuse-settings:
       max-concurrency: '6'
       h-keep-alive-period: 12
-- name: 美国06_2
+- name: 美国07
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -642,7 +175,22 @@ proxies:
     path: /kavir
     host: dey.lnmarketplace.net
     mode: stream-one
-- name: 荷兰01_2
+- name: 法国04
+  type: vless
+  server: 2001:bc8:32d7:302::10
+  port: 65513
+  uuid: 2567e2e0-8d4c-4c51-aee9-5d1f36024472
+  udp: true
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg
+    short-id: 21569dd6
+  network: xhttp
+  xhttp-opts:
+    path: /6eg3r4an
+- name: 荷兰02
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -658,345 +206,744 @@ proxies:
     path: /kavir
     host: dey.lnmarketplace.net
     mode: stream-one
-- name: 日本01_2
-  type: socks5
-  server: 112.28.149.152
-  port: 8443
+- name: 阿联酋01
+  type: hysteria2
+  server: fin14qr.wwwinternetvideo.click
+  port: 443
+  password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
+  sni: fin14qr.wwwinternetvideo.click
+- name: 瑞士01
+  type: hysteria2
+  server: 140.238.213.114
+  port: 50160
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 美国09
+  type: vless
+  server: 50.62.198.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
-  username: T2c6
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime39.workers.dev
+- name: 美国10
+  type: vless
+  server: 45.40.149.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime39.workers.dev
+- name: 美国11
+  type: vless
+  server: 50.62.195.4
+  port: 80
+  uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+  udp: true
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳+@WangCai2
+    headers:
+      Host: raspy-feather-12ec.137-257.workers.dev
+- name: 美国12
+  type: vless
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+  udp: true
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳+@WangCai2
+    headers:
+      Host: round-haze-8783.294.workers.dev
+- name: 美国13
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime42.workers.dev
+- name: 美国14
+  type: vless
+  server: 162.159.81.104
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+  udp: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
+    headers:
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+- name: 美国15
+  type: vless
+  server: 162.159.81.177
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+  udp: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoibHFUM0pwRHZXIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
+    headers:
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+- name: 美国16
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+- name: 美国17
+  type: vless
+  server: 50.62.195.4
+  port: 80
+  uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: raspy-feather-12ec.137-257.workers.dev
+- name: 美国18
+  type: hysteria2
+  server: 31.76.70.107
+  port: 8443
+  password: 523486c6-c0b5-4e5b-8896-4af2375b41cc
+  sni: quic.tyr-agentstvo.tech
+  skip-cert-verify: true
+- name: 香港01
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    headers:
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 法国06
+  type: vless
+  server: 2001:bc8:32d7:302::10
+  port: 65513
+  uuid: 2567e2e0-8d4c-4c51-aee9-5d1f36024472
+  udp: true
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg
+    short-id: 21569dd6
+  network: xhttp
+  xhttp-opts:
+    path: /6eg3r4an
+- name: 荷兰03
+  type: vless
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 美国19
+  type: vless
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    headers:
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 日本01
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+  udp: true
+  network: tcp
+- name: 美国20
+  type: hysteria2
+  server: 31.76.70.107
+  port: 8443
+  password: 523486c6-c0b5-4e5b-8896-4af2375b41cc
+  sni: quic.tyr-agentstvo.tech
+- name: 韩国01
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime42.workers.dev
+- name: 英国01
+  type: vless
+  server: 162.159.81.177
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+  udp: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoibHFUM0pwRHZXIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
+    headers:
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+- name: 德国01
+  type: vless
+  server: 91.206.71.8
+  port: 80
+  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
+  udp: true
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳+@WangCai2
+    headers:
+      Host: round-haze-8783.294.workers.dev
+- name: 法国09
+  type: vless
+  server: 162.159.81.104
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+  udp: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
+    headers:
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+- name: 荷兰04
+  type: vless
+  server: 50.62.195.4
+  port: 80
+  uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+  udp: true
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram🇨🇳+@WangCai2
+    headers:
+      Host: raspy-feather-12ec.137-257.workers.dev
+- name: 加拿大01
+  type: vless
+  server: 50.62.195.4
+  port: 80
+  uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: raspy-feather-12ec.137-257.workers.dev
+- name: 澳大利亚01
+  type: vless
+  server: 45.40.149.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime39.workers.dev
+- name: 瑞典01
+  type: vless
+  server: 50.62.198.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime39.workers.dev
+- name: 俄罗斯03
+  type: vless
+  server: ru05.abvpn.ru
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  udp: true
+  tls: true
+  servername: ru05.abvpn.ru
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: ru05.abvpn.ru
+- name: 俄罗斯04
+  type: hysteria2
+  server: els2.mangshe.xyz
+  port: 2056
+  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
+  sni: els2.mangshe.xyz
+  skip-cert-verify: true
+- name: 俄罗斯05
+  type: hysteria2
+  server: els2.mangshe.xyz
+  port: 2056
+  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
+  sni: els2.mangshe.xyz
+  skip-cert-verify: true
+- name: 美国21
+  type: vless
+  server: 72.56.40.152
+  port: 443
+  uuid: 3f054fce-df15-4f7c-8616-56a8b17e84b4
+  udp: true
+  tls: true
+  servername: usa.korgivps.ru
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/user
+    headers:
+      Host: usa.korgivps.ru
+- name: 香港03
+  type: vless
+  server: 82.38.46.66
+  port: 15003
+  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8
+    short-id: 4c517b9e
+  network: tcp
+- name: 芬兰01
+  type: vless
+  server: 31.76.70.32
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: baltic.cendora.ru
+  reality-opts:
+    public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
+    short-id: 4a46213c935e2ee4
+  network: tcp
+- name: 瑞士02
+  type: hysteria2
+  server: 140.238.213.114
+  port: 50160
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 美国22
+  type: hysteria2
+  server: 31.76.70.107
+  port: 8443
+  password: 523486c6-c0b5-4e5b-8896-4af2375b41cc
+  sni: quic.tyr-agentstvo.tech
+  skip-cert-verify: true
+- name: 德国02
+  type: hysteria2
+  server: fin14qr.wwwinternetvideo.click
+  port: 443
+  password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
+  sni: fin14qr.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 阿联酋02
+  type: hysteria2
+  server: fin14qr.wwwinternetvideo.click
+  port: 443
+  password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
+  sni: fin14qr.wwwinternetvideo.click
+- name: 伊朗01
+  type: vless
+  server: 185.143.233.5
+  port: 80
+  uuid: 38dd06a1-e1cb-492b-bb87-218ce05d0d67
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 瑞士01
-  - 美国08
+  - 法国01
+  - 美国01
   - 美国02
+  - 俄罗斯01
+  - 荷兰01
   - 美国03
   - 美国04
-  - 法国04
-  - 德国01
-  - 德国02
-  - 美国06
   - 俄罗斯02
-  - 法国05
-  - 韩国03
-  - 加拿大01
-  - 葡萄牙01
-  - 芬兰02
-  - 新加坡03
-  - 英国02
-  - 瑞典01
-  - 芬兰01
-  - 波兰01
-  - 奥地利01
-  - 意大利01
-  - 挪威01
-  - 丹麦01
-  - 英国01
-  - 法国06
-  - 澳大利亚01
-  - 西班牙01
-  - 日本02
-  - 新加坡02
-  - 香港01
-  - 德国03
-  - 捷克01
-  - 爱尔兰01
-  - 日本01
   - 美国05
-  - 荷兰02
-  - 比利时01
-  - 瑞士02
-  - 美国01
-  - 荷兰01
   - 美国07
-  - 俄罗斯01
+  - 法国04
+  - 荷兰02
   - 阿联酋01
-  - 韩国02
+  - 瑞士01
+  - 美国09
+  - 美国10
+  - 美国11
+  - 美国12
+  - 美国13
+  - 美国14
+  - 美国15
+  - 美国16
+  - 美国17
+  - 美国18
+  - 香港01
+  - 法国06
+  - 荷兰03
+  - 美国19
+  - 日本01
+  - 美国20
   - 韩国01
-  - 美国02_2
-  - 美国06_2
-  - 荷兰01_2
-  - 日本01_2
+  - 英国01
+  - 德国01
+  - 法国09
+  - 荷兰04
+  - 加拿大01
+  - 澳大利亚01
+  - 瑞典01
+  - 俄罗斯03
+  - 俄罗斯04
+  - 俄罗斯05
+  - 美国21
+  - 香港03
+  - 芬兰01
+  - 瑞士02
+  - 美国22
+  - 德国02
+  - 阿联酋02
+  - 伊朗01
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - 瑞士01
-  - 美国08
+  - 法国01
+  - 美国01
   - 美国02
+  - 俄罗斯01
+  - 荷兰01
   - 美国03
   - 美国04
-  - 法国04
-  - 德国01
-  - 德国02
-  - 美国06
   - 俄罗斯02
-  - 法国05
-  - 韩国03
-  - 加拿大01
-  - 葡萄牙01
-  - 芬兰02
-  - 新加坡03
-  - 英国02
-  - 瑞典01
-  - 芬兰01
-  - 波兰01
-  - 奥地利01
-  - 意大利01
-  - 挪威01
-  - 丹麦01
-  - 英国01
-  - 法国06
-  - 澳大利亚01
-  - 西班牙01
-  - 日本02
-  - 新加坡02
-  - 香港01
-  - 德国03
-  - 捷克01
-  - 爱尔兰01
-  - 日本01
   - 美国05
-  - 荷兰02
-  - 比利时01
-  - 瑞士02
-  - 美国01
-  - 荷兰01
   - 美国07
-  - 俄罗斯01
+  - 法国04
+  - 荷兰02
   - 阿联酋01
-  - 韩国02
+  - 瑞士01
+  - 美国09
+  - 美国10
+  - 美国11
+  - 美国12
+  - 美国13
+  - 美国14
+  - 美国15
+  - 美国16
+  - 美国17
+  - 美国18
+  - 香港01
+  - 法国06
+  - 荷兰03
+  - 美国19
+  - 日本01
+  - 美国20
   - 韩国01
-  - 美国02_2
-  - 美国06_2
-  - 荷兰01_2
-  - 日本01_2
+  - 英国01
+  - 德国01
+  - 法国09
+  - 荷兰04
+  - 加拿大01
+  - 澳大利亚01
+  - 瑞典01
+  - 俄罗斯03
+  - 俄罗斯04
+  - 俄罗斯05
+  - 美国21
+  - 香港03
+  - 芬兰01
+  - 瑞士02
+  - 美国22
+  - 德国02
+  - 阿联酋02
+  - 伊朗01
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 瑞士01
-  - 美国08
+  - 法国01
+  - 美国01
   - 美国02
+  - 俄罗斯01
+  - 荷兰01
   - 美国03
   - 美国04
-  - 法国04
-  - 德国01
-  - 德国02
-  - 美国06
   - 俄罗斯02
-  - 法国05
-  - 韩国03
-  - 加拿大01
-  - 葡萄牙01
-  - 芬兰02
-  - 新加坡03
-  - 英国02
-  - 瑞典01
-  - 芬兰01
-  - 波兰01
-  - 奥地利01
-  - 意大利01
-  - 挪威01
-  - 丹麦01
-  - 英国01
-  - 法国06
-  - 澳大利亚01
-  - 西班牙01
-  - 日本02
-  - 新加坡02
-  - 香港01
-  - 德国03
-  - 捷克01
-  - 爱尔兰01
-  - 日本01
   - 美国05
-  - 荷兰02
-  - 比利时01
-  - 瑞士02
-  - 美国01
-  - 荷兰01
   - 美国07
-  - 俄罗斯01
+  - 法国04
+  - 荷兰02
   - 阿联酋01
-  - 韩国02
+  - 瑞士01
+  - 美国09
+  - 美国10
+  - 美国11
+  - 美国12
+  - 美国13
+  - 美国14
+  - 美国15
+  - 美国16
+  - 美国17
+  - 美国18
+  - 香港01
+  - 法国06
+  - 荷兰03
+  - 美国19
+  - 日本01
+  - 美国20
   - 韩国01
-  - 美国02_2
-  - 美国06_2
-  - 荷兰01_2
-  - 日本01_2
+  - 英国01
+  - 德国01
+  - 法国09
+  - 荷兰04
+  - 加拿大01
+  - 澳大利亚01
+  - 瑞典01
+  - 俄罗斯03
+  - 俄罗斯04
+  - 俄罗斯05
+  - 美国21
+  - 香港03
+  - 芬兰01
+  - 瑞士02
+  - 美国22
+  - 德国02
+  - 阿联酋02
+  - 伊朗01
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 瑞士01
-  - 美国08
+  - 法国01
+  - 美国01
   - 美国02
+  - 俄罗斯01
+  - 荷兰01
   - 美国03
   - 美国04
-  - 法国04
-  - 德国01
-  - 德国02
-  - 美国06
   - 俄罗斯02
-  - 法国05
-  - 韩国03
-  - 加拿大01
-  - 葡萄牙01
-  - 芬兰02
-  - 新加坡03
-  - 英国02
-  - 瑞典01
-  - 芬兰01
-  - 波兰01
-  - 奥地利01
-  - 意大利01
-  - 挪威01
-  - 丹麦01
-  - 英国01
-  - 法国06
-  - 澳大利亚01
-  - 西班牙01
-  - 日本02
-  - 新加坡02
-  - 香港01
-  - 德国03
-  - 捷克01
-  - 爱尔兰01
-  - 日本01
   - 美国05
-  - 荷兰02
-  - 比利时01
-  - 瑞士02
-  - 美国01
-  - 荷兰01
   - 美国07
-  - 俄罗斯01
+  - 法国04
+  - 荷兰02
   - 阿联酋01
-  - 韩国02
+  - 瑞士01
+  - 美国09
+  - 美国10
+  - 美国11
+  - 美国12
+  - 美国13
+  - 美国14
+  - 美国15
+  - 美国16
+  - 美国17
+  - 美国18
+  - 香港01
+  - 法国06
+  - 荷兰03
+  - 美国19
+  - 日本01
+  - 美国20
   - 韩国01
-  - 美国02_2
-  - 美国06_2
-  - 荷兰01_2
-  - 日本01_2
+  - 英国01
+  - 德国01
+  - 法国09
+  - 荷兰04
+  - 加拿大01
+  - 澳大利亚01
+  - 瑞典01
+  - 俄罗斯03
+  - 俄罗斯04
+  - 俄罗斯05
+  - 美国21
+  - 香港03
+  - 芬兰01
+  - 瑞士02
+  - 美国22
+  - 德国02
+  - 阿联酋02
+  - 伊朗01
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 瑞士01
-  - 美国08
+  - 法国01
+  - 美国01
   - 美国02
+  - 俄罗斯01
+  - 荷兰01
   - 美国03
   - 美国04
-  - 法国04
-  - 德国01
-  - 德国02
-  - 美国06
   - 俄罗斯02
-  - 法国05
-  - 韩国03
-  - 加拿大01
-  - 葡萄牙01
-  - 芬兰02
-  - 新加坡03
-  - 英国02
-  - 瑞典01
-  - 芬兰01
-  - 波兰01
-  - 奥地利01
-  - 意大利01
-  - 挪威01
-  - 丹麦01
-  - 英国01
-  - 法国06
-  - 澳大利亚01
-  - 西班牙01
-  - 日本02
-  - 新加坡02
-  - 香港01
-  - 德国03
-  - 捷克01
-  - 爱尔兰01
-  - 日本01
   - 美国05
-  - 荷兰02
-  - 比利时01
-  - 瑞士02
-  - 美国01
-  - 荷兰01
   - 美国07
-  - 俄罗斯01
+  - 法国04
+  - 荷兰02
   - 阿联酋01
-  - 韩国02
+  - 瑞士01
+  - 美国09
+  - 美国10
+  - 美国11
+  - 美国12
+  - 美国13
+  - 美国14
+  - 美国15
+  - 美国16
+  - 美国17
+  - 美国18
+  - 香港01
+  - 法国06
+  - 荷兰03
+  - 美国19
+  - 日本01
+  - 美国20
   - 韩国01
-  - 美国02_2
-  - 美国06_2
-  - 荷兰01_2
-  - 日本01_2
+  - 英国01
+  - 德国01
+  - 法国09
+  - 荷兰04
+  - 加拿大01
+  - 澳大利亚01
+  - 瑞典01
+  - 俄罗斯03
+  - 俄罗斯04
+  - 俄罗斯05
+  - 美国21
+  - 香港03
+  - 芬兰01
+  - 瑞士02
+  - 美国22
+  - 德国02
+  - 阿联酋02
+  - 伊朗01
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 瑞士01
-  - 美国08
+  - 法国01
+  - 美国01
   - 美国02
+  - 俄罗斯01
+  - 荷兰01
   - 美国03
   - 美国04
-  - 法国04
-  - 德国01
-  - 德国02
-  - 美国06
   - 俄罗斯02
-  - 法国05
-  - 韩国03
-  - 加拿大01
-  - 葡萄牙01
-  - 芬兰02
-  - 新加坡03
-  - 英国02
-  - 瑞典01
-  - 芬兰01
-  - 波兰01
-  - 奥地利01
-  - 意大利01
-  - 挪威01
-  - 丹麦01
-  - 英国01
-  - 法国06
-  - 澳大利亚01
-  - 西班牙01
-  - 日本02
-  - 新加坡02
-  - 香港01
-  - 德国03
-  - 捷克01
-  - 爱尔兰01
-  - 日本01
   - 美国05
-  - 荷兰02
-  - 比利时01
-  - 瑞士02
-  - 美国01
-  - 荷兰01
   - 美国07
-  - 俄罗斯01
+  - 法国04
+  - 荷兰02
   - 阿联酋01
-  - 韩国02
+  - 瑞士01
+  - 美国09
+  - 美国10
+  - 美国11
+  - 美国12
+  - 美国13
+  - 美国14
+  - 美国15
+  - 美国16
+  - 美国17
+  - 美国18
+  - 香港01
+  - 法国06
+  - 荷兰03
+  - 美国19
+  - 日本01
+  - 美国20
   - 韩国01
-  - 美国02_2
-  - 美国06_2
-  - 荷兰01_2
-  - 日本01_2
+  - 英国01
+  - 德国01
+  - 法国09
+  - 荷兰04
+  - 加拿大01
+  - 澳大利亚01
+  - 瑞典01
+  - 俄罗斯03
+  - 俄罗斯04
+  - 俄罗斯05
+  - 美国21
+  - 香港03
+  - 芬兰01
+  - 瑞士02
+  - 美国22
+  - 德国02
+  - 阿联酋02
+  - 伊朗01
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -1019,56 +966,55 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 瑞士01
-  - 美国08
+  - 法国01
+  - 美国01
   - 美国02
+  - 俄罗斯01
+  - 荷兰01
   - 美国03
   - 美国04
-  - 法国04
-  - 德国01
-  - 德国02
-  - 美国06
   - 俄罗斯02
-  - 法国05
-  - 韩国03
-  - 加拿大01
-  - 葡萄牙01
-  - 芬兰02
-  - 新加坡03
-  - 英国02
-  - 瑞典01
-  - 芬兰01
-  - 波兰01
-  - 奥地利01
-  - 意大利01
-  - 挪威01
-  - 丹麦01
-  - 英国01
-  - 法国06
-  - 澳大利亚01
-  - 西班牙01
-  - 日本02
-  - 新加坡02
-  - 香港01
-  - 德国03
-  - 捷克01
-  - 爱尔兰01
-  - 日本01
   - 美国05
-  - 荷兰02
-  - 比利时01
-  - 瑞士02
-  - 美国01
-  - 荷兰01
   - 美国07
-  - 俄罗斯01
+  - 法国04
+  - 荷兰02
   - 阿联酋01
-  - 韩国02
+  - 瑞士01
+  - 美国09
+  - 美国10
+  - 美国11
+  - 美国12
+  - 美国13
+  - 美国14
+  - 美国15
+  - 美国16
+  - 美国17
+  - 美国18
+  - 香港01
+  - 法国06
+  - 荷兰03
+  - 美国19
+  - 日本01
+  - 美国20
   - 韩国01
-  - 美国02_2
-  - 美国06_2
-  - 荷兰01_2
-  - 日本01_2
+  - 英国01
+  - 德国01
+  - 法国09
+  - 荷兰04
+  - 加拿大01
+  - 澳大利亚01
+  - 瑞典01
+  - 俄罗斯03
+  - 俄罗斯04
+  - 俄罗斯05
+  - 美国21
+  - 香港03
+  - 芬兰01
+  - 瑞士02
+  - 美国22
+  - 德国02
+  - 阿联酋02
+  - 伊朗01
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
