@@ -1,6 +1,6 @@
 #
-#  2026-08-30 节点配置
-#  V 测速阶段不去重；重复连接作为独立节点保留
+#  2026-08-31 节点配置
+#  V 不去重；重复连接作为独立节点保留
 #  VMess 按工作流规则不写入 C
 #
 port: 7890
@@ -10,13 +10,96 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-- name: 法国01
+- name: 日本01
+  type: vless
+  server: jp.sofast.live
+  port: 52683
+  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+  udp: true
+  network: tcp
+- name: 德国01
   type: hysteria2
-  server: 62.210.7.139
-  port: 60111
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: speedtest.tinkoff.ru
+  server: fin14qr.wwwinternetvideo.click
+  port: 443
+  password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
+  sni: fin14qr.wwwinternetvideo.click
   skip-cert-verify: true
+- name: 阿联酋01
+  type: hysteria2
+  server: fin14qr.wwwinternetvideo.click
+  port: 443
+  password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
+  sni: fin14qr.wwwinternetvideo.click
+- name: 阿联酋02
+  type: hysteria2
+  server: fin14qr.wwwinternetvideo.click
+  port: 443
+  password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
+  sni: fin14qr.wwwinternetvideo.click
+- name: 俄罗斯01
+  type: vless
+  server: 46.29.235.9
+  port: 443
+  uuid: d67af820-f54c-48ab-862c-19086357f276
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: telegraf.lv
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
+    short-id: a1b2c3d4
+  network: tcp
+- name: 俄罗斯02
+  type: vless
+  server: ru05.abvpn.ru
+  port: 443
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  udp: true
+  tls: true
+  servername: ru05.abvpn.ru
+  client-fingerprint: edge
+  network: ws
+  ws-opts:
+    path: /websocket
+    headers:
+      Host: ru05.abvpn.ru
+- name: 法国01
+  type: vless
+  server: 2001:bc8:32d7:302::10
+  port: 65513
+  uuid: 2567e2e0-8d4c-4c51-aee9-5d1f36024472
+  udp: true
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg
+    short-id: 21569dd6
+  network: xhttp
+  xhttp-opts:
+    path: /6eg3r4an
+- name: 瑞士01
+  type: hysteria2
+  server: 140.238.213.114
+  port: 50160
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 香港01
+  type: vless
+  server: 82.38.46.66
+  port: 15003
+  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8
+    short-id: 4c517b9e
+  network: tcp
 - name: 美国01
   type: vless
   server: dey.lnmarketplace.net
@@ -45,8 +128,6 @@ proxies:
   udp: true
   tls: true
   servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
-  skip-cert-verify: true
   alpn:
   - h2
   network: xhttp
@@ -54,13 +135,12 @@ proxies:
     path: /kavir
     host: dey.lnmarketplace.net
     mode: stream-one
-- name: 俄罗斯01
-  type: hysteria2
-  server: els2.mangshe.xyz
-  port: 2056
-  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
-  sni: els2.mangshe.xyz
-  skip-cert-verify: true
+    no-grpc-header: true
+    headers:
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
 - name: 荷兰01
   type: vless
   server: dey.lnmarketplace.net
@@ -81,14 +161,35 @@ proxies:
     reuse-settings:
       max-concurrency: '6'
       h-keep-alive-period: 12
-- name: 美国03
+- name: 芬兰01
   type: vless
-  server: dey.lnmarketplace.net
+  server: 31.76.70.32
+  port: 443
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: baltic.cendora.ru
+  reality-opts:
+    public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
+    short-id: 4a46213c935e2ee4
+  network: tcp
+- name: 瑞士02
+  type: hysteria2
+  server: 140.238.213.114
+  port: 50160
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 荷兰02
+  type: vless
+  server: 2a14:3f87:f001:46::a
   port: 443
   uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   udp: true
   tls: true
   servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
   alpn:
   - h2
   network: xhttp
@@ -97,11 +198,45 @@ proxies:
     host: dey.lnmarketplace.net
     mode: stream-one
     no-grpc-header: true
-    headers:
-      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
     reuse-settings:
       max-concurrency: '6'
       h-keep-alive-period: 12
+- name: 法国02
+  type: hysteria2
+  server: 62.210.7.139
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
+- name: 美国03
+  type: vless
+  server: 72.56.40.152
+  port: 443
+  uuid: 3f054fce-df15-4f7c-8616-56a8b17e84b4
+  udp: true
+  tls: true
+  servername: usa.korgivps.ru
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/user
+    headers:
+      Host: usa.korgivps.ru
+- name: 法国03
+  type: vless
+  server: 2001:bc8:32d7:302::10
+  port: 65513
+  uuid: 2567e2e0-8d4c-4c51-aee9-5d1f36024472
+  udp: true
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg
+    short-id: 21569dd6
+  network: xhttp
+  xhttp-opts:
+    path: /6eg3r4an
 - name: 美国04
   type: vless
   server: dey.lnmarketplace.net
@@ -110,6 +245,8 @@ proxies:
   udp: true
   tls: true
   servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  skip-cert-verify: true
   alpn:
   - h2
   network: xhttp
@@ -117,27 +254,23 @@ proxies:
     path: /kavir
     host: dey.lnmarketplace.net
     mode: stream-one
-    no-grpc-header: true
-    headers:
-      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
-    reuse-settings:
-      max-concurrency: '6'
-      h-keep-alive-period: 12
-- name: 俄罗斯02
-  type: vless
-  server: 46.29.235.9
-  port: 443
-  uuid: d67af820-f54c-48ab-862c-19086357f276
-  udp: true
-  flow: xtls-rprx-vision
-  tls: true
-  servername: telegraf.lv
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
-    short-id: a1b2c3d4
-  network: tcp
 - name: 美国05
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+- name: 美国06
   type: vless
   server: 2a14:3f87:f001:46::a
   port: 443
@@ -159,7 +292,44 @@ proxies:
     reuse-settings:
       max-concurrency: '6'
       h-keep-alive-period: 12
+- name: 荷兰03
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
 - name: 美国07
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    headers:
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 美国08
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -175,22 +345,57 @@ proxies:
     path: /kavir
     host: dey.lnmarketplace.net
     mode: stream-one
-- name: 法国04
+- name: 美国09
   type: vless
-  server: 2001:bc8:32d7:302::10
-  port: 65513
-  uuid: 2567e2e0-8d4c-4c51-aee9-5d1f36024472
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   udp: true
   tls: true
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg
-    short-id: 21569dd6
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
   network: xhttp
   xhttp-opts:
-    path: /6eg3r4an
-- name: 荷兰02
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    headers:
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 香港02
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    headers:
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 阿联酋03
+  type: hysteria2
+  server: fin14qr.wwwinternetvideo.click
+  port: 443
+  password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
+  sni: fin14qr.wwwinternetvideo.click
+- name: 荷兰04
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -206,53 +411,169 @@ proxies:
     path: /kavir
     host: dey.lnmarketplace.net
     mode: stream-one
-- name: 阿联酋01
-  type: hysteria2
-  server: fin14qr.wwwinternetvideo.click
-  port: 443
-  password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
-  sni: fin14qr.wwwinternetvideo.click
-- name: 瑞士01
-  type: hysteria2
-  server: 140.238.213.114
-  port: 50160
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 美国09
-  type: vless
-  server: 50.62.198.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime39.workers.dev
 - name: 美国10
   type: vless
-  server: 45.40.149.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   udp: true
-  network: ws
-  ws-opts:
-    path: /
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+- name: 香港03
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
     headers:
-      Host: vms.lifetime39.workers.dev
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 法国04
+  type: vless
+  server: 2001:bc8:32d7:302::10
+  port: 65513
+  uuid: 2567e2e0-8d4c-4c51-aee9-5d1f36024472
+  udp: true
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg
+    short-id: 21569dd6
+  network: xhttp
+  xhttp-opts:
+    path: /6eg3r4an
 - name: 美国11
   type: vless
-  server: 50.62.195.4
-  port: 80
-  uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
   udp: true
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram🇨🇳+@WangCai2
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
     headers:
-      Host: raspy-feather-12ec.137-257.workers.dev
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 法国05
+  type: vless
+  server: 2001:bc8:32d7:302::10
+  port: 65513
+  uuid: 2567e2e0-8d4c-4c51-aee9-5d1f36024472
+  udp: true
+  tls: true
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: tQeEamJmYVUUfjRLX7ETvMnPj4DrHzRhR5TI684oYgg
+    short-id: 21569dd6
+  network: xhttp
+  xhttp-opts:
+    path: /6eg3r4an
 - name: 美国12
+  type: vless
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+- name: 荷兰05
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+- name: 荷兰06
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 荷兰07
+  type: vless
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 美国13
   type: vless
   server: 91.206.71.8
   port: 80
@@ -263,17 +584,6 @@ proxies:
     path: /pyip=Telegram🇨🇳+@WangCai2
     headers:
       Host: round-haze-8783.294.workers.dev
-- name: 美国13
-  type: vless
-  server: 63.141.128.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime42.workers.dev
 - name: 美国14
   type: vless
   server: 162.159.81.104
@@ -304,6 +614,38 @@ proxies:
   udp: true
   tls: true
   servername: dey.lnmarketplace.net
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    headers:
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 美国17
+  type: vless
+  server: 162.159.81.177
+  port: 80
+  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
+  udp: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoibHFUM0pwRHZXIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
+    headers:
+      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
+- name: 美国18
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
   client-fingerprint: firefox
   alpn:
   - h2
@@ -312,25 +654,198 @@ proxies:
     path: /kavir
     host: dey.lnmarketplace.net
     mode: stream-one
-- name: 美国17
+- name: 法国06
   type: vless
-  server: 50.62.195.4
-  port: 80
-  uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+  server: germany.superbuba.top
+  port: 443
+  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: germany.superbuba.top
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  network: tcp
+- name: 美国19
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   udp: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: raspy-feather-12ec.137-257.workers.dev
-- name: 美国18
-  type: hysteria2
-  server: 31.76.70.107
-  port: 8443
-  password: 523486c6-c0b5-4e5b-8896-4af2375b41cc
-  sni: quic.tyr-agentstvo.tech
-  skip-cert-verify: true
-- name: 香港01
+      Host: vms.lifetime42.workers.dev
+- name: 美国20
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  udp: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime42.workers.dev
+- name: 美国21
+  type: vless
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    headers:
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 荷兰08
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 法国07
+  type: vless
+  server: germany.superbuba.top
+  port: 443
+  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: germany.superbuba.top
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  network: tcp
+- name: 塞舌尔01
+  type: vless
+  server: germany.superbuba.top
+  port: 443
+  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: germany.superbuba.top
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  network: tcp
+- name: 美国22
+  type: vless
+  server: us.mkdir.kdns.fr
+  port: 443
+  uuid: 2cf94f4d-9d5b-49ca-81a3-ddc0529a2dac
+  udp: true
+  tls: true
+  servername: web-jornttsa.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: web-jornttsa.pages.dev
+- name: 美国23
+  type: vless
+  server: us.mkdir.kdns.fr
+  port: 443
+  uuid: 2cf94f4d-9d5b-49ca-81a3-ddc0529a2dac
+  udp: true
+  tls: true
+  servername: web-jornttsa.pages.dev
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: web-jornttsa.pages.dev
+- name: 美国24
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    headers:
+      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 美国25
+  type: vless
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+- name: 荷兰09
+  type: vless
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 香港04
   type: vless
   server: dey.lnmarketplace.net
   port: 443
@@ -352,7 +867,91 @@ proxies:
     reuse-settings:
       max-concurrency: '6'
       h-keep-alive-period: 12
-- name: 法国06
+- name: 法国08
+  type: vless
+  server: 45.95.96.225
+  port: 443
+  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: germany.superbuba.top
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  network: tcp
+- name: 法国09
+  type: vless
+  server: germany.superbuba.top
+  port: 443
+  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: germany.superbuba.top
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: 4fa44664f6a566d3
+  network: tcp
+- name: 瑞士03
+  type: vless
+  server: de48.tranzit-net.ru
+  port: 443
+  uuid: be3c103d-2c93-4f8e-adb9-2631537f80eb
+  udp: true
+  flow: xtls-rprx-vision
+  tls: true
+  servername: d.tranzit-net.ru
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: IAdOYYmEMPFAhpVUhqfML58AVtYPdAb71R_HAPf0N0k
+  network: tcp
+- name: 荷兰10
+  type: vless
+  server: 2a14:3f87:f001:46::a
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: chrome
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+- name: 荷兰11
+  type: vless
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  client-fingerprint: firefox
+  alpn:
+  - h2
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
+    no-grpc-header: true
+    reuse-settings:
+      max-concurrency: '6'
+      h-keep-alive-period: 12
+- name: 新加坡01
+  type: hysteria2
+  server: 138.2.73.238
+  port: 50160
+  password: f87376e17da040ed04c9665ce8972930
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 日本02
   type: vless
   server: 2001:bc8:32d7:302::10
   port: 65513
@@ -367,583 +966,469 @@ proxies:
   network: xhttp
   xhttp-opts:
     path: /6eg3r4an
-- name: 荷兰03
+- name: 德国02
   type: vless
-  server: 2a14:3f87:f001:46::a
+  server: rrr.windconnect.pro
   port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  udp: true
-  tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  network: xhttp
-  xhttp-opts:
-    path: /kavir
-    host: dey.lnmarketplace.net
-    mode: stream-one
-    no-grpc-header: true
-    reuse-settings:
-      max-concurrency: '6'
-      h-keep-alive-period: 12
-- name: 美国19
-  type: vless
-  server: 2a14:3f87:f001:46::a
-  port: 443
-  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
-  udp: true
-  tls: true
-  servername: dey.lnmarketplace.net
-  client-fingerprint: firefox
-  alpn:
-  - h2
-  network: xhttp
-  xhttp-opts:
-    path: /kavir
-    host: dey.lnmarketplace.net
-    mode: stream-one
-    no-grpc-header: true
-    headers:
-      User-Agent: Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/101.0.4951.67Safari/537.36
-    reuse-settings:
-      max-concurrency: '6'
-      h-keep-alive-period: 12
-- name: 日本01
-  type: vless
-  server: jp.sofast.live
-  port: 52683
-  uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
-  udp: true
-  network: tcp
-- name: 美国20
-  type: hysteria2
-  server: 31.76.70.107
-  port: 8443
-  password: 523486c6-c0b5-4e5b-8896-4af2375b41cc
-  sni: quic.tyr-agentstvo.tech
-- name: 韩国01
-  type: vless
-  server: 63.141.128.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime42.workers.dev
-- name: 英国01
-  type: vless
-  server: 162.159.81.177
-  port: 80
-  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
-  udp: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoibHFUM0pwRHZXIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19
-    headers:
-      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
-- name: 德国01
-  type: vless
-  server: 91.206.71.8
-  port: 80
-  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
-  udp: true
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram🇨🇳+@WangCai2
-    headers:
-      Host: round-haze-8783.294.workers.dev
-- name: 法国09
-  type: vless
-  server: 162.159.81.104
-  port: 80
-  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
-  udp: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ==
-    headers:
-      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
-- name: 荷兰04
-  type: vless
-  server: 50.62.195.4
-  port: 80
-  uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
-  udp: true
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram🇨🇳+@WangCai2
-    headers:
-      Host: raspy-feather-12ec.137-257.workers.dev
-- name: 加拿大01
-  type: vless
-  server: 50.62.195.4
-  port: 80
-  uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: raspy-feather-12ec.137-257.workers.dev
-- name: 澳大利亚01
-  type: vless
-  server: 45.40.149.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime39.workers.dev
-- name: 瑞典01
-  type: vless
-  server: 50.62.198.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime39.workers.dev
-- name: 俄罗斯03
-  type: vless
-  server: ru05.abvpn.ru
-  port: 443
-  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
-  udp: true
-  tls: true
-  servername: ru05.abvpn.ru
-  client-fingerprint: edge
-  network: ws
-  ws-opts:
-    path: /websocket
-    headers:
-      Host: ru05.abvpn.ru
-- name: 俄罗斯04
-  type: hysteria2
-  server: els2.mangshe.xyz
-  port: 2056
-  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
-  sni: els2.mangshe.xyz
-  skip-cert-verify: true
-- name: 俄罗斯05
-  type: hysteria2
-  server: els2.mangshe.xyz
-  port: 2056
-  password: 41f0d6d3-4a45-4635-8225-2abd2284189b
-  sni: els2.mangshe.xyz
-  skip-cert-verify: true
-- name: 美国21
-  type: vless
-  server: 72.56.40.152
-  port: 443
-  uuid: 3f054fce-df15-4f7c-8616-56a8b17e84b4
-  udp: true
-  tls: true
-  servername: usa.korgivps.ru
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/user
-    headers:
-      Host: usa.korgivps.ru
-- name: 香港03
-  type: vless
-  server: 82.38.46.66
-  port: 15003
-  uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
+  servername: rrr.windconnect.pro
   client-fingerprint: firefox
   reality-opts:
-    public-key: R_3usai5pYqcc0aIzXPfaoe-VE_7JOe60fUNMicwfQ8
-    short-id: 4c517b9e
+    public-key: BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30
+    short-id: 4da5d1853f04af6d
   network: tcp
-- name: 芬兰01
+- name: 美国26
   type: vless
-  server: 31.76.70.32
+  server: 31.76.69.40
   port: 443
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
   udp: true
   flow: xtls-rprx-vision
   tls: true
-  servername: baltic.cendora.ru
+  servername: eu-central.cendora.ru
+  client-fingerprint: firefox
   reality-opts:
-    public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
-    short-id: 4a46213c935e2ee4
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
   network: tcp
-- name: 瑞士02
+- name: 新加坡02
   type: hysteria2
-  server: 140.238.213.114
-  port: 50160
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 美国22
-  type: hysteria2
-  server: 31.76.70.107
-  port: 8443
-  password: 523486c6-c0b5-4e5b-8896-4af2375b41cc
-  sni: quic.tyr-agentstvo.tech
-  skip-cert-verify: true
-- name: 德国02
-  type: hysteria2
-  server: fin14qr.wwwinternetvideo.click
-  port: 443
-  password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
-  sni: fin14qr.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 阿联酋02
-  type: hysteria2
-  server: fin14qr.wwwinternetvideo.click
-  port: 443
-  password: BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=
-  sni: fin14qr.wwwinternetvideo.click
-- name: 伊朗01
-  type: vless
-  server: 185.143.233.5
-  port: 80
-  uuid: 38dd06a1-e1cb-492b-bb87-218ce05d0d67
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fox-a9e04bb07a-test.apps.ir-central1.arvancaas.ir
+  server: 31.76.4.128
+  port: 5002
+  password: 1206bad5-dcc9-410e-9595-d9fe9ee54085
+  sni: fi.aeternavpn.space
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - DIRECT
+  - 日本01
+  - 德国01
+  - 阿联酋01
+  - 阿联酋02
+  - 俄罗斯01
+  - 俄罗斯02
   - 法国01
+  - 瑞士01
+  - 香港01
   - 美国01
   - 美国02
-  - 俄罗斯01
   - 荷兰01
-  - 美国03
-  - 美国04
-  - 俄罗斯02
-  - 美国05
-  - 美国07
-  - 法国04
+  - 芬兰01
+  - 瑞士02
   - 荷兰02
-  - 阿联酋01
-  - 瑞士01
+  - 法国02
+  - 美国03
+  - 法国03
+  - 美国04
+  - 美国05
+  - 美国06
+  - 荷兰03
+  - 美国07
+  - 美国08
   - 美国09
+  - 香港02
+  - 阿联酋03
+  - 荷兰04
   - 美国10
+  - 香港03
+  - 法国04
   - 美国11
+  - 法国05
   - 美国12
+  - 荷兰05
+  - 荷兰06
+  - 荷兰07
   - 美国13
   - 美国14
   - 美国15
   - 美国16
   - 美国17
   - 美国18
-  - 香港01
   - 法国06
-  - 荷兰03
   - 美国19
-  - 日本01
   - 美国20
-  - 韩国01
-  - 英国01
-  - 德国01
-  - 法国09
-  - 荷兰04
-  - 加拿大01
-  - 澳大利亚01
-  - 瑞典01
-  - 俄罗斯03
-  - 俄罗斯04
-  - 俄罗斯05
   - 美国21
-  - 香港03
-  - 芬兰01
-  - 瑞士02
+  - 荷兰08
+  - 法国07
+  - 塞舌尔01
   - 美国22
+  - 美国23
+  - 美国24
+  - 美国25
+  - 荷兰09
+  - 香港04
+  - 法国08
+  - 法国09
+  - 瑞士03
+  - 荷兰10
+  - 荷兰11
+  - 新加坡01
+  - 日本02
   - 德国02
-  - 阿联酋02
-  - 伊朗01
+  - 美国26
+  - 新加坡02
 - name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
+  - 日本01
+  - 德国01
+  - 阿联酋01
+  - 阿联酋02
+  - 俄罗斯01
+  - 俄罗斯02
   - 法国01
+  - 瑞士01
+  - 香港01
   - 美国01
   - 美国02
-  - 俄罗斯01
   - 荷兰01
-  - 美国03
-  - 美国04
-  - 俄罗斯02
-  - 美国05
-  - 美国07
-  - 法国04
+  - 芬兰01
+  - 瑞士02
   - 荷兰02
-  - 阿联酋01
-  - 瑞士01
+  - 法国02
+  - 美国03
+  - 法国03
+  - 美国04
+  - 美国05
+  - 美国06
+  - 荷兰03
+  - 美国07
+  - 美国08
   - 美国09
+  - 香港02
+  - 阿联酋03
+  - 荷兰04
   - 美国10
+  - 香港03
+  - 法国04
   - 美国11
+  - 法国05
   - 美国12
+  - 荷兰05
+  - 荷兰06
+  - 荷兰07
   - 美国13
   - 美国14
   - 美国15
   - 美国16
   - 美国17
   - 美国18
-  - 香港01
   - 法国06
-  - 荷兰03
   - 美国19
-  - 日本01
   - 美国20
-  - 韩国01
-  - 英国01
-  - 德国01
-  - 法国09
-  - 荷兰04
-  - 加拿大01
-  - 澳大利亚01
-  - 瑞典01
-  - 俄罗斯03
-  - 俄罗斯04
-  - 俄罗斯05
   - 美国21
-  - 香港03
-  - 芬兰01
-  - 瑞士02
+  - 荷兰08
+  - 法国07
+  - 塞舌尔01
   - 美国22
+  - 美国23
+  - 美国24
+  - 美国25
+  - 荷兰09
+  - 香港04
+  - 法国08
+  - 法国09
+  - 瑞士03
+  - 荷兰10
+  - 荷兰11
+  - 新加坡01
+  - 日本02
   - 德国02
-  - 阿联酋02
-  - 伊朗01
+  - 美国26
+  - 新加坡02
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 日本01
+  - 德国01
+  - 阿联酋01
+  - 阿联酋02
+  - 俄罗斯01
+  - 俄罗斯02
   - 法国01
+  - 瑞士01
+  - 香港01
   - 美国01
   - 美国02
-  - 俄罗斯01
   - 荷兰01
-  - 美国03
-  - 美国04
-  - 俄罗斯02
-  - 美国05
-  - 美国07
-  - 法国04
+  - 芬兰01
+  - 瑞士02
   - 荷兰02
-  - 阿联酋01
-  - 瑞士01
+  - 法国02
+  - 美国03
+  - 法国03
+  - 美国04
+  - 美国05
+  - 美国06
+  - 荷兰03
+  - 美国07
+  - 美国08
   - 美国09
+  - 香港02
+  - 阿联酋03
+  - 荷兰04
   - 美国10
+  - 香港03
+  - 法国04
   - 美国11
+  - 法国05
   - 美国12
+  - 荷兰05
+  - 荷兰06
+  - 荷兰07
   - 美国13
   - 美国14
   - 美国15
   - 美国16
   - 美国17
   - 美国18
-  - 香港01
   - 法国06
-  - 荷兰03
   - 美国19
-  - 日本01
   - 美国20
-  - 韩国01
-  - 英国01
-  - 德国01
-  - 法国09
-  - 荷兰04
-  - 加拿大01
-  - 澳大利亚01
-  - 瑞典01
-  - 俄罗斯03
-  - 俄罗斯04
-  - 俄罗斯05
   - 美国21
-  - 香港03
-  - 芬兰01
-  - 瑞士02
+  - 荷兰08
+  - 法国07
+  - 塞舌尔01
   - 美国22
+  - 美国23
+  - 美国24
+  - 美国25
+  - 荷兰09
+  - 香港04
+  - 法国08
+  - 法国09
+  - 瑞士03
+  - 荷兰10
+  - 荷兰11
+  - 新加坡01
+  - 日本02
   - 德国02
-  - 阿联酋02
-  - 伊朗01
+  - 美国26
+  - 新加坡02
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 日本01
+  - 德国01
+  - 阿联酋01
+  - 阿联酋02
+  - 俄罗斯01
+  - 俄罗斯02
   - 法国01
+  - 瑞士01
+  - 香港01
   - 美国01
   - 美国02
-  - 俄罗斯01
   - 荷兰01
-  - 美国03
-  - 美国04
-  - 俄罗斯02
-  - 美国05
-  - 美国07
-  - 法国04
+  - 芬兰01
+  - 瑞士02
   - 荷兰02
-  - 阿联酋01
-  - 瑞士01
+  - 法国02
+  - 美国03
+  - 法国03
+  - 美国04
+  - 美国05
+  - 美国06
+  - 荷兰03
+  - 美国07
+  - 美国08
   - 美国09
+  - 香港02
+  - 阿联酋03
+  - 荷兰04
   - 美国10
+  - 香港03
+  - 法国04
   - 美国11
+  - 法国05
   - 美国12
+  - 荷兰05
+  - 荷兰06
+  - 荷兰07
   - 美国13
   - 美国14
   - 美国15
   - 美国16
   - 美国17
   - 美国18
-  - 香港01
   - 法国06
-  - 荷兰03
   - 美国19
-  - 日本01
   - 美国20
-  - 韩国01
-  - 英国01
-  - 德国01
-  - 法国09
-  - 荷兰04
-  - 加拿大01
-  - 澳大利亚01
-  - 瑞典01
-  - 俄罗斯03
-  - 俄罗斯04
-  - 俄罗斯05
   - 美国21
-  - 香港03
-  - 芬兰01
-  - 瑞士02
+  - 荷兰08
+  - 法国07
+  - 塞舌尔01
   - 美国22
+  - 美国23
+  - 美国24
+  - 美国25
+  - 荷兰09
+  - 香港04
+  - 法国08
+  - 法国09
+  - 瑞士03
+  - 荷兰10
+  - 荷兰11
+  - 新加坡01
+  - 日本02
   - 德国02
-  - 阿联酋02
-  - 伊朗01
+  - 美国26
+  - 新加坡02
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 日本01
+  - 德国01
+  - 阿联酋01
+  - 阿联酋02
+  - 俄罗斯01
+  - 俄罗斯02
   - 法国01
+  - 瑞士01
+  - 香港01
   - 美国01
   - 美国02
-  - 俄罗斯01
   - 荷兰01
-  - 美国03
-  - 美国04
-  - 俄罗斯02
-  - 美国05
-  - 美国07
-  - 法国04
+  - 芬兰01
+  - 瑞士02
   - 荷兰02
-  - 阿联酋01
-  - 瑞士01
+  - 法国02
+  - 美国03
+  - 法国03
+  - 美国04
+  - 美国05
+  - 美国06
+  - 荷兰03
+  - 美国07
+  - 美国08
   - 美国09
+  - 香港02
+  - 阿联酋03
+  - 荷兰04
   - 美国10
+  - 香港03
+  - 法国04
   - 美国11
+  - 法国05
   - 美国12
+  - 荷兰05
+  - 荷兰06
+  - 荷兰07
   - 美国13
   - 美国14
   - 美国15
   - 美国16
   - 美国17
   - 美国18
-  - 香港01
   - 法国06
-  - 荷兰03
   - 美国19
-  - 日本01
   - 美国20
-  - 韩国01
-  - 英国01
-  - 德国01
-  - 法国09
-  - 荷兰04
-  - 加拿大01
-  - 澳大利亚01
-  - 瑞典01
-  - 俄罗斯03
-  - 俄罗斯04
-  - 俄罗斯05
   - 美国21
-  - 香港03
-  - 芬兰01
-  - 瑞士02
+  - 荷兰08
+  - 法国07
+  - 塞舌尔01
   - 美国22
+  - 美国23
+  - 美国24
+  - 美国25
+  - 荷兰09
+  - 香港04
+  - 法国08
+  - 法国09
+  - 瑞士03
+  - 荷兰10
+  - 荷兰11
+  - 新加坡01
+  - 日本02
   - 德国02
-  - 阿联酋02
-  - 伊朗01
+  - 美国26
+  - 新加坡02
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 日本01
+  - 德国01
+  - 阿联酋01
+  - 阿联酋02
+  - 俄罗斯01
+  - 俄罗斯02
   - 法国01
+  - 瑞士01
+  - 香港01
   - 美国01
   - 美国02
-  - 俄罗斯01
   - 荷兰01
-  - 美国03
-  - 美国04
-  - 俄罗斯02
-  - 美国05
-  - 美国07
-  - 法国04
+  - 芬兰01
+  - 瑞士02
   - 荷兰02
-  - 阿联酋01
-  - 瑞士01
+  - 法国02
+  - 美国03
+  - 法国03
+  - 美国04
+  - 美国05
+  - 美国06
+  - 荷兰03
+  - 美国07
+  - 美国08
   - 美国09
+  - 香港02
+  - 阿联酋03
+  - 荷兰04
   - 美国10
+  - 香港03
+  - 法国04
   - 美国11
+  - 法国05
   - 美国12
+  - 荷兰05
+  - 荷兰06
+  - 荷兰07
   - 美国13
   - 美国14
   - 美国15
   - 美国16
   - 美国17
   - 美国18
-  - 香港01
   - 法国06
-  - 荷兰03
   - 美国19
-  - 日本01
   - 美国20
-  - 韩国01
-  - 英国01
-  - 德国01
-  - 法国09
-  - 荷兰04
-  - 加拿大01
-  - 澳大利亚01
-  - 瑞典01
-  - 俄罗斯03
-  - 俄罗斯04
-  - 俄罗斯05
   - 美国21
-  - 香港03
-  - 芬兰01
-  - 瑞士02
+  - 荷兰08
+  - 法国07
+  - 塞舌尔01
   - 美国22
+  - 美国23
+  - 美国24
+  - 美国25
+  - 荷兰09
+  - 香港04
+  - 法国08
+  - 法国09
+  - 瑞士03
+  - 荷兰10
+  - 荷兰11
+  - 新加坡01
+  - 日本02
   - 德国02
-  - 阿联酋02
-  - 伊朗01
+  - 美国26
+  - 新加坡02
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -966,55 +1451,72 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - 日本01
+  - 德国01
+  - 阿联酋01
+  - 阿联酋02
+  - 俄罗斯01
+  - 俄罗斯02
   - 法国01
+  - 瑞士01
+  - 香港01
   - 美国01
   - 美国02
-  - 俄罗斯01
   - 荷兰01
-  - 美国03
-  - 美国04
-  - 俄罗斯02
-  - 美国05
-  - 美国07
-  - 法国04
+  - 芬兰01
+  - 瑞士02
   - 荷兰02
-  - 阿联酋01
-  - 瑞士01
+  - 法国02
+  - 美国03
+  - 法国03
+  - 美国04
+  - 美国05
+  - 美国06
+  - 荷兰03
+  - 美国07
+  - 美国08
   - 美国09
+  - 香港02
+  - 阿联酋03
+  - 荷兰04
   - 美国10
+  - 香港03
+  - 法国04
   - 美国11
+  - 法国05
   - 美国12
+  - 荷兰05
+  - 荷兰06
+  - 荷兰07
   - 美国13
   - 美国14
   - 美国15
   - 美国16
   - 美国17
   - 美国18
-  - 香港01
   - 法国06
-  - 荷兰03
   - 美国19
-  - 日本01
   - 美国20
-  - 韩国01
-  - 英国01
-  - 德国01
-  - 法国09
-  - 荷兰04
-  - 加拿大01
-  - 澳大利亚01
-  - 瑞典01
-  - 俄罗斯03
-  - 俄罗斯04
-  - 俄罗斯05
   - 美国21
-  - 香港03
-  - 芬兰01
-  - 瑞士02
+  - 荷兰08
+  - 法国07
+  - 塞舌尔01
   - 美国22
+  - 美国23
+  - 美国24
+  - 美国25
+  - 荷兰09
+  - 香港04
+  - 法国08
+  - 法国09
+  - 瑞士03
+  - 荷兰10
+  - 荷兰11
+  - 新加坡01
+  - 日本02
   - 德国02
-  - 阿联酋02
-  - 伊朗01
+  - 美国26
+  - 新加坡02
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
 - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
